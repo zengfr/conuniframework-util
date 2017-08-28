@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.tuple.Pair;
 import org.apache.commons.lang3.event.EventUtils;
 import org.apache.commons.lang3.tuple.ImmutablePair;

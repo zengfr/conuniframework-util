@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.DoubleListList;
 import org.apache.commons.collections.primitives.adapters.ListDoubleList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableDoubleList;
@@ -31,11 +31,11 @@ return DoubleCollections.getEmptyDoubleList();
 public static it.unimi.dsi.fastutil.doubles.DoubleBigList asBigList(it.unimi.dsi.fastutil.doubles.DoubleList p0){
 return DoubleBigLists.asBigList(p0);
 }
-public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,int p1){
-return DoubleIterators.pour(p0,p1);
-}
 public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0){
 return DoubleIterators.pour(p0);
+}
+public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,int p1){
+return DoubleIterators.pour(p0,p1);
 }
 public static it.unimi.dsi.fastutil.doubles.DoubleList shuffle(it.unimi.dsi.fastutil.doubles.DoubleList p0,java.util.Random p1){
 return DoubleLists.shuffle(p0,p1);

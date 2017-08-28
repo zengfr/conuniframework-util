@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Sets;
 import org.apache.commons.collections.SetUtils;
 import org.apache.commons.collections.set.UnmodifiableSortedSet;
@@ -24,11 +24,11 @@ return SetUtils.synchronizedSortedSet(p0);
 public static java.util.SortedSet unmodifiableSortedSet(java.util.SortedSet p0){
 return SetUtils.unmodifiableSortedSet(p0);
 }
-public static java.util.SortedSet predicatedSortedSet(java.util.SortedSet p0,org.apache.commons.collections.Predicate p1){
-return SetUtils.predicatedSortedSet(p0,p1);
-}
 public static java.util.SortedSet transformedSortedSet(java.util.SortedSet p0,org.apache.commons.collections.Transformer p1){
 return SetUtils.transformedSortedSet(p0,p1);
+}
+public static java.util.SortedSet predicatedSortedSet(java.util.SortedSet p0,org.apache.commons.collections.Predicate p1){
+return SetUtils.predicatedSortedSet(p0,p1);
 }
 public static java.util.SortedSet typedSortedSet(java.util.SortedSet p0,java.lang.Class p1){
 return SetUtils.typedSortedSet(p0,p1);
@@ -57,16 +57,16 @@ return SetUtils.unmodifiableNavigableSet(p0);
 public static <E> java.util.SortedSet<E> unmodifiableSortedSet(java.util.SortedSet<E> p0){
 return SetUtils.unmodifiableSortedSet(p0);
 }
+public static <E> java.util.SortedSet<E> transformedSortedSet(java.util.SortedSet<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
+return SetUtils.transformedSortedSet(p0,p1);
+}
+public static <E> java.util.SortedSet<E> predicatedSortedSet(java.util.SortedSet<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
+return SetUtils.predicatedSortedSet(p0,p1);
+}
 public static <E> java.util.SortedSet<E> predicatedNavigableSet(java.util.NavigableSet<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
 return SetUtils.predicatedNavigableSet(p0,p1);
 }
 public static <E> java.util.SortedSet<E> transformedNavigableSet(java.util.NavigableSet<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
 return SetUtils.transformedNavigableSet(p0,p1);
-}
-public static <E> java.util.SortedSet<E> predicatedSortedSet(java.util.SortedSet<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
-return SetUtils.predicatedSortedSet(p0,p1);
-}
-public static <E> java.util.SortedSet<E> transformedSortedSet(java.util.SortedSet<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return SetUtils.transformedSortedSet(p0,p1);
 }
 }

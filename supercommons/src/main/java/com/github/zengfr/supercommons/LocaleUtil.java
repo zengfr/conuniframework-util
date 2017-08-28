@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.LocaleUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
@@ -27,23 +27,23 @@ import org.apache.commons.lang.time.FastDateFormat;
 * zengfr3000@qq.com
 */
 public final class LocaleUtil{ 
-public static java.util.List<java.util.Locale> localeLookupList(java.util.Locale p0){
-return LocaleUtils.localeLookupList(p0);
+public static java.util.Locale toLocale(java.lang.String p0){
+return LocaleUtils.toLocale(p0);
 }
 public static java.util.List<java.util.Locale> localeLookupList(java.util.Locale p0,java.util.Locale p1){
 return LocaleUtils.localeLookupList(p0,p1);
 }
-public static java.util.Locale toLocale(java.lang.String p0){
-return LocaleUtils.toLocale(p0);
+public static java.util.List<java.util.Locale> localeLookupList(java.util.Locale p0){
+return LocaleUtils.localeLookupList(p0);
 }
 public static boolean isAvailableLocale(java.util.Locale p0){
 return LocaleUtils.isAvailableLocale(p0);
 }
-public static java.lang.String lowerCase(java.lang.String p0,java.util.Locale p1){
-return StringUtils.lowerCase(p0,p1);
-}
 public static java.lang.String upperCase(java.lang.String p0,java.util.Locale p1){
 return StringUtils.upperCase(p0,p1);
+}
+public static java.lang.String lowerCase(java.lang.String p0,java.util.Locale p1){
+return StringUtils.lowerCase(p0,p1);
 }
 public static int getFuzzyDistance(java.lang.CharSequence p0,java.lang.CharSequence p1,java.util.Locale p2){
 return StringUtils.getFuzzyDistance(p0,p1,p2);
@@ -84,11 +84,11 @@ return FastDateFormat.getInstance(p0,p1);
 public static org.apache.commons.lang3.time.FastDateFormat getInstance(java.lang.String p0,java.util.TimeZone p1,java.util.Locale p2){
 return FastDateFormat.getInstance(p0,p1,p2);
 }
-public static org.apache.commons.lang3.time.FastDateFormat getDateInstance(int p0,java.util.Locale p1){
-return FastDateFormat.getDateInstance(p0,p1);
-}
 public static org.apache.commons.lang3.time.FastDateFormat getDateInstance(int p0,java.util.TimeZone p1,java.util.Locale p2){
 return FastDateFormat.getDateInstance(p0,p1,p2);
+}
+public static org.apache.commons.lang3.time.FastDateFormat getDateInstance(int p0,java.util.Locale p1){
+return FastDateFormat.getDateInstance(p0,p1);
 }
 public static org.apache.commons.lang3.time.FastDateFormat getDateTimeInstance(int p0,int p1,java.util.Locale p2){
 return FastDateFormat.getDateTimeInstance(p0,p1,p2);
@@ -111,9 +111,6 @@ return BigFractionFormat.getImproperInstance(p0);
 public static org.apache.commons.math3.fraction.BigFractionFormat getProperInstance(java.util.Locale p0){
 return BigFractionFormat.getProperInstance(p0);
 }
-public static java.text.NumberFormat getIntegerInstance(java.util.Locale p0){
-return NumberFormat.getIntegerInstance(p0);
-}
 public static java.text.NumberFormat getCurrencyInstance(java.util.Locale p0){
 return NumberFormat.getCurrencyInstance(p0);
 }
@@ -122,6 +119,9 @@ return NumberFormat.getNumberInstance(p0);
 }
 public static java.text.NumberFormat getPercentInstance(java.util.Locale p0){
 return NumberFormat.getPercentInstance(p0);
+}
+public static java.text.NumberFormat getIntegerInstance(java.util.Locale p0){
+return NumberFormat.getIntegerInstance(p0);
 }
 public static java.text.NumberFormat getDefaultNumberFormat(java.util.Locale p0){
 return CompositeFormat.getDefaultNumberFormat(p0);

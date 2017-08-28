@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.escape.Escapers;
 import com.google.common.html.HtmlEscapers;
 import com.google.common.net.UrlEscapers;
@@ -16,14 +16,14 @@ return Escapers.nullEscaper();
 public static com.google.common.escape.Escaper htmlEscaper(){
 return HtmlEscapers.htmlEscaper();
 }
-public static com.google.common.escape.Escaper urlFragmentEscaper(){
-return UrlEscapers.urlFragmentEscaper();
+public static com.google.common.escape.Escaper urlFormParameterEscaper(){
+return UrlEscapers.urlFormParameterEscaper();
 }
 public static com.google.common.escape.Escaper urlPathSegmentEscaper(){
 return UrlEscapers.urlPathSegmentEscaper();
 }
-public static com.google.common.escape.Escaper urlFormParameterEscaper(){
-return UrlEscapers.urlFormParameterEscaper();
+public static com.google.common.escape.Escaper urlFragmentEscaper(){
+return UrlEscapers.urlFragmentEscaper();
 }
 public static com.google.common.escape.Escaper xmlAttributeEscaper(){
 return XmlEscapers.xmlAttributeEscaper();

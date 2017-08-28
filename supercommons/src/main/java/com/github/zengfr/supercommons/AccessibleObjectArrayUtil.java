@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import java.lang.reflect.AccessibleObject;
 /**
 * @author zengfr

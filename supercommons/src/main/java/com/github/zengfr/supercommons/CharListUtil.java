@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CharListList;
 import org.apache.commons.collections.primitives.adapters.ListCharList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableCharList;
@@ -22,11 +22,11 @@ return ListCharList.wrap(p0);
 public static org.apache.commons.collections.primitives.CharList getEmptyCharList(){
 return CharCollections.getEmptyCharList();
 }
-public static org.apache.commons.collections.primitives.CharList unmodifiableCharList(org.apache.commons.collections.primitives.CharList p0) throws java.lang.NullPointerException{
-return CharCollections.unmodifiableCharList(p0);
-}
 public static org.apache.commons.collections.primitives.CharList singletonCharList(char p0){
 return CharCollections.singletonCharList(p0);
+}
+public static org.apache.commons.collections.primitives.CharList unmodifiableCharList(org.apache.commons.collections.primitives.CharList p0) throws java.lang.NullPointerException{
+return CharCollections.unmodifiableCharList(p0);
 }
 public static it.unimi.dsi.fastutil.chars.CharBigList asBigList(it.unimi.dsi.fastutil.chars.CharList p0){
 return CharBigLists.asBigList(p0);

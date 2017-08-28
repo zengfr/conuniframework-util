@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.primitives.Ints;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -69,17 +69,17 @@ import org.apache.commons.lang.NumberUtils;
 * zengfr3000@qq.com
 */
 public final class IntegerUtil{ 
-public static java.lang.Integer tryParse(java.lang.String p0){
-return Ints.tryParse(p0);
-}
 public static java.lang.Integer tryParse(java.lang.String p0,int p1){
 return Ints.tryParse(p0,p1);
 }
-public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getInteger(p0,p1);
+public static java.lang.Integer tryParse(java.lang.String p0){
+return Ints.tryParse(p0);
 }
 public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1,java.lang.Integer p2){
 return MapUtils.getInteger(p0,p1,p2);
+}
+public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getInteger(p0,p1);
 }
 public static <K> java.lang.Integer getInteger(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getInteger(p0,p1);
@@ -90,22 +90,22 @@ return MapUtils.getInteger(p0,p1,p2);
 public static boolean toBoolean(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2){
 return BooleanUtils.toBoolean(p0,p1,p2);
 }
-public static java.lang.Boolean toBooleanObject(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
-return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
-}
 public static java.lang.Boolean toBooleanObject(java.lang.Integer p0){
 return BooleanUtils.toBooleanObject(p0);
 }
+public static java.lang.Boolean toBooleanObject(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
+return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
+}
 public static java.lang.Integer toIntegerObject(boolean p0,java.lang.Integer p1,java.lang.Integer p2){
 return BooleanUtils.toIntegerObject(p0,p1,p2);
-}
-public static java.lang.Integer toIntegerObject(boolean p0){
-return BooleanUtils.toIntegerObject(p0);
 }
 public static java.lang.Integer toIntegerObject(java.lang.Boolean p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
 return BooleanUtils.toIntegerObject(p0,p1,p2,p3);
 }
 public static java.lang.Integer toIntegerObject(java.lang.Boolean p0){
+return BooleanUtils.toIntegerObject(p0);
+}
+public static java.lang.Integer toIntegerObject(boolean p0){
 return BooleanUtils.toIntegerObject(p0);
 }
 public static java.lang.Integer createInteger(java.lang.String p0){

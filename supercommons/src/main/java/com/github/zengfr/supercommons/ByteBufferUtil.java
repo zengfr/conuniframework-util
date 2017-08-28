@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.io.IOUtils;
 import com.facebook.util.Convert;
 import com.facebook.util.serialization.SerDeUtils;

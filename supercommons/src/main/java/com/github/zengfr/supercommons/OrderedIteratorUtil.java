@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.IteratorUtils;
 import org.apache.commons.collections4.IteratorUtils;
 import org.apache.commons.collections4.iterators.EmptyOrderedIterator;

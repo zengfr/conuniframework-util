@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.shorts.Short2BooleanSortedMaps;
 import it.unimi.dsi.fastutil.shorts.Short2ByteSortedMaps;
 import it.unimi.dsi.fastutil.shorts.Short2CharSortedMaps;
@@ -89,11 +89,11 @@ return ShortArrays.binarySearch(p0,p1,p2,p3,p4);
 public static void mergeSort(short[] p0,it.unimi.dsi.fastutil.shorts.ShortComparator p1){
  ShortArrays.mergeSort(p0,p1);
 }
-public static void mergeSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3,short[] p4){
- ShortArrays.mergeSort(p0,p1,p2,p3,p4);
-}
 public static void mergeSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
  ShortArrays.mergeSort(p0,p1,p2,p3);
+}
+public static void mergeSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3,short[] p4){
+ ShortArrays.mergeSort(p0,p1,p2,p3,p4);
 }
 public static void quickSort(short[] p0,it.unimi.dsi.fastutil.shorts.ShortComparator p1){
  ShortArrays.quickSort(p0,p1);
@@ -101,11 +101,11 @@ public static void quickSort(short[] p0,it.unimi.dsi.fastutil.shorts.ShortCompar
 public static void quickSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
  ShortArrays.quickSort(p0,p1,p2,p3);
 }
-public static void parallelQuickSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
- ShortArrays.parallelQuickSort(p0,p1,p2,p3);
-}
 public static void parallelQuickSort(short[] p0,it.unimi.dsi.fastutil.shorts.ShortComparator p1){
  ShortArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
+ ShortArrays.parallelQuickSort(p0,p1,p2,p3);
 }
 public static long binarySearch(short[][] p0,long p1,long p2,short p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
 return ShortBigArrays.binarySearch(p0,p1,p2,p3,p4);
@@ -146,23 +146,23 @@ return ShortIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
 public static int upHeap(short[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.shorts.ShortComparator p5){
 return ShortIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
 }
-public static int front(short[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
-return ShortSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
 public static int[] makeHeap(short[] p0,int p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
 return ShortSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(short[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
- ShortSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(short[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
  ShortSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(short[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.shorts.ShortComparator p3){
+ ShortSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(short[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
 return ShortSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 }
 public static int upHeap(short[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
 return ShortSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
+}
+public static int front(short[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
+return ShortSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
 public static it.unimi.dsi.fastutil.shorts.ShortSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.shorts.ShortComparator p1){
 return ShortSortedSets.singleton(p0,p1);

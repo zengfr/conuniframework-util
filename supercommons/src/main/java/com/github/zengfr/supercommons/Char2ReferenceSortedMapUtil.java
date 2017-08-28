@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.chars.Char2ReferenceSortedMaps;
 /**
 * @author zengfr

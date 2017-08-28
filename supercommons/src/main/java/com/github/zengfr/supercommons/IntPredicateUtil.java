@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.bytes.ByteIterators;
 import it.unimi.dsi.fastutil.chars.CharIterators;
 import it.unimi.dsi.fastutil.ints.IntIterators;

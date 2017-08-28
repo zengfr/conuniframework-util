@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Sets;
 import org.apache.commons.collections4.SetUtils;
 /**

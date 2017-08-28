@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.primitives.Chars;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -151,26 +151,26 @@ return ArrayUtils.isNotEmpty(p0);
 public static char[] nullToEmpty(char[] p0){
 return ArrayUtils.nullToEmpty(p0);
 }
-public static boolean isSameLength(char[] p0,char[] p1){
-return ArrayUtils.isSameLength(p0,p1);
-}
-public static java.lang.Character[] toObject(char[] p0){
-return ArrayUtils.toObject(p0);
+public static boolean isSorted(char[] p0){
+return ArrayUtils.isSorted(p0);
 }
 public static char[] subarray(char[] p0,int p1,int p2){
 return ArrayUtils.subarray(p0,p1,p2);
+}
+public static boolean isSameLength(char[] p0,char[] p1){
+return ArrayUtils.isSameLength(p0,p1);
+}
+public static char[] removeElements(char[] p0,char... p1){
+return ArrayUtils.removeElements(p0,p1);
+}
+public static java.lang.Character[] toObject(char[] p0){
+return ArrayUtils.toObject(p0);
 }
 public static char[] toPrimitive(java.lang.Character[] p0){
 return ArrayUtils.toPrimitive(p0);
 }
 public static char[] toPrimitive(java.lang.Character[] p0,char p1){
 return ArrayUtils.toPrimitive(p0,p1);
-}
-public static boolean isSorted(char[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static char[] removeElements(char[] p0,char... p1){
-return ArrayUtils.removeElements(p0,p1);
 }
 public static java.lang.String random(int p0,int p1,int p2,boolean p3,boolean p4,char... p5){
 return RandomStringUtils.random(p0,p1,p2,p3,p4,p5);
@@ -190,26 +190,26 @@ return StringUtils.join(p0,p1,p2,p3);
 public static int indexOfAny(java.lang.CharSequence p0,char... p1){
 return StringUtils.indexOfAny(p0,p1);
 }
+public static boolean containsOnly(java.lang.CharSequence p0,char... p1){
+return StringUtils.containsOnly(p0,p1);
+}
 public static boolean containsNone(java.lang.CharSequence p0,char... p1){
 return StringUtils.containsNone(p0,p1);
-}
-public static int indexOfAnyBut(java.lang.CharSequence p0,char... p1){
-return StringUtils.indexOfAnyBut(p0,p1);
 }
 public static boolean containsAny(java.lang.CharSequence p0,char... p1){
 return StringUtils.containsAny(p0,p1);
 }
-public static boolean containsOnly(java.lang.CharSequence p0,char... p1){
-return StringUtils.containsOnly(p0,p1);
+public static int indexOfAnyBut(java.lang.CharSequence p0,char... p1){
+return StringUtils.indexOfAnyBut(p0,p1);
 }
 public static org.apache.commons.lang3.text.StrMatcher charSetMatcher(char... p0){
 return StrMatcher.charSetMatcher(p0);
 }
-public static org.apache.commons.lang3.text.StrTokenizer getCSVInstance(char[] p0){
-return StrTokenizer.getCSVInstance(p0);
-}
 public static org.apache.commons.lang3.text.StrTokenizer getTSVInstance(char[] p0){
 return StrTokenizer.getTSVInstance(p0);
+}
+public static org.apache.commons.lang3.text.StrTokenizer getCSVInstance(char[] p0){
+return StrTokenizer.getCSVInstance(p0);
 }
 public static java.lang.String capitalize(java.lang.String p0,char... p1){
 return WordUtils.capitalize(p0,p1);
@@ -217,11 +217,11 @@ return WordUtils.capitalize(p0,p1);
 public static java.lang.String uncapitalize(java.lang.String p0,char... p1){
 return WordUtils.uncapitalize(p0,p1);
 }
-public static java.lang.String initials(java.lang.String p0,char... p1){
-return WordUtils.initials(p0,p1);
-}
 public static java.lang.String capitalizeFully(java.lang.String p0,char... p1){
 return WordUtils.capitalizeFully(p0,p1);
+}
+public static java.lang.String initials(java.lang.String p0,char... p1){
+return WordUtils.initials(p0,p1);
 }
 public static boolean isDelimiter(int p0,char[] p1){
 return WordUtils.isDelimiter(p0,p1);
@@ -256,41 +256,35 @@ return CharArrays.ensureCapacity(p0,p1);
 public static char[] setLength(char[] p0,int p1){
 return CharArrays.setLength(p0,p1);
 }
-public static char[] grow(char[] p0,int p1){
-return CharArrays.grow(p0,p1);
-}
 public static char[] grow(char[] p0,int p1,int p2){
 return CharArrays.grow(p0,p1,p2);
+}
+public static char[] grow(char[] p0,int p1){
+return CharArrays.grow(p0,p1);
 }
 public static int binarySearch(char[] p0,char p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
 return CharArrays.binarySearch(p0,p1,p2);
 }
-public static int binarySearch(char[] p0,int p1,int p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
-return CharArrays.binarySearch(p0,p1,p2,p3,p4);
+public static int binarySearch(char[] p0,int p1,int p2,char p3){
+return CharArrays.binarySearch(p0,p1,p2,p3);
 }
 public static int binarySearch(char[] p0,char p1){
 return CharArrays.binarySearch(p0,p1);
 }
-public static int binarySearch(char[] p0,int p1,int p2,char p3){
-return CharArrays.binarySearch(p0,p1,p2,p3);
-}
-public static char[] shuffle(char[] p0,java.util.Random p1){
-return CharArrays.shuffle(p0,p1);
+public static int binarySearch(char[] p0,int p1,int p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
+return CharArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static char[] shuffle(char[] p0,int p1,int p2,java.util.Random p3){
 return CharArrays.shuffle(p0,p1,p2,p3);
 }
-public static void swap(char[] p0,int p1,int p2){
- CharArrays.swap(p0,p1,p2);
+public static char[] shuffle(char[] p0,java.util.Random p1){
+return CharArrays.shuffle(p0,p1);
 }
 public static void swap(char[] p0,int p1,int p2,int p3){
  CharArrays.swap(p0,p1,p2,p3);
 }
-public static void mergeSort(char[] p0){
- CharArrays.mergeSort(p0);
-}
-public static void mergeSort(char[] p0,int p1,int p2){
- CharArrays.mergeSort(p0,p1,p2);
+public static void swap(char[] p0,int p1,int p2){
+ CharArrays.swap(p0,p1,p2);
 }
 public static void mergeSort(char[] p0,int p1,int p2,char[] p3){
  CharArrays.mergeSort(p0,p1,p2,p3);
@@ -298,83 +292,17 @@ public static void mergeSort(char[] p0,int p1,int p2,char[] p3){
 public static void mergeSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
  CharArrays.mergeSort(p0,p1);
 }
-public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3,char[] p4){
- CharArrays.mergeSort(p0,p1,p2,p3,p4);
-}
 public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
  CharArrays.mergeSort(p0,p1,p2,p3);
 }
-public static void ensureFromTo(char[] p0,int p1,int p2){
- CharArrays.ensureFromTo(p0,p1,p2);
+public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3,char[] p4){
+ CharArrays.mergeSort(p0,p1,p2,p3,p4);
 }
-public static void quickSort(char[] p0,char[] p1,int p2,int p3){
- CharArrays.quickSort(p0,p1,p2,p3);
+public static void mergeSort(char[] p0,int p1,int p2){
+ CharArrays.mergeSort(p0,p1,p2);
 }
-public static void quickSort(char[] p0,char[] p1){
- CharArrays.quickSort(p0,p1);
-}
-public static void quickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
- CharArrays.quickSort(p0,p1);
-}
-public static void quickSort(char[] p0,int p1,int p2){
- CharArrays.quickSort(p0,p1,p2);
-}
-public static void quickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
- CharArrays.quickSort(p0,p1,p2,p3);
-}
-public static void quickSort(char[] p0){
- CharArrays.quickSort(p0);
-}
-public static void parallelQuickSort(char[] p0){
- CharArrays.parallelQuickSort(p0);
-}
-public static void parallelQuickSort(char[] p0,char[] p1,int p2,int p3){
- CharArrays.parallelQuickSort(p0,p1,p2,p3);
-}
-public static void parallelQuickSort(char[] p0,int p1,int p2){
- CharArrays.parallelQuickSort(p0,p1,p2);
-}
-public static void parallelQuickSort(char[] p0,char[] p1){
- CharArrays.parallelQuickSort(p0,p1);
-}
-public static void parallelQuickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
- CharArrays.parallelQuickSort(p0,p1,p2,p3);
-}
-public static void parallelQuickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
- CharArrays.parallelQuickSort(p0,p1);
-}
-public static void ensureOffsetLength(char[] p0,int p1,int p2){
- CharArrays.ensureOffsetLength(p0,p1,p2);
-}
-public static void parallelQuickSortIndirect(int[] p0,char[] p1){
- CharArrays.parallelQuickSortIndirect(p0,p1);
-}
-public static void parallelQuickSortIndirect(int[] p0,char[] p1,int p2,int p3){
- CharArrays.parallelQuickSortIndirect(p0,p1,p2,p3);
-}
-public static void quickSortIndirect(int[] p0,char[] p1,int p2,int p3){
- CharArrays.quickSortIndirect(p0,p1,p2,p3);
-}
-public static void quickSortIndirect(int[] p0,char[] p1){
- CharArrays.quickSortIndirect(p0,p1);
-}
-public static void parallelRadixSortIndirect(int[] p0,char[] p1,boolean p2){
- CharArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
- CharArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
-public static void parallelRadixSort(char[] p0,char[] p1,int p2,int p3){
- CharArrays.parallelRadixSort(p0,p1,p2,p3);
-}
-public static void parallelRadixSort(char[] p0,char[] p1){
- CharArrays.parallelRadixSort(p0,p1);
-}
-public static void parallelRadixSort(char[] p0,int p1,int p2){
- CharArrays.parallelRadixSort(p0,p1,p2);
-}
-public static void parallelRadixSort(char[] p0){
- CharArrays.parallelRadixSort(p0);
+public static void mergeSort(char[] p0){
+ CharArrays.mergeSort(p0);
 }
 public static void radixSortIndirect(int[] p0,char[] p1,char[] p2,int p3,int p4,boolean p5){
  CharArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
@@ -382,38 +310,110 @@ public static void radixSortIndirect(int[] p0,char[] p1,char[] p2,int p3,int p4,
 public static void radixSortIndirect(int[] p0,char[] p1,char[] p2,boolean p3){
  CharArrays.radixSortIndirect(p0,p1,p2,p3);
 }
-public static void radixSortIndirect(int[] p0,char[] p1,boolean p2){
- CharArrays.radixSortIndirect(p0,p1,p2);
-}
 public static void radixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
  CharArrays.radixSortIndirect(p0,p1,p2,p3,p4);
 }
-public static void stabilize(int[] p0,char[] p1,int p2,int p3){
- CharArrays.stabilize(p0,p1,p2,p3);
+public static void radixSortIndirect(int[] p0,char[] p1,boolean p2){
+ CharArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void stabilize(int[] p0,char[] p1){
- CharArrays.stabilize(p0,p1);
+public static void parallelRadixSort(char[] p0){
+ CharArrays.parallelRadixSort(p0);
+}
+public static void parallelRadixSort(char[] p0,char[] p1){
+ CharArrays.parallelRadixSort(p0,p1);
+}
+public static void parallelRadixSort(char[] p0,char[] p1,int p2,int p3){
+ CharArrays.parallelRadixSort(p0,p1,p2,p3);
+}
+public static void parallelRadixSort(char[] p0,int p1,int p2){
+ CharArrays.parallelRadixSort(p0,p1,p2);
+}
+public static void parallelRadixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
+ CharArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,char[] p1,boolean p2){
+ CharArrays.parallelRadixSortIndirect(p0,p1,p2);
+}
+public static void ensureFromTo(char[] p0,int p1,int p2){
+ CharArrays.ensureFromTo(p0,p1,p2);
+}
+public static void quickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
+ CharArrays.quickSort(p0,p1);
+}
+public static void quickSort(char[] p0){
+ CharArrays.quickSort(p0);
+}
+public static void quickSort(char[] p0,int p1,int p2){
+ CharArrays.quickSort(p0,p1,p2);
+}
+public static void quickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
+ CharArrays.quickSort(p0,p1,p2,p3);
+}
+public static void quickSort(char[] p0,char[] p1){
+ CharArrays.quickSort(p0,p1);
+}
+public static void quickSort(char[] p0,char[] p1,int p2,int p3){
+ CharArrays.quickSort(p0,p1,p2,p3);
 }
 public static void ensureSameLength(char[] p0,char[] p1){
  CharArrays.ensureSameLength(p0,p1);
 }
+public static void stabilize(int[] p0,char[] p1){
+ CharArrays.stabilize(p0,p1);
+}
+public static void stabilize(int[] p0,char[] p1,int p2,int p3){
+ CharArrays.stabilize(p0,p1,p2,p3);
+}
 public static void radixSort(char[] p0,int p1,int p2){
  CharArrays.radixSort(p0,p1,p2);
-}
-public static void radixSort(char[] p0,char[] p1,int p2,int p3){
- CharArrays.radixSort(p0,p1,p2,p3);
-}
-public static void radixSort(char[] p0){
- CharArrays.radixSort(p0);
 }
 public static void radixSort(char[] p0,char[] p1){
  CharArrays.radixSort(p0,p1);
 }
-public static void copyFromBig(char[][] p0,long p1,char[] p2,int p3,int p4){
- CharBigArrays.copyFromBig(p0,p1,p2,p3,p4);
+public static void radixSort(char[] p0){
+ CharArrays.radixSort(p0);
+}
+public static void radixSort(char[] p0,char[] p1,int p2,int p3){
+ CharArrays.radixSort(p0,p1,p2,p3);
+}
+public static void ensureOffsetLength(char[] p0,int p1,int p2){
+ CharArrays.ensureOffsetLength(p0,p1,p2);
+}
+public static void parallelQuickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
+ CharArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
+ CharArrays.parallelQuickSort(p0,p1,p2,p3);
+}
+public static void parallelQuickSort(char[] p0,char[] p1,int p2,int p3){
+ CharArrays.parallelQuickSort(p0,p1,p2,p3);
+}
+public static void parallelQuickSort(char[] p0,char[] p1){
+ CharArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(char[] p0){
+ CharArrays.parallelQuickSort(p0);
+}
+public static void parallelQuickSort(char[] p0,int p1,int p2){
+ CharArrays.parallelQuickSort(p0,p1,p2);
+}
+public static void quickSortIndirect(int[] p0,char[] p1,int p2,int p3){
+ CharArrays.quickSortIndirect(p0,p1,p2,p3);
+}
+public static void quickSortIndirect(int[] p0,char[] p1){
+ CharArrays.quickSortIndirect(p0,p1);
+}
+public static void parallelQuickSortIndirect(int[] p0,char[] p1){
+ CharArrays.parallelQuickSortIndirect(p0,p1);
+}
+public static void parallelQuickSortIndirect(int[] p0,char[] p1,int p2,int p3){
+ CharArrays.parallelQuickSortIndirect(p0,p1,p2,p3);
 }
 public static void copyToBig(char[] p0,int p1,char[][] p2,long p3,long p4){
  CharBigArrays.copyToBig(p0,p1,p2,p3,p4);
+}
+public static void copyFromBig(char[][] p0,long p1,char[] p2,int p3,int p4){
+ CharBigArrays.copyFromBig(p0,p1,p2,p3,p4);
 }
 public static void makeHeap(char[] p0,int p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
  CharHeaps.makeHeap(p0,p1,p2);
@@ -451,20 +451,14 @@ return CharIterators.unwrap(p0,p1);
 public static int unwrap(it.unimi.dsi.fastutil.chars.CharIterator p0,char[] p1,int p2,int p3){
 return CharIterators.unwrap(p0,p1,p2,p3);
 }
-public static int front(char[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
-return CharSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
-public static int front(char[] p0,int[] p1,int p2,int[] p3){
-return CharSemiIndirectHeaps.front(p0,p1,p2,p3);
-}
 public static int[] makeHeap(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
 return CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(char[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
- CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(char[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
  CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(char[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
+ CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(char[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
 return CharSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
@@ -472,31 +466,46 @@ return CharSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 public static int upHeap(char[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
 return CharSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
 }
-public static int loadChars(java.io.File p0,char[] p1,int p2,int p3) throws java.io.IOException{
-return BinIO.loadChars(p0,p1,p2,p3);
+public static int front(char[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
+return CharSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
-public static int loadChars(java.io.DataInput p0,char[] p1,int p2,int p3) throws java.io.IOException{
-return BinIO.loadChars(p0,p1,p2,p3);
+public static int front(char[] p0,int[] p1,int p2,int[] p3){
+return CharSemiIndirectHeaps.front(p0,p1,p2,p3);
+}
+public static char[] loadChars(java.lang.CharSequence p0) throws java.io.IOException{
+return BinIO.loadChars(p0);
 }
 public static char[] loadChars(java.io.File p0) throws java.io.IOException{
 return BinIO.loadChars(p0);
 }
+public static int loadChars(java.io.File p0,char[] p1,int p2,int p3) throws java.io.IOException{
+return BinIO.loadChars(p0,p1,p2,p3);
+}
 public static int loadChars(java.io.DataInput p0,char[] p1) throws java.io.IOException{
+return BinIO.loadChars(p0,p1);
+}
+public static int loadChars(java.io.DataInput p0,char[] p1,int p2,int p3) throws java.io.IOException{
+return BinIO.loadChars(p0,p1,p2,p3);
+}
+public static int loadChars(java.lang.CharSequence p0,char[] p1,int p2,int p3) throws java.io.IOException{
+return BinIO.loadChars(p0,p1,p2,p3);
+}
+public static int loadChars(java.io.File p0,char[] p1) throws java.io.IOException{
 return BinIO.loadChars(p0,p1);
 }
 public static int loadChars(java.lang.CharSequence p0,char[] p1) throws java.io.IOException{
 return BinIO.loadChars(p0,p1);
 }
-public static int loadChars(java.io.File p0,char[] p1) throws java.io.IOException{
-return BinIO.loadChars(p0,p1);
-}
-public static int loadChars(java.lang.CharSequence p0,char[] p1,int p2,int p3) throws java.io.IOException{
-return BinIO.loadChars(p0,p1,p2,p3);
-}
-public static char[] loadChars(java.lang.CharSequence p0) throws java.io.IOException{
-return BinIO.loadChars(p0);
-}
 public static void storeChars(char[] p0,int p1,int p2,java.lang.CharSequence p3) throws java.io.IOException{
+ BinIO.storeChars(p0,p1,p2,p3);
+}
+public static void storeChars(char[] p0,java.io.File p1) throws java.io.IOException{
+ BinIO.storeChars(p0,p1);
+}
+public static void storeChars(char[] p0,java.lang.CharSequence p1) throws java.io.IOException{
+ BinIO.storeChars(p0,p1);
+}
+public static void storeChars(char[] p0,int p1,int p2,java.io.File p3) throws java.io.IOException{
  BinIO.storeChars(p0,p1,p2,p3);
 }
 public static void storeChars(char[] p0,java.io.DataOutput p1) throws java.io.IOException{
@@ -504,15 +513,6 @@ public static void storeChars(char[] p0,java.io.DataOutput p1) throws java.io.IO
 }
 public static void storeChars(char[] p0,int p1,int p2,java.io.DataOutput p3) throws java.io.IOException{
  BinIO.storeChars(p0,p1,p2,p3);
-}
-public static void storeChars(char[] p0,int p1,int p2,java.io.File p3) throws java.io.IOException{
- BinIO.storeChars(p0,p1,p2,p3);
-}
-public static void storeChars(char[] p0,java.lang.CharSequence p1) throws java.io.IOException{
- BinIO.storeChars(p0,p1);
-}
-public static void storeChars(char[] p0,java.io.File p1) throws java.io.IOException{
- BinIO.storeChars(p0,p1);
 }
 public static char[] addAll(char[] p0,char[] p1){
 return ArrayUtils.addAll(p0,p1);
@@ -526,17 +526,17 @@ return RandomStringUtils.random(p0,p1);
 public static int indexOfAny(java.lang.String p0,char[] p1){
 return StringUtils.indexOfAny(p0,p1);
 }
+public static boolean containsOnly(java.lang.String p0,char[] p1){
+return StringUtils.containsOnly(p0,p1);
+}
 public static boolean containsNone(java.lang.String p0,char[] p1){
 return StringUtils.containsNone(p0,p1);
-}
-public static int indexOfAnyBut(java.lang.String p0,char[] p1){
-return StringUtils.indexOfAnyBut(p0,p1);
 }
 public static boolean containsAny(java.lang.String p0,char[] p1){
 return StringUtils.containsAny(p0,p1);
 }
-public static boolean containsOnly(java.lang.String p0,char[] p1){
-return StringUtils.containsOnly(p0,p1);
+public static int indexOfAnyBut(java.lang.String p0,char[] p1){
+return StringUtils.indexOfAnyBut(p0,p1);
 }
 public static org.apache.commons.lang.text.StrMatcher charSetMatcher(char[] p0){
 return StrMatcher.charSetMatcher(p0);
@@ -547,10 +547,10 @@ return WordUtils.capitalize(p0,p1);
 public static java.lang.String uncapitalize(java.lang.String p0,char[] p1){
 return WordUtils.uncapitalize(p0,p1);
 }
-public static java.lang.String initials(java.lang.String p0,char[] p1){
-return WordUtils.initials(p0,p1);
-}
 public static java.lang.String capitalizeFully(java.lang.String p0,char[] p1){
 return WordUtils.capitalizeFully(p0,p1);
+}
+public static java.lang.String initials(java.lang.String p0,char[] p1){
+return WordUtils.initials(p0,p1);
 }
 }

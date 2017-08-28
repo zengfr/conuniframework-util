@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.TransformerUtils;
 import org.apache.commons.collections.FactoryUtils;
 import org.apache.commons.collections.ClosureUtils;
@@ -48,58 +48,58 @@ return ArrayUtils.nullToEmpty(p0);
 public static java.lang.Class<?>[] toClass(java.lang.Object... p0){
 return ClassUtils.toClass(p0);
 }
-public static java.lang.Class<?>[] wrappersToPrimitives(java.lang.Class<?>... p0){
-return ClassUtils.wrappersToPrimitives(p0);
-}
 public static java.lang.Class<?>[] primitivesToWrappers(java.lang.Class<?>... p0){
 return ClassUtils.primitivesToWrappers(p0);
+}
+public static java.lang.Class<?>[] wrappersToPrimitives(java.lang.Class<?>... p0){
+return ClassUtils.wrappersToPrimitives(p0);
 }
 public static java.lang.Class[] toClass(java.lang.Object[] p0){
 return ClassUtils.toClass(p0);
 }
-public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1){
-return ClassUtils.isAssignable(p0,p1);
-}
 public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1,boolean p2){
 return ClassUtils.isAssignable(p0,p1,p2);
+}
+public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1){
+return ClassUtils.isAssignable(p0,p1);
 }
 public static java.lang.reflect.Method getPublicMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2) throws java.lang.SecurityException,java.lang.NoSuchMethodException{
 return ClassUtils.getPublicMethod(p0,p1,p2);
 }
-public static java.lang.Class[] wrappersToPrimitives(java.lang.Class[] p0){
-return ClassUtils.wrappersToPrimitives(p0);
-}
 public static java.lang.Class[] primitivesToWrappers(java.lang.Class[] p0){
 return ClassUtils.primitivesToWrappers(p0);
+}
+public static java.lang.Class[] wrappersToPrimitives(java.lang.Class[] p0){
+return ClassUtils.wrappersToPrimitives(p0);
 }
 public static java.lang.reflect.Constructor getAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
 return ConstructorUtils.getAccessibleConstructor(p0,p1);
 }
-public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeConstructor(p0,p1,p2);
+public static java.lang.reflect.Constructor getMatchingAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
+return ConstructorUtils.getMatchingAccessibleConstructor(p0,p1);
 }
 public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
 }
-public static java.lang.reflect.Constructor getMatchingAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
-return ConstructorUtils.getMatchingAccessibleConstructor(p0,p1);
+public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeConstructor(p0,p1,p2);
 }
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1,p2,p3);
 }
+public static java.lang.reflect.Method getMatchingAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
+return MethodUtils.getMatchingAccessibleMethod(p0,p1,p2);
+}
 public static java.lang.reflect.Method getAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
 return MethodUtils.getAccessibleMethod(p0,p1,p2);
-}
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
 }
 public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2,p3);
 }
-public static java.lang.reflect.Method getMatchingAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
-return MethodUtils.getMatchingAccessibleMethod(p0,p1,p2);
-}
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2,p3);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
 }
 }

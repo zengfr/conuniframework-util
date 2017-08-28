@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.math.BigIntegerMath;
 import com.google.common.math.DoubleMath;
 import com.google.common.math.IntMath;
@@ -23,17 +23,17 @@ return BigIntegerMath.divide(p0,p1,p2);
 public static int log2(java.math.BigInteger p0,java.math.RoundingMode p1){
 return BigIntegerMath.log2(p0,p1);
 }
-public static java.math.BigInteger roundToBigInteger(double p0,java.math.RoundingMode p1){
-return DoubleMath.roundToBigInteger(p0,p1);
-}
-public static int log2(double p0,java.math.RoundingMode p1){
-return DoubleMath.log2(p0,p1);
+public static int roundToInt(double p0,java.math.RoundingMode p1){
+return DoubleMath.roundToInt(p0,p1);
 }
 public static long roundToLong(double p0,java.math.RoundingMode p1){
 return DoubleMath.roundToLong(p0,p1);
 }
-public static int roundToInt(double p0,java.math.RoundingMode p1){
-return DoubleMath.roundToInt(p0,p1);
+public static int log2(double p0,java.math.RoundingMode p1){
+return DoubleMath.log2(p0,p1);
+}
+public static java.math.BigInteger roundToBigInteger(double p0,java.math.RoundingMode p1){
+return DoubleMath.roundToBigInteger(p0,p1);
 }
 public static int sqrt(int p0,java.math.RoundingMode p1){
 return IntMath.sqrt(p0,p1);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Suppliers;
 /**
 * @author zengfr
@@ -16,10 +16,10 @@ return Suppliers.synchronizedSupplier(p0);
 public static <T> com.google.common.base.Supplier<T> memoizeWithExpiration(com.google.common.base.Supplier<T> p0,long p1,java.util.concurrent.TimeUnit p2){
 return Suppliers.memoizeWithExpiration(p0,p1,p2);
 }
-public static <T> com.google.common.base.Supplier<T> ofInstance(T p0){
-return Suppliers.ofInstance(p0);
-}
 public static <T> com.google.common.base.Supplier<T> memoize(com.google.common.base.Supplier<T> p0){
 return Suppliers.memoize(p0);
+}
+public static <T> com.google.common.base.Supplier<T> ofInstance(T p0){
+return Suppliers.ofInstance(p0);
 }
 }

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Iterators;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.collections.CollectionUtils;
@@ -72,10 +72,10 @@ return Iterators.cycle(p0);
 public static <T> java.util.Iterator<T> consumingIterator(java.util.Iterator<T> p0){
 return Iterators.consumingIterator(p0);
 }
-public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,java.lang.String[] p1,boolean p2){
+public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,org.apache.commons.io.filefilter.IOFileFilter p1,org.apache.commons.io.filefilter.IOFileFilter p2){
 return FileUtils.iterateFiles(p0,p1,p2);
 }
-public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,org.apache.commons.io.filefilter.IOFileFilter p1,org.apache.commons.io.filefilter.IOFileFilter p2){
+public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,java.lang.String[] p1,boolean p2){
 return FileUtils.iterateFiles(p0,p1,p2);
 }
 public static java.util.Iterator<java.io.File> iterateFilesAndDirs(java.io.File p0,org.apache.commons.io.filefilter.IOFileFilter p1,org.apache.commons.io.filefilter.IOFileFilter p2){
@@ -99,26 +99,29 @@ return IteratorUtils.toArray(p0,p1);
 public static java.util.Iterator getIterator(java.lang.Object p0){
 return IteratorUtils.getIterator(p0);
 }
-public static java.util.List toList(java.util.Iterator p0,int p1){
-return IteratorUtils.toList(p0,p1);
+public static java.util.Iterator filteredIterator(java.util.Iterator p0,org.apache.commons.collections.Predicate p1){
+return IteratorUtils.filteredIterator(p0,p1);
 }
 public static java.util.List toList(java.util.Iterator p0){
 return IteratorUtils.toList(p0);
 }
-public static java.util.Iterator unmodifiableIterator(java.util.Iterator p0){
-return IteratorUtils.unmodifiableIterator(p0);
+public static java.util.List toList(java.util.Iterator p0,int p1){
+return IteratorUtils.toList(p0,p1);
 }
 public static java.util.Enumeration asEnumeration(java.util.Iterator p0){
 return IteratorUtils.asEnumeration(p0);
 }
-public static java.util.Iterator filteredIterator(java.util.Iterator p0,org.apache.commons.collections.Predicate p1){
-return IteratorUtils.filteredIterator(p0,p1);
+public static java.util.Iterator unmodifiableIterator(java.util.Iterator p0){
+return IteratorUtils.unmodifiableIterator(p0);
+}
+public static java.util.Iterator transformedIterator(java.util.Iterator p0,org.apache.commons.collections.Transformer p1){
+return IteratorUtils.transformedIterator(p0,p1);
 }
 public static java.util.Iterator objectGraphIterator(java.lang.Object p0,org.apache.commons.collections.Transformer p1){
 return IteratorUtils.objectGraphIterator(p0,p1);
 }
-public static java.util.Iterator transformedIterator(java.util.Iterator p0,org.apache.commons.collections.Transformer p1){
-return IteratorUtils.transformedIterator(p0,p1);
+public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Collection p1){
+return IteratorUtils.collatedIterator(p0,p1);
 }
 public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Iterator[] p1){
 return IteratorUtils.collatedIterator(p0,p1);
@@ -126,32 +129,26 @@ return IteratorUtils.collatedIterator(p0,p1);
 public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Iterator p1,java.util.Iterator p2){
 return IteratorUtils.collatedIterator(p0,p1,p2);
 }
-public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Collection p1){
-return IteratorUtils.collatedIterator(p0,p1);
-}
-public static java.util.ListIterator toListIterator(java.util.Iterator p0){
-return IteratorUtils.toListIterator(p0);
-}
-public static java.util.Iterator asIterator(java.util.Enumeration p0){
-return IteratorUtils.asIterator(p0);
-}
-public static java.util.Iterator asIterator(java.util.Enumeration p0,java.util.Collection p1){
-return IteratorUtils.asIterator(p0,p1);
-}
 public static java.util.Iterator chainedIterator(java.util.Iterator p0,java.util.Iterator p1){
 return IteratorUtils.chainedIterator(p0,p1);
-}
-public static java.util.Iterator chainedIterator(java.util.Collection p0){
-return IteratorUtils.chainedIterator(p0);
 }
 public static java.util.Iterator chainedIterator(java.util.Iterator[] p0){
 return IteratorUtils.chainedIterator(p0);
 }
+public static java.util.Iterator chainedIterator(java.util.Collection p0){
+return IteratorUtils.chainedIterator(p0);
+}
+public static java.util.Iterator asIterator(java.util.Enumeration p0,java.util.Collection p1){
+return IteratorUtils.asIterator(p0,p1);
+}
+public static java.util.Iterator asIterator(java.util.Enumeration p0){
+return IteratorUtils.asIterator(p0);
+}
+public static java.util.ListIterator toListIterator(java.util.Iterator p0){
+return IteratorUtils.toListIterator(p0);
+}
 public static java.util.Iterator decorate(java.util.Iterator p0){
 return UnmodifiableIterator.decorate(p0);
-}
-public static <E> java.util.Iterator<E> unmodifiableIterator(java.util.Iterator<E> p0){
-return IteratorUtils.unmodifiableIterator(p0);
 }
 public static <E> java.util.Iterator<E> filteredIterator(java.util.Iterator<? extends E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
 return IteratorUtils.filteredIterator(p0,p1);
@@ -159,23 +156,32 @@ return IteratorUtils.filteredIterator(p0,p1);
 public static <E> java.util.Iterator<E> peekingIterator(java.util.Iterator<? extends E> p0){
 return IteratorUtils.peekingIterator(p0);
 }
-public static <E> java.util.Iterator<E> objectGraphIterator(E p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return IteratorUtils.objectGraphIterator(p0,p1);
+public static <E> java.util.Iterator<E> unmodifiableIterator(java.util.Iterator<E> p0){
+return IteratorUtils.unmodifiableIterator(p0);
 }
 public static <I,O> java.util.Iterator<O> transformedIterator(java.util.Iterator<? extends I> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1){
 return IteratorUtils.transformedIterator(p0,p1);
 }
-public static <E> java.util.Iterator<E> pushbackIterator(java.util.Iterator<? extends E> p0){
-return IteratorUtils.pushbackIterator(p0);
+public static <E> java.util.Iterator<E> objectGraphIterator(E p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
+return IteratorUtils.objectGraphIterator(p0,p1);
 }
-public static <E> java.util.Iterator<E> collatedIterator(java.util.Comparator<? super E> p0,java.util.Collection<java.util.Iterator<? extends E>> p1){
-return IteratorUtils.collatedIterator(p0,p1);
+public static <E> java.util.Iterator<E> collatedIterator(java.util.Comparator<? super E> p0,java.util.Iterator<? extends E> p1,java.util.Iterator<? extends E> p2){
+return IteratorUtils.collatedIterator(p0,p1,p2);
 }
 public static <E> java.util.Iterator<E> collatedIterator(java.util.Comparator<? super E> p0,java.util.Iterator<? extends E>... p1){
 return IteratorUtils.collatedIterator(p0,p1);
 }
-public static <E> java.util.Iterator<E> collatedIterator(java.util.Comparator<? super E> p0,java.util.Iterator<? extends E> p1,java.util.Iterator<? extends E> p2){
-return IteratorUtils.collatedIterator(p0,p1,p2);
+public static <E> java.util.Iterator<E> collatedIterator(java.util.Comparator<? super E> p0,java.util.Collection<java.util.Iterator<? extends E>> p1){
+return IteratorUtils.collatedIterator(p0,p1);
+}
+public static <E> java.util.Iterator<E> chainedIterator(java.util.Collection<java.util.Iterator<? extends E>> p0){
+return IteratorUtils.chainedIterator(p0);
+}
+public static <E> java.util.Iterator<E> chainedIterator(java.util.Iterator<? extends E> p0,java.util.Iterator<? extends E> p1){
+return IteratorUtils.chainedIterator(p0,p1);
+}
+public static <E> java.util.Iterator<E> chainedIterator(java.util.Iterator<? extends E>... p0){
+return IteratorUtils.chainedIterator(p0);
 }
 public static <E> java.util.Iterator<E> asIterator(java.util.Enumeration<? extends E> p0,java.util.Collection<? super E> p1){
 return IteratorUtils.asIterator(p0,p1);
@@ -183,14 +189,8 @@ return IteratorUtils.asIterator(p0,p1);
 public static <E> java.util.Iterator<E> asIterator(java.util.Enumeration<? extends E> p0){
 return IteratorUtils.asIterator(p0);
 }
-public static <E> java.util.Iterator<E> chainedIterator(java.util.Iterator<? extends E> p0,java.util.Iterator<? extends E> p1){
-return IteratorUtils.chainedIterator(p0,p1);
-}
-public static <E> java.util.Iterator<E> chainedIterator(java.util.Collection<java.util.Iterator<? extends E>> p0){
-return IteratorUtils.chainedIterator(p0);
-}
-public static <E> java.util.Iterator<E> chainedIterator(java.util.Iterator<? extends E>... p0){
-return IteratorUtils.chainedIterator(p0);
+public static <E> java.util.Iterator<E> pushbackIterator(java.util.Iterator<? extends E> p0){
+return IteratorUtils.pushbackIterator(p0);
 }
 public static <E> java.util.Iterator<E> unmodifiableIterator(java.util.Iterator<? extends E> p0){
 return UnmodifiableIterator.unmodifiableIterator(p0);

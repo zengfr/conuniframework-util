@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.hash.BloomFilter;
 import com.google.common.io.ByteStreams;
 import com.google.common.io.Closeables;
@@ -95,14 +95,14 @@ return IOUtils.buffer(p0,p1);
 public static java.io.BufferedInputStream buffer(java.io.InputStream p0){
 return IOUtils.buffer(p0);
 }
+public static java.util.List<java.lang.String> readLines(java.io.InputStream p0) throws java.io.IOException{
+return IOUtils.readLines(p0);
+}
 public static java.util.List<java.lang.String> readLines(java.io.InputStream p0,java.lang.String p1) throws java.io.IOException{
 return IOUtils.readLines(p0,p1);
 }
 public static java.util.List<java.lang.String> readLines(java.io.InputStream p0,java.nio.charset.Charset p1) throws java.io.IOException{
 return IOUtils.readLines(p0,p1);
-}
-public static java.util.List<java.lang.String> readLines(java.io.InputStream p0) throws java.io.IOException{
-return IOUtils.readLines(p0);
 }
 public static java.io.InputStream toBufferedInputStream(java.io.InputStream p0) throws java.io.IOException{
 return IOUtils.toBufferedInputStream(p0);
@@ -110,41 +110,41 @@ return IOUtils.toBufferedInputStream(p0);
 public static java.io.InputStream toBufferedInputStream(java.io.InputStream p0,int p1) throws java.io.IOException{
 return IOUtils.toBufferedInputStream(p0,p1);
 }
-public static java.io.InputStream toInputStream(java.lang.String p0,java.lang.String p1) throws java.io.IOException{
-return IOUtils.toInputStream(p0,p1);
-}
-public static java.io.InputStream toInputStream(java.lang.CharSequence p0,java.nio.charset.Charset p1){
-return IOUtils.toInputStream(p0,p1);
-}
 public static java.io.InputStream toInputStream(java.lang.CharSequence p0){
+return IOUtils.toInputStream(p0);
+}
+public static java.io.InputStream toInputStream(java.lang.String p0){
 return IOUtils.toInputStream(p0);
 }
 public static java.io.InputStream toInputStream(java.lang.CharSequence p0,java.lang.String p1) throws java.io.IOException{
 return IOUtils.toInputStream(p0,p1);
 }
-public static java.io.InputStream toInputStream(java.lang.String p0){
-return IOUtils.toInputStream(p0);
+public static java.io.InputStream toInputStream(java.lang.CharSequence p0,java.nio.charset.Charset p1){
+return IOUtils.toInputStream(p0,p1);
+}
+public static java.io.InputStream toInputStream(java.lang.String p0,java.lang.String p1) throws java.io.IOException{
+return IOUtils.toInputStream(p0,p1);
 }
 public static java.io.InputStream toInputStream(java.lang.String p0,java.nio.charset.Charset p1){
 return IOUtils.toInputStream(p0,p1);
 }
-public static org.apache.commons.io.LineIterator lineIterator(java.io.InputStream p0,java.nio.charset.Charset p1) throws java.io.IOException{
-return IOUtils.lineIterator(p0,p1);
-}
 public static org.apache.commons.io.LineIterator lineIterator(java.io.InputStream p0,java.lang.String p1) throws java.io.IOException{
 return IOUtils.lineIterator(p0,p1);
 }
-public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1,long p2,long p3,byte[] p4) throws java.io.IOException{
-return IOUtils.copyLarge(p0,p1,p2,p3,p4);
-}
-public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1) throws java.io.IOException{
-return IOUtils.copyLarge(p0,p1);
+public static org.apache.commons.io.LineIterator lineIterator(java.io.InputStream p0,java.nio.charset.Charset p1) throws java.io.IOException{
+return IOUtils.lineIterator(p0,p1);
 }
 public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1,byte[] p2) throws java.io.IOException{
 return IOUtils.copyLarge(p0,p1,p2);
 }
+public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1) throws java.io.IOException{
+return IOUtils.copyLarge(p0,p1);
+}
 public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1,long p2,long p3) throws java.io.IOException{
 return IOUtils.copyLarge(p0,p1,p2,p3);
+}
+public static long copyLarge(java.io.InputStream p0,java.io.OutputStream p1,long p2,long p3,byte[] p4) throws java.io.IOException{
+return IOUtils.copyLarge(p0,p1,p2,p3,p4);
 }
 public static float readSwappedFloat(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedFloat(p0);
@@ -158,11 +158,11 @@ return EndianUtils.readSwappedLong(p0);
 public static int readSwappedUnsignedShort(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedUnsignedShort(p0);
 }
-public static double readSwappedDouble(java.io.InputStream p0) throws java.io.IOException{
-return EndianUtils.readSwappedDouble(p0);
-}
 public static int readSwappedInteger(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedInteger(p0);
+}
+public static double readSwappedDouble(java.io.InputStream p0) throws java.io.IOException{
+return EndianUtils.readSwappedDouble(p0);
 }
 public static long readSwappedUnsignedInteger(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedUnsignedInteger(p0);
@@ -182,11 +182,11 @@ return ByteIteratorInputStream.adapt(p0);
 public static org.apache.commons.collections.primitives.ByteIterator adapt(java.io.InputStream p0){
 return InputStreamByteIterator.adapt(p0);
 }
-public static int loadBytes(java.io.InputStream p0,byte[] p1,int p2,int p3) throws java.io.IOException{
-return BinIO.loadBytes(p0,p1,p2,p3);
-}
 public static int loadBytes(java.io.InputStream p0,byte[] p1) throws java.io.IOException{
 return BinIO.loadBytes(p0,p1);
+}
+public static int loadBytes(java.io.InputStream p0,byte[] p1,int p2,int p3) throws java.io.IOException{
+return BinIO.loadBytes(p0,p1,p2,p3);
 }
 public static long loadBytes(java.io.InputStream p0,byte[][] p1,long p2,long p3) throws java.io.IOException{
 return BinIO.loadBytes(p0,p1,p2,p3);

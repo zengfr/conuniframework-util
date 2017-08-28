@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.bytes.ByteCollections;
 import it.unimi.dsi.fastutil.io.BinIO;
 import it.unimi.dsi.fastutil.io.TextIO;
@@ -12,10 +12,10 @@ public final class ByteIterableUtil{
 public static it.unimi.dsi.fastutil.bytes.ByteCollection asCollection(it.unimi.dsi.fastutil.bytes.ByteIterable p0){
 return ByteCollections.asCollection(p0);
 }
-public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.io.File p0){
+public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.lang.CharSequence p0){
 return BinIO.asByteIterable(p0);
 }
-public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.lang.CharSequence p0){
+public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.io.File p0){
 return BinIO.asByteIterable(p0);
 }
 }

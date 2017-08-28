@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Collections2;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.collections.TransformerUtils;
@@ -60,11 +60,11 @@ return Collections2.filter(p0,p1);
 public static <F,T> java.util.Collection<T> transform(java.util.Collection<F> p0,com.google.common.base.Function<? super F, T> p1){
 return Collections2.transform(p0,p1);
 }
-public static <E extends java.lang.Comparable<? super E> > java.util.Collection<java.util.List<E>> orderedPermutations(java.lang.Iterable<E> p0){
-return Collections2.orderedPermutations(p0);
-}
 public static <E> java.util.Collection<java.util.List<E>> orderedPermutations(java.lang.Iterable<E> p0,java.util.Comparator<? super E> p1){
 return Collections2.orderedPermutations(p0,p1);
+}
+public static <E extends java.lang.Comparable<? super E> > java.util.Collection<java.util.List<E>> orderedPermutations(java.lang.Iterable<E> p0){
+return Collections2.orderedPermutations(p0);
 }
 public static <E> java.util.Collection<java.util.List<E>> permutations(java.util.Collection<E> p0){
 return Collections2.permutations(p0);
@@ -156,29 +156,26 @@ return CollectionUtils.isFull(p0);
 public static java.util.Collection subtract(java.util.Collection p0,java.util.Collection p1){
 return CollectionUtils.subtract(p0,p1);
 }
-public static java.util.Collection transformedCollection(java.util.Collection p0,org.apache.commons.collections.Transformer p1){
-return CollectionUtils.transformedCollection(p0,p1);
-}
-public static boolean isEqualCollection(java.util.Collection p0,java.util.Collection p1){
-return CollectionUtils.isEqualCollection(p0,p1);
-}
-public static java.util.Collection predicatedCollection(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
-return CollectionUtils.predicatedCollection(p0,p1);
-}
-public static java.util.Map getCardinalityMap(java.util.Collection p0){
-return CollectionUtils.getCardinalityMap(p0);
-}
-public static boolean isProperSubCollection(java.util.Collection p0,java.util.Collection p1){
-return CollectionUtils.isProperSubCollection(p0,p1);
+public static void select(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
+ CollectionUtils.select(p0,p1,p2);
 }
 public static java.util.Collection select(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
 return CollectionUtils.select(p0,p1);
 }
-public static void select(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
- CollectionUtils.select(p0,p1,p2);
+public static void forAllDo(java.util.Collection p0,org.apache.commons.collections.Closure p1){
+ CollectionUtils.forAllDo(p0,p1);
 }
 public static java.util.Collection typedCollection(java.util.Collection p0,java.lang.Class p1){
 return CollectionUtils.typedCollection(p0,p1);
+}
+public static java.util.Collection disjunction(java.util.Collection p0,java.util.Collection p1){
+return CollectionUtils.disjunction(p0,p1);
+}
+public static void selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
+ CollectionUtils.selectRejected(p0,p1,p2);
+}
+public static java.util.Collection selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
+return CollectionUtils.selectRejected(p0,p1);
 }
 public static boolean isSubCollection(java.util.Collection p0,java.util.Collection p1){
 return CollectionUtils.isSubCollection(p0,p1);
@@ -186,17 +183,20 @@ return CollectionUtils.isSubCollection(p0,p1);
 public static boolean addIgnoreNull(java.util.Collection p0,java.lang.Object p1){
 return CollectionUtils.addIgnoreNull(p0,p1);
 }
-public static void forAllDo(java.util.Collection p0,org.apache.commons.collections.Closure p1){
- CollectionUtils.forAllDo(p0,p1);
+public static java.util.Map getCardinalityMap(java.util.Collection p0){
+return CollectionUtils.getCardinalityMap(p0);
 }
-public static java.util.Collection disjunction(java.util.Collection p0,java.util.Collection p1){
-return CollectionUtils.disjunction(p0,p1);
+public static boolean isProperSubCollection(java.util.Collection p0,java.util.Collection p1){
+return CollectionUtils.isProperSubCollection(p0,p1);
 }
-public static java.util.Collection selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
-return CollectionUtils.selectRejected(p0,p1);
+public static java.util.Collection predicatedCollection(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
+return CollectionUtils.predicatedCollection(p0,p1);
 }
-public static void selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
- CollectionUtils.selectRejected(p0,p1,p2);
+public static java.util.Collection transformedCollection(java.util.Collection p0,org.apache.commons.collections.Transformer p1){
+return CollectionUtils.transformedCollection(p0,p1);
+}
+public static boolean isEqualCollection(java.util.Collection p0,java.util.Collection p1){
+return CollectionUtils.isEqualCollection(p0,p1);
 }
 public static java.util.Collection decorate(java.util.Collection p0){
 return SynchronizedCollection.decorate(p0);
@@ -210,14 +210,14 @@ return PredicatedCollection.decorate(p0,p1);
 public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Collection p1){
 return IteratorUtils.collatedIterator(p0,p1);
 }
+public static java.util.Iterator chainedIterator(java.util.Collection p0){
+return IteratorUtils.chainedIterator(p0);
+}
 public static org.apache.commons.collections.ResettableIterator loopingIterator(java.util.Collection p0){
 return IteratorUtils.loopingIterator(p0);
 }
 public static java.util.Iterator asIterator(java.util.Enumeration p0,java.util.Collection p1){
 return IteratorUtils.asIterator(p0,p1);
-}
-public static java.util.Iterator chainedIterator(java.util.Collection p0){
-return IteratorUtils.chainedIterator(p0);
 }
 public static int hashCodeForSet(java.util.Collection p0){
 return SetUtils.hashCodeForSet(p0);
@@ -246,17 +246,17 @@ return ListUtils.isEqualList(p0,p1);
 public static int hashCodeForList(java.util.Collection p0){
 return ListUtils.hashCodeForList(p0);
 }
-public static org.apache.commons.collections.Predicate nonePredicate(java.util.Collection p0){
-return PredicateUtils.nonePredicate(p0);
-}
-public static org.apache.commons.collections.Predicate onePredicate(java.util.Collection p0){
-return PredicateUtils.onePredicate(p0);
-}
 public static org.apache.commons.collections.Predicate allPredicate(java.util.Collection p0){
 return PredicateUtils.allPredicate(p0);
 }
 public static org.apache.commons.collections.Predicate anyPredicate(java.util.Collection p0){
 return PredicateUtils.anyPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate onePredicate(java.util.Collection p0){
+return PredicateUtils.onePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nonePredicate(java.util.Collection p0){
+return PredicateUtils.nonePredicate(p0);
 }
 public static <I,O> java.util.Collection<O> collect(java.util.Iterator<I> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1){
 return CollectionUtils.collect(p0,p1);
@@ -273,17 +273,17 @@ return CollectionUtils.collect(p0,p1,p2);
 public static <C> java.util.Collection<C> synchronizedCollection(java.util.Collection<C> p0){
 return CollectionUtils.synchronizedCollection(p0);
 }
-public static <E> java.util.Collection<E> removeAll(java.lang.Iterable<E> p0,java.lang.Iterable<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
-return CollectionUtils.removeAll(p0,p1,p2);
-}
 public static <E> java.util.Collection<E> removeAll(java.util.Collection<E> p0,java.util.Collection<?> p1){
 return CollectionUtils.removeAll(p0,p1);
 }
-public static <E> java.util.Collection<E> retainAll(java.lang.Iterable<E> p0,java.lang.Iterable<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
-return CollectionUtils.retainAll(p0,p1,p2);
+public static <E> java.util.Collection<E> removeAll(java.lang.Iterable<E> p0,java.lang.Iterable<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
+return CollectionUtils.removeAll(p0,p1,p2);
 }
 public static <C> java.util.Collection<C> retainAll(java.util.Collection<C> p0,java.util.Collection<?> p1){
 return CollectionUtils.retainAll(p0,p1);
+}
+public static <E> java.util.Collection<E> retainAll(java.lang.Iterable<E> p0,java.lang.Iterable<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
+return CollectionUtils.retainAll(p0,p1,p2);
 }
 public static <C> java.util.Collection<C> unmodifiableCollection(java.util.Collection<? extends C> p0){
 return CollectionUtils.unmodifiableCollection(p0);
@@ -294,17 +294,14 @@ return CollectionUtils.intersection(p0,p1);
 public static <O> java.util.Collection<O> union(java.lang.Iterable<? extends O> p0,java.lang.Iterable<? extends O> p1){
 return CollectionUtils.union(p0,p1);
 }
-public static <E> java.util.Collection<E> transformingCollection(java.util.Collection<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return CollectionUtils.transformingCollection(p0,p1);
-}
 public static <O> java.util.Collection<O> subtract(java.lang.Iterable<? extends O> p0,java.lang.Iterable<? extends O> p1){
 return CollectionUtils.subtract(p0,p1);
 }
 public static <O> java.util.Collection<O> subtract(java.lang.Iterable<? extends O> p0,java.lang.Iterable<? extends O> p1,org.apache.commons.collections4.Predicate<O> p2){
 return CollectionUtils.subtract(p0,p1,p2);
 }
-public static <C> java.util.Collection<C> predicatedCollection(java.util.Collection<C> p0,org.apache.commons.collections4.Predicate<? super C> p1){
-return CollectionUtils.predicatedCollection(p0,p1);
+public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
+return CollectionUtils.select(p0,p1,p2);
 }
 public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2,R p3){
 return CollectionUtils.select(p0,p1,p2,p3);
@@ -312,23 +309,26 @@ return CollectionUtils.select(p0,p1,p2,p3);
 public static <O> java.util.Collection<O> select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1){
 return CollectionUtils.select(p0,p1);
 }
-public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
-return CollectionUtils.select(p0,p1,p2);
-}
-public static <T> java.util.Collection<T> emptyCollection(){
-return CollectionUtils.emptyCollection();
-}
 public static <O> java.util.Collection<O> disjunction(java.lang.Iterable<? extends O> p0,java.lang.Iterable<? extends O> p1){
 return CollectionUtils.disjunction(p0,p1);
-}
-public static <O,R extends java.util.Collection<? super O> > R selectRejected(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
-return CollectionUtils.selectRejected(p0,p1,p2);
 }
 public static <O> java.util.Collection<O> selectRejected(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1){
 return CollectionUtils.selectRejected(p0,p1);
 }
+public static <O,R extends java.util.Collection<? super O> > R selectRejected(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
+return CollectionUtils.selectRejected(p0,p1,p2);
+}
+public static <C> java.util.Collection<C> predicatedCollection(java.util.Collection<C> p0,org.apache.commons.collections4.Predicate<? super C> p1){
+return CollectionUtils.predicatedCollection(p0,p1);
+}
+public static <T> java.util.Collection<T> emptyCollection(){
+return CollectionUtils.emptyCollection();
+}
 public static <T> java.util.Collection<T> emptyIfNull(java.util.Collection<T> p0){
 return CollectionUtils.emptyIfNull(p0);
+}
+public static <E> java.util.Collection<E> transformingCollection(java.util.Collection<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
+return CollectionUtils.transformingCollection(p0,p1);
 }
 public static <K,V> java.util.Collection<V> getCollection(org.apache.commons.collections4.MultiValuedMap<K, V> p0,K p1){
 return MultiMapUtils.getCollection(p0,p1);

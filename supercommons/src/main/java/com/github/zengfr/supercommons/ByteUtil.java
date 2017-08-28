@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections4.MapUtils;
 import it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions;
@@ -88,11 +88,11 @@ import org.apache.commons.lang.math.NumberUtils;
 * zengfr3000@qq.com
 */
 public final class ByteUtil{ 
-public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
-return MapUtils.getByte(p0,p1,p2);
-}
 public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getByte(p0,p1);
+}
+public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
+return MapUtils.getByte(p0,p1,p2);
 }
 public static <K> java.lang.Byte getByte(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getByte(p0,p1);
@@ -271,17 +271,17 @@ return ArrayUtils.removeElement(p0,p1);
 public static byte[] toPrimitive(java.lang.Byte[] p0,byte p1){
 return ArrayUtils.toPrimitive(p0,p1);
 }
-public static java.lang.String byteToHex(byte p0,int p1,java.lang.String p2,int p3,int p4){
-return Conversion.byteToHex(p0,p1,p2,p3,p4);
+public static boolean[] byteToBinary(byte p0,int p1,boolean[] p2,int p3,int p4){
+return Conversion.byteToBinary(p0,p1,p2,p3,p4);
 }
 public static byte hexToByte(java.lang.String p0,int p1,byte p2,int p3,int p4){
 return Conversion.hexToByte(p0,p1,p2,p3,p4);
 }
-public static boolean[] byteToBinary(byte p0,int p1,boolean[] p2,int p3,int p4){
-return Conversion.byteToBinary(p0,p1,p2,p3,p4);
-}
 public static byte binaryToByte(boolean[] p0,int p1,byte p2,int p3,int p4){
 return Conversion.binaryToByte(p0,p1,p2,p3,p4);
+}
+public static java.lang.String byteToHex(byte p0,int p1,java.lang.String p2,int p3,int p4){
+return Conversion.byteToHex(p0,p1,p2,p3,p4);
 }
 public static byte min(byte p0,byte p1,byte p2){
 return NumberUtils.min(p0,p1,p2);
@@ -295,20 +295,20 @@ return NumberUtils.toByte(p0);
 public static byte toByte(java.lang.String p0,byte p1){
 return NumberUtils.toByte(p0,p1);
 }
-public static byte CONST_BYTE(int p0) throws java.lang.IllegalArgumentException{
-return ObjectUtils.CONST_BYTE(p0);
-}
 public static byte CONST(byte p0){
 return ObjectUtils.CONST(p0);
+}
+public static byte CONST_BYTE(int p0) throws java.lang.IllegalArgumentException{
+return ObjectUtils.CONST_BYTE(p0);
 }
 public static byte copySign(byte p0,byte p1) throws org.apache.commons.math3.exception.MathArithmeticException{
 return MathUtils.copySign(p0,p1);
 }
-public static void setDefaultByte(byte p0){
- ConvertUtils.setDefaultByte(p0);
-}
 public static byte getDefaultByte(){
 return ConvertUtils.getDefaultByte();
+}
+public static void setDefaultByte(byte p0){
+ ConvertUtils.setDefaultByte(p0);
 }
 public static org.apache.commons.collections.primitives.ByteIterator singletonByteIterator(byte p0){
 return ByteCollections.singletonByteIterator(p0);
@@ -385,14 +385,14 @@ public static void fill(byte[] p0,byte p1){
 public static int binarySearch(byte[] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
 return ByteArrays.binarySearch(p0,p1,p2);
 }
-public static int binarySearch(byte[] p0,int p1,int p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
-return ByteArrays.binarySearch(p0,p1,p2,p3,p4);
+public static int binarySearch(byte[] p0,int p1,int p2,byte p3){
+return ByteArrays.binarySearch(p0,p1,p2,p3);
 }
 public static int binarySearch(byte[] p0,byte p1){
 return ByteArrays.binarySearch(p0,p1);
 }
-public static int binarySearch(byte[] p0,int p1,int p2,byte p3){
-return ByteArrays.binarySearch(p0,p1,p2,p3);
+public static int binarySearch(byte[] p0,int p1,int p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
+return ByteArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static void add(byte[][] p0,long p1,byte p2){
  ByteBigArrays.add(p0,p1,p2);
@@ -409,11 +409,11 @@ public static void fill(byte[][] p0,long p1,long p2,byte p3){
 public static long binarySearch(byte[][] p0,long p1,long p2,byte p3){
 return ByteBigArrays.binarySearch(p0,p1,p2,p3);
 }
-public static long binarySearch(byte[][] p0,long p1,long p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
-return ByteBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
 public static long binarySearch(byte[][] p0,byte p1){
 return ByteBigArrays.binarySearch(p0,p1);
+}
+public static long binarySearch(byte[][] p0,long p1,long p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
+return ByteBigArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static long binarySearch(byte[][] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
 return ByteBigArrays.binarySearch(p0,p1,p2);
@@ -472,11 +472,11 @@ return Short2ByteFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.shorts.Short2ByteSortedMap singleton(short p0,byte p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 return Short2ByteSortedMaps.singleton(p0,p1,p2);
 }
-public static java.util.List<byte[]> unpackComparable(byte[] p0,byte p1,byte p2){
-return PackedByteArray.unpackComparable(p0,p1,p2);
-}
 public static byte[] packComparable(java.util.List<byte[]> p0,byte p1,byte p2){
 return PackedByteArray.packComparable(p0,p1,p2);
+}
+public static java.util.List<byte[]> unpackComparable(byte[] p0,byte p1,byte p2){
+return PackedByteArray.unpackComparable(p0,p1,p2);
 }
 public static byte[] readByteArray(java.io.DataInput p0,byte p1) throws java.io.IOException{
 return PackedByteArray.readByteArray(p0,p1);

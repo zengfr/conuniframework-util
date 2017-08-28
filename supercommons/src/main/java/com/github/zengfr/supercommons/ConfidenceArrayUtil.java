@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import edu.umd.cs.findbugs.annotations.Confidence;
 /**
 * @author zengfr

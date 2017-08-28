@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections4.TransformerUtils;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.functors.ConstantTransformer;

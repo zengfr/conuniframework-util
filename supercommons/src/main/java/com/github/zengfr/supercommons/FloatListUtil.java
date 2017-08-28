@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.FloatListList;
 import org.apache.commons.collections.primitives.adapters.ListFloatList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableFloatList;
@@ -19,14 +19,14 @@ return FloatListList.wrap(p0);
 public static org.apache.commons.collections.primitives.FloatList wrap(java.util.List p0){
 return ListFloatList.wrap(p0);
 }
-public static org.apache.commons.collections.primitives.FloatList singletonFloatList(float p0){
-return FloatCollections.singletonFloatList(p0);
+public static org.apache.commons.collections.primitives.FloatList getEmptyFloatList(){
+return FloatCollections.getEmptyFloatList();
 }
 public static org.apache.commons.collections.primitives.FloatList unmodifiableFloatList(org.apache.commons.collections.primitives.FloatList p0) throws java.lang.NullPointerException{
 return FloatCollections.unmodifiableFloatList(p0);
 }
-public static org.apache.commons.collections.primitives.FloatList getEmptyFloatList(){
-return FloatCollections.getEmptyFloatList();
+public static org.apache.commons.collections.primitives.FloatList singletonFloatList(float p0){
+return FloatCollections.singletonFloatList(p0);
 }
 public static it.unimi.dsi.fastutil.floats.FloatBigList asBigList(it.unimi.dsi.fastutil.floats.FloatList p0){
 return FloatBigLists.asBigList(p0);

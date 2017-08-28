@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.concurrent.ConcurrentUtils;
 /**
 * @author zengfr
@@ -7,11 +7,11 @@ import org.apache.commons.lang3.concurrent.ConcurrentUtils;
 * zengfr3000@qq.com
 */
 public final class ExecutionExceptionUtil{ 
-public static void handleCause(java.util.concurrent.ExecutionException p0) throws org.apache.commons.lang3.concurrent.ConcurrentException{
- ConcurrentUtils.handleCause(p0);
-}
 public static org.apache.commons.lang3.concurrent.ConcurrentException extractCause(java.util.concurrent.ExecutionException p0){
 return ConcurrentUtils.extractCause(p0);
+}
+public static void handleCause(java.util.concurrent.ExecutionException p0) throws org.apache.commons.lang3.concurrent.ConcurrentException{
+ ConcurrentUtils.handleCause(p0);
 }
 public static void handleCauseUnchecked(java.util.concurrent.ExecutionException p0){
  ConcurrentUtils.handleCauseUnchecked(p0);

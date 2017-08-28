@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.math3.dfp.Dfp;
 import org.apache.commons.math3.dfp.DfpMath;
 import org.apache.commons.math3.dfp.DfpField;
@@ -42,10 +42,10 @@ return DfpMath.asin(p0);
 public static org.apache.commons.math3.dfp.Dfp atan(org.apache.commons.math3.dfp.Dfp p0){
 return DfpMath.atan(p0);
 }
-public static org.apache.commons.math3.dfp.Dfp computeLn(org.apache.commons.math3.dfp.Dfp p0,org.apache.commons.math3.dfp.Dfp p1,org.apache.commons.math3.dfp.Dfp p2){
-return DfpField.computeLn(p0,p1,p2);
-}
 public static org.apache.commons.math3.dfp.Dfp computeExp(org.apache.commons.math3.dfp.Dfp p0,org.apache.commons.math3.dfp.Dfp p1){
 return DfpField.computeExp(p0,p1);
+}
+public static org.apache.commons.math3.dfp.Dfp computeLn(org.apache.commons.math3.dfp.Dfp p0,org.apache.commons.math3.dfp.Dfp p1,org.apache.commons.math3.dfp.Dfp p2){
+return DfpField.computeLn(p0,p1,p2);
 }
 }

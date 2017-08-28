@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang.enum.EnumUtils;
 import org.apache.commons.lang.enums.EnumUtils;
 /**

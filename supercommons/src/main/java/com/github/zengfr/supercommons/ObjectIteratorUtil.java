@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.bytes.Byte2BooleanMaps;
 import it.unimi.dsi.fastutil.bytes.Byte2ByteMaps;
 import it.unimi.dsi.fastutil.bytes.Byte2CharMaps;
@@ -316,11 +316,11 @@ return ObjectIterators.concat(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.ObjectIterator<K> emptyIterator(){
 return ObjectIterators.emptyIterator();
 }
-public static <K> it.unimi.dsi.fastutil.objects.ObjectIterator<K> unmodifiable(it.unimi.dsi.fastutil.objects.ObjectIterator<K> p0){
-return ObjectIterators.unmodifiable(p0);
-}
 public static <K> it.unimi.dsi.fastutil.objects.ObjectIterator<K> asObjectIterator(java.util.Iterator<K> p0){
 return ObjectIterators.asObjectIterator(p0);
+}
+public static <K> it.unimi.dsi.fastutil.objects.ObjectIterator<K> unmodifiable(it.unimi.dsi.fastutil.objects.ObjectIterator<K> p0){
+return ObjectIterators.unmodifiable(p0);
 }
 public static <K> it.unimi.dsi.fastutil.objects.ObjectIterator<it.unimi.dsi.fastutil.objects.Reference2BooleanMap.it.unimi.dsi.fastutil.objects.Reference2BooleanMap.Entry<K>> fastIterator(it.unimi.dsi.fastutil.objects.Reference2BooleanMap<K> p0){
 return Reference2BooleanMaps.fastIterator(p0);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.ImmutableTable;
 import com.google.common.collect.Tables;
 import org.apache.commons.collections4.CollectionUtils;
@@ -27,11 +27,11 @@ return CollectionUtils.collect(p0,p1,p2);
 public static <I,O,R extends java.util.Collection<? super O> > R collect(java.util.Iterator<? extends I> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1,R p2){
 return CollectionUtils.collect(p0,p1,p2);
 }
-public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2,R p3){
-return CollectionUtils.select(p0,p1,p2,p3);
-}
 public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
 return CollectionUtils.select(p0,p1,p2);
+}
+public static <O,R extends java.util.Collection<? super O> > R select(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2,R p3){
+return CollectionUtils.select(p0,p1,p2,p3);
 }
 public static <O,R extends java.util.Collection<? super O> > R selectRejected(java.lang.Iterable<? extends O> p0,org.apache.commons.collections4.Predicate<? super O> p1,R p2){
 return CollectionUtils.selectRejected(p0,p1,p2);

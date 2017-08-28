@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.math3.fitting.leastsquares.GaussNewtonOptimizer.Decomposition;
 /**
 * @author zengfr

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.bidimap.UnmodifiableBidiMap;
 import org.apache.commons.collections4.bidimap.UnmodifiableBidiMap;
 /**

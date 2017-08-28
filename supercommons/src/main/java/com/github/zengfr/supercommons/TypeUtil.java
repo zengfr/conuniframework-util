@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.reflect.TypeToken;
 import org.apache.commons.lang3.reflect.TypeUtils;
 /**
@@ -23,20 +23,17 @@ return TypeUtils.getRawType(p0,p1);
 public static java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type> getTypeArguments(java.lang.reflect.Type p0,java.lang.Class<?> p1){
 return TypeUtils.getTypeArguments(p0,p1);
 }
-public static boolean isAssignable(java.lang.reflect.Type p0,java.lang.reflect.Type p1){
-return TypeUtils.isAssignable(p0,p1);
-}
-public static java.lang.reflect.Type unrollVariables(java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type> p0,java.lang.reflect.Type p1){
-return TypeUtils.unrollVariables(p0,p1);
+public static boolean isArrayType(java.lang.reflect.Type p0){
+return TypeUtils.isArrayType(p0);
 }
 public static java.lang.reflect.GenericArrayType genericArrayType(java.lang.reflect.Type p0){
 return TypeUtils.genericArrayType(p0);
 }
-public static boolean isArrayType(java.lang.reflect.Type p0){
-return TypeUtils.isArrayType(p0);
+public static java.lang.reflect.Type unrollVariables(java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type> p0,java.lang.reflect.Type p1){
+return TypeUtils.unrollVariables(p0,p1);
 }
-public static java.lang.reflect.Type getArrayComponentType(java.lang.reflect.Type p0){
-return TypeUtils.getArrayComponentType(p0);
+public static boolean isAssignable(java.lang.reflect.Type p0,java.lang.reflect.Type p1){
+return TypeUtils.isAssignable(p0,p1);
 }
 public static final java.lang.reflect.ParameterizedType parameterizeWithOwner(java.lang.reflect.Type p0,java.lang.Class<?> p1,java.lang.reflect.Type... p2){
 return TypeUtils.parameterizeWithOwner(p0,p1,p2);
@@ -46,5 +43,8 @@ return TypeUtils.parameterizeWithOwner(p0,p1,p2);
 }
 public static boolean containsTypeVariables(java.lang.reflect.Type p0){
 return TypeUtils.containsTypeVariables(p0);
+}
+public static java.lang.reflect.Type getArrayComponentType(java.lang.reflect.Type p0){
+return TypeUtils.getArrayComponentType(p0);
 }
 }

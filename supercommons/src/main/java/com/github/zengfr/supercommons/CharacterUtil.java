@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.CharUtils;
 import it.unimi.dsi.fastutil.bytes.Byte2CharFunctions;
 import it.unimi.dsi.fastutil.bytes.Byte2CharMaps;
@@ -63,11 +63,8 @@ import org.apache.commons.lang.CharUtils;
 * zengfr3000@qq.com
 */
 public final class CharacterUtil{ 
-public static int toIntValue(java.lang.Character p0){
-return CharUtils.toIntValue(p0);
-}
-public static int toIntValue(java.lang.Character p0,int p1){
-return CharUtils.toIntValue(p0,p1);
+public static java.lang.String unicodeEscaped(java.lang.Character p0){
+return CharUtils.unicodeEscaped(p0);
 }
 public static char toChar(java.lang.Character p0,char p1){
 return CharUtils.toChar(p0,p1);
@@ -75,8 +72,11 @@ return CharUtils.toChar(p0,p1);
 public static char toChar(java.lang.Character p0){
 return CharUtils.toChar(p0);
 }
-public static java.lang.String unicodeEscaped(java.lang.Character p0){
-return CharUtils.unicodeEscaped(p0);
+public static int toIntValue(java.lang.Character p0,int p1){
+return CharUtils.toIntValue(p0,p1);
+}
+public static int toIntValue(java.lang.Character p0){
+return CharUtils.toIntValue(p0);
 }
 public static java.lang.Character toCharacterObject(char p0){
 return CharUtils.toCharacterObject(p0);

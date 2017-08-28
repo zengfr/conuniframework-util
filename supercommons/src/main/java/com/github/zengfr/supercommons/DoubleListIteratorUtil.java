@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.DoubleListIteratorListIterator;
 import org.apache.commons.collections.primitives.adapters.ListIteratorDoubleListIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableDoubleListIterator;
@@ -18,14 +18,14 @@ return DoubleListIteratorListIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.DoubleListIterator wrap(java.util.ListIterator p0){
 return ListIteratorDoubleListIterator.wrap(p0);
 }
+public static org.apache.commons.collections.primitives.DoubleListIterator unmodifiableDoubleListIterator(org.apache.commons.collections.primitives.DoubleListIterator p0){
+return DoubleCollections.unmodifiableDoubleListIterator(p0);
+}
 public static org.apache.commons.collections.primitives.DoubleListIterator getEmptyDoubleListIterator(){
 return DoubleCollections.getEmptyDoubleListIterator();
 }
 public static org.apache.commons.collections.primitives.DoubleListIterator singletonDoubleListIterator(double p0){
 return DoubleCollections.singletonDoubleListIterator(p0);
-}
-public static org.apache.commons.collections.primitives.DoubleListIterator unmodifiableDoubleListIterator(org.apache.commons.collections.primitives.DoubleListIterator p0){
-return DoubleCollections.unmodifiableDoubleListIterator(p0);
 }
 public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator asBigListIterator(it.unimi.dsi.fastutil.doubles.DoubleListIterator p0){
 return DoubleBigListIterators.asBigListIterator(p0);

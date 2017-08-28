@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.facebook.util.TimeInterval;
 import com.facebook.util.TimeIntervalType;
 /**

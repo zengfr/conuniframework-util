@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.primitives.Primitives;
 import org.apache.commons.collections.BagUtils;
 import org.apache.commons.collections.CollectionUtils;
@@ -51,20 +51,20 @@ return Primitives.wrap(p0);
 public static <T> java.lang.Class<T> unwrap(java.lang.Class<T> p0){
 return Primitives.unwrap(p0);
 }
-public static org.apache.commons.collections.Bag typedBag(org.apache.commons.collections.Bag p0,java.lang.Class p1){
-return BagUtils.typedBag(p0,p1);
-}
 public static org.apache.commons.collections.SortedBag typedSortedBag(org.apache.commons.collections.SortedBag p0,java.lang.Class p1){
 return BagUtils.typedSortedBag(p0,p1);
+}
+public static org.apache.commons.collections.Bag typedBag(org.apache.commons.collections.Bag p0,java.lang.Class p1){
+return BagUtils.typedBag(p0,p1);
 }
 public static java.util.Collection typedCollection(java.util.Collection p0,java.lang.Class p1){
 return CollectionUtils.typedCollection(p0,p1);
 }
-public static java.util.Map typedMap(java.util.Map p0,java.lang.Class p1,java.lang.Class p2){
-return MapUtils.typedMap(p0,p1,p2);
-}
 public static java.util.Map multiValueMap(java.util.Map p0,java.lang.Class p1){
 return MapUtils.multiValueMap(p0,p1);
+}
+public static java.util.Map typedMap(java.util.Map p0,java.lang.Class p1,java.lang.Class p2){
+return MapUtils.typedMap(p0,p1,p2);
 }
 public static java.util.SortedMap typedSortedMap(java.util.SortedMap p0,java.lang.Class p1,java.lang.Class p2){
 return MapUtils.typedSortedMap(p0,p1,p2);
@@ -129,11 +129,11 @@ return PredicateUtils.instanceofPredicate(p0);
 public static org.apache.commons.collections.Buffer decorate(org.apache.commons.collections.Buffer p0,java.lang.Class p1){
 return TypedBuffer.decorate(p0,p1);
 }
-public static java.lang.Class<?> primitiveToWrapper(java.lang.Class<?> p0){
-return ClassUtils.primitiveToWrapper(p0);
-}
 public static java.lang.Class<?> wrapperToPrimitive(java.lang.Class<?> p0){
 return ClassUtils.wrapperToPrimitive(p0);
+}
+public static java.lang.Class<?> primitiveToWrapper(java.lang.Class<?> p0){
+return ClassUtils.primitiveToWrapper(p0);
 }
 public static java.lang.Class<?> getRawType(java.lang.reflect.Type p0,java.lang.reflect.Type p1){
 return TypeUtils.getRawType(p0,p1);
@@ -147,20 +147,20 @@ return PropertyUtils.getPropertyEditorClass(p0,p1);
 public static java.lang.Class<?> getPrimitiveType(java.lang.Class<?> p0){
 return MethodUtils.getPrimitiveType(p0);
 }
-public static java.lang.Class<?> getPrimitiveWrapper(java.lang.Class<?> p0){
-return MethodUtils.getPrimitiveWrapper(p0);
-}
 public static java.lang.Class<?> toNonPrimitiveClass(java.lang.Class<?> p0){
 return MethodUtils.toNonPrimitiveClass(p0);
+}
+public static java.lang.Class<?> getPrimitiveWrapper(java.lang.Class<?> p0){
+return MethodUtils.getPrimitiveWrapper(p0);
 }
 public static <T> java.lang.Class<T> primitiveToWrapper(java.lang.Class<T> p0){
 return ConvertUtils.primitiveToWrapper(p0);
 }
-public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
-return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
-}
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
 return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
+}
+public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
+return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
 }
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
 return EqualsBuilder.reflectionEquals(p0,p1,p2,p3);
@@ -177,14 +177,14 @@ return HashCodeBuilder.reflectionHashCode(p0,p1,p2,p3,p4,p5);
 public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang.builder.ToStringStyle p1,boolean p2,java.lang.Class p3){
 return ToStringBuilder.reflectionToString(p0,p1,p2,p3);
 }
-public static java.lang.String getShortClassName(java.lang.Class p0){
-return ClassUtils.getShortClassName(p0);
-}
 public static java.lang.String getPackageName(java.lang.Class p0){
 return ClassUtils.getPackageName(p0);
 }
 public static java.util.List getAllInterfaces(java.lang.Class p0){
 return ClassUtils.getAllInterfaces(p0);
+}
+public static java.lang.String getShortClassName(java.lang.Class p0){
+return ClassUtils.getShortClassName(p0);
 }
 public static boolean isAssignable(java.lang.Class p0,java.lang.Class p1,boolean p2){
 return ClassUtils.isAssignable(p0,p1,p2);
@@ -198,14 +198,8 @@ return ClassUtils.isInnerClass(p0);
 public static java.lang.reflect.Method getPublicMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2) throws java.lang.SecurityException,java.lang.NoSuchMethodException{
 return ClassUtils.getPublicMethod(p0,p1,p2);
 }
-public static java.lang.Class primitiveToWrapper(java.lang.Class p0){
-return ClassUtils.primitiveToWrapper(p0);
-}
 public static java.util.List getAllSuperclasses(java.lang.Class p0){
 return ClassUtils.getAllSuperclasses(p0);
-}
-public static java.lang.String getPackageCanonicalName(java.lang.Class p0){
-return ClassUtils.getPackageCanonicalName(p0);
 }
 public static java.lang.String getShortCanonicalName(java.lang.Class p0){
 return ClassUtils.getShortCanonicalName(p0);
@@ -213,26 +207,26 @@ return ClassUtils.getShortCanonicalName(p0);
 public static java.lang.Class wrapperToPrimitive(java.lang.Class p0){
 return ClassUtils.wrapperToPrimitive(p0);
 }
+public static java.lang.String getPackageCanonicalName(java.lang.Class p0){
+return ClassUtils.getPackageCanonicalName(p0);
+}
+public static java.lang.Class primitiveToWrapper(java.lang.Class p0){
+return ClassUtils.primitiveToWrapper(p0);
+}
 public static java.util.Iterator iterator(java.lang.Class p0){
 return EnumUtils.iterator(p0);
 }
 public static java.util.Map getEnumMap(java.lang.Class p0){
 return EnumUtils.getEnumMap(p0);
 }
-public static org.apache.commons.lang.enum.ValuedEnum getEnum(java.lang.Class p0,int p1){
-return EnumUtils.getEnum(p0,p1);
+public static java.util.List getEnumList(java.lang.Class p0){
+return EnumUtils.getEnumList(p0);
 }
 public static org.apache.commons.lang.enum.Enum getEnum(java.lang.Class p0,java.lang.String p1){
 return EnumUtils.getEnum(p0,p1);
 }
-public static java.util.List getEnumList(java.lang.Class p0){
-return EnumUtils.getEnumList(p0);
-}
-public static int indexOfThrowable(java.lang.Throwable p0,java.lang.Class p1){
-return ExceptionUtils.indexOfThrowable(p0,p1);
-}
-public static int indexOfThrowable(java.lang.Throwable p0,java.lang.Class p1,int p2){
-return ExceptionUtils.indexOfThrowable(p0,p1,p2);
+public static org.apache.commons.lang.enum.ValuedEnum getEnum(java.lang.Class p0,int p1){
+return EnumUtils.getEnum(p0,p1);
 }
 public static int indexOfType(java.lang.Throwable p0,java.lang.Class p1){
 return ExceptionUtils.indexOfType(p0,p1);
@@ -240,11 +234,29 @@ return ExceptionUtils.indexOfType(p0,p1);
 public static int indexOfType(java.lang.Throwable p0,java.lang.Class p1,int p2){
 return ExceptionUtils.indexOfType(p0,p1,p2);
 }
+public static int indexOfThrowable(java.lang.Throwable p0,java.lang.Class p1){
+return ExceptionUtils.indexOfThrowable(p0,p1);
+}
+public static int indexOfThrowable(java.lang.Throwable p0,java.lang.Class p1,int p2){
+return ExceptionUtils.indexOfThrowable(p0,p1,p2);
+}
 public static java.lang.reflect.Constructor getAccessibleConstructor(java.lang.Class p0,java.lang.Class p1){
 return ConstructorUtils.getAccessibleConstructor(p0,p1);
 }
 public static java.lang.reflect.Constructor getAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
 return ConstructorUtils.getAccessibleConstructor(p0,p1);
+}
+public static java.lang.reflect.Constructor getMatchingAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
+return ConstructorUtils.getMatchingAccessibleConstructor(p0,p1);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
 }
 public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1);
@@ -254,18 +266,6 @@ return ConstructorUtils.invokeConstructor(p0,p1);
 }
 public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1,p2);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
-}
-public static java.lang.reflect.Constructor getMatchingAccessibleConstructor(java.lang.Class p0,java.lang.Class[] p1){
-return ConstructorUtils.getMatchingAccessibleConstructor(p0,p1);
 }
 public static java.lang.reflect.Field getDeclaredField(java.lang.Class p0,java.lang.String p1,boolean p2){
 return FieldUtils.getDeclaredField(p0,p1,p2);
@@ -291,11 +291,11 @@ public static void writeStaticField(java.lang.Class p0,java.lang.String p1,java.
 public static void writeStaticField(java.lang.Class p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeStaticField(p0,p1,p2,p3);
 }
-public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readDeclaredStaticField(p0,p1,p2);
-}
 public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredStaticField(p0,p1);
+}
+public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readDeclaredStaticField(p0,p1,p2);
 }
 public static void writeDeclaredStaticField(java.lang.Class p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
@@ -303,29 +303,29 @@ public static void writeDeclaredStaticField(java.lang.Class p0,java.lang.String 
 public static void writeDeclaredStaticField(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredStaticField(p0,p1,p2);
 }
+public static java.lang.reflect.Method getMatchingAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
+return MethodUtils.getMatchingAccessibleMethod(p0,p1,p2);
+}
 public static java.lang.reflect.Method getAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
 return MethodUtils.getAccessibleMethod(p0,p1,p2);
 }
 public static java.lang.reflect.Method getAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class p2){
 return MethodUtils.getAccessibleMethod(p0,p1,p2);
 }
-public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeStaticMethod(p0,p1,p2,p3);
-}
 public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2);
+}
+public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeStaticMethod(p0,p1,p2,p3);
 }
 public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2);
 }
-public static java.lang.reflect.Method getMatchingAccessibleMethod(java.lang.Class p0,java.lang.String p1,java.lang.Class[] p2){
-return MethodUtils.getMatchingAccessibleMethod(p0,p1,p2);
+public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactStaticMethod(p0,p1,p2,p3);
 }
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
-}
-public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactStaticMethod(p0,p1,p2,p3);
 }
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2);

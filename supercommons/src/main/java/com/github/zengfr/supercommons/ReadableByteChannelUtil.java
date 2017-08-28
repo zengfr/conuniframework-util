@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.io.ByteStreams;
 import org.apache.commons.io.IOUtils;
 /**

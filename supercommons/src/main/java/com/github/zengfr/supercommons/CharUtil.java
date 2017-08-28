@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Ascii;
 import com.google.common.base.CharMatcher;
 import com.google.common.base.Joiner;
@@ -151,14 +151,14 @@ return Chars.toByteArray(p0);
 public static char saturatedCast(long p0){
 return Chars.saturatedCast(p0);
 }
-public static char fromByteArray(byte[] p0){
-return Chars.fromByteArray(p0);
+public static char checkedCast(long p0){
+return Chars.checkedCast(p0);
 }
 public static char fromBytes(byte p0,byte p1){
 return Chars.fromBytes(p0,p1);
 }
-public static char checkedCast(long p0){
-return Chars.checkedCast(p0);
+public static char fromByteArray(byte[] p0){
+return Chars.fromByteArray(p0);
 }
 public static char[] add(char[] p0,int p1,char p2){
 return ArrayUtils.add(p0,p1,p2);
@@ -187,14 +187,20 @@ return CharUtils.isAsciiPrintable(p0);
 public static boolean isAsciiControl(char p0){
 return CharUtils.isAsciiControl(p0);
 }
-public static int toIntValue(char p0){
-return CharUtils.toIntValue(p0);
-}
-public static int toIntValue(char p0,int p1){
-return CharUtils.toIntValue(p0,p1);
+public static java.lang.String unicodeEscaped(char p0){
+return CharUtils.unicodeEscaped(p0);
 }
 public static boolean isAsciiNumeric(char p0){
 return CharUtils.isAsciiNumeric(p0);
+}
+public static boolean isAsciiAlpha(char p0){
+return CharUtils.isAsciiAlpha(p0);
+}
+public static char toChar(java.lang.String p0){
+return CharUtils.toChar(p0);
+}
+public static char toChar(java.lang.String p0,char p1){
+return CharUtils.toChar(p0,p1);
 }
 public static char toChar(java.lang.Character p0,char p1){
 return CharUtils.toChar(p0,p1);
@@ -202,32 +208,23 @@ return CharUtils.toChar(p0,p1);
 public static char toChar(java.lang.Character p0){
 return CharUtils.toChar(p0);
 }
-public static char toChar(java.lang.String p0,char p1){
-return CharUtils.toChar(p0,p1);
+public static int toIntValue(char p0,int p1){
+return CharUtils.toIntValue(p0,p1);
 }
-public static char toChar(java.lang.String p0){
-return CharUtils.toChar(p0);
-}
-public static java.lang.String unicodeEscaped(char p0){
-return CharUtils.unicodeEscaped(p0);
-}
-public static boolean isAsciiAlpha(char p0){
-return CharUtils.isAsciiAlpha(p0);
-}
-public static boolean isAsciiAlphaLower(char p0){
-return CharUtils.isAsciiAlphaLower(p0);
+public static int toIntValue(char p0){
+return CharUtils.toIntValue(p0);
 }
 public static java.lang.Character toCharacterObject(char p0){
 return CharUtils.toCharacterObject(p0);
 }
-public static boolean isAsciiAlphanumeric(char p0){
-return CharUtils.isAsciiAlphanumeric(p0);
-}
 public static boolean isAsciiAlphaUpper(char p0){
 return CharUtils.isAsciiAlphaUpper(p0);
 }
-public static boolean[] hexDigitToBinary(char p0){
-return Conversion.hexDigitToBinary(p0);
+public static boolean isAsciiAlphaLower(char p0){
+return CharUtils.isAsciiAlphaLower(p0);
+}
+public static boolean isAsciiAlphanumeric(char p0){
+return CharUtils.isAsciiAlphanumeric(p0);
 }
 public static char binaryToHexDigit(boolean[] p0,int p1){
 return Conversion.binaryToHexDigit(p0,p1);
@@ -241,14 +238,14 @@ return Conversion.hexDigitToInt(p0);
 public static char intToHexDigit(int p0){
 return Conversion.intToHexDigit(p0);
 }
-public static char intToHexDigitMsb0(int p0){
-return Conversion.intToHexDigitMsb0(p0);
+public static boolean[] hexDigitToBinary(char p0){
+return Conversion.hexDigitToBinary(p0);
 }
-public static char binaryBeMsb0ToHexDigit(boolean[] p0){
-return Conversion.binaryBeMsb0ToHexDigit(p0);
+public static int hexDigitMsb0ToInt(char p0){
+return Conversion.hexDigitMsb0ToInt(p0);
 }
-public static char binaryBeMsb0ToHexDigit(boolean[] p0,int p1){
-return Conversion.binaryBeMsb0ToHexDigit(p0,p1);
+public static boolean[] hexDigitMsb0ToBinary(char p0){
+return Conversion.hexDigitMsb0ToBinary(p0);
 }
 public static char binaryToHexDigitMsb0_4bits(boolean[] p0){
 return Conversion.binaryToHexDigitMsb0_4bits(p0);
@@ -256,11 +253,14 @@ return Conversion.binaryToHexDigitMsb0_4bits(p0);
 public static char binaryToHexDigitMsb0_4bits(boolean[] p0,int p1){
 return Conversion.binaryToHexDigitMsb0_4bits(p0,p1);
 }
-public static int hexDigitMsb0ToInt(char p0){
-return Conversion.hexDigitMsb0ToInt(p0);
+public static char binaryBeMsb0ToHexDigit(boolean[] p0){
+return Conversion.binaryBeMsb0ToHexDigit(p0);
 }
-public static boolean[] hexDigitMsb0ToBinary(char p0){
-return Conversion.hexDigitMsb0ToBinary(p0);
+public static char binaryBeMsb0ToHexDigit(boolean[] p0,int p1){
+return Conversion.binaryBeMsb0ToHexDigit(p0,p1);
+}
+public static char intToHexDigitMsb0(int p0){
+return Conversion.intToHexDigitMsb0(p0);
 }
 public static char CONST(char p0){
 return ObjectUtils.CONST(p0);
@@ -328,20 +328,17 @@ return StringUtils.split(p0,p1);
 public static java.lang.String wrap(java.lang.String p0,char p1){
 return StringUtils.wrap(p0,p1);
 }
-public static java.lang.String rightPad(java.lang.String p0,int p1,char p2){
-return StringUtils.rightPad(p0,p1,p2);
-}
 public static java.lang.String leftPad(java.lang.String p0,int p1,char p2){
 return StringUtils.leftPad(p0,p1,p2);
+}
+public static java.lang.String rightPad(java.lang.String p0,int p1,char p2){
+return StringUtils.rightPad(p0,p1,p2);
 }
 public static java.lang.String[] splitPreserveAllTokens(java.lang.String p0,char p1){
 return StringUtils.splitPreserveAllTokens(p0,p1);
 }
-public static java.lang.String repeat(char p0,int p1){
-return StringUtils.repeat(p0,p1);
-}
-public static java.lang.String replaceChars(java.lang.String p0,char p1,char p2){
-return StringUtils.replaceChars(p0,p1,p2);
+public static java.lang.String center(java.lang.String p0,int p1,char p2){
+return StringUtils.center(p0,p1,p2);
 }
 public static java.lang.String reverseDelimited(java.lang.String p0,char p1){
 return StringUtils.reverseDelimited(p0,p1);
@@ -349,8 +346,11 @@ return StringUtils.reverseDelimited(p0,p1);
 public static int countMatches(java.lang.CharSequence p0,char p1){
 return StringUtils.countMatches(p0,p1);
 }
-public static java.lang.String center(java.lang.String p0,int p1,char p2){
-return StringUtils.center(p0,p1,p2);
+public static java.lang.String repeat(char p0,int p1){
+return StringUtils.repeat(p0,p1);
+}
+public static java.lang.String replaceChars(java.lang.String p0,char p1,char p2){
+return StringUtils.replaceChars(p0,p1,p2);
 }
 public static java.util.Formatter append(java.lang.CharSequence p0,java.util.Formatter p1,int p2,int p3,int p4,char p5,java.lang.CharSequence p6){
 return FormattableUtils.append(p0,p1,p2,p3,p4,p5,p6);
@@ -373,14 +373,14 @@ public static void setDefaultCharacter(char p0){
 public static boolean isDelimiter(char p0,char[] p1){
 return WordUtils.isDelimiter(p0,p1);
 }
+public static org.apache.commons.collections.primitives.CharList singletonCharList(char p0){
+return CharCollections.singletonCharList(p0);
+}
 public static org.apache.commons.collections.primitives.CharListIterator singletonCharListIterator(char p0){
 return CharCollections.singletonCharListIterator(p0);
 }
 public static org.apache.commons.collections.primitives.CharIterator singletonCharIterator(char p0){
 return CharCollections.singletonCharIterator(p0);
-}
-public static org.apache.commons.collections.primitives.CharList singletonCharList(char p0){
-return CharCollections.singletonCharList(p0);
 }
 public static char safeIntToChar(int p0){
 return SafeMath.safeIntToChar(p0);
@@ -454,14 +454,14 @@ public static void fill(char[] p0,char p1){
 public static int binarySearch(char[] p0,char p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
 return CharArrays.binarySearch(p0,p1,p2);
 }
-public static int binarySearch(char[] p0,int p1,int p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
-return CharArrays.binarySearch(p0,p1,p2,p3,p4);
+public static int binarySearch(char[] p0,int p1,int p2,char p3){
+return CharArrays.binarySearch(p0,p1,p2,p3);
 }
 public static int binarySearch(char[] p0,char p1){
 return CharArrays.binarySearch(p0,p1);
 }
-public static int binarySearch(char[] p0,int p1,int p2,char p3){
-return CharArrays.binarySearch(p0,p1,p2,p3);
+public static int binarySearch(char[] p0,int p1,int p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
+return CharArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static void add(char[][] p0,long p1,char p2){
  CharBigArrays.add(p0,p1,p2);
@@ -478,11 +478,11 @@ public static void fill(char[][] p0,long p1,long p2,char p3){
 public static long binarySearch(char[][] p0,long p1,long p2,char p3){
 return CharBigArrays.binarySearch(p0,p1,p2,p3);
 }
-public static long binarySearch(char[][] p0,long p1,long p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
-return CharBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
 public static long binarySearch(char[][] p0,char p1){
 return CharBigArrays.binarySearch(p0,p1);
+}
+public static long binarySearch(char[][] p0,long p1,long p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
+return CharBigArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static long binarySearch(char[][] p0,char p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
 return CharBigArrays.binarySearch(p0,p1,p2);

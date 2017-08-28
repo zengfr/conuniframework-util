@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.io.ByteIteratorInputStream;
 import org.apache.commons.collections.primitives.adapters.io.InputStreamByteIterator;
 import org.apache.commons.collections.primitives.adapters.ByteIteratorIterator;
@@ -35,11 +35,11 @@ return IteratorByteIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.ByteIterator getEmptyByteIterator(){
 return ByteCollections.getEmptyByteIterator();
 }
-public static org.apache.commons.collections.primitives.ByteIterator unmodifiableByteIterator(org.apache.commons.collections.primitives.ByteIterator p0){
-return ByteCollections.unmodifiableByteIterator(p0);
-}
 public static org.apache.commons.collections.primitives.ByteIterator singletonByteIterator(byte p0){
 return ByteCollections.singletonByteIterator(p0);
+}
+public static org.apache.commons.collections.primitives.ByteIterator unmodifiableByteIterator(org.apache.commons.collections.primitives.ByteIterator p0){
+return ByteCollections.unmodifiableByteIterator(p0);
 }
 public static boolean all(it.unimi.dsi.fastutil.bytes.ByteIterator p0,java.util.function.IntPredicate p1){
 return ByteIterators.all(p0,p1);
@@ -107,10 +107,10 @@ public static void storeBytes(it.unimi.dsi.fastutil.bytes.ByteIterator p0,java.i
 public static it.unimi.dsi.fastutil.bytes.ByteIterator asByteIterator(java.lang.CharSequence p0) throws java.io.IOException{
 return BinIO.asByteIterator(p0);
 }
-public static it.unimi.dsi.fastutil.bytes.ByteIterator asByteIterator(java.io.DataInput p0){
+public static it.unimi.dsi.fastutil.bytes.ByteIterator asByteIterator(java.io.File p0) throws java.io.IOException{
 return BinIO.asByteIterator(p0);
 }
-public static it.unimi.dsi.fastutil.bytes.ByteIterator asByteIterator(java.io.File p0) throws java.io.IOException{
+public static it.unimi.dsi.fastutil.bytes.ByteIterator asByteIterator(java.io.DataInput p0){
 return BinIO.asByteIterator(p0);
 }
 public static void storeBytes(it.unimi.dsi.fastutil.bytes.ByteIterator p0,java.io.PrintStream p1){

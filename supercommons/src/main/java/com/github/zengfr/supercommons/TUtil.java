@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 import com.google.common.base.Optional;
@@ -117,11 +117,11 @@ return Callables.returning(p0);
 public static <T> boolean addIgnoreNull(java.util.Collection<T> p0,T p1){
 return CollectionUtils.addIgnoreNull(p0,p1);
 }
-public static <T> org.apache.commons.collections4.Factory<T> constantFactory(T p0){
-return FactoryUtils.constantFactory(p0);
-}
 public static <T> org.apache.commons.collections4.Factory<T> prototypeFactory(T p0){
 return FactoryUtils.prototypeFactory(p0);
+}
+public static <T> org.apache.commons.collections4.Factory<T> constantFactory(T p0){
+return FactoryUtils.constantFactory(p0);
 }
 public static <T> org.apache.commons.collections4.Predicate<T> comparatorPredicate(T p0,java.util.Comparator<T> p1,Criterion p2){
 return ComparatorPredicate.comparatorPredicate(p0,p1,p2);
@@ -165,14 +165,14 @@ return ObjectUtils.compare(p0,p1,p2);
 public static <T extends java.lang.Comparable<? super T> > int compare(T p0,T p1){
 return ObjectUtils.compare(p0,p1);
 }
-public static <T> T defaultIfNull(T p0,T p1){
-return ObjectUtils.defaultIfNull(p0,p1);
+public static <T> T CONST(T p0){
+return ObjectUtils.CONST(p0);
 }
 public static <T> T cloneIfPossible(T p0){
 return ObjectUtils.cloneIfPossible(p0);
 }
-public static <T> T CONST(T p0){
-return ObjectUtils.CONST(p0);
+public static <T> T defaultIfNull(T p0,T p1){
+return ObjectUtils.defaultIfNull(p0,p1);
 }
 public static <T extends java.lang.Comparable<T> > org.apache.commons.lang3.Range<T> is(T p0){
 return Range.is(p0);
@@ -180,11 +180,11 @@ return Range.is(p0);
 public static <T> org.apache.commons.lang3.Range<T> is(T p0,java.util.Comparator<T> p1){
 return Range.is(p0,p1);
 }
-public static <T extends java.lang.Comparable<T> > org.apache.commons.lang3.Range<T> between(T p0,T p1){
-return Range.between(p0,p1);
-}
 public static <T> org.apache.commons.lang3.Range<T> between(T p0,T p1,java.util.Comparator<T> p2){
 return Range.between(p0,p1,p2);
+}
+public static <T extends java.lang.Comparable<T> > org.apache.commons.lang3.Range<T> between(T p0,T p1){
+return Range.between(p0,p1);
 }
 public static <T extends java.io.Serializable > T roundtrip(T p0){
 return SerializationUtils.roundtrip(p0);
@@ -201,17 +201,17 @@ return Validate.validIndex(p0,p1);
 public static <T extends java.util.Collection<?> > T validIndex(T p0,int p1,java.lang.String p2,java.lang.Object... p3){
 return Validate.validIndex(p0,p1,p2,p3);
 }
+public static <T extends java.util.Map<?, ?> > T notEmpty(T p0){
+return Validate.notEmpty(p0);
+}
 public static <T extends java.lang.CharSequence > T notEmpty(T p0,java.lang.String p1,java.lang.Object... p2){
 return Validate.notEmpty(p0,p1,p2);
 }
-public static <T extends java.lang.CharSequence > T notEmpty(T p0){
-return Validate.notEmpty(p0);
+public static <T> T notNull(T p0,java.lang.String p1,java.lang.Object... p2){
+return Validate.notNull(p0,p1,p2);
 }
 public static <T> T notNull(T p0){
 return Validate.notNull(p0);
-}
-public static <T> T notNull(T p0,java.lang.String p1,java.lang.Object... p2){
-return Validate.notNull(p0,p1,p2);
 }
 public static <T> void exclusiveBetween(T p0,T p1,java.lang.Comparable<T> p2){
  Validate.exclusiveBetween(p0,p1,p2);
@@ -225,17 +225,17 @@ return Validate.notBlank(p0,p1,p2);
 public static <T extends java.lang.CharSequence > T notBlank(T p0){
 return Validate.notBlank(p0);
 }
-public static <T> void inclusiveBetween(T p0,T p1,java.lang.Comparable<T> p2){
- Validate.inclusiveBetween(p0,p1,p2);
-}
-public static <T> void inclusiveBetween(T p0,T p1,java.lang.Comparable<T> p2,java.lang.String p3,java.lang.Object... p4){
- Validate.inclusiveBetween(p0,p1,p2,p3,p4);
+public static <T extends java.lang.Iterable<?> > T noNullElements(T p0,java.lang.String p1,java.lang.Object... p2){
+return Validate.noNullElements(p0,p1,p2);
 }
 public static <T extends java.lang.Iterable<?> > T noNullElements(T p0){
 return Validate.noNullElements(p0);
 }
-public static <T extends java.lang.Iterable<?> > T noNullElements(T p0,java.lang.String p1,java.lang.Object... p2){
-return Validate.noNullElements(p0,p1,p2);
+public static <T> void inclusiveBetween(T p0,T p1,java.lang.Comparable<T> p2,java.lang.String p3,java.lang.Object... p4){
+ Validate.inclusiveBetween(p0,p1,p2,p3,p4);
+}
+public static <T> void inclusiveBetween(T p0,T p1,java.lang.Comparable<T> p2){
+ Validate.inclusiveBetween(p0,p1,p2);
 }
 public static <T extends org.apache.commons.math3.RealFieldElement<T> > T min(T p0,T p1){
 return MathUtils.min(p0,p1);

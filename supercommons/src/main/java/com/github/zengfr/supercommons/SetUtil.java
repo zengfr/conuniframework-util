@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Sets;
 import com.google.common.primitives.Primitives;
 import org.apache.commons.io.filefilter.FileFilterUtils;
@@ -32,29 +32,29 @@ return Sets.newSetFromMap(p0);
 public static <E> java.util.Set<E> filter(java.util.Set<E> p0,com.google.common.base.Predicate<? super E> p1){
 return Sets.filter(p0,p1);
 }
+public static <E> java.util.Set<java.util.Set<E>> powerSet(java.util.Set<E> p0){
+return Sets.powerSet(p0);
+}
+public static <B> java.util.Set<java.util.List<B>> cartesianProduct(java.util.List<? extends java.util.Set<? extends B>> p0){
+return Sets.cartesianProduct(p0);
+}
+public static <B> java.util.Set<java.util.List<B>> cartesianProduct(java.util.Set<? extends B>... p0){
+return Sets.cartesianProduct(p0);
+}
+public static <E> java.util.Set<E> newIdentityHashSet(){
+return Sets.newIdentityHashSet();
+}
 public static <E> java.util.Set<E> newConcurrentHashSet(){
 return Sets.newConcurrentHashSet();
 }
 public static <E> java.util.Set<E> newConcurrentHashSet(java.lang.Iterable<? extends E> p0){
 return Sets.newConcurrentHashSet(p0);
 }
-public static <E> java.util.Set<E> newIdentityHashSet(){
-return Sets.newIdentityHashSet();
-}
-public static <E> java.util.Set<java.util.Set<E>> powerSet(java.util.Set<E> p0){
-return Sets.powerSet(p0);
-}
-public static <B> java.util.Set<java.util.List<B>> cartesianProduct(java.util.Set<? extends B>... p0){
-return Sets.cartesianProduct(p0);
-}
-public static <B> java.util.Set<java.util.List<B>> cartesianProduct(java.util.List<? extends java.util.Set<? extends B>> p0){
-return Sets.cartesianProduct(p0);
+public static java.util.Set<java.lang.Class<?>> allPrimitiveTypes(){
+return Primitives.allPrimitiveTypes();
 }
 public static java.util.Set<java.lang.Class<?>> allWrapperTypes(){
 return Primitives.allWrapperTypes();
-}
-public static java.util.Set<java.lang.Class<?>> allPrimitiveTypes(){
-return Primitives.allPrimitiveTypes();
 }
 public static java.util.Set<java.io.File> filterSet(org.apache.commons.io.filefilter.IOFileFilter p0,java.lang.Iterable<java.io.File> p1){
 return FileFilterUtils.filterSet(p0,p1);
@@ -74,14 +74,14 @@ return SetUtils.unmodifiableSet(p0);
 public static java.util.Set transformedSet(java.util.Set p0,org.apache.commons.collections.Transformer p1){
 return SetUtils.transformedSet(p0,p1);
 }
-public static java.util.Set orderedSet(java.util.Set p0){
-return SetUtils.orderedSet(p0);
-}
 public static java.util.Set typedSet(java.util.Set p0,java.lang.Class p1){
 return SetUtils.typedSet(p0,p1);
 }
 public static java.util.Set predicatedSet(java.util.Set p0,org.apache.commons.collections.Predicate p1){
 return SetUtils.predicatedSet(p0,p1);
+}
+public static java.util.Set orderedSet(java.util.Set p0){
+return SetUtils.orderedSet(p0);
 }
 public static java.util.Set decorate(java.util.Set p0,org.apache.commons.collections.Predicate p1){
 return PredicatedSet.decorate(p0,p1);
@@ -116,11 +116,11 @@ return SetUtils.unmodifiableSet(p0);
 public static <E> java.util.Set<E> transformedSet(java.util.Set<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
 return SetUtils.transformedSet(p0,p1);
 }
-public static <E> java.util.Set<E> orderedSet(java.util.Set<E> p0){
-return SetUtils.orderedSet(p0);
-}
 public static <E> java.util.Set<E> predicatedSet(java.util.Set<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
 return SetUtils.predicatedSet(p0,p1);
+}
+public static <E> java.util.Set<E> orderedSet(java.util.Set<E> p0){
+return SetUtils.orderedSet(p0);
 }
 public static <T> java.util.Set<T> emptyIfNull(java.util.Set<T> p0){
 return SetUtils.emptyIfNull(p0);

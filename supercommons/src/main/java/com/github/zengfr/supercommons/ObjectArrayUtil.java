@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.math3.util.MathArrays;
 import it.unimi.dsi.fastutil.objects.ObjectBigArrays;
 /**
@@ -32,11 +32,11 @@ return ObjectBigArrays.ensureCapacity(p0,p1,p2);
 public static <K> K[][] setLength(K[][] p0,long p1){
 return ObjectBigArrays.setLength(p0,p1);
 }
-public static <K> K[][] grow(K[][] p0,long p1,long p2){
-return ObjectBigArrays.grow(p0,p1,p2);
-}
 public static <K> K[][] grow(K[][] p0,long p1){
 return ObjectBigArrays.grow(p0,p1);
+}
+public static <K> K[][] grow(K[][] p0,long p1,long p2){
+return ObjectBigArrays.grow(p0,p1,p2);
 }
 public static <K> K[][] shuffle(K[][] p0,long p1,long p2,java.util.Random p3){
 return ObjectBigArrays.shuffle(p0,p1,p2,p3);

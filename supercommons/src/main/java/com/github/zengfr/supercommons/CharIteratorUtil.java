@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.io.CharIteratorReader;
 import org.apache.commons.collections.primitives.adapters.io.ReaderCharIterator;
 import org.apache.commons.collections.primitives.adapters.CharIteratorIterator;
@@ -71,28 +71,28 @@ return CharIterators.any(p0,p1);
 public static it.unimi.dsi.fastutil.chars.CharIterator unmodifiable(it.unimi.dsi.fastutil.chars.CharIterator p0){
 return CharIterators.unmodifiable(p0);
 }
+public static it.unimi.dsi.fastutil.chars.CharIterator asCharIterator(java.util.Iterator p0){
+return CharIterators.asCharIterator(p0);
+}
 public static int pour(it.unimi.dsi.fastutil.chars.CharIterator p0,it.unimi.dsi.fastutil.chars.CharCollection p1){
 return CharIterators.pour(p0,p1);
-}
-public static it.unimi.dsi.fastutil.chars.CharList pour(it.unimi.dsi.fastutil.chars.CharIterator p0){
-return CharIterators.pour(p0);
 }
 public static int pour(it.unimi.dsi.fastutil.chars.CharIterator p0,it.unimi.dsi.fastutil.chars.CharCollection p1,int p2){
 return CharIterators.pour(p0,p1,p2);
 }
+public static it.unimi.dsi.fastutil.chars.CharList pour(it.unimi.dsi.fastutil.chars.CharIterator p0){
+return CharIterators.pour(p0);
+}
 public static it.unimi.dsi.fastutil.chars.CharList pour(it.unimi.dsi.fastutil.chars.CharIterator p0,int p1){
 return CharIterators.pour(p0,p1);
-}
-public static it.unimi.dsi.fastutil.chars.CharIterator asCharIterator(java.util.Iterator p0){
-return CharIterators.asCharIterator(p0);
 }
 public static void storeChars(it.unimi.dsi.fastutil.chars.CharIterator p0,java.lang.CharSequence p1) throws java.io.IOException{
  BinIO.storeChars(p0,p1);
 }
-public static void storeChars(it.unimi.dsi.fastutil.chars.CharIterator p0,java.io.File p1) throws java.io.IOException{
+public static void storeChars(it.unimi.dsi.fastutil.chars.CharIterator p0,java.io.DataOutput p1) throws java.io.IOException{
  BinIO.storeChars(p0,p1);
 }
-public static void storeChars(it.unimi.dsi.fastutil.chars.CharIterator p0,java.io.DataOutput p1) throws java.io.IOException{
+public static void storeChars(it.unimi.dsi.fastutil.chars.CharIterator p0,java.io.File p1) throws java.io.IOException{
  BinIO.storeChars(p0,p1);
 }
 public static it.unimi.dsi.fastutil.chars.CharIterator asCharIterator(java.io.File p0) throws java.io.IOException{

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Predicates;
 import com.google.common.io.Files;
 import org.apache.commons.collections.BagUtils;
@@ -80,35 +80,26 @@ return Predicates.contains(p0);
 public static <T> com.google.common.base.Predicate<T> isNull(){
 return Predicates.isNull();
 }
-public static <T> com.google.common.base.Predicate<T> and(com.google.common.base.Predicate<? super T> p0,com.google.common.base.Predicate<? super T> p1){
-return Predicates.and(p0,p1);
-}
 public static <T> com.google.common.base.Predicate<T> and(java.lang.Iterable<? extends com.google.common.base.Predicate<? super T>> p0){
 return Predicates.and(p0);
+}
+public static <T> com.google.common.base.Predicate<T> and(com.google.common.base.Predicate<? super T> p0,com.google.common.base.Predicate<? super T> p1){
+return Predicates.and(p0,p1);
 }
 public static <T> com.google.common.base.Predicate<T> and(com.google.common.base.Predicate<? super T>... p0){
 return Predicates.and(p0);
 }
-public static <T> com.google.common.base.Predicate<T> or(com.google.common.base.Predicate<? super T>... p0){
-return Predicates.or(p0);
-}
 public static <T> com.google.common.base.Predicate<T> or(com.google.common.base.Predicate<? super T> p0,com.google.common.base.Predicate<? super T> p1){
 return Predicates.or(p0,p1);
+}
+public static <T> com.google.common.base.Predicate<T> or(com.google.common.base.Predicate<? super T>... p0){
+return Predicates.or(p0);
 }
 public static <T> com.google.common.base.Predicate<T> or(java.lang.Iterable<? extends com.google.common.base.Predicate<? super T>> p0){
 return Predicates.or(p0);
 }
 public static <A,B> com.google.common.base.Predicate<A> compose(com.google.common.base.Predicate<B> p0,com.google.common.base.Function<A, ? extends B> p1){
 return Predicates.compose(p0,p1);
-}
-public static com.google.common.base.Predicate<java.lang.Object> instanceOf(java.lang.Class<?> p0){
-return Predicates.instanceOf(p0);
-}
-public static com.google.common.base.Predicate<java.lang.Class<?>> assignableFrom(java.lang.Class<?> p0){
-return Predicates.assignableFrom(p0);
-}
-public static com.google.common.base.Predicate<java.lang.CharSequence> containsPattern(java.lang.String p0){
-return Predicates.containsPattern(p0);
 }
 public static <T> com.google.common.base.Predicate<T> alwaysFalse(){
 return Predicates.alwaysFalse();
@@ -122,6 +113,15 @@ return Predicates.alwaysTrue();
 public static <T> com.google.common.base.Predicate<T> equalTo(T p0){
 return Predicates.equalTo(p0);
 }
+public static com.google.common.base.Predicate<java.lang.Object> instanceOf(java.lang.Class<?> p0){
+return Predicates.instanceOf(p0);
+}
+public static com.google.common.base.Predicate<java.lang.Class<?>> assignableFrom(java.lang.Class<?> p0){
+return Predicates.assignableFrom(p0);
+}
+public static com.google.common.base.Predicate<java.lang.CharSequence> containsPattern(java.lang.String p0){
+return Predicates.containsPattern(p0);
+}
 public static com.google.common.base.Predicate<java.io.File> isDirectory(){
 return Files.isDirectory();
 }
@@ -134,11 +134,11 @@ return BagUtils.predicatedBag(p0,p1);
 public static org.apache.commons.collections.SortedBag predicatedSortedBag(org.apache.commons.collections.SortedBag p0,org.apache.commons.collections.Predicate p1){
 return BagUtils.predicatedSortedBag(p0,p1);
 }
-public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
-return TransformerUtils.switchTransformer(p0,p1,p2);
-}
 public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Predicate p0){
 return TransformerUtils.asTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
+return TransformerUtils.switchTransformer(p0,p1,p2);
 }
 public static java.lang.Object find(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
 return CollectionUtils.find(p0,p1);
@@ -152,26 +152,26 @@ public static void filter(java.util.Collection p0,org.apache.commons.collections
 public static int countMatches(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
 return CollectionUtils.countMatches(p0,p1);
 }
-public static java.util.Collection predicatedCollection(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
-return CollectionUtils.predicatedCollection(p0,p1);
+public static void select(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
+ CollectionUtils.select(p0,p1,p2);
 }
 public static java.util.Collection select(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
 return CollectionUtils.select(p0,p1);
 }
-public static void select(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
- CollectionUtils.select(p0,p1,p2);
+public static void selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
+ CollectionUtils.selectRejected(p0,p1,p2);
 }
 public static java.util.Collection selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
 return CollectionUtils.selectRejected(p0,p1);
 }
-public static void selectRejected(java.util.Collection p0,org.apache.commons.collections.Predicate p1,java.util.Collection p2){
- CollectionUtils.selectRejected(p0,p1,p2);
-}
-public static java.util.SortedMap predicatedSortedMap(java.util.SortedMap p0,org.apache.commons.collections.Predicate p1,org.apache.commons.collections.Predicate p2){
-return MapUtils.predicatedSortedMap(p0,p1,p2);
+public static java.util.Collection predicatedCollection(java.util.Collection p0,org.apache.commons.collections.Predicate p1){
+return CollectionUtils.predicatedCollection(p0,p1);
 }
 public static java.util.Map predicatedMap(java.util.Map p0,org.apache.commons.collections.Predicate p1,org.apache.commons.collections.Predicate p2){
 return MapUtils.predicatedMap(p0,p1,p2);
+}
+public static java.util.SortedMap predicatedSortedMap(java.util.SortedMap p0,org.apache.commons.collections.Predicate p1,org.apache.commons.collections.Predicate p2){
+return MapUtils.predicatedSortedMap(p0,p1,p2);
 }
 public static org.apache.commons.collections.Bag decorate(org.apache.commons.collections.Bag p0,org.apache.commons.collections.Predicate p1){
 return PredicatedBag.decorate(p0,p1);
@@ -206,14 +206,14 @@ return BufferUtils.predicatedBuffer(p0,p1);
 public static java.util.List decorate(java.util.List p0,org.apache.commons.collections.Predicate p1){
 return PredicatedList.decorate(p0,p1);
 }
-public static org.apache.commons.collections.Closure ifClosure(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Closure p1){
-return ClosureUtils.ifClosure(p0,p1);
+public static org.apache.commons.collections.Closure whileClosure(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Closure p1){
+return ClosureUtils.whileClosure(p0,p1);
 }
 public static org.apache.commons.collections.Closure ifClosure(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Closure p1,org.apache.commons.collections.Closure p2){
 return ClosureUtils.ifClosure(p0,p1,p2);
 }
-public static org.apache.commons.collections.Closure whileClosure(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Closure p1){
-return ClosureUtils.whileClosure(p0,p1);
+public static org.apache.commons.collections.Closure ifClosure(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Closure p1){
+return ClosureUtils.ifClosure(p0,p1);
 }
 public static org.apache.commons.collections.Closure doWhileClosure(org.apache.commons.collections.Closure p0,org.apache.commons.collections.Predicate p1){
 return ClosureUtils.doWhileClosure(p0,p1);
@@ -266,53 +266,17 @@ return ListUtils.predicatedList(p0,p1);
 public static org.apache.commons.collections.Predicate asPredicate(org.apache.commons.collections.Transformer p0){
 return PredicateUtils.asPredicate(p0);
 }
-public static org.apache.commons.collections.Predicate exceptionPredicate(){
-return PredicateUtils.exceptionPredicate();
-}
-public static org.apache.commons.collections.Predicate transformedPredicate(org.apache.commons.collections.Transformer p0,org.apache.commons.collections.Predicate p1){
-return PredicateUtils.transformedPredicate(p0,p1);
-}
-public static org.apache.commons.collections.Predicate nullIsExceptionPredicate(org.apache.commons.collections.Predicate p0){
-return PredicateUtils.nullIsExceptionPredicate(p0);
-}
-public static org.apache.commons.collections.Predicate identityPredicate(java.lang.Object p0){
-return PredicateUtils.identityPredicate(p0);
-}
-public static org.apache.commons.collections.Predicate nullIsFalsePredicate(org.apache.commons.collections.Predicate p0){
-return PredicateUtils.nullIsFalsePredicate(p0);
-}
-public static org.apache.commons.collections.Predicate instanceofPredicate(java.lang.Class p0){
-return PredicateUtils.instanceofPredicate(p0);
-}
-public static org.apache.commons.collections.Predicate nullIsTruePredicate(org.apache.commons.collections.Predicate p0){
-return PredicateUtils.nullIsTruePredicate(p0);
+public static org.apache.commons.collections.Predicate equalPredicate(java.lang.Object p0){
+return PredicateUtils.equalPredicate(p0);
 }
 public static org.apache.commons.collections.Predicate uniquePredicate(){
 return PredicateUtils.uniquePredicate();
 }
-public static org.apache.commons.collections.Predicate nonePredicate(org.apache.commons.collections.Predicate[] p0){
-return PredicateUtils.nonePredicate(p0);
+public static org.apache.commons.collections.Predicate invokerPredicate(java.lang.String p0,java.lang.Class[] p1,java.lang.Object[] p2){
+return PredicateUtils.invokerPredicate(p0,p1,p2);
 }
-public static org.apache.commons.collections.Predicate nonePredicate(java.util.Collection p0){
-return PredicateUtils.nonePredicate(p0);
-}
-public static org.apache.commons.collections.Predicate neitherPredicate(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Predicate p1){
-return PredicateUtils.neitherPredicate(p0,p1);
-}
-public static org.apache.commons.collections.Predicate notPredicate(org.apache.commons.collections.Predicate p0){
-return PredicateUtils.notPredicate(p0);
-}
-public static org.apache.commons.collections.Predicate onePredicate(java.util.Collection p0){
-return PredicateUtils.onePredicate(p0);
-}
-public static org.apache.commons.collections.Predicate onePredicate(org.apache.commons.collections.Predicate[] p0){
-return PredicateUtils.onePredicate(p0);
-}
-public static org.apache.commons.collections.Predicate nullPredicate(){
-return PredicateUtils.nullPredicate();
-}
-public static org.apache.commons.collections.Predicate falsePredicate(){
-return PredicateUtils.falsePredicate();
+public static org.apache.commons.collections.Predicate invokerPredicate(java.lang.String p0){
+return PredicateUtils.invokerPredicate(p0);
 }
 public static org.apache.commons.collections.Predicate andPredicate(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Predicate p1){
 return PredicateUtils.andPredicate(p0,p1);
@@ -323,11 +287,11 @@ return PredicateUtils.allPredicate(p0);
 public static org.apache.commons.collections.Predicate allPredicate(org.apache.commons.collections.Predicate[] p0){
 return PredicateUtils.allPredicate(p0);
 }
-public static org.apache.commons.collections.Predicate truePredicate(){
-return PredicateUtils.truePredicate();
-}
 public static org.apache.commons.collections.Predicate orPredicate(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Predicate p1){
 return PredicateUtils.orPredicate(p0,p1);
+}
+public static org.apache.commons.collections.Predicate nullPredicate(){
+return PredicateUtils.nullPredicate();
 }
 public static org.apache.commons.collections.Predicate anyPredicate(org.apache.commons.collections.Predicate[] p0){
 return PredicateUtils.anyPredicate(p0);
@@ -338,17 +302,53 @@ return PredicateUtils.anyPredicate(p0);
 public static org.apache.commons.collections.Predicate eitherPredicate(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Predicate p1){
 return PredicateUtils.eitherPredicate(p0,p1);
 }
-public static org.apache.commons.collections.Predicate equalPredicate(java.lang.Object p0){
-return PredicateUtils.equalPredicate(p0);
+public static org.apache.commons.collections.Predicate falsePredicate(){
+return PredicateUtils.falsePredicate();
 }
-public static org.apache.commons.collections.Predicate invokerPredicate(java.lang.String p0){
-return PredicateUtils.invokerPredicate(p0);
+public static org.apache.commons.collections.Predicate onePredicate(org.apache.commons.collections.Predicate[] p0){
+return PredicateUtils.onePredicate(p0);
 }
-public static org.apache.commons.collections.Predicate invokerPredicate(java.lang.String p0,java.lang.Class[] p1,java.lang.Object[] p2){
-return PredicateUtils.invokerPredicate(p0,p1,p2);
+public static org.apache.commons.collections.Predicate onePredicate(java.util.Collection p0){
+return PredicateUtils.onePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate truePredicate(){
+return PredicateUtils.truePredicate();
 }
 public static org.apache.commons.collections.Predicate notNullPredicate(){
 return PredicateUtils.notNullPredicate();
+}
+public static org.apache.commons.collections.Predicate neitherPredicate(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Predicate p1){
+return PredicateUtils.neitherPredicate(p0,p1);
+}
+public static org.apache.commons.collections.Predicate notPredicate(org.apache.commons.collections.Predicate p0){
+return PredicateUtils.notPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nonePredicate(org.apache.commons.collections.Predicate[] p0){
+return PredicateUtils.nonePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nonePredicate(java.util.Collection p0){
+return PredicateUtils.nonePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nullIsFalsePredicate(org.apache.commons.collections.Predicate p0){
+return PredicateUtils.nullIsFalsePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate instanceofPredicate(java.lang.Class p0){
+return PredicateUtils.instanceofPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate transformedPredicate(org.apache.commons.collections.Transformer p0,org.apache.commons.collections.Predicate p1){
+return PredicateUtils.transformedPredicate(p0,p1);
+}
+public static org.apache.commons.collections.Predicate identityPredicate(java.lang.Object p0){
+return PredicateUtils.identityPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nullIsExceptionPredicate(org.apache.commons.collections.Predicate p0){
+return PredicateUtils.nullIsExceptionPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate nullIsTruePredicate(org.apache.commons.collections.Predicate p0){
+return PredicateUtils.nullIsTruePredicate(p0);
+}
+public static org.apache.commons.collections.Predicate exceptionPredicate(){
+return PredicateUtils.exceptionPredicate();
 }
 public static org.apache.commons.collections.Buffer decorate(org.apache.commons.collections.Buffer p0,org.apache.commons.collections.Predicate p1){
 return PredicatedBuffer.decorate(p0,p1);
@@ -422,16 +422,16 @@ return AllPredicate.allPredicate(p0);
 public static <T> org.apache.commons.collections4.Predicate<T> asPredicate(org.apache.commons.collections4.Transformer<? super T, java.lang.Boolean> p0){
 return PredicateUtils.asPredicate(p0);
 }
-public static org.apache.commons.collections4.Predicate<java.lang.Object> instanceofPredicate(java.lang.Class<?> p0){
-return PredicateUtils.instanceofPredicate(p0);
-}
-public static <T> org.apache.commons.collections4.Predicate<T> neitherPredicate(org.apache.commons.collections4.Predicate<? super T> p0,org.apache.commons.collections4.Predicate<? super T> p1){
-return PredicateUtils.neitherPredicate(p0,p1);
+public static <T> org.apache.commons.collections4.Predicate<T> invokerPredicate(java.lang.String p0,java.lang.Class<?>[] p1,java.lang.Object[] p2){
+return PredicateUtils.invokerPredicate(p0,p1,p2);
 }
 public static <T> org.apache.commons.collections4.Predicate<T> eitherPredicate(org.apache.commons.collections4.Predicate<? super T> p0,org.apache.commons.collections4.Predicate<? super T> p1){
 return PredicateUtils.eitherPredicate(p0,p1);
 }
-public static <T> org.apache.commons.collections4.Predicate<T> invokerPredicate(java.lang.String p0,java.lang.Class<?>[] p1,java.lang.Object[] p2){
-return PredicateUtils.invokerPredicate(p0,p1,p2);
+public static <T> org.apache.commons.collections4.Predicate<T> neitherPredicate(org.apache.commons.collections4.Predicate<? super T> p0,org.apache.commons.collections4.Predicate<? super T> p1){
+return PredicateUtils.neitherPredicate(p0,p1);
+}
+public static org.apache.commons.collections4.Predicate<java.lang.Object> instanceofPredicate(java.lang.Class<?> p0){
+return PredicateUtils.instanceofPredicate(p0);
 }
 }

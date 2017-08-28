@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.primitives.Booleans;
 import com.google.common.primitives.Chars;
 import com.google.common.primitives.Doubles;
@@ -114,20 +114,38 @@ public final class ComparatorUtil{
 public static java.util.Comparator<boolean[]> lexicographicalComparator(){
 return Booleans.lexicographicalComparator();
 }
+public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Collection p1){
+return IteratorUtils.collatedIterator(p0,p1);
+}
 public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Iterator[] p1){
 return IteratorUtils.collatedIterator(p0,p1);
 }
 public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Iterator p1,java.util.Iterator p2){
 return IteratorUtils.collatedIterator(p0,p1,p2);
 }
-public static java.util.Iterator collatedIterator(java.util.Comparator p0,java.util.Collection p1){
-return IteratorUtils.collatedIterator(p0,p1);
-}
 public static java.lang.Object min(java.lang.Object p0,java.lang.Object p1,java.util.Comparator p2){
 return ComparatorUtils.min(p0,p1,p2);
 }
 public static java.lang.Object max(java.lang.Object p0,java.lang.Object p1,java.util.Comparator p2){
 return ComparatorUtils.max(p0,p1,p2);
+}
+public static java.util.Comparator chainedComparator(java.util.Comparator p0,java.util.Comparator p1){
+return ComparatorUtils.chainedComparator(p0,p1);
+}
+public static java.util.Comparator chainedComparator(java.util.Collection p0){
+return ComparatorUtils.chainedComparator(p0);
+}
+public static java.util.Comparator chainedComparator(java.util.Comparator[] p0){
+return ComparatorUtils.chainedComparator(p0);
+}
+public static java.util.Comparator reversedComparator(java.util.Comparator p0){
+return ComparatorUtils.reversedComparator(p0);
+}
+public static java.util.Comparator booleanComparator(boolean p0){
+return ComparatorUtils.booleanComparator(p0);
+}
+public static java.util.Comparator naturalComparator(){
+return ComparatorUtils.naturalComparator();
 }
 public static java.util.Comparator nullLowComparator(java.util.Comparator p0){
 return ComparatorUtils.nullLowComparator(p0);
@@ -138,23 +156,14 @@ return ComparatorUtils.nullHighComparator(p0);
 public static java.util.Comparator transformedComparator(java.util.Comparator p0,org.apache.commons.collections.Transformer p1){
 return ComparatorUtils.transformedComparator(p0,p1);
 }
-public static java.util.Comparator naturalComparator(){
-return ComparatorUtils.naturalComparator();
+public static <E> java.util.Comparator<E> chainedComparator(java.util.Comparator<E>... p0){
+return ComparatorUtils.chainedComparator(p0);
 }
-public static java.util.Comparator reversedComparator(java.util.Comparator p0){
+public static <E> java.util.Comparator<E> chainedComparator(java.util.Collection<java.util.Comparator<E>> p0){
+return ComparatorUtils.chainedComparator(p0);
+}
+public static <E> java.util.Comparator<E> reversedComparator(java.util.Comparator<E> p0){
 return ComparatorUtils.reversedComparator(p0);
-}
-public static java.util.Comparator chainedComparator(java.util.Comparator[] p0){
-return ComparatorUtils.chainedComparator(p0);
-}
-public static java.util.Comparator chainedComparator(java.util.Collection p0){
-return ComparatorUtils.chainedComparator(p0);
-}
-public static java.util.Comparator chainedComparator(java.util.Comparator p0,java.util.Comparator p1){
-return ComparatorUtils.chainedComparator(p0,p1);
-}
-public static java.util.Comparator booleanComparator(boolean p0){
-return ComparatorUtils.booleanComparator(p0);
 }
 public static <E> java.util.Comparator<E> nullLowComparator(java.util.Comparator<E> p0){
 return ComparatorUtils.nullLowComparator(p0);
@@ -164,15 +173,6 @@ return ComparatorUtils.nullHighComparator(p0);
 }
 public static <I,O> java.util.Comparator<I> transformedComparator(java.util.Comparator<O> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1){
 return ComparatorUtils.transformedComparator(p0,p1);
-}
-public static <E> java.util.Comparator<E> reversedComparator(java.util.Comparator<E> p0){
-return ComparatorUtils.reversedComparator(p0);
-}
-public static <E> java.util.Comparator<E> chainedComparator(java.util.Collection<java.util.Comparator<E>> p0){
-return ComparatorUtils.chainedComparator(p0);
-}
-public static <E> java.util.Comparator<E> chainedComparator(java.util.Comparator<E>... p0){
-return ComparatorUtils.chainedComparator(p0);
 }
 public static java.util.Comparator<? super java.util.Map.java.util.Map.Entry<java.lang.Byte, ?>> entryComparator(it.unimi.dsi.fastutil.bytes.ByteComparator p0){
 return Byte2BooleanSortedMaps.entryComparator(p0);

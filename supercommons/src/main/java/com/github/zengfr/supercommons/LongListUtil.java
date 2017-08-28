@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ListLongList;
 import org.apache.commons.collections.primitives.adapters.LongListList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableLongList;

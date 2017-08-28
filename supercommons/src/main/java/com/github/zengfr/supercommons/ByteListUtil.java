@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ByteListList;
 import org.apache.commons.collections.primitives.adapters.ListByteList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableByteList;
@@ -22,11 +22,11 @@ return ListByteList.wrap(p0);
 public static org.apache.commons.collections.primitives.ByteList getEmptyByteList(){
 return ByteCollections.getEmptyByteList();
 }
-public static org.apache.commons.collections.primitives.ByteList singletonByteList(byte p0){
-return ByteCollections.singletonByteList(p0);
-}
 public static org.apache.commons.collections.primitives.ByteList unmodifiableByteList(org.apache.commons.collections.primitives.ByteList p0) throws java.lang.NullPointerException{
 return ByteCollections.unmodifiableByteList(p0);
+}
+public static org.apache.commons.collections.primitives.ByteList singletonByteList(byte p0){
+return ByteCollections.singletonByteList(p0);
 }
 public static it.unimi.dsi.fastutil.bytes.ByteBigList asBigList(it.unimi.dsi.fastutil.bytes.ByteList p0){
 return ByteBigLists.asBigList(p0);

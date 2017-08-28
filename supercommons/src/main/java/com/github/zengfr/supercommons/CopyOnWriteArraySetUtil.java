@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Sets;
 /**
 * @author zengfr
@@ -7,10 +7,10 @@ import com.google.common.collect.Sets;
 * zengfr3000@qq.com
 */
 public final class CopyOnWriteArraySetUtil{ 
-public static <E> java.util.concurrent.CopyOnWriteArraySet<E> newCopyOnWriteArraySet(java.lang.Iterable<? extends E> p0){
-return Sets.newCopyOnWriteArraySet(p0);
-}
 public static <E> java.util.concurrent.CopyOnWriteArraySet<E> newCopyOnWriteArraySet(){
 return Sets.newCopyOnWriteArraySet();
+}
+public static <E> java.util.concurrent.CopyOnWriteArraySet<E> newCopyOnWriteArraySet(java.lang.Iterable<? extends E> p0){
+return Sets.newCopyOnWriteArraySet(p0);
 }
 }

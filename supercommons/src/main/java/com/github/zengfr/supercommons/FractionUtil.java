@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.math.Fraction;
 import org.apache.commons.math3.fraction.FractionFormat;
 import org.apache.commons.math3.fraction.Fraction;

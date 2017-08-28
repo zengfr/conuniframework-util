@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.FloatListIteratorListIterator;
 import org.apache.commons.collections.primitives.adapters.ListIteratorFloatListIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableFloatListIterator;
@@ -18,14 +18,14 @@ return FloatListIteratorListIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.FloatListIterator wrap(java.util.ListIterator p0){
 return ListIteratorFloatListIterator.wrap(p0);
 }
-public static org.apache.commons.collections.primitives.FloatListIterator singletonFloatListIterator(float p0){
-return FloatCollections.singletonFloatListIterator(p0);
-}
 public static org.apache.commons.collections.primitives.FloatListIterator unmodifiableFloatListIterator(org.apache.commons.collections.primitives.FloatListIterator p0){
 return FloatCollections.unmodifiableFloatListIterator(p0);
 }
 public static org.apache.commons.collections.primitives.FloatListIterator getEmptyFloatListIterator(){
 return FloatCollections.getEmptyFloatListIterator();
+}
+public static org.apache.commons.collections.primitives.FloatListIterator singletonFloatListIterator(float p0){
+return FloatCollections.singletonFloatListIterator(p0);
 }
 public static it.unimi.dsi.fastutil.floats.FloatBigListIterator asBigListIterator(it.unimi.dsi.fastutil.floats.FloatListIterator p0){
 return FloatBigListIterators.asBigListIterator(p0);

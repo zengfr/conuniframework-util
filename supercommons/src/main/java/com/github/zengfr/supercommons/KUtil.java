@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.cache.RemovalNotification;
 import com.google.common.collect.ImmutableBiMap;
 import com.google.common.collect.ImmutableMap;
@@ -118,11 +118,11 @@ return MapUtils.getNumber(p0,p1);
 public static <K> java.lang.Number getNumber(java.util.Map<? super K, ?> p0,K p1,java.lang.Number p2){
 return MapUtils.getNumber(p0,p1,p2);
 }
-public static <K,V> V getObject(java.util.Map<? super K, V> p0,K p1){
-return MapUtils.getObject(p0,p1);
-}
 public static <K,V> V getObject(java.util.Map<K, V> p0,K p1,V p2){
 return MapUtils.getObject(p0,p1,p2);
+}
+public static <K,V> V getObject(java.util.Map<? super K, V> p0,K p1){
+return MapUtils.getObject(p0,p1);
 }
 public static <K> java.lang.Boolean getBoolean(java.util.Map<? super K, ?> p0,K p1,java.lang.Boolean p2){
 return MapUtils.getBoolean(p0,p1,p2);
@@ -178,29 +178,20 @@ return MapUtils.getString(p0,p1);
 public static <K> java.lang.String getString(java.util.Map<? super K, ?> p0,K p1,java.lang.String p2){
 return MapUtils.getString(p0,p1,p2);
 }
-public static <K> double getDoubleValue(java.util.Map<? super K, ?> p0,K p1){
-return MapUtils.getDoubleValue(p0,p1);
-}
-public static <K> double getDoubleValue(java.util.Map<? super K, ?> p0,K p1,double p2){
-return MapUtils.getDoubleValue(p0,p1,p2);
-}
-public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1){
-return MapUtils.getFloatValue(p0,p1);
-}
-public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1,float p2){
-return MapUtils.getFloatValue(p0,p1,p2);
+public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1,short p2){
+return MapUtils.getShortValue(p0,p1,p2);
 }
 public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getShortValue(p0,p1);
 }
-public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1,short p2){
-return MapUtils.getShortValue(p0,p1,p2);
+public static <K> void safeAddToMap(java.util.Map<? super K, java.lang.Object> p0,K p1,java.lang.Object p2) throws java.lang.NullPointerException{
+ MapUtils.safeAddToMap(p0,p1,p2);
 }
-public static <K> boolean getBooleanValue(java.util.Map<? super K, ?> p0,K p1,boolean p2){
-return MapUtils.getBooleanValue(p0,p1,p2);
+public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1,float p2){
+return MapUtils.getFloatValue(p0,p1,p2);
 }
-public static <K> boolean getBooleanValue(java.util.Map<? super K, ?> p0,K p1){
-return MapUtils.getBooleanValue(p0,p1);
+public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1){
+return MapUtils.getFloatValue(p0,p1);
 }
 public static <K> byte getByteValue(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getByteValue(p0,p1);
@@ -214,14 +205,23 @@ return MapUtils.getLongValue(p0,p1,p2);
 public static <K> long getLongValue(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getLongValue(p0,p1);
 }
-public static <K> int getIntValue(java.util.Map<? super K, ?> p0,K p1){
-return MapUtils.getIntValue(p0,p1);
-}
 public static <K> int getIntValue(java.util.Map<? super K, ?> p0,K p1,int p2){
 return MapUtils.getIntValue(p0,p1,p2);
 }
-public static <K> void safeAddToMap(java.util.Map<? super K, java.lang.Object> p0,K p1,java.lang.Object p2) throws java.lang.NullPointerException{
- MapUtils.safeAddToMap(p0,p1,p2);
+public static <K> int getIntValue(java.util.Map<? super K, ?> p0,K p1){
+return MapUtils.getIntValue(p0,p1);
+}
+public static <K> double getDoubleValue(java.util.Map<? super K, ?> p0,K p1){
+return MapUtils.getDoubleValue(p0,p1);
+}
+public static <K> double getDoubleValue(java.util.Map<? super K, ?> p0,K p1,double p2){
+return MapUtils.getDoubleValue(p0,p1,p2);
+}
+public static <K> boolean getBooleanValue(java.util.Map<? super K, ?> p0,K p1,boolean p2){
+return MapUtils.getBooleanValue(p0,p1,p2);
+}
+public static <K> boolean getBooleanValue(java.util.Map<? super K, ?> p0,K p1){
+return MapUtils.getBooleanValue(p0,p1);
 }
 public static <K,V> java.util.Collection<V> getCollection(org.apache.commons.collections4.MultiValuedMap<K, V> p0,K p1){
 return MultiMapUtils.getCollection(p0,p1);
@@ -247,10 +247,10 @@ return ConcurrentUtils.createIfAbsentUnchecked(p0,p1,p2);
 public static <K,V> org.apache.commons.math3.util.Pair<K, V> create(K p0,V p1){
 return Pair.create(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanFunction<K> singleton(K p0,java.lang.Boolean p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanFunction<K> singleton(K p0,boolean p1){
 return Object2BooleanFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanFunction<K> singleton(K p0,boolean p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanFunction<K> singleton(K p0,java.lang.Boolean p1){
 return Object2BooleanFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanSortedMap<K> singleton(K p0,java.lang.Boolean p1,java.util.Comparator<? super K> p2){
@@ -259,10 +259,10 @@ return Object2BooleanSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2BooleanSortedMap<K> singleton(K p0,boolean p1,java.util.Comparator<? super K> p2){
 return Object2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2ByteFunction<K> singleton(K p0,java.lang.Byte p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2ByteFunction<K> singleton(K p0,byte p1){
 return Object2ByteFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2ByteFunction<K> singleton(K p0,byte p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2ByteFunction<K> singleton(K p0,java.lang.Byte p1){
 return Object2ByteFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2ByteSortedMap<K> singleton(K p0,java.lang.Byte p1,java.util.Comparator<? super K> p2){
@@ -271,10 +271,10 @@ return Object2ByteSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2ByteSortedMap<K> singleton(K p0,byte p1,java.util.Comparator<? super K> p2){
 return Object2ByteSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> singleton(K p0,java.lang.Character p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> singleton(K p0,char p1){
 return Object2CharFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> singleton(K p0,char p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> singleton(K p0,java.lang.Character p1){
 return Object2CharFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2CharSortedMap<K> singleton(K p0,java.lang.Character p1,java.util.Comparator<? super K> p2){
@@ -283,10 +283,10 @@ return Object2CharSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2CharSortedMap<K> singleton(K p0,char p1,java.util.Comparator<? super K> p2){
 return Object2CharSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleFunction<K> singleton(K p0,java.lang.Double p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleFunction<K> singleton(K p0,double p1){
 return Object2DoubleFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleFunction<K> singleton(K p0,double p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleFunction<K> singleton(K p0,java.lang.Double p1){
 return Object2DoubleFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleSortedMap<K> singleton(K p0,java.lang.Double p1,java.util.Comparator<? super K> p2){
@@ -295,10 +295,10 @@ return Object2DoubleSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2DoubleSortedMap<K> singleton(K p0,double p1,java.util.Comparator<? super K> p2){
 return Object2DoubleSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2FloatFunction<K> singleton(K p0,java.lang.Float p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2FloatFunction<K> singleton(K p0,float p1){
 return Object2FloatFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2FloatFunction<K> singleton(K p0,float p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2FloatFunction<K> singleton(K p0,java.lang.Float p1){
 return Object2FloatFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2FloatSortedMap<K> singleton(K p0,java.lang.Float p1,java.util.Comparator<? super K> p2){
@@ -307,10 +307,10 @@ return Object2FloatSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2FloatSortedMap<K> singleton(K p0,float p1,java.util.Comparator<? super K> p2){
 return Object2FloatSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> singleton(K p0,java.lang.Integer p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> singleton(K p0,int p1){
 return Object2IntFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> singleton(K p0,int p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> singleton(K p0,java.lang.Integer p1){
 return Object2IntFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,java.lang.Integer p1,java.util.Comparator<? super K> p2){
@@ -319,10 +319,10 @@ return Object2IntSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,int p1,java.util.Comparator<? super K> p2){
 return Object2IntSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2LongFunction<K> singleton(K p0,java.lang.Long p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2LongFunction<K> singleton(K p0,long p1){
 return Object2LongFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2LongFunction<K> singleton(K p0,long p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2LongFunction<K> singleton(K p0,java.lang.Long p1){
 return Object2LongFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2LongSortedMap<K> singleton(K p0,java.lang.Long p1,java.util.Comparator<? super K> p2){
@@ -337,10 +337,10 @@ return Object2ObjectFunctions.singleton(p0,p1);
 public static <K,V> it.unimi.dsi.fastutil.objects.Object2ObjectSortedMap<K, V> singleton(K p0,V p1,java.util.Comparator<? super K> p2){
 return Object2ObjectSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2ShortFunction<K> singleton(K p0,java.lang.Short p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2ShortFunction<K> singleton(K p0,short p1){
 return Object2ShortFunctions.singleton(p0,p1);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2ShortFunction<K> singleton(K p0,short p1){
+public static <K> it.unimi.dsi.fastutil.objects.Object2ShortFunction<K> singleton(K p0,java.lang.Short p1){
 return Object2ShortFunctions.singleton(p0,p1);
 }
 public static <K> it.unimi.dsi.fastutil.objects.Object2ShortSortedMap<K> singleton(K p0,java.lang.Short p1,java.util.Comparator<? super K> p2){
@@ -349,23 +349,23 @@ return Object2ShortSortedMaps.singleton(p0,p1,p2);
 public static <K> it.unimi.dsi.fastutil.objects.Object2ShortSortedMap<K> singleton(K p0,short p1,java.util.Comparator<? super K> p2){
 return Object2ShortSortedMaps.singleton(p0,p1,p2);
 }
+public static <K> void fill(K[] p0,int p1,int p2,K p3){
+ ObjectArrays.fill(p0,p1,p2,p3);
+}
 public static <K> void fill(K[] p0,K p1){
  ObjectArrays.fill(p0,p1);
 }
-public static <K> void fill(K[] p0,int p1,int p2,K p3){
- ObjectArrays.fill(p0,p1,p2,p3);
+public static <K> int binarySearch(K[] p0,int p1,int p2,K p3,java.util.Comparator<K> p4){
+return ObjectArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static <K> int binarySearch(K[] p0,K p1,java.util.Comparator<K> p2){
 return ObjectArrays.binarySearch(p0,p1,p2);
 }
-public static <K> int binarySearch(K[] p0,K p1){
-return ObjectArrays.binarySearch(p0,p1);
-}
 public static <K> int binarySearch(K[] p0,int p1,int p2,K p3){
 return ObjectArrays.binarySearch(p0,p1,p2,p3);
 }
-public static <K> int binarySearch(K[] p0,int p1,int p2,K p3,java.util.Comparator<K> p4){
-return ObjectArrays.binarySearch(p0,p1,p2,p3,p4);
+public static <K> int binarySearch(K[] p0,K p1){
+return ObjectArrays.binarySearch(p0,p1);
 }
 public static <K> void set(K[][] p0,long p1,K p2){
  ObjectBigArrays.set(p0,p1,p2);
@@ -376,11 +376,11 @@ public static <K> void fill(K[][] p0,long p1,long p2,K p3){
 public static <K> void fill(K[][] p0,K p1){
  ObjectBigArrays.fill(p0,p1);
 }
-public static <K> long binarySearch(K[][] p0,long p1,long p2,K p3){
-return ObjectBigArrays.binarySearch(p0,p1,p2,p3);
-}
 public static <K> long binarySearch(K[][] p0,long p1,long p2,K p3,java.util.Comparator<K> p4){
 return ObjectBigArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+public static <K> long binarySearch(K[][] p0,long p1,long p2,K p3){
+return ObjectBigArrays.binarySearch(p0,p1,p2,p3);
 }
 public static <K> long binarySearch(K[][] p0,K p1,java.util.Comparator<K> p2){
 return ObjectBigArrays.binarySearch(p0,p1,p2);

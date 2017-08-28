@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CollectionShortCollection;
 import org.apache.commons.collections.primitives.adapters.ShortCollectionCollection;
 import it.unimi.dsi.fastutil.shorts.ShortCollections;
@@ -34,10 +34,10 @@ return ShortIterators.unwrap(p0,p1,p2);
 public static long unwrap(it.unimi.dsi.fastutil.shorts.ShortIterator p0,it.unimi.dsi.fastutil.shorts.ShortCollection p1){
 return ShortIterators.unwrap(p0,p1);
 }
-public static int pour(it.unimi.dsi.fastutil.shorts.ShortIterator p0,it.unimi.dsi.fastutil.shorts.ShortCollection p1){
-return ShortIterators.pour(p0,p1);
-}
 public static int pour(it.unimi.dsi.fastutil.shorts.ShortIterator p0,it.unimi.dsi.fastutil.shorts.ShortCollection p1,int p2){
 return ShortIterators.pour(p0,p1,p2);
+}
+public static int pour(it.unimi.dsi.fastutil.shorts.ShortIterator p0,it.unimi.dsi.fastutil.shorts.ShortCollection p1){
+return ShortIterators.pour(p0,p1);
 }
 }

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.io.CharStreams;
 import com.google.common.io.Closeables;
 import org.apache.commons.io.IOUtils;
@@ -72,14 +72,14 @@ return IOUtils.readLines(p0);
 public static boolean contentEqualsIgnoreEOL(java.io.Reader p0,java.io.Reader p1) throws java.io.IOException{
 return IOUtils.contentEqualsIgnoreEOL(p0,p1);
 }
-public static org.apache.commons.io.LineIterator lineIterator(java.io.Reader p0){
-return IOUtils.lineIterator(p0);
+public static java.io.BufferedReader toBufferedReader(java.io.Reader p0,int p1){
+return IOUtils.toBufferedReader(p0,p1);
 }
 public static java.io.BufferedReader toBufferedReader(java.io.Reader p0){
 return IOUtils.toBufferedReader(p0);
 }
-public static java.io.BufferedReader toBufferedReader(java.io.Reader p0,int p1){
-return IOUtils.toBufferedReader(p0,p1);
+public static org.apache.commons.io.LineIterator lineIterator(java.io.Reader p0){
+return IOUtils.lineIterator(p0);
 }
 public static long copyLarge(java.io.Reader p0,java.io.Writer p1,long p2,long p3,char[] p4) throws java.io.IOException{
 return IOUtils.copyLarge(p0,p1,p2,p3,p4);

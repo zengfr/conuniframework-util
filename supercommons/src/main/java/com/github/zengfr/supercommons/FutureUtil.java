@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.util.concurrent.Futures;
 import org.apache.commons.lang3.concurrent.ConcurrentUtils;
 /**

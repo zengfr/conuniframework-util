@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CollectionDoubleCollection;
 import org.apache.commons.collections.primitives.adapters.DoubleCollectionCollection;
 import it.unimi.dsi.fastutil.doubles.DoubleCollections;
@@ -34,10 +34,10 @@ return DoubleIterators.unwrap(p0,p1);
 public static int unwrap(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1,int p2){
 return DoubleIterators.unwrap(p0,p1,p2);
 }
-public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1){
-return DoubleIterators.pour(p0,p1);
-}
 public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1,int p2){
 return DoubleIterators.pour(p0,p1,p2);
+}
+public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1){
+return DoubleIterators.pour(p0,p1);
 }
 }

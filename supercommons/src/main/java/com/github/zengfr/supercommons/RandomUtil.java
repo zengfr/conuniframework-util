@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.commons.math3.random.RandomGeneratorFactory;
 import org.apache.commons.math3.random.RandomAdaptor;
@@ -58,11 +58,11 @@ return RandomGeneratorFactory.createRandomGenerator(p0);
 public static java.util.Random createAdaptor(org.apache.commons.math3.random.RandomGenerator p0){
 return RandomAdaptor.createAdaptor(p0);
 }
-public static boolean[] shuffle(boolean[] p0,java.util.Random p1){
-return BooleanArrays.shuffle(p0,p1);
-}
 public static boolean[] shuffle(boolean[] p0,int p1,int p2,java.util.Random p3){
 return BooleanArrays.shuffle(p0,p1,p2,p3);
+}
+public static boolean[] shuffle(boolean[] p0,java.util.Random p1){
+return BooleanArrays.shuffle(p0,p1);
 }
 public static boolean[][] shuffle(boolean[][] p0,long p1,long p2,java.util.Random p3){
 return BooleanBigArrays.shuffle(p0,p1,p2,p3);
@@ -76,17 +76,17 @@ return BooleanBigLists.shuffle(p0,p1);
 public static it.unimi.dsi.fastutil.booleans.BooleanList shuffle(it.unimi.dsi.fastutil.booleans.BooleanList p0,java.util.Random p1){
 return BooleanLists.shuffle(p0,p1);
 }
-public static byte[] shuffle(byte[] p0,java.util.Random p1){
-return ByteArrays.shuffle(p0,p1);
-}
 public static byte[] shuffle(byte[] p0,int p1,int p2,java.util.Random p3){
 return ByteArrays.shuffle(p0,p1,p2,p3);
 }
-public static byte[][] shuffle(byte[][] p0,long p1,long p2,java.util.Random p3){
-return ByteBigArrays.shuffle(p0,p1,p2,p3);
+public static byte[] shuffle(byte[] p0,java.util.Random p1){
+return ByteArrays.shuffle(p0,p1);
 }
 public static byte[][] shuffle(byte[][] p0,java.util.Random p1){
 return ByteBigArrays.shuffle(p0,p1);
+}
+public static byte[][] shuffle(byte[][] p0,long p1,long p2,java.util.Random p3){
+return ByteBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.bytes.ByteBigList shuffle(it.unimi.dsi.fastutil.bytes.ByteBigList p0,java.util.Random p1){
 return ByteBigLists.shuffle(p0,p1);
@@ -94,17 +94,17 @@ return ByteBigLists.shuffle(p0,p1);
 public static it.unimi.dsi.fastutil.bytes.ByteList shuffle(it.unimi.dsi.fastutil.bytes.ByteList p0,java.util.Random p1){
 return ByteLists.shuffle(p0,p1);
 }
-public static char[] shuffle(char[] p0,java.util.Random p1){
-return CharArrays.shuffle(p0,p1);
-}
 public static char[] shuffle(char[] p0,int p1,int p2,java.util.Random p3){
 return CharArrays.shuffle(p0,p1,p2,p3);
 }
-public static char[][] shuffle(char[][] p0,long p1,long p2,java.util.Random p3){
-return CharBigArrays.shuffle(p0,p1,p2,p3);
+public static char[] shuffle(char[] p0,java.util.Random p1){
+return CharArrays.shuffle(p0,p1);
 }
 public static char[][] shuffle(char[][] p0,java.util.Random p1){
 return CharBigArrays.shuffle(p0,p1);
+}
+public static char[][] shuffle(char[][] p0,long p1,long p2,java.util.Random p3){
+return CharBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.chars.CharBigList shuffle(it.unimi.dsi.fastutil.chars.CharBigList p0,java.util.Random p1){
 return CharBigLists.shuffle(p0,p1);
@@ -136,11 +136,11 @@ return FloatArrays.shuffle(p0,p1);
 public static float[] shuffle(float[] p0,int p1,int p2,java.util.Random p3){
 return FloatArrays.shuffle(p0,p1,p2,p3);
 }
-public static float[][] shuffle(float[][] p0,long p1,long p2,java.util.Random p3){
-return FloatBigArrays.shuffle(p0,p1,p2,p3);
-}
 public static float[][] shuffle(float[][] p0,java.util.Random p1){
 return FloatBigArrays.shuffle(p0,p1);
+}
+public static float[][] shuffle(float[][] p0,long p1,long p2,java.util.Random p3){
+return FloatBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.floats.FloatBigList shuffle(it.unimi.dsi.fastutil.floats.FloatBigList p0,java.util.Random p1){
 return FloatBigLists.shuffle(p0,p1);
@@ -148,17 +148,17 @@ return FloatBigLists.shuffle(p0,p1);
 public static it.unimi.dsi.fastutil.floats.FloatList shuffle(it.unimi.dsi.fastutil.floats.FloatList p0,java.util.Random p1){
 return FloatLists.shuffle(p0,p1);
 }
-public static int[] shuffle(int[] p0,java.util.Random p1){
-return IntArrays.shuffle(p0,p1);
-}
 public static int[] shuffle(int[] p0,int p1,int p2,java.util.Random p3){
 return IntArrays.shuffle(p0,p1,p2,p3);
 }
-public static int[][] shuffle(int[][] p0,long p1,long p2,java.util.Random p3){
-return IntBigArrays.shuffle(p0,p1,p2,p3);
+public static int[] shuffle(int[] p0,java.util.Random p1){
+return IntArrays.shuffle(p0,p1);
 }
 public static int[][] shuffle(int[][] p0,java.util.Random p1){
 return IntBigArrays.shuffle(p0,p1);
+}
+public static int[][] shuffle(int[][] p0,long p1,long p2,java.util.Random p3){
+return IntBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.ints.IntBigList shuffle(it.unimi.dsi.fastutil.ints.IntBigList p0,java.util.Random p1){
 return IntBigLists.shuffle(p0,p1);
@@ -166,17 +166,17 @@ return IntBigLists.shuffle(p0,p1);
 public static it.unimi.dsi.fastutil.ints.IntList shuffle(it.unimi.dsi.fastutil.ints.IntList p0,java.util.Random p1){
 return IntLists.shuffle(p0,p1);
 }
-public static long[] shuffle(long[] p0,java.util.Random p1){
-return LongArrays.shuffle(p0,p1);
-}
 public static long[] shuffle(long[] p0,int p1,int p2,java.util.Random p3){
 return LongArrays.shuffle(p0,p1,p2,p3);
 }
-public static long[][] shuffle(long[][] p0,long p1,long p2,java.util.Random p3){
-return LongBigArrays.shuffle(p0,p1,p2,p3);
+public static long[] shuffle(long[] p0,java.util.Random p1){
+return LongArrays.shuffle(p0,p1);
 }
 public static long[][] shuffle(long[][] p0,java.util.Random p1){
 return LongBigArrays.shuffle(p0,p1);
+}
+public static long[][] shuffle(long[][] p0,long p1,long p2,java.util.Random p3){
+return LongBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.longs.LongBigList shuffle(it.unimi.dsi.fastutil.longs.LongBigList p0,java.util.Random p1){
 return LongBigLists.shuffle(p0,p1);
@@ -184,11 +184,11 @@ return LongBigLists.shuffle(p0,p1);
 public static it.unimi.dsi.fastutil.longs.LongList shuffle(it.unimi.dsi.fastutil.longs.LongList p0,java.util.Random p1){
 return LongLists.shuffle(p0,p1);
 }
-public static <K> K[] shuffle(K[] p0,java.util.Random p1){
-return ObjectArrays.shuffle(p0,p1);
-}
 public static <K> K[] shuffle(K[] p0,int p1,int p2,java.util.Random p3){
 return ObjectArrays.shuffle(p0,p1,p2,p3);
+}
+public static <K> K[] shuffle(K[] p0,java.util.Random p1){
+return ObjectArrays.shuffle(p0,p1);
 }
 public static <K> K[][] shuffle(K[][] p0,long p1,long p2,java.util.Random p3){
 return ObjectBigArrays.shuffle(p0,p1,p2,p3);
@@ -208,17 +208,17 @@ return ReferenceBigLists.shuffle(p0,p1);
 public static <K> it.unimi.dsi.fastutil.objects.ReferenceList<K> shuffle(it.unimi.dsi.fastutil.objects.ReferenceList<K> p0,java.util.Random p1){
 return ReferenceLists.shuffle(p0,p1);
 }
-public static short[] shuffle(short[] p0,java.util.Random p1){
-return ShortArrays.shuffle(p0,p1);
-}
 public static short[] shuffle(short[] p0,int p1,int p2,java.util.Random p3){
 return ShortArrays.shuffle(p0,p1,p2,p3);
 }
-public static short[][] shuffle(short[][] p0,long p1,long p2,java.util.Random p3){
-return ShortBigArrays.shuffle(p0,p1,p2,p3);
+public static short[] shuffle(short[] p0,java.util.Random p1){
+return ShortArrays.shuffle(p0,p1);
 }
 public static short[][] shuffle(short[][] p0,java.util.Random p1){
 return ShortBigArrays.shuffle(p0,p1);
+}
+public static short[][] shuffle(short[][] p0,long p1,long p2,java.util.Random p3){
+return ShortBigArrays.shuffle(p0,p1,p2,p3);
 }
 public static it.unimi.dsi.fastutil.shorts.ShortBigList shuffle(it.unimi.dsi.fastutil.shorts.ShortBigList p0,java.util.Random p1){
 return ShortBigLists.shuffle(p0,p1);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.IteratorUtils;
 import org.apache.commons.collections.iterators.UnmodifiableListIterator;
 import org.apache.commons.collections4.IteratorUtils;
@@ -33,14 +33,14 @@ import it.unimi.dsi.fastutil.shorts.ShortIterators;
 * zengfr3000@qq.com
 */
 public final class ListIteratorUtil{ 
-public static java.util.ListIterator unmodifiableListIterator(java.util.ListIterator p0){
-return IteratorUtils.unmodifiableListIterator(p0);
+public static java.util.ListIterator filteredListIterator(java.util.ListIterator p0,org.apache.commons.collections.Predicate p1){
+return IteratorUtils.filteredListIterator(p0,p1);
 }
 public static java.util.ListIterator singletonListIterator(java.lang.Object p0){
 return IteratorUtils.singletonListIterator(p0);
 }
-public static java.util.ListIterator filteredListIterator(java.util.ListIterator p0,org.apache.commons.collections.Predicate p1){
-return IteratorUtils.filteredListIterator(p0,p1);
+public static java.util.ListIterator unmodifiableListIterator(java.util.ListIterator p0){
+return IteratorUtils.unmodifiableListIterator(p0);
 }
 public static java.util.ListIterator toListIterator(java.util.Iterator p0){
 return IteratorUtils.toListIterator(p0);
@@ -48,14 +48,14 @@ return IteratorUtils.toListIterator(p0);
 public static java.util.ListIterator decorate(java.util.ListIterator p0){
 return UnmodifiableListIterator.decorate(p0);
 }
-public static <E> java.util.ListIterator<E> unmodifiableListIterator(java.util.ListIterator<E> p0){
-return IteratorUtils.unmodifiableListIterator(p0);
+public static <E> java.util.ListIterator<E> filteredListIterator(java.util.ListIterator<? extends E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
+return IteratorUtils.filteredListIterator(p0,p1);
 }
 public static <E> java.util.ListIterator<E> singletonListIterator(E p0){
 return IteratorUtils.singletonListIterator(p0);
 }
-public static <E> java.util.ListIterator<E> filteredListIterator(java.util.ListIterator<? extends E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
-return IteratorUtils.filteredListIterator(p0,p1);
+public static <E> java.util.ListIterator<E> unmodifiableListIterator(java.util.ListIterator<E> p0){
+return IteratorUtils.unmodifiableListIterator(p0);
 }
 public static <E> java.util.ListIterator<E> toListIterator(java.util.Iterator<? extends E> p0){
 return IteratorUtils.toListIterator(p0);

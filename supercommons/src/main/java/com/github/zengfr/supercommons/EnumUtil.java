@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import java.lang.Enum;
 import org.apache.commons.lang3.EnumUtils;
 import org.apache.commons.lang.enum.EnumUtils;

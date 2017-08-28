@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.text.translate.NumericEntityEscaper;
 import org.apache.commons.text.translate.NumericEntityEscaper;
 /**
@@ -8,11 +8,11 @@ import org.apache.commons.text.translate.NumericEntityEscaper;
 * zengfr3000@qq.com
 */
 public final class NumericEntityEscaperUtil{ 
-public static org.apache.commons.lang3.text.translate.NumericEntityEscaper below(int p0){
-return NumericEntityEscaper.below(p0);
-}
 public static org.apache.commons.lang3.text.translate.NumericEntityEscaper above(int p0){
 return NumericEntityEscaper.above(p0);
+}
+public static org.apache.commons.lang3.text.translate.NumericEntityEscaper below(int p0){
+return NumericEntityEscaper.below(p0);
 }
 public static org.apache.commons.lang3.text.translate.NumericEntityEscaper between(int p0,int p1){
 return NumericEntityEscaper.between(p0,p1);

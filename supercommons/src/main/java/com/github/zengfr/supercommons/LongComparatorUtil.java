@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.BigArrays;
 import it.unimi.dsi.fastutil.longs.Long2BooleanSortedMaps;
 import it.unimi.dsi.fastutil.longs.Long2ByteSortedMaps;
@@ -96,11 +96,11 @@ return LongArrays.binarySearch(p0,p1,p2,p3,p4);
 public static void mergeSort(long[] p0,it.unimi.dsi.fastutil.longs.LongComparator p1){
  LongArrays.mergeSort(p0,p1);
 }
-public static void mergeSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3,long[] p4){
- LongArrays.mergeSort(p0,p1,p2,p3,p4);
-}
 public static void mergeSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
  LongArrays.mergeSort(p0,p1,p2,p3);
+}
+public static void mergeSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3,long[] p4){
+ LongArrays.mergeSort(p0,p1,p2,p3,p4);
 }
 public static void quickSort(long[] p0,it.unimi.dsi.fastutil.longs.LongComparator p1){
  LongArrays.quickSort(p0,p1);
@@ -108,11 +108,11 @@ public static void quickSort(long[] p0,it.unimi.dsi.fastutil.longs.LongComparato
 public static void quickSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
  LongArrays.quickSort(p0,p1,p2,p3);
 }
-public static void parallelQuickSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
- LongArrays.parallelQuickSort(p0,p1,p2,p3);
-}
 public static void parallelQuickSort(long[] p0,it.unimi.dsi.fastutil.longs.LongComparator p1){
  LongArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
+ LongArrays.parallelQuickSort(p0,p1,p2,p3);
 }
 public static long binarySearch(long[][] p0,long p1,long p2,long p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
 return LongBigArrays.binarySearch(p0,p1,p2,p3,p4);
@@ -126,11 +126,11 @@ public static void quickSort(long[][] p0,it.unimi.dsi.fastutil.longs.LongCompara
 public static void quickSort(long[][] p0,long p1,long p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
  LongBigArrays.quickSort(p0,p1,p2,p3);
 }
-public static it.unimi.dsi.fastutil.longs.LongComparator oppositeComparator(it.unimi.dsi.fastutil.longs.LongComparator p0){
-return LongComparators.oppositeComparator(p0);
-}
 public static it.unimi.dsi.fastutil.longs.LongComparator asLongComparator(java.util.Comparator<? super java.lang.Long> p0){
 return LongComparators.asLongComparator(p0);
+}
+public static it.unimi.dsi.fastutil.longs.LongComparator oppositeComparator(it.unimi.dsi.fastutil.longs.LongComparator p0){
+return LongComparators.oppositeComparator(p0);
 }
 public static void makeHeap(long[] p0,int p1,it.unimi.dsi.fastutil.longs.LongComparator p2){
  LongHeaps.makeHeap(p0,p1,p2);
@@ -153,23 +153,23 @@ return LongIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
 public static int upHeap(long[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.longs.LongComparator p5){
 return LongIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
 }
-public static int front(long[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
-return LongSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
 public static int[] makeHeap(long[] p0,int p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
 return LongSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(long[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
- LongSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(long[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
  LongSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(long[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.longs.LongComparator p3){
+ LongSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(long[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
 return LongSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 }
 public static int upHeap(long[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
 return LongSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
+}
+public static int front(long[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.longs.LongComparator p4){
+return LongSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
 public static it.unimi.dsi.fastutil.longs.LongSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.longs.LongComparator p1){
 return LongSortedSets.singleton(p0,p1);

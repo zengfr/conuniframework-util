@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Predicates;
 import com.google.common.base.Splitter;
 /**

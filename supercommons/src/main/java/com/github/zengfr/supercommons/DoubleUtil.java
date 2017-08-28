@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.primitives.Doubles;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections4.MapUtils;
@@ -135,11 +135,11 @@ public final class DoubleUtil{
 public static java.lang.Double tryParse(java.lang.String p0){
 return Doubles.tryParse(p0);
 }
-public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1,java.lang.Double p2){
-return MapUtils.getDouble(p0,p1,p2);
-}
 public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getDouble(p0,p1);
+}
+public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1,java.lang.Double p2){
+return MapUtils.getDouble(p0,p1,p2);
 }
 public static <K> java.lang.Double getDouble(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getDouble(p0,p1);
@@ -258,11 +258,32 @@ return BloomFilter.create(p0,p1,p2);
 public static double factorial(int p0){
 return DoubleMath.factorial(p0);
 }
-public static boolean isMathematicalInteger(double p0){
-return DoubleMath.isMathematicalInteger(p0);
+public static double mean(double... p0){
+return DoubleMath.mean(p0);
 }
-public static java.math.BigInteger roundToBigInteger(double p0,java.math.RoundingMode p1){
-return DoubleMath.roundToBigInteger(p0,p1);
+public static double mean(int... p0){
+return DoubleMath.mean(p0);
+}
+public static double mean(long... p0){
+return DoubleMath.mean(p0);
+}
+public static double mean(java.lang.Iterable<? extends java.lang.Number> p0){
+return DoubleMath.mean(p0);
+}
+public static double mean(java.util.Iterator<? extends java.lang.Number> p0){
+return DoubleMath.mean(p0);
+}
+public static int roundToInt(double p0,java.math.RoundingMode p1){
+return DoubleMath.roundToInt(p0,p1);
+}
+public static int fuzzyCompare(double p0,double p1,double p2){
+return DoubleMath.fuzzyCompare(p0,p1,p2);
+}
+public static boolean fuzzyEquals(double p0,double p1,double p2){
+return DoubleMath.fuzzyEquals(p0,p1,p2);
+}
+public static long roundToLong(double p0,java.math.RoundingMode p1){
+return DoubleMath.roundToLong(p0,p1);
 }
 public static double log2(double p0){
 return DoubleMath.log2(p0);
@@ -273,32 +294,11 @@ return DoubleMath.log2(p0,p1);
 public static boolean isPowerOfTwo(double p0){
 return DoubleMath.isPowerOfTwo(p0);
 }
-public static long roundToLong(double p0,java.math.RoundingMode p1){
-return DoubleMath.roundToLong(p0,p1);
+public static java.math.BigInteger roundToBigInteger(double p0,java.math.RoundingMode p1){
+return DoubleMath.roundToBigInteger(p0,p1);
 }
-public static boolean fuzzyEquals(double p0,double p1,double p2){
-return DoubleMath.fuzzyEquals(p0,p1,p2);
-}
-public static int fuzzyCompare(double p0,double p1,double p2){
-return DoubleMath.fuzzyCompare(p0,p1,p2);
-}
-public static double mean(java.lang.Iterable<? extends java.lang.Number> p0){
-return DoubleMath.mean(p0);
-}
-public static double mean(java.util.Iterator<? extends java.lang.Number> p0){
-return DoubleMath.mean(p0);
-}
-public static double mean(double... p0){
-return DoubleMath.mean(p0);
-}
-public static double mean(int... p0){
-return DoubleMath.mean(p0);
-}
-public static double mean(long... p0){
-return DoubleMath.mean(p0);
-}
-public static int roundToInt(double p0,java.math.RoundingMode p1){
-return DoubleMath.roundToInt(p0,p1);
+public static boolean isMathematicalInteger(double p0){
+return DoubleMath.isMathematicalInteger(p0);
 }
 public static double min(double... p0){
 return Doubles.min(p0);
@@ -330,23 +330,23 @@ return RateLimiter.create(p0,p1,p2);
 public static double swapDouble(double p0){
 return EndianUtils.swapDouble(p0);
 }
-public static double readSwappedDouble(byte[] p0,int p1){
-return EndianUtils.readSwappedDouble(p0,p1);
-}
 public static double readSwappedDouble(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedDouble(p0);
 }
-public static void writeSwappedDouble(java.io.OutputStream p0,double p1) throws java.io.IOException{
- EndianUtils.writeSwappedDouble(p0,p1);
+public static double readSwappedDouble(byte[] p0,int p1){
+return EndianUtils.readSwappedDouble(p0,p1);
 }
 public static void writeSwappedDouble(byte[] p0,int p1,double p2){
  EndianUtils.writeSwappedDouble(p0,p1,p2);
 }
-public static double getDoubleValue(java.util.Map p0,java.lang.Object p1,double p2){
-return MapUtils.getDoubleValue(p0,p1,p2);
+public static void writeSwappedDouble(java.io.OutputStream p0,double p1) throws java.io.IOException{
+ EndianUtils.writeSwappedDouble(p0,p1);
 }
 public static double getDoubleValue(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getDoubleValue(p0,p1);
+}
+public static double getDoubleValue(java.util.Map p0,java.lang.Object p1,double p2){
+return MapUtils.getDoubleValue(p0,p1,p2);
 }
 public static <K> double getDoubleValue(java.util.Map<? super K, ?> p0,K p1){
 return MapUtils.getDoubleValue(p0,p1);
@@ -426,17 +426,17 @@ public static void exclusiveBetween(double p0,double p1,double p2){
 public static void isTrue(boolean p0,java.lang.String p1,double p2){
  Validate.isTrue(p0,p1,p2);
 }
-public static void inclusiveBetween(double p0,double p1,double p2,java.lang.String p3){
- Validate.inclusiveBetween(p0,p1,p2,p3);
-}
 public static void inclusiveBetween(double p0,double p1,double p2){
  Validate.inclusiveBetween(p0,p1,p2);
 }
-public static double computeQuantizationError(java.lang.Iterable<double[]> p0,java.lang.Iterable<org.apache.commons.math3.ml.neuralnet.Neuron> p1,org.apache.commons.math3.ml.distance.DistanceMeasure p2){
-return MapUtils.computeQuantizationError(p0,p1,p2);
+public static void inclusiveBetween(double p0,double p1,double p2,java.lang.String p3){
+ Validate.inclusiveBetween(p0,p1,p2,p3);
 }
 public static double computeTopographicError(java.lang.Iterable<double[]> p0,org.apache.commons.math3.ml.neuralnet.Network p1,org.apache.commons.math3.ml.distance.DistanceMeasure p2){
 return MapUtils.computeTopographicError(p0,p1,p2);
+}
+public static double computeQuantizationError(java.lang.Iterable<double[]> p0,java.lang.Iterable<org.apache.commons.math3.ml.neuralnet.Neuron> p1,org.apache.commons.math3.ml.distance.DistanceMeasure p2){
+return MapUtils.computeQuantizationError(p0,p1,p2);
 }
 public static org.apache.commons.math3.ml.neuralnet.sofm.NeighbourhoodSizeFunction exponentialDecay(double p0,double p1,long p2){
 return NeighbourhoodSizeFunctionFactory.exponentialDecay(p0,p1,p2);
@@ -456,14 +456,14 @@ return FeatureInitializerFactory.uniform(p0,p1);
 public static double[] sample(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,int p3) throws org.apache.commons.math3.exception.NumberIsTooLargeException,org.apache.commons.math3.exception.NotStrictlyPositiveException{
 return FunctionUtils.sample(p0,p1,p2,p3);
 }
-public static org.apache.commons.math3.analysis.MultivariateFunction collector(org.apache.commons.math3.analysis.BivariateFunction p0,double p1){
-return FunctionUtils.collector(p0,p1);
+public static org.apache.commons.math3.analysis.UnivariateFunction fix2ndArgument(org.apache.commons.math3.analysis.BivariateFunction p0,double p1){
+return FunctionUtils.fix2ndArgument(p0,p1);
 }
 public static org.apache.commons.math3.analysis.MultivariateFunction collector(org.apache.commons.math3.analysis.BivariateFunction p0,org.apache.commons.math3.analysis.UnivariateFunction p1,double p2){
 return FunctionUtils.collector(p0,p1,p2);
 }
-public static org.apache.commons.math3.analysis.UnivariateFunction fix2ndArgument(org.apache.commons.math3.analysis.BivariateFunction p0,double p1){
-return FunctionUtils.fix2ndArgument(p0,p1);
+public static org.apache.commons.math3.analysis.MultivariateFunction collector(org.apache.commons.math3.analysis.BivariateFunction p0,double p1){
+return FunctionUtils.collector(p0,p1);
 }
 public static org.apache.commons.math3.analysis.UnivariateFunction fix1stArgument(org.apache.commons.math3.analysis.BivariateFunction p0,double p1){
 return FunctionUtils.fix1stArgument(p0,p1);
@@ -486,32 +486,8 @@ return PolynomialFunctionNewtonForm.evaluate(p0,p1,p2);
 public static double[] shift(double[] p0,double p1){
 return PolynomialsUtils.shift(p0,p1);
 }
-public static void verifyInterval(double p0,double p1) throws org.apache.commons.math3.exception.NumberIsTooLargeException{
- UnivariateSolverUtils.verifyInterval(p0,p1);
-}
-public static double forceSide(int p0,org.apache.commons.math3.analysis.UnivariateFunction p1,org.apache.commons.math3.analysis.solvers.BracketedUnivariateSolver<org.apache.commons.math3.analysis.UnivariateFunction> p2,double p3,double p4,double p5,org.apache.commons.math3.analysis.solvers.AllowedSolution p6) throws org.apache.commons.math3.exception.NoBracketingException{
-return UnivariateSolverUtils.forceSide(p0,p1,p2,p3,p4,p5,p6);
-}
-public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3,int p4) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.NoBracketingException{
-return UnivariateSolverUtils.bracket(p0,p1,p2,p3,p4);
-}
-public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3,double p4,double p5,int p6) throws org.apache.commons.math3.exception.NoBracketingException{
-return UnivariateSolverUtils.bracket(p0,p1,p2,p3,p4,p5,p6);
-}
-public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.NoBracketingException{
-return UnivariateSolverUtils.bracket(p0,p1,p2,p3);
-}
 public static boolean isSequence(double p0,double p1,double p2){
 return UnivariateSolverUtils.isSequence(p0,p1,p2);
-}
-public static boolean isBracketing(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException{
-return UnivariateSolverUtils.isBracketing(p0,p1,p2);
-}
-public static void verifySequence(double p0,double p1,double p2) throws org.apache.commons.math3.exception.NumberIsTooLargeException{
- UnivariateSolverUtils.verifySequence(p0,p1,p2);
-}
-public static void verifyBracketing(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoBracketingException{
- UnivariateSolverUtils.verifyBracketing(p0,p1,p2);
 }
 public static double solve(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoBracketingException{
 return UnivariateSolverUtils.solve(p0,p1,p2);
@@ -519,65 +495,131 @@ return UnivariateSolverUtils.solve(p0,p1,p2);
 public static double solve(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoBracketingException{
 return UnivariateSolverUtils.solve(p0,p1,p2,p3);
 }
+public static void verifySequence(double p0,double p1,double p2) throws org.apache.commons.math3.exception.NumberIsTooLargeException{
+ UnivariateSolverUtils.verifySequence(p0,p1,p2);
+}
+public static void verifyBracketing(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoBracketingException{
+ UnivariateSolverUtils.verifyBracketing(p0,p1,p2);
+}
+public static boolean isBracketing(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException{
+return UnivariateSolverUtils.isBracketing(p0,p1,p2);
+}
 public static double midpoint(double p0,double p1){
 return UnivariateSolverUtils.midpoint(p0,p1);
 }
-public static org.apache.commons.math3.stat.interval.ConfidenceInterval getAgrestiCoullInterval(int p0,int p1,double p2){
-return IntervalUtils.getAgrestiCoullInterval(p0,p1,p2);
+public static double forceSide(int p0,org.apache.commons.math3.analysis.UnivariateFunction p1,org.apache.commons.math3.analysis.solvers.BracketedUnivariateSolver<org.apache.commons.math3.analysis.UnivariateFunction> p2,double p3,double p4,double p5,org.apache.commons.math3.analysis.solvers.AllowedSolution p6) throws org.apache.commons.math3.exception.NoBracketingException{
+return UnivariateSolverUtils.forceSide(p0,p1,p2,p3,p4,p5,p6);
 }
-public static org.apache.commons.math3.stat.interval.ConfidenceInterval getNormalApproximationInterval(int p0,int p1,double p2){
-return IntervalUtils.getNormalApproximationInterval(p0,p1,p2);
+public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3,double p4,double p5,int p6) throws org.apache.commons.math3.exception.NoBracketingException{
+return UnivariateSolverUtils.bracket(p0,p1,p2,p3,p4,p5,p6);
+}
+public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.NoBracketingException{
+return UnivariateSolverUtils.bracket(p0,p1,p2,p3);
+}
+public static double[] bracket(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2,double p3,int p4) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.NoBracketingException{
+return UnivariateSolverUtils.bracket(p0,p1,p2,p3,p4);
+}
+public static void verifyInterval(double p0,double p1) throws org.apache.commons.math3.exception.NumberIsTooLargeException{
+ UnivariateSolverUtils.verifyInterval(p0,p1);
 }
 public static org.apache.commons.math3.stat.interval.ConfidenceInterval getWilsonScoreInterval(int p0,int p1,double p2){
 return IntervalUtils.getWilsonScoreInterval(p0,p1,p2);
 }
+public static org.apache.commons.math3.stat.interval.ConfidenceInterval getNormalApproximationInterval(int p0,int p1,double p2){
+return IntervalUtils.getNormalApproximationInterval(p0,p1,p2);
+}
+public static org.apache.commons.math3.stat.interval.ConfidenceInterval getAgrestiCoullInterval(int p0,int p1,double p2){
+return IntervalUtils.getAgrestiCoullInterval(p0,p1,p2);
+}
 public static org.apache.commons.math3.stat.interval.ConfidenceInterval getClopperPearsonInterval(int p0,int p1,double p2){
 return IntervalUtils.getClopperPearsonInterval(p0,p1,p2);
 }
-public static double kolmogorovSmirnovStatistic(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovStatistic(p0,p1);
+public static boolean oneWayAnovaTest(java.util.Collection<double[]> p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.ConvergenceException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.oneWayAnovaTest(p0,p1);
 }
-public static double kolmogorovSmirnovStatistic(double[] p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovStatistic(p0,p1);
+public static double pairedTTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.pairedTTest(p0,p1);
 }
-public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+public static boolean pairedTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.pairedTTest(p0,p1,p2);
 }
-public static boolean kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,double p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+public static double gTestIntrinsic(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTestIntrinsic(p0,p1);
 }
-public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1);
+public static double chiSquareTest(long[][] p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0);
 }
-public static double kolmogorovSmirnovTest(double[] p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+public static boolean chiSquareTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0,p1,p2);
 }
-public static double kolmogorovSmirnovTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1);
+public static double chiSquareTest(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0,p1);
 }
-public static boolean homoscedasticTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.homoscedasticTTest(p0,p1,p2);
+public static boolean chiSquareTest(long[][] p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0,p1);
+}
+public static boolean gTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTest(p0,p1,p2);
+}
+public static double gTest(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTest(p0,p1);
+}
+public static double exactP(double p0,int p1,int p2,boolean p3){
+return TestUtils.exactP(p0,p1,p2,p3);
+}
+public static double tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1);
+}
+public static double tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1);
+}
+public static boolean tTest(double p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static boolean tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static boolean tTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static double tTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1);
+}
+public static double tTest(double p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1);
+}
+public static boolean tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static double monteCarloP(double p0,int p1,int p2,boolean p3,int p4){
+return TestUtils.monteCarloP(p0,p1,p2,p3,p4);
+}
+public static double chiSquare(long[][] p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.DimensionMismatchException{
+return TestUtils.chiSquare(p0);
+}
+public static double chiSquare(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException{
+return TestUtils.chiSquare(p0,p1);
+}
+public static double approximateP(double p0,int p1,int p2){
+return TestUtils.approximateP(p0,p1,p2);
+}
+public static double homoscedasticT(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException{
+return TestUtils.homoscedasticT(p0,p1);
+}
+public static double homoscedasticT(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException{
+return TestUtils.homoscedasticT(p0,p1);
+}
+public static double pairedT(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException{
+return TestUtils.pairedT(p0,p1);
 }
 public static double homoscedasticTTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.homoscedasticTTest(p0,p1);
 }
+public static boolean homoscedasticTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.homoscedasticTTest(p0,p1,p2);
+}
 public static double homoscedasticTTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.homoscedasticTTest(p0,p1);
-}
-public static double oneWayAnovaFValue(java.util.Collection<double[]> p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException{
-return TestUtils.oneWayAnovaFValue(p0);
-}
-public static double gDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException{
-return TestUtils.gDataSetsComparison(p0,p1);
-}
-public static double rootLogLikelihoodRatio(long p0,long p1,long p2,long p3) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException{
-return TestUtils.rootLogLikelihoodRatio(p0,p1,p2,p3);
-}
-public static boolean gTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTestDataSetsComparison(p0,p1,p2);
-}
-public static double gTestDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTestDataSetsComparison(p0,p1);
 }
 public static double chiSquareDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException{
 return TestUtils.chiSquareDataSetsComparison(p0,p1);
@@ -588,92 +630,50 @@ return TestUtils.chiSquareTestDataSetsComparison(p0,p1,p2);
 public static double chiSquareTestDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.chiSquareTestDataSetsComparison(p0,p1);
 }
+public static double oneWayAnovaFValue(java.util.Collection<double[]> p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException{
+return TestUtils.oneWayAnovaFValue(p0);
+}
+public static double rootLogLikelihoodRatio(long p0,long p1,long p2,long p3) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException{
+return TestUtils.rootLogLikelihoodRatio(p0,p1,p2,p3);
+}
+public static boolean gTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTestDataSetsComparison(p0,p1,p2);
+}
+public static double gTestDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTestDataSetsComparison(p0,p1);
+}
+public static double kolmogorovSmirnovTest(double[] p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+}
+public static double kolmogorovSmirnovTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1);
+}
+public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+}
+public static boolean kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,double p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+}
+public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1);
+}
+public static double gDataSetsComparison(long[] p0,long[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException{
+return TestUtils.gDataSetsComparison(p0,p1);
+}
 public static double oneWayAnovaPValue(java.util.Collection<double[]> p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.ConvergenceException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.oneWayAnovaPValue(p0);
 }
-public static double chiSquareTest(long[][] p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0);
+public static double kolmogorovSmirnovStatistic(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovStatistic(p0,p1);
 }
-public static double chiSquareTest(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0,p1);
-}
-public static boolean chiSquareTest(long[][] p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0,p1);
-}
-public static boolean chiSquareTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0,p1,p2);
-}
-public static double pairedT(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException{
-return TestUtils.pairedT(p0,p1);
-}
-public static boolean tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static double tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1);
-}
-public static double tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1);
-}
-public static boolean tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static boolean tTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static boolean tTest(double p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static double tTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1);
-}
-public static double tTest(double p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1);
-}
-public static boolean oneWayAnovaTest(java.util.Collection<double[]> p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.ConvergenceException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.oneWayAnovaTest(p0,p1);
-}
-public static boolean pairedTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.pairedTTest(p0,p1,p2);
-}
-public static double pairedTTest(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.pairedTTest(p0,p1);
-}
-public static double gTest(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTest(p0,p1);
-}
-public static boolean gTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTest(p0,p1,p2);
-}
-public static double gTestIntrinsic(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTestIntrinsic(p0,p1);
-}
-public static double homoscedasticT(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException{
-return TestUtils.homoscedasticT(p0,p1);
-}
-public static double homoscedasticT(double[] p0,double[] p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException{
-return TestUtils.homoscedasticT(p0,p1);
-}
-public static double exactP(double p0,int p1,int p2,boolean p3){
-return TestUtils.exactP(p0,p1,p2,p3);
-}
-public static double approximateP(double p0,int p1,int p2){
-return TestUtils.approximateP(p0,p1,p2);
-}
-public static double monteCarloP(double p0,int p1,int p2,boolean p3,int p4){
-return TestUtils.monteCarloP(p0,p1,p2,p3,p4);
-}
-public static double chiSquare(double[] p0,long[] p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException{
-return TestUtils.chiSquare(p0,p1);
-}
-public static double chiSquare(long[][] p0) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.DimensionMismatchException{
-return TestUtils.chiSquare(p0);
-}
-public static double min(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.min(p0,p1,p2);
+public static double kolmogorovSmirnovStatistic(double[] p0,double[] p1) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovStatistic(p0,p1);
 }
 public static double min(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.min(p0);
+}
+public static double min(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.min(p0,p1,p2);
 }
 public static double max(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.max(p0);
@@ -687,11 +687,11 @@ return StatUtils.sum(p0);
 public static double sum(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.sum(p0,p1,p2);
 }
-public static double mean(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.mean(p0);
-}
 public static double mean(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.mean(p0,p1,p2);
+}
+public static double mean(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.mean(p0);
 }
 public static double product(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.product(p0,p1,p2);
@@ -699,41 +699,11 @@ return StatUtils.product(p0,p1,p2);
 public static double product(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.product(p0);
 }
-public static double varianceDifference(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException{
-return StatUtils.varianceDifference(p0,p1,p2);
+public static double sumSq(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.sumSq(p0);
 }
-public static double populationVariance(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.populationVariance(p0,p1);
-}
-public static double populationVariance(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.populationVariance(p0);
-}
-public static double populationVariance(double[] p0,double p1,int p2,int p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.populationVariance(p0,p1,p2,p3);
-}
-public static double populationVariance(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.populationVariance(p0,p1,p2);
-}
-public static double meanDifference(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NoDataException{
-return StatUtils.meanDifference(p0,p1);
-}
-public static double variance(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.variance(p0);
-}
-public static double variance(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.variance(p0,p1);
-}
-public static double variance(double[] p0,double p1,int p2,int p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.variance(p0,p1,p2,p3);
-}
-public static double variance(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.variance(p0,p1,p2);
-}
-public static double percentile(double[] p0,int p1,int p2,double p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.percentile(p0,p1,p2,p3);
-}
-public static double percentile(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.percentile(p0,p1);
+public static double sumSq(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.sumSq(p0,p1,p2);
 }
 public static double geometricMean(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.geometricMean(p0);
@@ -741,20 +711,50 @@ return StatUtils.geometricMean(p0);
 public static double geometricMean(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.geometricMean(p0,p1,p2);
 }
+public static double percentile(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.percentile(p0,p1);
+}
+public static double percentile(double[] p0,int p1,int p2,double p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.percentile(p0,p1,p2,p3);
+}
+public static double sumDifference(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NoDataException{
+return StatUtils.sumDifference(p0,p1);
+}
 public static double sumLog(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.sumLog(p0,p1,p2);
 }
 public static double sumLog(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return StatUtils.sumLog(p0);
 }
-public static double sumDifference(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NoDataException{
-return StatUtils.sumDifference(p0,p1);
+public static double meanDifference(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NoDataException{
+return StatUtils.meanDifference(p0,p1);
 }
-public static double sumSq(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.sumSq(p0,p1,p2);
+public static double variance(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.variance(p0,p1,p2);
 }
-public static double sumSq(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return StatUtils.sumSq(p0);
+public static double variance(double[] p0,double p1,int p2,int p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.variance(p0,p1,p2,p3);
+}
+public static double variance(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.variance(p0);
+}
+public static double variance(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.variance(p0,p1);
+}
+public static double varianceDifference(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException{
+return StatUtils.varianceDifference(p0,p1,p2);
+}
+public static double populationVariance(double[] p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.populationVariance(p0);
+}
+public static double populationVariance(double[] p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.populationVariance(p0,p1);
+}
+public static double populationVariance(double[] p0,double p1,int p2,int p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.populationVariance(p0,p1,p2,p3);
+}
+public static double populationVariance(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return StatUtils.populationVariance(p0,p1,p2);
 }
 public static PSquareMarkers newMarkers(java.util.List<java.lang.Double> p0,double p1){
 return PSquarePercentile.newMarkers(p0,p1);
@@ -786,20 +786,20 @@ return Quaternion.dotProduct(p0,p1);
 public static double regularizedBeta(double p0,double p1,double p2,double p3){
 return Beta.regularizedBeta(p0,p1,p2,p3);
 }
-public static double regularizedBeta(double p0,double p1,double p2,double p3,int p4){
-return Beta.regularizedBeta(p0,p1,p2,p3,p4);
+public static double regularizedBeta(double p0,double p1,double p2){
+return Beta.regularizedBeta(p0,p1,p2);
 }
 public static double regularizedBeta(double p0,double p1,double p2,int p3){
 return Beta.regularizedBeta(p0,p1,p2,p3);
 }
-public static double regularizedBeta(double p0,double p1,double p2){
-return Beta.regularizedBeta(p0,p1,p2);
-}
-public static double logBeta(double p0,double p1,double p2,int p3){
-return Beta.logBeta(p0,p1,p2,p3);
+public static double regularizedBeta(double p0,double p1,double p2,double p3,int p4){
+return Beta.regularizedBeta(p0,p1,p2,p3,p4);
 }
 public static double logBeta(double p0,double p1){
 return Beta.logBeta(p0,p1);
+}
+public static double logBeta(double p0,double p1,double p2,int p3){
+return Beta.logBeta(p0,p1,p2,p3);
 }
 public static double erf(double p0,double p1){
 return Erf.erf(p0,p1);
@@ -807,14 +807,14 @@ return Erf.erf(p0,p1);
 public static double erf(double p0){
 return Erf.erf(p0);
 }
+public static double erfcInv(double p0){
+return Erf.erfcInv(p0);
+}
 public static double erfc(double p0){
 return Erf.erfc(p0);
 }
 public static double erfInv(double p0){
 return Erf.erfInv(p0);
-}
-public static double erfcInv(double p0){
-return Erf.erfcInv(p0);
 }
 public static double value(double p0,double p1) throws org.apache.commons.math3.exception.MathIllegalArgumentException,org.apache.commons.math3.exception.ConvergenceException{
 return BesselJ.value(p0,p1);
@@ -822,29 +822,8 @@ return BesselJ.value(p0,p1);
 public static BesselJResult rjBesl(double p0,double p1,int p2){
 return BesselJ.rjBesl(p0,p1,p2);
 }
-public static double regularizedGammaQ(double p0,double p1,double p2,int p3){
-return Gamma.regularizedGammaQ(p0,p1,p2,p3);
-}
-public static double regularizedGammaQ(double p0,double p1){
-return Gamma.regularizedGammaQ(p0,p1);
-}
-public static double regularizedGammaP(double p0,double p1){
-return Gamma.regularizedGammaP(p0,p1);
-}
-public static double regularizedGammaP(double p0,double p1,double p2,int p3){
-return Gamma.regularizedGammaP(p0,p1,p2,p3);
-}
-public static double logGamma1p(double p0) throws org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.NumberIsTooLargeException{
-return Gamma.logGamma1p(p0);
-}
-public static double trigamma(double p0){
-return Gamma.trigamma(p0);
-}
-public static double digamma(double p0){
-return Gamma.digamma(p0);
-}
-public static double invGamma1pm1(double p0){
-return Gamma.invGamma1pm1(p0);
+public static double gamma(double p0){
+return Gamma.gamma(p0);
 }
 public static double logGamma(double p0){
 return Gamma.logGamma(p0);
@@ -852,8 +831,29 @@ return Gamma.logGamma(p0);
 public static double lanczos(double p0){
 return Gamma.lanczos(p0);
 }
-public static double gamma(double p0){
-return Gamma.gamma(p0);
+public static double regularizedGammaP(double p0,double p1){
+return Gamma.regularizedGammaP(p0,p1);
+}
+public static double regularizedGammaP(double p0,double p1,double p2,int p3){
+return Gamma.regularizedGammaP(p0,p1,p2,p3);
+}
+public static double regularizedGammaQ(double p0,double p1,double p2,int p3){
+return Gamma.regularizedGammaQ(p0,p1,p2,p3);
+}
+public static double regularizedGammaQ(double p0,double p1){
+return Gamma.regularizedGammaQ(p0,p1);
+}
+public static double logGamma1p(double p0) throws org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.NumberIsTooLargeException{
+return Gamma.logGamma1p(p0);
+}
+public static double invGamma1pm1(double p0){
+return Gamma.invGamma1pm1(p0);
+}
+public static double digamma(double p0){
+return Gamma.digamma(p0);
+}
+public static double trigamma(double p0){
+return Gamma.trigamma(p0);
 }
 public static double distance(org.apache.commons.math3.geometry.spherical.twod.S2Point p0,org.apache.commons.math3.geometry.spherical.twod.S2Point p1){
 return S2Point.distance(p0,p1);
@@ -864,8 +864,8 @@ return S1Point.distance(p0,p1);
 public static double distance(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1){
 return Vector3D.distance(p0,p1);
 }
-public static double distanceSq(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1){
-return Vector3D.distanceSq(p0,p1);
+public static double angle(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1) throws org.apache.commons.math3.exception.MathArithmeticException{
+return Vector3D.angle(p0,p1);
 }
 public static double dotProduct(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1){
 return Vector3D.dotProduct(p0,p1);
@@ -876,8 +876,8 @@ return Vector3D.distanceInf(p0,p1);
 public static double distance1(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1){
 return Vector3D.distance1(p0,p1);
 }
-public static double angle(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1) throws org.apache.commons.math3.exception.MathArithmeticException{
-return Vector3D.angle(p0,p1);
+public static double distanceSq(org.apache.commons.math3.geometry.euclidean.threed.Vector3D p0,org.apache.commons.math3.geometry.euclidean.threed.Vector3D p1){
+return Vector3D.distanceSq(p0,p1);
 }
 public static double distance(org.apache.commons.math3.geometry.euclidean.threed.Rotation p0,org.apache.commons.math3.geometry.euclidean.threed.Rotation p1){
 return Rotation.distance(p0,p1);
@@ -888,23 +888,23 @@ return Line.getTransform(p0,p1,p2,p3,p4,p5);
 public static double distance(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1){
 return Vector2D.distance(p0,p1);
 }
-public static double distanceSq(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1){
-return Vector2D.distanceSq(p0,p1);
+public static double angle(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1) throws org.apache.commons.math3.exception.MathArithmeticException{
+return Vector2D.angle(p0,p1);
 }
 public static double distanceInf(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1){
 return Vector2D.distanceInf(p0,p1);
 }
-public static double angle(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1) throws org.apache.commons.math3.exception.MathArithmeticException{
-return Vector2D.angle(p0,p1);
+public static double distanceSq(org.apache.commons.math3.geometry.euclidean.twod.Vector2D p0,org.apache.commons.math3.geometry.euclidean.twod.Vector2D p1){
+return Vector2D.distanceSq(p0,p1);
 }
 public static double distance(org.apache.commons.math3.geometry.euclidean.oned.Vector1D p0,org.apache.commons.math3.geometry.euclidean.oned.Vector1D p1){
 return Vector1D.distance(p0,p1);
 }
-public static double distanceSq(org.apache.commons.math3.geometry.euclidean.oned.Vector1D p0,org.apache.commons.math3.geometry.euclidean.oned.Vector1D p1){
-return Vector1D.distanceSq(p0,p1);
-}
 public static double distanceInf(org.apache.commons.math3.geometry.euclidean.oned.Vector1D p0,org.apache.commons.math3.geometry.euclidean.oned.Vector1D p1){
 return Vector1D.distanceInf(p0,p1);
+}
+public static double distanceSq(org.apache.commons.math3.geometry.euclidean.oned.Vector1D p0,org.apache.commons.math3.geometry.euclidean.oned.Vector1D p1){
+return Vector1D.distanceSq(p0,p1);
 }
 public static java.lang.StringBuffer formatDouble(double p0,java.text.NumberFormat p1,java.lang.StringBuffer p2,java.text.FieldPosition p3){
 return CompositeFormat.formatDouble(p0,p1,p2,p3);
@@ -918,14 +918,14 @@ public static void checkFinite(double p0) throws org.apache.commons.math3.except
 public static double normalizeAngle(double p0,double p1){
 return MathUtils.normalizeAngle(p0,p1);
 }
+public static double factorialLog(int p0) throws org.apache.commons.math3.exception.NotPositiveException{
+return ArithmeticUtils.factorialLog(p0);
+}
 public static double binomialCoefficientDouble(int p0,int p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NumberIsTooLargeException,org.apache.commons.math3.exception.MathArithmeticException{
 return ArithmeticUtils.binomialCoefficientDouble(p0,p1);
 }
 public static double binomialCoefficientLog(int p0,int p1) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NumberIsTooLargeException,org.apache.commons.math3.exception.MathArithmeticException{
 return ArithmeticUtils.binomialCoefficientLog(p0,p1);
-}
-public static double factorialLog(int p0) throws org.apache.commons.math3.exception.NotPositiveException{
-return ArithmeticUtils.factorialLog(p0);
 }
 public static double factorialDouble(int p0) throws org.apache.commons.math3.exception.NotPositiveException{
 return ArithmeticUtils.factorialDouble(p0);
@@ -939,17 +939,11 @@ return MathArrays.distance(p0,p1);
 public static double distance(int[] p0,int[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException{
 return MathArrays.distance(p0,p1);
 }
-public static double linearCombination(double p0,double p1,double p2,double p3,double p4,double p5,double p6,double p7){
-return MathArrays.linearCombination(p0,p1,p2,p3,p4,p5,p6,p7);
+public static double cosAngle(double[] p0,double[] p1){
+return MathArrays.cosAngle(p0,p1);
 }
-public static double linearCombination(double p0,double p1,double p2,double p3){
-return MathArrays.linearCombination(p0,p1,p2,p3);
-}
-public static double linearCombination(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException{
-return MathArrays.linearCombination(p0,p1);
-}
-public static double linearCombination(double p0,double p1,double p2,double p3,double p4,double p5){
-return MathArrays.linearCombination(p0,p1,p2,p3,p4,p5);
+public static double safeNorm(double[] p0){
+return MathArrays.safeNorm(p0);
 }
 public static void scaleInPlace(double p0,double[] p1){
  MathArrays.scaleInPlace(p0,p1);
@@ -963,11 +957,17 @@ return MathArrays.distanceInf(p0,p1);
 public static double distance1(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException{
 return MathArrays.distance1(p0,p1);
 }
-public static double safeNorm(double[] p0){
-return MathArrays.safeNorm(p0);
+public static double linearCombination(double[] p0,double[] p1) throws org.apache.commons.math3.exception.DimensionMismatchException{
+return MathArrays.linearCombination(p0,p1);
 }
-public static double cosAngle(double[] p0,double[] p1){
-return MathArrays.cosAngle(p0,p1);
+public static double linearCombination(double p0,double p1,double p2,double p3,double p4,double p5){
+return MathArrays.linearCombination(p0,p1,p2,p3,p4,p5);
+}
+public static double linearCombination(double p0,double p1,double p2,double p3,double p4,double p5,double p6,double p7){
+return MathArrays.linearCombination(p0,p1,p2,p3,p4,p5,p6,p7);
+}
+public static double linearCombination(double p0,double p1,double p2,double p3){
+return MathArrays.linearCombination(p0,p1,p2,p3);
 }
 public static double abs(double p0){
 return FastMath.abs(p0);
@@ -1053,10 +1053,10 @@ return FastMath.hypot(p0,p1);
 public static double log1p(double p0){
 return FastMath.log1p(p0);
 }
-public static float nextAfter(float p0,double p1){
+public static double nextAfter(double p0,double p1){
 return FastMath.nextAfter(p0,p1);
 }
-public static double nextAfter(double p0,double p1){
+public static float nextAfter(float p0,double p1){
 return FastMath.nextAfter(p0,p1);
 }
 public static double nextDown(double p0){
@@ -1089,14 +1089,14 @@ return FastMath.toRadians(p0);
 public static double ulp(double p0){
 return FastMath.ulp(p0);
 }
+public static double acosh(double p0){
+return FastMath.acosh(p0);
+}
 public static double asinh(double p0){
 return FastMath.asinh(p0);
 }
 public static double atanh(double p0){
 return FastMath.atanh(p0);
-}
-public static double acosh(double p0){
-return FastMath.acosh(p0);
 }
 public static int compareTo(double p0,double p1,double p2){
 return Precision.compareTo(p0,p1,p2);
@@ -1131,11 +1131,11 @@ return TransformUtils.scaleArray(p0,p1);
 public static double[] scaleArray(double[] p0,double p1){
 return TransformUtils.scaleArray(p0,p1);
 }
-public static double getDefaultDouble(){
-return ConvertUtils.getDefaultDouble();
-}
 public static void setDefaultDouble(double p0){
  ConvertUtils.setDefaultDouble(p0);
+}
+public static double getDefaultDouble(){
+return ConvertUtils.getDefaultDouble();
 }
 public static org.apache.commons.collections.primitives.DoubleList singletonDoubleList(double p0){
 return DoubleCollections.singletonDoubleList(p0);
@@ -1218,14 +1218,11 @@ return Double2ShortFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.doubles.Double2ShortSortedMap singleton(double p0,short p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
 return Double2ShortSortedMaps.singleton(p0,p1,p2);
 }
-public static void fill(double[] p0,double p1){
- DoubleArrays.fill(p0,p1);
-}
 public static void fill(double[] p0,int p1,int p2,double p3){
  DoubleArrays.fill(p0,p1,p2,p3);
 }
-public static int binarySearch(double[] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
-return DoubleArrays.binarySearch(p0,p1,p2);
+public static void fill(double[] p0,double p1){
+ DoubleArrays.fill(p0,p1);
 }
 public static int binarySearch(double[] p0,int p1,int p2,double p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
 return DoubleArrays.binarySearch(p0,p1,p2,p3,p4);
@@ -1236,29 +1233,32 @@ return DoubleArrays.binarySearch(p0,p1);
 public static int binarySearch(double[] p0,int p1,int p2,double p3){
 return DoubleArrays.binarySearch(p0,p1,p2,p3);
 }
+public static int binarySearch(double[] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
+return DoubleArrays.binarySearch(p0,p1,p2);
+}
 public static void add(double[][] p0,long p1,double p2){
  DoubleBigArrays.add(p0,p1,p2);
 }
 public static void set(double[][] p0,long p1,double p2){
  DoubleBigArrays.set(p0,p1,p2);
 }
-public static void fill(double[][] p0,double p1){
- DoubleBigArrays.fill(p0,p1);
-}
 public static void fill(double[][] p0,long p1,long p2,double p3){
  DoubleBigArrays.fill(p0,p1,p2,p3);
 }
+public static void fill(double[][] p0,double p1){
+ DoubleBigArrays.fill(p0,p1);
+}
 public static long binarySearch(double[][] p0,long p1,long p2,double p3){
 return DoubleBigArrays.binarySearch(p0,p1,p2,p3);
+}
+public static long binarySearch(double[][] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
+return DoubleBigArrays.binarySearch(p0,p1,p2);
 }
 public static long binarySearch(double[][] p0,long p1,long p2,double p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
 return DoubleBigArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static long binarySearch(double[][] p0,double p1){
 return DoubleBigArrays.binarySearch(p0,p1);
-}
-public static long binarySearch(double[][] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
-return DoubleBigArrays.binarySearch(p0,p1,p2);
 }
 public static void mul(double[][] p0,long p1,double p2){
  DoubleBigArrays.mul(p0,p1,p2);

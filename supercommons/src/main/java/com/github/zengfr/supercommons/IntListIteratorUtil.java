@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.IntListIteratorListIterator;
 import org.apache.commons.collections.primitives.adapters.ListIteratorIntListIterator;
 import org.apache.commons.collections.primitives.IntCollections;
@@ -21,11 +21,11 @@ return ListIteratorIntListIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.IntListIterator singletonIntListIterator(int p0){
 return IntCollections.singletonIntListIterator(p0);
 }
-public static org.apache.commons.collections.primitives.IntListIterator unmodifiableIntListIterator(org.apache.commons.collections.primitives.IntListIterator p0){
-return IntCollections.unmodifiableIntListIterator(p0);
-}
 public static org.apache.commons.collections.primitives.IntListIterator getEmptyIntListIterator(){
 return IntCollections.getEmptyIntListIterator();
+}
+public static org.apache.commons.collections.primitives.IntListIterator unmodifiableIntListIterator(org.apache.commons.collections.primitives.IntListIterator p0){
+return IntCollections.unmodifiableIntListIterator(p0);
 }
 public static it.unimi.dsi.fastutil.ints.IntBigListIterator asBigListIterator(it.unimi.dsi.fastutil.ints.IntListIterator p0){
 return IntBigListIterators.asBigListIterator(p0);
@@ -39,11 +39,11 @@ return IntIterators.wrap(p0);
 public static it.unimi.dsi.fastutil.ints.IntListIterator singleton(int p0){
 return IntIterators.singleton(p0);
 }
-public static it.unimi.dsi.fastutil.ints.IntListIterator unmodifiable(it.unimi.dsi.fastutil.ints.IntListIterator p0){
-return IntIterators.unmodifiable(p0);
-}
 public static it.unimi.dsi.fastutil.ints.IntListIterator asIntIterator(java.util.ListIterator p0){
 return IntIterators.asIntIterator(p0);
+}
+public static it.unimi.dsi.fastutil.ints.IntListIterator unmodifiable(it.unimi.dsi.fastutil.ints.IntListIterator p0){
+return IntIterators.unmodifiable(p0);
 }
 public static it.unimi.dsi.fastutil.ints.IntListIterator fromTo(int p0,int p1){
 return IntIterators.fromTo(p0,p1);

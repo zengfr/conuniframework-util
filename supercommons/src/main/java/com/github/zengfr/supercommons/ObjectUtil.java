@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Defaults;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
@@ -468,11 +468,11 @@ return Iterables.getLast(p0);
 public static <T> T getLast(java.lang.Iterable<? extends T> p0,T p1){
 return Iterables.getLast(p0,p1);
 }
-public static <T> T getOnlyElement(java.lang.Iterable<T> p0){
-return Iterables.getOnlyElement(p0);
-}
 public static <T> T getOnlyElement(java.lang.Iterable<? extends T> p0,T p1){
 return Iterables.getOnlyElement(p0,p1);
+}
+public static <T> T getOnlyElement(java.lang.Iterable<T> p0){
+return Iterables.getOnlyElement(p0);
 }
 public static boolean contains(java.util.Iterator<?> p0,java.lang.Object p1){
 return Iterators.contains(p0,p1);
@@ -495,11 +495,11 @@ return Iterators.getLast(p0,p1);
 public static <T> T getNext(java.util.Iterator<? extends T> p0,T p1){
 return Iterators.getNext(p0,p1);
 }
-public static <T> T getOnlyElement(java.util.Iterator<? extends T> p0,T p1){
-return Iterators.getOnlyElement(p0,p1);
-}
 public static <T> T getOnlyElement(java.util.Iterator<T> p0){
 return Iterators.getOnlyElement(p0);
+}
+public static <T> T getOnlyElement(java.util.Iterator<? extends T> p0,T p1){
+return Iterators.getOnlyElement(p0,p1);
 }
 public static <T> T readBytes(java.io.InputStream p0,com.google.common.io.ByteProcessor<T> p1) throws java.io.IOException{
 return ByteStreams.readBytes(p0,p1);
@@ -573,11 +573,11 @@ return CollectionUtils.find(p0,p1);
 public static int cardinality(java.lang.Object p0,java.util.Collection p1){
 return CollectionUtils.cardinality(p0,p1);
 }
-public static boolean addIgnoreNull(java.util.Collection p0,java.lang.Object p1){
-return CollectionUtils.addIgnoreNull(p0,p1);
-}
 public static boolean sizeIsEmpty(java.lang.Object p0){
 return CollectionUtils.sizeIsEmpty(p0);
+}
+public static boolean addIgnoreNull(java.util.Collection p0,java.lang.Object p1){
+return CollectionUtils.addIgnoreNull(p0,p1);
 }
 public static java.lang.Number getNumber(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getNumber(p0,p1);
@@ -585,92 +585,80 @@ return MapUtils.getNumber(p0,p1);
 public static java.lang.Number getNumber(java.util.Map p0,java.lang.Object p1,java.lang.Number p2){
 return MapUtils.getNumber(p0,p1,p2);
 }
-public static java.lang.Object getObject(java.util.Map p0,java.lang.Object p1,java.lang.Object p2){
-return MapUtils.getObject(p0,p1,p2);
-}
 public static java.lang.Object getObject(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getObject(p0,p1);
 }
-public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getBoolean(p0,p1);
+public static java.lang.Object getObject(java.util.Map p0,java.lang.Object p1,java.lang.Object p2){
+return MapUtils.getObject(p0,p1,p2);
 }
 public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1,java.lang.Boolean p2){
 return MapUtils.getBoolean(p0,p1,p2);
 }
-public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
-return MapUtils.getByte(p0,p1,p2);
+public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getBoolean(p0,p1);
 }
 public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getByte(p0,p1);
 }
-public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getShort(p0,p1);
+public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
+return MapUtils.getByte(p0,p1,p2);
 }
 public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1,java.lang.Short p2){
 return MapUtils.getShort(p0,p1,p2);
 }
-public static java.lang.Long getLong(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getLong(p0,p1);
+public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getShort(p0,p1);
 }
 public static java.lang.Long getLong(java.util.Map p0,java.lang.Object p1,java.lang.Long p2){
 return MapUtils.getLong(p0,p1,p2);
 }
-public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getFloat(p0,p1);
+public static java.lang.Long getLong(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getLong(p0,p1);
 }
 public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1,java.lang.Float p2){
 return MapUtils.getFloat(p0,p1,p2);
 }
-public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1,java.lang.Double p2){
-return MapUtils.getDouble(p0,p1,p2);
+public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getFloat(p0,p1);
 }
 public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getDouble(p0,p1);
 }
-public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getInteger(p0,p1);
+public static java.lang.Double getDouble(java.util.Map p0,java.lang.Object p1,java.lang.Double p2){
+return MapUtils.getDouble(p0,p1,p2);
 }
 public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1,java.lang.Integer p2){
 return MapUtils.getInteger(p0,p1,p2);
 }
-public static java.util.Map getMap(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getMap(p0,p1);
+public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getInteger(p0,p1);
 }
 public static java.util.Map getMap(java.util.Map p0,java.lang.Object p1,java.util.Map p2){
 return MapUtils.getMap(p0,p1,p2);
 }
-public static java.lang.String getString(java.util.Map p0,java.lang.Object p1,java.lang.String p2){
-return MapUtils.getString(p0,p1,p2);
+public static java.util.Map getMap(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getMap(p0,p1);
 }
 public static java.lang.String getString(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getString(p0,p1);
 }
-public static double getDoubleValue(java.util.Map p0,java.lang.Object p1,double p2){
-return MapUtils.getDoubleValue(p0,p1,p2);
-}
-public static double getDoubleValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getDoubleValue(p0,p1);
-}
-public static float getFloatValue(java.util.Map p0,java.lang.Object p1,float p2){
-return MapUtils.getFloatValue(p0,p1,p2);
-}
-public static float getFloatValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getFloatValue(p0,p1);
-}
-public static short getShortValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getShortValue(p0,p1);
+public static java.lang.String getString(java.util.Map p0,java.lang.Object p1,java.lang.String p2){
+return MapUtils.getString(p0,p1,p2);
 }
 public static short getShortValue(java.util.Map p0,java.lang.Object p1,short p2){
 return MapUtils.getShortValue(p0,p1,p2);
 }
-public static void verbosePrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map p2){
- MapUtils.verbosePrint(p0,p1,p2);
+public static short getShortValue(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getShortValue(p0,p1);
 }
-public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getBooleanValue(p0,p1);
+public static void safeAddToMap(java.util.Map p0,java.lang.Object p1,java.lang.Object p2) throws java.lang.NullPointerException{
+ MapUtils.safeAddToMap(p0,p1,p2);
 }
-public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1,boolean p2){
-return MapUtils.getBooleanValue(p0,p1,p2);
+public static float getFloatValue(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getFloatValue(p0,p1);
+}
+public static float getFloatValue(java.util.Map p0,java.lang.Object p1,float p2){
+return MapUtils.getFloatValue(p0,p1,p2);
 }
 public static byte getByteValue(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getByteValue(p0,p1);
@@ -684,17 +672,29 @@ return MapUtils.getLongValue(p0,p1,p2);
 public static long getLongValue(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getLongValue(p0,p1);
 }
-public static int getIntValue(java.util.Map p0,java.lang.Object p1,int p2){
-return MapUtils.getIntValue(p0,p1,p2);
+public static void debugPrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map p2){
+ MapUtils.debugPrint(p0,p1,p2);
 }
 public static int getIntValue(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getIntValue(p0,p1);
 }
-public static void debugPrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map p2){
- MapUtils.debugPrint(p0,p1,p2);
+public static int getIntValue(java.util.Map p0,java.lang.Object p1,int p2){
+return MapUtils.getIntValue(p0,p1,p2);
 }
-public static void safeAddToMap(java.util.Map p0,java.lang.Object p1,java.lang.Object p2) throws java.lang.NullPointerException{
- MapUtils.safeAddToMap(p0,p1,p2);
+public static double getDoubleValue(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getDoubleValue(p0,p1);
+}
+public static double getDoubleValue(java.util.Map p0,java.lang.Object p1,double p2){
+return MapUtils.getDoubleValue(p0,p1,p2);
+}
+public static void verbosePrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map p2){
+ MapUtils.verbosePrint(p0,p1,p2);
+}
+public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1,boolean p2){
+return MapUtils.getBooleanValue(p0,p1,p2);
+}
+public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getBooleanValue(p0,p1);
 }
 public static java.util.Map decorate(java.util.Map p0,java.lang.Object p1){
 return DefaultedMap.decorate(p0,p1);
@@ -705,29 +705,29 @@ return IteratorUtils.getIterator(p0);
 public static org.apache.commons.collections.ResettableIterator singletonIterator(java.lang.Object p0){
 return IteratorUtils.singletonIterator(p0);
 }
-public static java.util.Iterator objectGraphIterator(java.lang.Object p0,org.apache.commons.collections.Transformer p1){
-return IteratorUtils.objectGraphIterator(p0,p1);
-}
-public static java.util.ListIterator singletonListIterator(java.lang.Object p0){
-return IteratorUtils.singletonListIterator(p0);
+public static org.apache.commons.collections.ResettableListIterator arrayListIterator(java.lang.Object p0,int p1,int p2){
+return IteratorUtils.arrayListIterator(p0,p1,p2);
 }
 public static org.apache.commons.collections.ResettableListIterator arrayListIterator(java.lang.Object p0,int p1){
 return IteratorUtils.arrayListIterator(p0,p1);
 }
-public static org.apache.commons.collections.ResettableListIterator arrayListIterator(java.lang.Object p0,int p1,int p2){
-return IteratorUtils.arrayListIterator(p0,p1,p2);
-}
 public static org.apache.commons.collections.ResettableListIterator arrayListIterator(java.lang.Object p0){
 return IteratorUtils.arrayListIterator(p0);
+}
+public static java.util.ListIterator singletonListIterator(java.lang.Object p0){
+return IteratorUtils.singletonListIterator(p0);
+}
+public static java.util.Iterator objectGraphIterator(java.lang.Object p0,org.apache.commons.collections.Transformer p1){
+return IteratorUtils.objectGraphIterator(p0,p1);
 }
 public static org.apache.commons.collections.ResettableIterator arrayIterator(java.lang.Object p0){
 return IteratorUtils.arrayIterator(p0);
 }
-public static org.apache.commons.collections.ResettableIterator arrayIterator(java.lang.Object p0,int p1){
-return IteratorUtils.arrayIterator(p0,p1);
-}
 public static org.apache.commons.collections.ResettableIterator arrayIterator(java.lang.Object p0,int p1,int p2){
 return IteratorUtils.arrayIterator(p0,p1,p2);
+}
+public static org.apache.commons.collections.ResettableIterator arrayIterator(java.lang.Object p0,int p1){
+return IteratorUtils.arrayIterator(p0,p1);
 }
 public static java.lang.Object min(java.lang.Object p0,java.lang.Object p1,java.util.Comparator p2){
 return ComparatorUtils.min(p0,p1,p2);
@@ -735,47 +735,47 @@ return ComparatorUtils.min(p0,p1,p2);
 public static java.lang.Object max(java.lang.Object p0,java.lang.Object p1,java.util.Comparator p2){
 return ComparatorUtils.max(p0,p1,p2);
 }
-public static org.apache.commons.collections.Factory constantFactory(java.lang.Object p0){
-return FactoryUtils.constantFactory(p0);
-}
 public static org.apache.commons.collections.Factory prototypeFactory(java.lang.Object p0){
 return FactoryUtils.prototypeFactory(p0);
+}
+public static org.apache.commons.collections.Factory constantFactory(java.lang.Object p0){
+return FactoryUtils.constantFactory(p0);
 }
 public static org.apache.commons.collections.Factory getInstance(java.lang.Object p0){
 return PrototypeFactory.getInstance(p0);
 }
-public static org.apache.commons.collections.Predicate identityPredicate(java.lang.Object p0){
-return PredicateUtils.identityPredicate(p0);
-}
 public static org.apache.commons.collections.Predicate equalPredicate(java.lang.Object p0){
 return PredicateUtils.equalPredicate(p0);
+}
+public static org.apache.commons.collections.Predicate identityPredicate(java.lang.Object p0){
+return PredicateUtils.identityPredicate(p0);
 }
 public static <T> T find(java.lang.Iterable<T> p0,org.apache.commons.collections4.Predicate<? super T> p1){
 return CollectionUtils.find(p0,p1);
 }
-public static <T,C extends org.apache.commons.collections4.Closure<? super T> > T forAllButLastDo(java.lang.Iterable<T> p0,C p1){
+public static <T,C extends org.apache.commons.collections4.Closure<? super T> > T forAllButLastDo(java.util.Iterator<T> p0,C p1){
 return CollectionUtils.forAllButLastDo(p0,p1);
 }
-public static <T,C extends org.apache.commons.collections4.Closure<? super T> > T forAllButLastDo(java.util.Iterator<T> p0,C p1){
+public static <T,C extends org.apache.commons.collections4.Closure<? super T> > T forAllButLastDo(java.lang.Iterable<T> p0,C p1){
 return CollectionUtils.forAllButLastDo(p0,p1);
 }
 public static <E> E extractSingleton(java.util.Collection<E> p0){
 return CollectionUtils.extractSingleton(p0);
 }
-public static <K,V> V getObject(java.util.Map<? super K, V> p0,K p1){
-return MapUtils.getObject(p0,p1);
-}
 public static <K,V> V getObject(java.util.Map<K, V> p0,K p1,V p2){
 return MapUtils.getObject(p0,p1,p2);
 }
-public static void verbosePrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map<?, ?> p2){
- MapUtils.verbosePrint(p0,p1,p2);
+public static <K,V> V getObject(java.util.Map<? super K, V> p0,K p1){
+return MapUtils.getObject(p0,p1);
+}
+public static <K> void safeAddToMap(java.util.Map<? super K, java.lang.Object> p0,K p1,java.lang.Object p2) throws java.lang.NullPointerException{
+ MapUtils.safeAddToMap(p0,p1,p2);
 }
 public static void debugPrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map<?, ?> p2){
  MapUtils.debugPrint(p0,p1,p2);
 }
-public static <K> void safeAddToMap(java.util.Map<? super K, java.lang.Object> p0,K p1,java.lang.Object p2) throws java.lang.NullPointerException{
- MapUtils.safeAddToMap(p0,p1,p2);
+public static void verbosePrint(java.io.PrintStream p0,java.lang.Object p1,java.util.Map<?, ?> p2){
+ MapUtils.verbosePrint(p0,p1,p2);
 }
 public static <E> boolean contains(java.util.Iterator<E> p0,java.lang.Object p1){
 return IteratorUtils.contains(p0,p1);
@@ -831,6 +831,9 @@ return ArrayUtils.isEquals(p0,p1);
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class<?> p3,java.lang.String... p4){
 return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
 }
+public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1){
+return CompareToBuilder.reflectionCompare(p0,p1);
+}
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2){
 return CompareToBuilder.reflectionCompare(p0,p1,p2);
 }
@@ -840,19 +843,16 @@ return CompareToBuilder.reflectionCompare(p0,p1,p2);
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,java.lang.String... p2){
 return CompareToBuilder.reflectionCompare(p0,p1,p2);
 }
-public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1){
-return CompareToBuilder.reflectionCompare(p0,p1);
-}
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection<java.lang.String> p2){
-return EqualsBuilder.reflectionEquals(p0,p1,p2);
-}
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class<?> p3,java.lang.String... p4){
 return EqualsBuilder.reflectionEquals(p0,p1,p2,p3,p4);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2){
+return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.lang.String... p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2){
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection<java.lang.String> p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static int reflectionHashCode(java.lang.Object p0,java.util.Collection<java.lang.String> p1){
@@ -876,11 +876,11 @@ return ReflectionToStringBuilder.toStringExclude(p0,p1);
 public static java.lang.String toStringExclude(java.lang.Object p0,java.lang.String... p1){
 return ReflectionToStringBuilder.toStringExclude(p0,p1);
 }
-public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang3.builder.ToStringStyle p1){
-return ToStringBuilder.reflectionToString(p0,p1);
-}
 public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang3.builder.ToStringStyle p1,boolean p2){
 return ToStringBuilder.reflectionToString(p0,p1,p2);
+}
+public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang3.builder.ToStringStyle p1){
+return ToStringBuilder.reflectionToString(p0,p1);
 }
 public static java.lang.String reflectionToString(java.lang.Object p0){
 return ToStringBuilder.reflectionToString(p0);
@@ -888,17 +888,17 @@ return ToStringBuilder.reflectionToString(p0);
 public static java.lang.String getSimpleName(java.lang.Object p0,java.lang.String p1){
 return ClassUtils.getSimpleName(p0,p1);
 }
-public static java.lang.String getShortClassName(java.lang.Object p0,java.lang.String p1){
-return ClassUtils.getShortClassName(p0,p1);
-}
 public static java.lang.String getPackageName(java.lang.Object p0,java.lang.String p1){
 return ClassUtils.getPackageName(p0,p1);
 }
-public static java.lang.String getPackageCanonicalName(java.lang.Object p0,java.lang.String p1){
-return ClassUtils.getPackageCanonicalName(p0,p1);
+public static java.lang.String getShortClassName(java.lang.Object p0,java.lang.String p1){
+return ClassUtils.getShortClassName(p0,p1);
 }
 public static java.lang.String getShortCanonicalName(java.lang.Object p0,java.lang.String p1){
 return ClassUtils.getShortCanonicalName(p0,p1);
+}
+public static java.lang.String getPackageCanonicalName(java.lang.Object p0,java.lang.String p1){
+return ClassUtils.getPackageCanonicalName(p0,p1);
 }
 public static <K,V> V putIfAbsent(java.util.concurrent.ConcurrentMap<K, V> p0,K p1,V p2){
 return ConcurrentUtils.putIfAbsent(p0,p1,p2);
@@ -930,14 +930,17 @@ return ObjectUtils.firstNonNull(p0);
 public static <T> T mode(T... p0){
 return ObjectUtils.mode(p0);
 }
-public static <T> T defaultIfNull(T p0,T p1){
-return ObjectUtils.defaultIfNull(p0,p1);
+public static <T> T median(java.util.Comparator<T> p0,T... p1){
+return ObjectUtils.median(p0,p1);
 }
-public static void identityToString(java.lang.StringBuilder p0,java.lang.Object p1){
- ObjectUtils.identityToString(p0,p1);
+public static <T> T CONST(T p0){
+return ObjectUtils.CONST(p0);
 }
-public static java.lang.String identityToString(java.lang.Object p0){
-return ObjectUtils.identityToString(p0);
+public static boolean notEqual(java.lang.Object p0,java.lang.Object p1){
+return ObjectUtils.notEqual(p0,p1);
+}
+public static <T> T cloneIfPossible(T p0){
+return ObjectUtils.cloneIfPossible(p0);
 }
 public static void identityToString(java.lang.StringBuffer p0,java.lang.Object p1){
  ObjectUtils.identityToString(p0,p1);
@@ -948,23 +951,14 @@ public static void identityToString(org.apache.commons.lang3.text.StrBuilder p0,
 public static void identityToString(java.lang.Appendable p0,java.lang.Object p1) throws java.io.IOException{
  ObjectUtils.identityToString(p0,p1);
 }
-public static boolean notEqual(java.lang.Object p0,java.lang.Object p1){
-return ObjectUtils.notEqual(p0,p1);
+public static java.lang.String identityToString(java.lang.Object p0){
+return ObjectUtils.identityToString(p0);
 }
-public static <T> T median(java.util.Comparator<T> p0,T... p1){
-return ObjectUtils.median(p0,p1);
+public static void identityToString(java.lang.StringBuilder p0,java.lang.Object p1){
+ ObjectUtils.identityToString(p0,p1);
 }
-public static <T> T cloneIfPossible(T p0){
-return ObjectUtils.cloneIfPossible(p0);
-}
-public static <T> T CONST(T p0){
-return ObjectUtils.CONST(p0);
-}
-public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object[] p1,java.lang.Class<?>[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeConstructor(p0,p1,p2);
-}
-public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object... p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeConstructor(p0,p1);
+public static <T> T defaultIfNull(T p0,T p1){
+return ObjectUtils.defaultIfNull(p0,p1);
 }
 public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object[] p1,java.lang.Class<?>[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
@@ -972,23 +966,35 @@ return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
 public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object... p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeExactConstructor(p0,p1);
 }
-public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1) throws java.lang.IllegalAccessException{
-return FieldUtils.readStaticField(p0,p1);
+public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object... p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeConstructor(p0,p1);
+}
+public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object[] p1,java.lang.Class<?>[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeConstructor(p0,p1,p2);
 }
 public static java.lang.Object readStaticField(java.lang.reflect.Field p0) throws java.lang.IllegalAccessException{
 return FieldUtils.readStaticField(p0);
 }
-public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readStaticField(p0,p1,p2);
-}
 public static java.lang.Object readStaticField(java.lang.reflect.Field p0,boolean p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readStaticField(p0,p1);
 }
-public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1) throws java.lang.IllegalAccessException{
-return FieldUtils.readField(p0,p1);
+public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1) throws java.lang.IllegalAccessException{
+return FieldUtils.readStaticField(p0,p1);
 }
-public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readField(p0,p1,p2);
+public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readStaticField(p0,p1,p2);
+}
+public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1);
+}
+public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1,p2);
+}
+public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1,p2);
+}
+public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1,p2,p3);
 }
 public static java.lang.Object readField(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readField(p0,p1);
@@ -996,53 +1002,47 @@ return FieldUtils.readField(p0,p1);
 public static java.lang.Object readField(java.lang.Object p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readField(p0,p1,p2);
 }
-public static void writeField(java.lang.reflect.Field p0,java.lang.Object p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeField(p0,p1,p2);
+public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readField(p0,p1,p2);
 }
-public static void writeField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeField(p0,p1,p2);
+public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1) throws java.lang.IllegalAccessException{
+return FieldUtils.readField(p0,p1);
 }
 public static void writeField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeField(p0,p1,p2,p3);
 }
+public static void writeField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeField(p0,p1,p2);
+}
+public static void writeField(java.lang.reflect.Field p0,java.lang.Object p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeField(p0,p1,p2);
+}
 public static void writeField(java.lang.reflect.Field p0,java.lang.Object p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeField(p0,p1,p2,p3);
-}
-public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1,p2,p3);
-}
-public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1,p2);
-}
-public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1,p2);
-}
-public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1);
-}
-public static java.lang.Object readDeclaredField(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException{
-return FieldUtils.readDeclaredField(p0,p1);
 }
 public static java.lang.Object readDeclaredField(java.lang.Object p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredField(p0,p1,p2);
 }
-public static java.lang.Object readDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1) throws java.lang.IllegalAccessException{
-return FieldUtils.readDeclaredStaticField(p0,p1);
+public static java.lang.Object readDeclaredField(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException{
+return FieldUtils.readDeclaredField(p0,p1);
 }
 public static java.lang.Object readDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredStaticField(p0,p1,p2);
 }
-public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
- FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
-}
-public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeDeclaredStaticField(p0,p1,p2);
+public static java.lang.Object readDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1) throws java.lang.IllegalAccessException{
+return FieldUtils.readDeclaredStaticField(p0,p1);
 }
 public static void writeDeclaredField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredField(p0,p1,p2);
 }
 public static void writeDeclaredField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredField(p0,p1,p2,p3);
+}
+public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeDeclaredStaticField(p0,p1,p2);
+}
+public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
+ FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
 }
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class<?>[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1,p2,p3);
@@ -1052,15 +1052,6 @@ return MethodUtils.invokeMethod(p0,p1,p2);
 }
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1);
-}
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class<?>[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
-}
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object... p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2);
-}
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1);
 }
 public static java.lang.Object invokeStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class<?>[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2,p3);
@@ -1073,6 +1064,15 @@ return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
 }
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class<?>[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2,p3);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class<?>[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object... p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1);
 }
 public static boolean isInstance(java.lang.Object p0,java.lang.reflect.Type p1){
 return TypeUtils.isInstance(p0,p1);
@@ -1107,11 +1107,11 @@ return DateUtils.round(p0,p1);
 public static java.util.Date ceiling(java.lang.Object p0,int p1){
 return DateUtils.ceiling(p0,p1);
 }
-public static <T> T notNull(T p0){
-return Validate.notNull(p0);
-}
 public static <T> T notNull(T p0,java.lang.String p1,java.lang.Object... p2){
 return Validate.notNull(p0,p1,p2);
+}
+public static <T> T notNull(T p0){
+return Validate.notNull(p0);
 }
 public static void isInstanceOf(java.lang.Class<?> p0,java.lang.Object p1,java.lang.String p2,java.lang.Object... p3){
  Validate.isInstanceOf(p0,p1,p2,p3);
@@ -1119,11 +1119,11 @@ public static void isInstanceOf(java.lang.Class<?> p0,java.lang.Object p1,java.l
 public static void isInstanceOf(java.lang.Class<?> p0,java.lang.Object p1){
  Validate.isInstanceOf(p0,p1);
 }
-public static void deserializeRealVector(java.lang.Object p0,java.lang.String p1,java.io.ObjectInputStream p2) throws java.lang.ClassNotFoundException,java.io.IOException{
- MatrixUtils.deserializeRealVector(p0,p1,p2);
-}
 public static void deserializeRealMatrix(java.lang.Object p0,java.lang.String p1,java.io.ObjectInputStream p2) throws java.lang.ClassNotFoundException,java.io.IOException{
  MatrixUtils.deserializeRealMatrix(p0,p1,p2);
+}
+public static void deserializeRealVector(java.lang.Object p0,java.lang.String p1,java.io.ObjectInputStream p2) throws java.lang.ClassNotFoundException,java.io.IOException{
+ MatrixUtils.deserializeRealVector(p0,p1,p2);
 }
 public static void checkNotNull(java.lang.Object p0) throws org.apache.commons.math3.exception.NullArgumentException{
  MathUtils.checkNotNull(p0);
@@ -1143,27 +1143,6 @@ return LocaleBeanUtils.getProperty(p0,p1);
 public static java.lang.String getProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return LocaleBeanUtils.getProperty(p0,p1,p2);
 }
-public static java.lang.String getNestedProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getNestedProperty(p0,p1);
-}
-public static java.lang.String getNestedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getNestedProperty(p0,p1,p2);
-}
-public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2,java.lang.String p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getIndexedProperty(p0,p1,p2,p3);
-}
-public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getIndexedProperty(p0,p1,p2);
-}
-public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getIndexedProperty(p0,p1,p2);
-}
-public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getIndexedProperty(p0,p1);
-}
-public static java.lang.String getMappedPropertyLocale(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getMappedPropertyLocale(p0,p1,p2);
-}
 public static java.lang.String getSimpleProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return LocaleBeanUtils.getSimpleProperty(p0,p1);
 }
@@ -1173,29 +1152,56 @@ return LocaleBeanUtils.getSimpleProperty(p0,p1,p2);
 public static java.lang.String getMappedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2,java.lang.String p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return LocaleBeanUtils.getMappedProperty(p0,p1,p2,p3);
 }
-public static java.lang.String getMappedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return LocaleBeanUtils.getMappedProperty(p0,p1,p2);
-}
 public static java.lang.String getMappedProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return LocaleBeanUtils.getMappedProperty(p0,p1);
 }
-public static java.lang.String[] getArrayProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return BeanUtils.getArrayProperty(p0,p1);
+public static java.lang.String getMappedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getMappedProperty(p0,p1,p2);
 }
-public static java.lang.Object cloneBean(java.lang.Object p0) throws java.lang.IllegalAccessException,java.lang.InstantiationException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return BeanUtils.cloneBean(p0);
+public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getIndexedProperty(p0,p1);
+}
+public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2,java.lang.String p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getIndexedProperty(p0,p1,p2,p3);
+}
+public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getIndexedProperty(p0,p1,p2);
+}
+public static java.lang.String getIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getIndexedProperty(p0,p1,p2);
+}
+public static java.lang.String getMappedPropertyLocale(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getMappedPropertyLocale(p0,p1,p2);
+}
+public static java.lang.String getNestedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getNestedProperty(p0,p1,p2);
+}
+public static java.lang.String getNestedProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return LocaleBeanUtils.getNestedProperty(p0,p1);
+}
+public static void copyProperties(java.lang.Object p0,java.lang.Object p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+ BeanUtils.copyProperties(p0,p1);
 }
 public static java.util.Map<java.lang.String, java.lang.String> describe(java.lang.Object p0) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return BeanUtils.describe(p0);
 }
+public static java.lang.Object cloneBean(java.lang.Object p0) throws java.lang.IllegalAccessException,java.lang.InstantiationException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return BeanUtils.cloneBean(p0);
+}
 public static void populate(java.lang.Object p0,java.util.Map<java.lang.String, ?> p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
  BeanUtils.populate(p0,p1);
+}
+public static java.lang.String[] getArrayProperty(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return BeanUtils.getArrayProperty(p0,p1);
 }
 public static void copyProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
  BeanUtils.copyProperty(p0,p1,p2);
 }
-public static void copyProperties(java.lang.Object p0,java.lang.Object p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
- BeanUtils.copyProperties(p0,p1);
+public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
+}
+public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
 }
 public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1);
@@ -1203,41 +1209,23 @@ return ConstructorUtils.invokeConstructor(p0,p1);
 public static <T> T invokeConstructor(java.lang.Class<T> p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1);
 }
-public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
-public static <T> T invokeExactConstructor(java.lang.Class<T> p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
 public static java.lang.Class<?> getPropertyType(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return PropertyUtils.getPropertyType(p0,p1);
 }
 public static java.beans.PropertyDescriptor[] getPropertyDescriptors(java.lang.Object p0){
 return PropertyUtils.getPropertyDescriptors(p0);
 }
-public static boolean isReadable(java.lang.Object p0,java.lang.String p1){
-return PropertyUtils.isReadable(p0,p1);
+public static java.lang.Class<?> getPropertyEditorClass(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+return PropertyUtils.getPropertyEditorClass(p0,p1);
 }
 public static boolean isWriteable(java.lang.Object p0,java.lang.String p1){
 return PropertyUtils.isWriteable(p0,p1);
 }
-public static void setSimpleProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
- PropertyUtils.setSimpleProperty(p0,p1,p2);
+public static boolean isReadable(java.lang.Object p0,java.lang.String p1){
+return PropertyUtils.isReadable(p0,p1);
 }
 public static java.beans.PropertyDescriptor getPropertyDescriptor(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
 return PropertyUtils.getPropertyDescriptor(p0,p1);
-}
-public static org.apache.commons.collections.FastHashMap getMappedPropertyDescriptors(java.lang.Object p0){
-return PropertyUtils.getMappedPropertyDescriptors(p0);
-}
-public static void setNestedProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
- PropertyUtils.setNestedProperty(p0,p1,p2);
-}
-public static void setIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2,java.lang.Object p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
- PropertyUtils.setIndexedProperty(p0,p1,p2,p3);
-}
-public static void setIndexedProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
- PropertyUtils.setIndexedProperty(p0,p1,p2);
 }
 public static void setMappedProperty(java.lang.Object p0,java.lang.String p1,java.lang.String p2,java.lang.Object p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
  PropertyUtils.setMappedProperty(p0,p1,p2,p3);
@@ -1245,8 +1233,20 @@ public static void setMappedProperty(java.lang.Object p0,java.lang.String p1,jav
 public static void setMappedProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
  PropertyUtils.setMappedProperty(p0,p1,p2);
 }
-public static java.lang.Class<?> getPropertyEditorClass(java.lang.Object p0,java.lang.String p1) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
-return PropertyUtils.getPropertyEditorClass(p0,p1);
+public static void setSimpleProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+ PropertyUtils.setSimpleProperty(p0,p1,p2);
+}
+public static void setIndexedProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+ PropertyUtils.setIndexedProperty(p0,p1,p2);
+}
+public static void setIndexedProperty(java.lang.Object p0,java.lang.String p1,int p2,java.lang.Object p3) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+ PropertyUtils.setIndexedProperty(p0,p1,p2,p3);
+}
+public static void setNestedProperty(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.NoSuchMethodException{
+ PropertyUtils.setNestedProperty(p0,p1,p2);
+}
+public static org.apache.commons.collections.FastHashMap getMappedPropertyDescriptors(java.lang.Object p0){
+return PropertyUtils.getMappedPropertyDescriptors(p0);
 }
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1,p2);
@@ -1254,23 +1254,23 @@ return MethodUtils.invokeMethod(p0,p1,p2);
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1,p2);
 }
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2);
-}
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2);
-}
 public static java.lang.Object invokeStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2);
 }
 public static java.lang.Object invokeStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2);
 }
+public static java.lang.Object invokeExactStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
+}
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
 }
-public static java.lang.Object invokeExactStaticMethod(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2);
 }
 public static java.lang.Object convert(java.lang.String[] p0,java.lang.Class<?> p1,java.lang.String p2){
 return LocaleConvertUtils.convert(p0,p1,p2);
@@ -1878,6 +1878,15 @@ return IntSortedSets.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.ints.IntSortedSet synchronize(it.unimi.dsi.fastutil.ints.IntSortedSet p0,java.lang.Object p1){
 return IntSortedSets.synchronize(p0,p1);
 }
+public static void storeObject(java.lang.Object p0,java.io.OutputStream p1) throws java.io.IOException{
+ BinIO.storeObject(p0,p1);
+}
+public static void storeObject(java.lang.Object p0,java.io.File p1) throws java.io.IOException{
+ BinIO.storeObject(p0,p1);
+}
+public static void storeObject(java.lang.Object p0,java.lang.CharSequence p1) throws java.io.IOException{
+ BinIO.storeObject(p0,p1);
+}
 public static java.lang.Object loadObject(java.lang.CharSequence p0) throws java.io.IOException,java.lang.ClassNotFoundException{
 return BinIO.loadObject(p0);
 }
@@ -1886,15 +1895,6 @@ return BinIO.loadObject(p0);
 }
 public static java.lang.Object loadObject(java.io.InputStream p0) throws java.io.IOException,java.lang.ClassNotFoundException{
 return BinIO.loadObject(p0);
-}
-public static void storeObject(java.lang.Object p0,java.lang.CharSequence p1) throws java.io.IOException{
- BinIO.storeObject(p0,p1);
-}
-public static void storeObject(java.lang.Object p0,java.io.File p1) throws java.io.IOException{
- BinIO.storeObject(p0,p1);
-}
-public static void storeObject(java.lang.Object p0,java.io.OutputStream p1) throws java.io.IOException{
- BinIO.storeObject(p0,p1);
 }
 public static it.unimi.dsi.fastutil.longs.Long2BooleanFunction synchronize(it.unimi.dsi.fastutil.longs.Long2BooleanFunction p0,java.lang.Object p1){
 return Long2BooleanFunctions.synchronize(p0,p1);
@@ -2334,11 +2334,11 @@ return ShortSortedSets.synchronize(p0,p1);
 public static <T> T wrap(java.lang.Class<T> p0,T p1){
 return RobustProxy.wrap(p0,p1);
 }
-public static <T> T deserializeFromBytes(byte[] p0,com.facebook.util.serialization.Deserializer<T> p1) throws com.facebook.util.serialization.SerDeException{
-return SerDeUtils.deserializeFromBytes(p0,p1);
-}
 public static <T> T deserializeFromByteBuffer(java.nio.ByteBuffer p0,com.facebook.util.serialization.Deserializer<T> p1) throws com.facebook.util.serialization.SerDeException{
 return SerDeUtils.deserializeFromByteBuffer(p0,p1);
+}
+public static <T> T deserializeFromBytes(byte[] p0,com.facebook.util.serialization.Deserializer<T> p1) throws com.facebook.util.serialization.SerDeException{
+return SerDeUtils.deserializeFromBytes(p0,p1);
 }
 public static <V,E extends java.lang.Throwable > V logElapsedTime(java.lang.String p0,com.facebook.util.ExtCallable<V, E> p1) throws E{
 return TimeUtil.logElapsedTime(p0,p1);
@@ -2352,38 +2352,38 @@ return ArrayUtils.add(p0,p1);
 public static java.lang.Object[] removeElement(java.lang.Object[] p0,java.lang.Object p1){
 return ArrayUtils.removeElement(p0,p1);
 }
-public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
-return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
-}
-public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,java.lang.String[] p2){
-return CompareToBuilder.reflectionCompare(p0,p1,p2);
-}
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,java.util.Collection p2){
 return CompareToBuilder.reflectionCompare(p0,p1,p2);
 }
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
 return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
-return EqualsBuilder.reflectionEquals(p0,p1,p2,p3);
+public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,java.lang.String[] p2){
+return CompareToBuilder.reflectionCompare(p0,p1,p2);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1){
-return EqualsBuilder.reflectionEquals(p0,p1);
-}
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection p2){
-return EqualsBuilder.reflectionEquals(p0,p1,p2);
-}
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
-return EqualsBuilder.reflectionEquals(p0,p1,p2,p3,p4);
+public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
+return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
 }
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.lang.String[] p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
-public static int reflectionHashCode(int p0,int p1,java.lang.Object p2,boolean p3,java.lang.Class p4){
-return HashCodeBuilder.reflectionHashCode(p0,p1,p2,p3,p4);
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection p2){
+return EqualsBuilder.reflectionEquals(p0,p1,p2);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1){
+return EqualsBuilder.reflectionEquals(p0,p1);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
+return EqualsBuilder.reflectionEquals(p0,p1,p2,p3);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
+return EqualsBuilder.reflectionEquals(p0,p1,p2,p3,p4);
 }
 public static int reflectionHashCode(java.lang.Object p0,java.util.Collection p1){
 return HashCodeBuilder.reflectionHashCode(p0,p1);
+}
+public static int reflectionHashCode(int p0,int p1,java.lang.Object p2,boolean p3,java.lang.Class p4){
+return HashCodeBuilder.reflectionHashCode(p0,p1,p2,p3,p4);
 }
 public static int reflectionHashCode(java.lang.Object p0,java.lang.String[] p1){
 return HashCodeBuilder.reflectionHashCode(p0,p1);
@@ -2394,13 +2394,13 @@ return HashCodeBuilder.reflectionHashCode(p0,p1,p2,p3,p4,p5);
 public static int reflectionHashCode(java.lang.Object p0){
 return HashCodeBuilder.reflectionHashCode(p0);
 }
+public static java.lang.String toStringExclude(java.lang.Object p0,java.util.Collection p1){
+return ReflectionToStringBuilder.toStringExclude(p0,p1);
+}
 public static java.lang.String toStringExclude(java.lang.Object p0,java.lang.String[] p1){
 return ReflectionToStringBuilder.toStringExclude(p0,p1);
 }
 public static java.lang.String toStringExclude(java.lang.Object p0,java.lang.String p1){
-return ReflectionToStringBuilder.toStringExclude(p0,p1);
-}
-public static java.lang.String toStringExclude(java.lang.Object p0,java.util.Collection p1){
 return ReflectionToStringBuilder.toStringExclude(p0,p1);
 }
 public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang.builder.ToStringStyle p1,boolean p2){
@@ -2421,14 +2421,23 @@ return ObjectUtils.min(p0,p1);
 public static java.lang.Object max(java.lang.Comparable p0,java.lang.Comparable p1){
 return ObjectUtils.max(p0,p1);
 }
-public static java.lang.Object defaultIfNull(java.lang.Object p0,java.lang.Object p1){
-return ObjectUtils.defaultIfNull(p0,p1);
-}
 public static java.lang.Object cloneIfPossible(java.lang.Object p0){
 return ObjectUtils.cloneIfPossible(p0);
 }
+public static java.lang.Object defaultIfNull(java.lang.Object p0,java.lang.Object p1){
+return ObjectUtils.defaultIfNull(p0,p1);
+}
 public static java.lang.StringBuffer appendIdentityToString(java.lang.StringBuffer p0,java.lang.Object p1){
 return ObjectUtils.appendIdentityToString(p0,p1);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
+}
+public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
+return ConstructorUtils.invokeExactConstructor(p0,p1);
 }
 public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1);
@@ -2438,15 +2447,6 @@ return ConstructorUtils.invokeConstructor(p0,p1);
 }
 public static java.lang.Object invokeConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
 return ConstructorUtils.invokeConstructor(p0,p1,p2);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1);
-}
-public static java.lang.Object invokeExactConstructor(java.lang.Class p0,java.lang.Object[] p1,java.lang.Class[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException,java.lang.InstantiationException{
-return ConstructorUtils.invokeExactConstructor(p0,p1,p2);
 }
 public static java.lang.Object readStaticField(java.lang.Class p0,java.lang.String p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readStaticField(p0,p1);
@@ -2460,11 +2460,11 @@ public static void writeStaticField(java.lang.Class p0,java.lang.String p1,java.
 public static void writeStaticField(java.lang.Class p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeStaticField(p0,p1,p2,p3);
 }
-public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readDeclaredStaticField(p0,p1,p2);
-}
 public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredStaticField(p0,p1);
+}
+public static java.lang.Object readDeclaredStaticField(java.lang.Class p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readDeclaredStaticField(p0,p1,p2);
 }
 public static void writeDeclaredStaticField(java.lang.Class p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
@@ -2475,26 +2475,26 @@ public static void writeDeclaredStaticField(java.lang.Class p0,java.lang.String 
 public static java.lang.Object invokeMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeMethod(p0,p1,p2,p3);
 }
-public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
+public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeStaticMethod(p0,p1,p2);
 }
 public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2,p3);
 }
-public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeStaticMethod(p0,p1,p2);
-}
 public static java.lang.Object invokeStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeStaticMethod(p0,p1,p2);
-}
-public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
-return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
 }
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2,p3);
 }
+public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
+}
 public static java.lang.Object invokeExactStaticMethod(java.lang.Class p0,java.lang.String p1,java.lang.Object[] p2) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
 return MethodUtils.invokeExactStaticMethod(p0,p1,p2);
+}
+public static java.lang.Object invokeExactMethod(java.lang.Object p0,java.lang.String p1,java.lang.Object[] p2,java.lang.Class[] p3) throws java.lang.NoSuchMethodException,java.lang.IllegalAccessException,java.lang.reflect.InvocationTargetException{
+return MethodUtils.invokeExactMethod(p0,p1,p2,p3);
 }
 public static java.lang.Object clone(java.io.Serializable p0){
 return SerializationUtils.clone(p0);

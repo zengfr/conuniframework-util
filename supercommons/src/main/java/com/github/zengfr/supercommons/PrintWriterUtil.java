@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.commons.lang.exception.ExceptionUtils;
 /**

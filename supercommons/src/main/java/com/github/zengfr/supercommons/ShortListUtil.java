@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ListShortList;
 import org.apache.commons.collections.primitives.adapters.ShortListList;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableShortList;
@@ -22,11 +22,11 @@ return ShortListList.wrap(p0);
 public static org.apache.commons.collections.primitives.ShortList unmodifiableShortList(org.apache.commons.collections.primitives.ShortList p0) throws java.lang.NullPointerException{
 return ShortCollections.unmodifiableShortList(p0);
 }
-public static org.apache.commons.collections.primitives.ShortList singletonShortList(short p0){
-return ShortCollections.singletonShortList(p0);
-}
 public static org.apache.commons.collections.primitives.ShortList getEmptyShortList(){
 return ShortCollections.getEmptyShortList();
+}
+public static org.apache.commons.collections.primitives.ShortList singletonShortList(short p0){
+return ShortCollections.singletonShortList(p0);
 }
 public static it.unimi.dsi.fastutil.shorts.ShortBigList asBigList(it.unimi.dsi.fastutil.shorts.ShortList p0){
 return ShortBigLists.asBigList(p0);

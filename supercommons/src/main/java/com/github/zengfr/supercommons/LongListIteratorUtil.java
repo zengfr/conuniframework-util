@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ListIteratorLongListIterator;
 import org.apache.commons.collections.primitives.adapters.LongListIteratorListIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableLongListIterator;
@@ -39,10 +39,10 @@ return LongIterators.wrap(p0);
 public static it.unimi.dsi.fastutil.longs.LongListIterator singleton(long p0){
 return LongIterators.singleton(p0);
 }
-public static it.unimi.dsi.fastutil.longs.LongListIterator unmodifiable(it.unimi.dsi.fastutil.longs.LongListIterator p0){
-return LongIterators.unmodifiable(p0);
-}
 public static it.unimi.dsi.fastutil.longs.LongListIterator asLongIterator(java.util.ListIterator p0){
 return LongIterators.asLongIterator(p0);
+}
+public static it.unimi.dsi.fastutil.longs.LongListIterator unmodifiable(it.unimi.dsi.fastutil.longs.LongListIterator p0){
+return LongIterators.unmodifiable(p0);
 }
 }

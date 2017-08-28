@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.objects.ObjectIterators;
 /**
 * @author zengfr
@@ -16,10 +16,10 @@ return ObjectIterators.wrap(p0);
 public static <K> it.unimi.dsi.fastutil.objects.ObjectListIterator<K> singleton(K p0){
 return ObjectIterators.singleton(p0);
 }
-public static <K> it.unimi.dsi.fastutil.objects.ObjectListIterator<K> unmodifiable(it.unimi.dsi.fastutil.objects.ObjectListIterator<K> p0){
-return ObjectIterators.unmodifiable(p0);
-}
 public static <K> it.unimi.dsi.fastutil.objects.ObjectListIterator<K> asObjectIterator(java.util.ListIterator<K> p0){
 return ObjectIterators.asObjectIterator(p0);
+}
+public static <K> it.unimi.dsi.fastutil.objects.ObjectListIterator<K> unmodifiable(it.unimi.dsi.fastutil.objects.ObjectListIterator<K> p0){
+return ObjectIterators.unmodifiable(p0);
 }
 }

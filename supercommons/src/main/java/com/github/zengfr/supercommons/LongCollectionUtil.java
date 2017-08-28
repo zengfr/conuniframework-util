@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CollectionLongCollection;
 import org.apache.commons.collections.primitives.adapters.LongCollectionCollection;
 import it.unimi.dsi.fastutil.longs.LongCollections;
@@ -34,10 +34,10 @@ return LongIterators.unwrap(p0,p1);
 public static int unwrap(it.unimi.dsi.fastutil.longs.LongIterator p0,it.unimi.dsi.fastutil.longs.LongCollection p1,int p2){
 return LongIterators.unwrap(p0,p1,p2);
 }
-public static int pour(it.unimi.dsi.fastutil.longs.LongIterator p0,it.unimi.dsi.fastutil.longs.LongCollection p1,int p2){
-return LongIterators.pour(p0,p1,p2);
-}
 public static int pour(it.unimi.dsi.fastutil.longs.LongIterator p0,it.unimi.dsi.fastutil.longs.LongCollection p1){
 return LongIterators.pour(p0,p1);
+}
+public static int pour(it.unimi.dsi.fastutil.longs.LongIterator p0,it.unimi.dsi.fastutil.longs.LongCollection p1,int p2){
+return LongIterators.pour(p0,p1,p2);
 }
 }

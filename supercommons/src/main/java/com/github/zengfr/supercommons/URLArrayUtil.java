@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.io.FileUtils;
 /**
 * @author zengfr
@@ -7,10 +7,10 @@ import org.apache.commons.io.FileUtils;
 * zengfr3000@qq.com
 */
 public final class URLArrayUtil{ 
-public static java.net.URL[] toURLs(java.io.File[] p0) throws java.io.IOException{
-return FileUtils.toURLs(p0);
-}
 public static java.io.File[] toFiles(java.net.URL[] p0){
 return FileUtils.toFiles(p0);
+}
+public static java.net.URL[] toURLs(java.io.File[] p0) throws java.io.IOException{
+return FileUtils.toURLs(p0);
 }
 }

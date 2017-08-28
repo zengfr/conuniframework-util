@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ByteListIteratorListIterator;
 import org.apache.commons.collections.primitives.adapters.ListIteratorByteListIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableByteListIterator;
@@ -18,14 +18,14 @@ return ByteListIteratorListIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.ByteListIterator wrap(java.util.ListIterator p0){
 return ListIteratorByteListIterator.wrap(p0);
 }
-public static org.apache.commons.collections.primitives.ByteListIterator singletonByteListIterator(byte p0){
-return ByteCollections.singletonByteListIterator(p0);
-}
 public static org.apache.commons.collections.primitives.ByteListIterator getEmptyByteListIterator(){
 return ByteCollections.getEmptyByteListIterator();
 }
 public static org.apache.commons.collections.primitives.ByteListIterator unmodifiableByteListIterator(org.apache.commons.collections.primitives.ByteListIterator p0){
 return ByteCollections.unmodifiableByteListIterator(p0);
+}
+public static org.apache.commons.collections.primitives.ByteListIterator singletonByteListIterator(byte p0){
+return ByteCollections.singletonByteListIterator(p0);
 }
 public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator asBigListIterator(it.unimi.dsi.fastutil.bytes.ByteListIterator p0){
 return ByteBigListIterators.asBigListIterator(p0);
@@ -42,10 +42,10 @@ return ByteIterators.singleton(p0);
 public static it.unimi.dsi.fastutil.bytes.ByteListIterator unmodifiable(it.unimi.dsi.fastutil.bytes.ByteListIterator p0){
 return ByteIterators.unmodifiable(p0);
 }
-public static it.unimi.dsi.fastutil.bytes.ByteListIterator asByteIterator(java.util.ListIterator p0){
-return ByteIterators.asByteIterator(p0);
-}
 public static it.unimi.dsi.fastutil.bytes.ByteListIterator fromTo(byte p0,byte p1){
 return ByteIterators.fromTo(p0,p1);
+}
+public static it.unimi.dsi.fastutil.bytes.ByteListIterator asByteIterator(java.util.ListIterator p0){
+return ByteIterators.asByteIterator(p0);
 }
 }

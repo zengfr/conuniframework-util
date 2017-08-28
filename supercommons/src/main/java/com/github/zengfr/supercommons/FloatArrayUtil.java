@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang.ArrayUtils;
 import com.google.common.primitives.Floats;
@@ -111,14 +111,14 @@ return ArrayUtils.isNotEmpty(p0);
 public static float[] nullToEmpty(float[] p0){
 return ArrayUtils.nullToEmpty(p0);
 }
-public static boolean isSameLength(float[] p0,float[] p1){
-return ArrayUtils.isSameLength(p0,p1);
+public static boolean isSorted(float[] p0){
+return ArrayUtils.isSorted(p0);
 }
 public static float[] subarray(float[] p0,int p1,int p2){
 return ArrayUtils.subarray(p0,p1,p2);
 }
-public static boolean isSorted(float[] p0){
-return ArrayUtils.isSorted(p0);
+public static boolean isSameLength(float[] p0,float[] p1){
+return ArrayUtils.isSameLength(p0,p1);
 }
 public static float[] removeElements(float[] p0,float... p1){
 return ArrayUtils.removeElements(p0,p1);
@@ -141,17 +141,17 @@ return FloatArrayList.wrap(p0,p1);
 public static float[] trim(float[] p0,int p1){
 return FloatArrays.trim(p0,p1);
 }
-public static float[] copy(float[] p0,int p1,int p2){
-return FloatArrays.copy(p0,p1,p2);
-}
 public static float[] copy(float[] p0){
 return FloatArrays.copy(p0);
 }
-public static void fill(float[] p0,float p1){
- FloatArrays.fill(p0,p1);
+public static float[] copy(float[] p0,int p1,int p2){
+return FloatArrays.copy(p0,p1,p2);
 }
 public static void fill(float[] p0,int p1,int p2,float p3){
  FloatArrays.fill(p0,p1,p2,p3);
+}
+public static void fill(float[] p0,float p1){
+ FloatArrays.fill(p0,p1);
 }
 public static float[] ensureCapacity(float[] p0,int p1){
 return FloatArrays.ensureCapacity(p0,p1);
@@ -165,9 +165,6 @@ return FloatArrays.grow(p0,p1);
 public static float[] grow(float[] p0,int p1,int p2){
 return FloatArrays.grow(p0,p1,p2);
 }
-public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-return FloatArrays.binarySearch(p0,p1,p2);
-}
 public static int binarySearch(float[] p0,int p1,int p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
 return FloatArrays.binarySearch(p0,p1,p2,p3,p4);
 }
@@ -176,6 +173,9 @@ return FloatArrays.binarySearch(p0,p1);
 }
 public static int binarySearch(float[] p0,int p1,int p2,float p3){
 return FloatArrays.binarySearch(p0,p1,p2,p3);
+}
+public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+return FloatArrays.binarySearch(p0,p1,p2);
 }
 public static float[] shuffle(float[] p0,java.util.Random p1){
 return FloatArrays.shuffle(p0,p1);
@@ -192,14 +192,11 @@ public static void swap(float[] p0,int p1,int p2){
 public static void mergeSort(float[] p0,int p1,int p2,float[] p3){
  FloatArrays.mergeSort(p0,p1,p2,p3);
 }
-public static void mergeSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
- FloatArrays.mergeSort(p0,p1);
-}
 public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
  FloatArrays.mergeSort(p0,p1,p2,p3);
 }
-public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3,float[] p4){
- FloatArrays.mergeSort(p0,p1,p2,p3,p4);
+public static void mergeSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+ FloatArrays.mergeSort(p0,p1);
 }
 public static void mergeSort(float[] p0,int p1,int p2){
  FloatArrays.mergeSort(p0,p1,p2);
@@ -207,26 +204,83 @@ public static void mergeSort(float[] p0,int p1,int p2){
 public static void mergeSort(float[] p0){
  FloatArrays.mergeSort(p0);
 }
+public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3,float[] p4){
+ FloatArrays.mergeSort(p0,p1,p2,p3,p4);
+}
+public static void radixSortIndirect(int[] p0,float[] p1,boolean p2){
+ FloatArrays.radixSortIndirect(p0,p1,p2);
+}
+public static void radixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
+ FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,boolean p3){
+ FloatArrays.radixSortIndirect(p0,p1,p2,p3);
+}
+public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,int p3,int p4,boolean p5){
+ FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
+}
+public static void parallelRadixSort(float[] p0,int p1,int p2){
+ FloatArrays.parallelRadixSort(p0,p1,p2);
+}
+public static void parallelRadixSort(float[] p0,float[] p1,int p2,int p3){
+ FloatArrays.parallelRadixSort(p0,p1,p2,p3);
+}
+public static void parallelRadixSort(float[] p0,float[] p1){
+ FloatArrays.parallelRadixSort(p0,p1);
+}
+public static void parallelRadixSort(float[] p0){
+ FloatArrays.parallelRadixSort(p0);
+}
+public static void parallelRadixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
+ FloatArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,float[] p1,boolean p2){
+ FloatArrays.parallelRadixSortIndirect(p0,p1,p2);
+}
 public static void ensureFromTo(float[] p0,int p1,int p2){
  FloatArrays.ensureFromTo(p0,p1,p2);
 }
-public static void quickSort(float[] p0,float[] p1){
+public static void quickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
  FloatArrays.quickSort(p0,p1);
 }
 public static void quickSort(float[] p0){
  FloatArrays.quickSort(p0);
 }
-public static void quickSort(float[] p0,int p1,int p2){
- FloatArrays.quickSort(p0,p1,p2);
-}
 public static void quickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
  FloatArrays.quickSort(p0,p1,p2,p3);
 }
-public static void quickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+public static void quickSort(float[] p0,float[] p1){
  FloatArrays.quickSort(p0,p1);
 }
 public static void quickSort(float[] p0,float[] p1,int p2,int p3){
  FloatArrays.quickSort(p0,p1,p2,p3);
+}
+public static void quickSort(float[] p0,int p1,int p2){
+ FloatArrays.quickSort(p0,p1,p2);
+}
+public static void ensureSameLength(float[] p0,float[] p1){
+ FloatArrays.ensureSameLength(p0,p1);
+}
+public static void stabilize(int[] p0,float[] p1,int p2,int p3){
+ FloatArrays.stabilize(p0,p1,p2,p3);
+}
+public static void stabilize(int[] p0,float[] p1){
+ FloatArrays.stabilize(p0,p1);
+}
+public static void radixSort(float[] p0){
+ FloatArrays.radixSort(p0);
+}
+public static void radixSort(float[] p0,float[] p1,int p2,int p3){
+ FloatArrays.radixSort(p0,p1,p2,p3);
+}
+public static void radixSort(float[] p0,float[] p1){
+ FloatArrays.radixSort(p0,p1);
+}
+public static void radixSort(float[] p0,int p1,int p2){
+ FloatArrays.radixSort(p0,p1,p2);
+}
+public static void ensureOffsetLength(float[] p0,int p1,int p2){
+ FloatArrays.ensureOffsetLength(p0,p1,p2);
 }
 public static void parallelQuickSort(float[] p0,float[] p1,int p2,int p3){
  FloatArrays.parallelQuickSort(p0,p1,p2,p3);
@@ -240,83 +294,29 @@ public static void parallelQuickSort(float[] p0,int p1,int p2){
 public static void parallelQuickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
  FloatArrays.parallelQuickSort(p0,p1);
 }
-public static void parallelQuickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
- FloatArrays.parallelQuickSort(p0,p1,p2,p3);
-}
 public static void parallelQuickSort(float[] p0,float[] p1){
  FloatArrays.parallelQuickSort(p0,p1);
 }
-public static void ensureOffsetLength(float[] p0,int p1,int p2){
- FloatArrays.ensureOffsetLength(p0,p1,p2);
-}
-public static void parallelQuickSortIndirect(int[] p0,float[] p1,int p2,int p3){
- FloatArrays.parallelQuickSortIndirect(p0,p1,p2,p3);
-}
-public static void parallelQuickSortIndirect(int[] p0,float[] p1){
- FloatArrays.parallelQuickSortIndirect(p0,p1);
-}
-public static void quickSortIndirect(int[] p0,float[] p1){
- FloatArrays.quickSortIndirect(p0,p1);
+public static void parallelQuickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+ FloatArrays.parallelQuickSort(p0,p1,p2,p3);
 }
 public static void quickSortIndirect(int[] p0,float[] p1,int p2,int p3){
  FloatArrays.quickSortIndirect(p0,p1,p2,p3);
 }
-public static void parallelRadixSortIndirect(int[] p0,float[] p1,boolean p2){
- FloatArrays.parallelRadixSortIndirect(p0,p1,p2);
+public static void quickSortIndirect(int[] p0,float[] p1){
+ FloatArrays.quickSortIndirect(p0,p1);
 }
-public static void parallelRadixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
- FloatArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelQuickSortIndirect(int[] p0,float[] p1){
+ FloatArrays.parallelQuickSortIndirect(p0,p1);
 }
-public static void parallelRadixSort(float[] p0,float[] p1){
- FloatArrays.parallelRadixSort(p0,p1);
-}
-public static void parallelRadixSort(float[] p0,float[] p1,int p2,int p3){
- FloatArrays.parallelRadixSort(p0,p1,p2,p3);
-}
-public static void parallelRadixSort(float[] p0){
- FloatArrays.parallelRadixSort(p0);
-}
-public static void parallelRadixSort(float[] p0,int p1,int p2){
- FloatArrays.parallelRadixSort(p0,p1,p2);
-}
-public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,boolean p3){
- FloatArrays.radixSortIndirect(p0,p1,p2,p3);
-}
-public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,int p3,int p4,boolean p5){
- FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
-}
-public static void radixSortIndirect(int[] p0,float[] p1,boolean p2){
- FloatArrays.radixSortIndirect(p0,p1,p2);
-}
-public static void radixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
- FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4);
-}
-public static void stabilize(int[] p0,float[] p1,int p2,int p3){
- FloatArrays.stabilize(p0,p1,p2,p3);
-}
-public static void stabilize(int[] p0,float[] p1){
- FloatArrays.stabilize(p0,p1);
-}
-public static void ensureSameLength(float[] p0,float[] p1){
- FloatArrays.ensureSameLength(p0,p1);
-}
-public static void radixSort(float[] p0,float[] p1){
- FloatArrays.radixSort(p0,p1);
-}
-public static void radixSort(float[] p0,int p1,int p2){
- FloatArrays.radixSort(p0,p1,p2);
-}
-public static void radixSort(float[] p0){
- FloatArrays.radixSort(p0);
-}
-public static void radixSort(float[] p0,float[] p1,int p2,int p3){
- FloatArrays.radixSort(p0,p1,p2,p3);
-}
-public static void copyFromBig(float[][] p0,long p1,float[] p2,int p3,int p4){
- FloatBigArrays.copyFromBig(p0,p1,p2,p3,p4);
+public static void parallelQuickSortIndirect(int[] p0,float[] p1,int p2,int p3){
+ FloatArrays.parallelQuickSortIndirect(p0,p1,p2,p3);
 }
 public static void copyToBig(float[] p0,int p1,float[][] p2,long p3,long p4){
  FloatBigArrays.copyToBig(p0,p1,p2,p3,p4);
+}
+public static void copyFromBig(float[][] p0,long p1,float[] p2,int p3,int p4){
+ FloatBigArrays.copyFromBig(p0,p1,p2,p3,p4);
 }
 public static void makeHeap(float[] p0,int p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
  FloatHeaps.makeHeap(p0,p1,p2);
@@ -354,20 +354,14 @@ return FloatIterators.unwrap(p0,p1);
 public static float[] unwrap(it.unimi.dsi.fastutil.floats.FloatIterator p0){
 return FloatIterators.unwrap(p0);
 }
-public static int front(float[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-return FloatSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
-public static int front(float[] p0,int[] p1,int p2,int[] p3){
-return FloatSemiIndirectHeaps.front(p0,p1,p2,p3);
-}
 public static int[] makeHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
 return FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(float[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
- FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(float[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
  FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(float[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+ FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
 return FloatSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
@@ -375,31 +369,46 @@ return FloatSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 public static int upHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
 return FloatSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
 }
-public static float[] loadFloats(java.lang.CharSequence p0) throws java.io.IOException{
-return BinIO.loadFloats(p0);
+public static int front(float[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+return FloatSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
-public static int loadFloats(java.lang.CharSequence p0,float[] p1) throws java.io.IOException{
-return BinIO.loadFloats(p0,p1);
+public static int front(float[] p0,int[] p1,int p2,int[] p3){
+return FloatSemiIndirectHeaps.front(p0,p1,p2,p3);
 }
 public static int loadFloats(java.io.DataInput p0,float[] p1) throws java.io.IOException{
 return BinIO.loadFloats(p0,p1);
 }
-public static float[] loadFloats(java.io.File p0) throws java.io.IOException{
-return BinIO.loadFloats(p0);
+public static int loadFloats(java.io.File p0,float[] p1) throws java.io.IOException{
+return BinIO.loadFloats(p0,p1);
+}
+public static int loadFloats(java.lang.CharSequence p0,float[] p1) throws java.io.IOException{
+return BinIO.loadFloats(p0,p1);
 }
 public static int loadFloats(java.io.File p0,float[] p1,int p2,int p3) throws java.io.IOException{
 return BinIO.loadFloats(p0,p1,p2,p3);
 }
-public static int loadFloats(java.io.File p0,float[] p1) throws java.io.IOException{
-return BinIO.loadFloats(p0,p1);
+public static float[] loadFloats(java.io.File p0) throws java.io.IOException{
+return BinIO.loadFloats(p0);
 }
-public static int loadFloats(java.io.DataInput p0,float[] p1,int p2,int p3) throws java.io.IOException{
-return BinIO.loadFloats(p0,p1,p2,p3);
+public static float[] loadFloats(java.lang.CharSequence p0) throws java.io.IOException{
+return BinIO.loadFloats(p0);
 }
 public static int loadFloats(java.lang.CharSequence p0,float[] p1,int p2,int p3) throws java.io.IOException{
 return BinIO.loadFloats(p0,p1,p2,p3);
 }
+public static int loadFloats(java.io.DataInput p0,float[] p1,int p2,int p3) throws java.io.IOException{
+return BinIO.loadFloats(p0,p1,p2,p3);
+}
+public static void storeFloats(float[] p0,java.io.DataOutput p1) throws java.io.IOException{
+ BinIO.storeFloats(p0,p1);
+}
 public static void storeFloats(float[] p0,int p1,int p2,java.io.File p3) throws java.io.IOException{
+ BinIO.storeFloats(p0,p1,p2,p3);
+}
+public static void storeFloats(float[] p0,java.lang.CharSequence p1) throws java.io.IOException{
+ BinIO.storeFloats(p0,p1);
+}
+public static void storeFloats(float[] p0,int p1,int p2,java.io.DataOutput p3) throws java.io.IOException{
  BinIO.storeFloats(p0,p1,p2,p3);
 }
 public static void storeFloats(float[] p0,int p1,int p2,java.lang.CharSequence p3) throws java.io.IOException{
@@ -408,26 +417,17 @@ public static void storeFloats(float[] p0,int p1,int p2,java.lang.CharSequence p
 public static void storeFloats(float[] p0,java.io.File p1) throws java.io.IOException{
  BinIO.storeFloats(p0,p1);
 }
-public static void storeFloats(float[] p0,java.lang.CharSequence p1) throws java.io.IOException{
- BinIO.storeFloats(p0,p1);
-}
-public static void storeFloats(float[] p0,int p1,int p2,java.io.DataOutput p3) throws java.io.IOException{
- BinIO.storeFloats(p0,p1,p2,p3);
-}
-public static void storeFloats(float[] p0,java.io.DataOutput p1) throws java.io.IOException{
- BinIO.storeFloats(p0,p1);
-}
 public static int loadFloats(java.io.BufferedReader p0,float[] p1,int p2,int p3) throws java.io.IOException{
 return TextIO.loadFloats(p0,p1,p2,p3);
 }
 public static int loadFloats(java.io.BufferedReader p0,float[] p1) throws java.io.IOException{
 return TextIO.loadFloats(p0,p1);
 }
-public static void storeFloats(float[] p0,java.io.PrintStream p1){
- TextIO.storeFloats(p0,p1);
-}
 public static void storeFloats(float[] p0,int p1,int p2,java.io.PrintStream p3){
  TextIO.storeFloats(p0,p1,p2,p3);
+}
+public static void storeFloats(float[] p0,java.io.PrintStream p1){
+ TextIO.storeFloats(p0,p1);
 }
 public static float[] addAll(float[] p0,float[] p1){
 return ArrayUtils.addAll(p0,p1);

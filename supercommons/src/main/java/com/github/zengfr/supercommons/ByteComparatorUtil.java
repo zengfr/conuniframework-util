@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.bytes.Byte2BooleanSortedMaps;
 import it.unimi.dsi.fastutil.bytes.Byte2ByteSortedMaps;
 import it.unimi.dsi.fastutil.bytes.Byte2CharSortedMaps;
@@ -89,11 +89,11 @@ return ByteArrays.binarySearch(p0,p1,p2,p3,p4);
 public static void mergeSort(byte[] p0,it.unimi.dsi.fastutil.bytes.ByteComparator p1){
  ByteArrays.mergeSort(p0,p1);
 }
-public static void mergeSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3,byte[] p4){
- ByteArrays.mergeSort(p0,p1,p2,p3,p4);
-}
 public static void mergeSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
  ByteArrays.mergeSort(p0,p1,p2,p3);
+}
+public static void mergeSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3,byte[] p4){
+ ByteArrays.mergeSort(p0,p1,p2,p3,p4);
 }
 public static void quickSort(byte[] p0,it.unimi.dsi.fastutil.bytes.ByteComparator p1){
  ByteArrays.quickSort(p0,p1);
@@ -101,11 +101,11 @@ public static void quickSort(byte[] p0,it.unimi.dsi.fastutil.bytes.ByteComparato
 public static void quickSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
  ByteArrays.quickSort(p0,p1,p2,p3);
 }
-public static void parallelQuickSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
- ByteArrays.parallelQuickSort(p0,p1,p2,p3);
-}
 public static void parallelQuickSort(byte[] p0,it.unimi.dsi.fastutil.bytes.ByteComparator p1){
  ByteArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
+ ByteArrays.parallelQuickSort(p0,p1,p2,p3);
 }
 public static long binarySearch(byte[][] p0,long p1,long p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
 return ByteBigArrays.binarySearch(p0,p1,p2,p3,p4);
@@ -146,23 +146,23 @@ return ByteIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
 public static int upHeap(byte[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.bytes.ByteComparator p5){
 return ByteIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
 }
-public static int front(byte[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
-return ByteSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
 public static int[] makeHeap(byte[] p0,int p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
 return ByteSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(byte[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
- ByteSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(byte[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
  ByteSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(byte[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.bytes.ByteComparator p3){
+ ByteSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(byte[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
 return ByteSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 }
 public static int upHeap(byte[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
 return ByteSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
+}
+public static int front(byte[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
+return ByteSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
 public static it.unimi.dsi.fastutil.bytes.ByteSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.bytes.ByteComparator p1){
 return ByteSortedSets.singleton(p0,p1);

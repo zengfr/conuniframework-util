@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections4.MapUtils;
 import it.unimi.dsi.fastutil.bytes.Byte2ShortFunctions;
@@ -82,11 +82,11 @@ import org.apache.commons.lang.math.NumberUtils;
 * zengfr3000@qq.com
 */
 public final class ShortUtil{ 
-public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getShort(p0,p1);
-}
 public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1,java.lang.Short p2){
 return MapUtils.getShort(p0,p1,p2);
+}
+public static java.lang.Short getShort(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getShort(p0,p1);
 }
 public static <K> java.lang.Short getShort(java.util.Map<? super K, ?> p0,K p1,java.lang.Short p2){
 return MapUtils.getShort(p0,p1,p2);
@@ -217,17 +217,14 @@ return Shorts.toByteArray(p0);
 public static short saturatedCast(long p0){
 return Shorts.saturatedCast(p0);
 }
-public static short fromByteArray(byte[] p0){
-return Shorts.fromByteArray(p0);
+public static short checkedCast(long p0){
+return Shorts.checkedCast(p0);
 }
 public static short fromBytes(byte p0,byte p1){
 return Shorts.fromBytes(p0,p1);
 }
-public static short checkedCast(long p0){
-return Shorts.checkedCast(p0);
-}
-public static short swapShort(short p0){
-return EndianUtils.swapShort(p0);
+public static short fromByteArray(byte[] p0){
+return Shorts.fromByteArray(p0);
 }
 public static short readSwappedShort(byte[] p0,int p1){
 return EndianUtils.readSwappedShort(p0,p1);
@@ -235,23 +232,26 @@ return EndianUtils.readSwappedShort(p0,p1);
 public static short readSwappedShort(java.io.InputStream p0) throws java.io.IOException{
 return EndianUtils.readSwappedShort(p0);
 }
-public static void writeSwappedShort(java.io.OutputStream p0,short p1) throws java.io.IOException{
- EndianUtils.writeSwappedShort(p0,p1);
+public static short swapShort(short p0){
+return EndianUtils.swapShort(p0);
 }
 public static void writeSwappedShort(byte[] p0,int p1,short p2){
  EndianUtils.writeSwappedShort(p0,p1,p2);
 }
-public static short getShortValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getShortValue(p0,p1);
+public static void writeSwappedShort(java.io.OutputStream p0,short p1) throws java.io.IOException{
+ EndianUtils.writeSwappedShort(p0,p1);
 }
 public static short getShortValue(java.util.Map p0,java.lang.Object p1,short p2){
 return MapUtils.getShortValue(p0,p1,p2);
 }
-public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1){
+public static short getShortValue(java.util.Map p0,java.lang.Object p1){
 return MapUtils.getShortValue(p0,p1);
 }
 public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1,short p2){
 return MapUtils.getShortValue(p0,p1,p2);
+}
+public static <K> short getShortValue(java.util.Map<? super K, ?> p0,K p1){
+return MapUtils.getShortValue(p0,p1);
 }
 public static short[] add(short[] p0,short p1){
 return ArrayUtils.add(p0,p1);
@@ -271,14 +271,14 @@ return ArrayUtils.removeElement(p0,p1);
 public static short[] toPrimitive(java.lang.Short[] p0,short p1){
 return ArrayUtils.toPrimitive(p0,p1);
 }
-public static java.lang.String shortToHex(short p0,int p1,java.lang.String p2,int p3,int p4){
-return Conversion.shortToHex(p0,p1,p2,p3,p4);
+public static boolean[] shortToBinary(short p0,int p1,boolean[] p2,int p3,int p4){
+return Conversion.shortToBinary(p0,p1,p2,p3,p4);
+}
+public static short binaryToShort(boolean[] p0,int p1,short p2,int p3,int p4){
+return Conversion.binaryToShort(p0,p1,p2,p3,p4);
 }
 public static short hexToShort(java.lang.String p0,int p1,short p2,int p3,int p4){
 return Conversion.hexToShort(p0,p1,p2,p3,p4);
-}
-public static boolean[] shortToBinary(short p0,int p1,boolean[] p2,int p3,int p4){
-return Conversion.shortToBinary(p0,p1,p2,p3,p4);
 }
 public static byte[] shortToByteArray(short p0,int p1,byte[] p2,int p3,int p4){
 return Conversion.shortToByteArray(p0,p1,p2,p3,p4);
@@ -286,8 +286,8 @@ return Conversion.shortToByteArray(p0,p1,p2,p3,p4);
 public static short byteArrayToShort(byte[] p0,int p1,short p2,int p3,int p4){
 return Conversion.byteArrayToShort(p0,p1,p2,p3,p4);
 }
-public static short binaryToShort(boolean[] p0,int p1,short p2,int p3,int p4){
-return Conversion.binaryToShort(p0,p1,p2,p3,p4);
+public static java.lang.String shortToHex(short p0,int p1,java.lang.String p2,int p3,int p4){
+return Conversion.shortToHex(p0,p1,p2,p3,p4);
 }
 public static short min(short p0,short p1,short p2){
 return NumberUtils.min(p0,p1,p2);
@@ -301,29 +301,29 @@ return NumberUtils.toShort(p0);
 public static short toShort(java.lang.String p0,short p1){
 return NumberUtils.toShort(p0,p1);
 }
-public static short CONST_SHORT(int p0) throws java.lang.IllegalArgumentException{
-return ObjectUtils.CONST_SHORT(p0);
-}
 public static short CONST(short p0){
 return ObjectUtils.CONST(p0);
+}
+public static short CONST_SHORT(int p0) throws java.lang.IllegalArgumentException{
+return ObjectUtils.CONST_SHORT(p0);
 }
 public static short copySign(short p0,short p1) throws org.apache.commons.math3.exception.MathArithmeticException{
 return MathUtils.copySign(p0,p1);
 }
-public static void setDefaultShort(short p0){
- ConvertUtils.setDefaultShort(p0);
-}
 public static short getDefaultShort(){
 return ConvertUtils.getDefaultShort();
 }
-public static org.apache.commons.collections.primitives.ShortIterator singletonShortIterator(short p0){
-return ShortCollections.singletonShortIterator(p0);
+public static void setDefaultShort(short p0){
+ ConvertUtils.setDefaultShort(p0);
+}
+public static org.apache.commons.collections.primitives.ShortListIterator singletonShortListIterator(short p0){
+return ShortCollections.singletonShortListIterator(p0);
 }
 public static org.apache.commons.collections.primitives.ShortList singletonShortList(short p0){
 return ShortCollections.singletonShortList(p0);
 }
-public static org.apache.commons.collections.primitives.ShortListIterator singletonShortListIterator(short p0){
-return ShortCollections.singletonShortListIterator(p0);
+public static org.apache.commons.collections.primitives.ShortIterator singletonShortIterator(short p0){
+return ShortCollections.singletonShortIterator(p0);
 }
 public static short safeIntToShort(int p0){
 return SafeMath.safeIntToShort(p0);
@@ -433,14 +433,14 @@ public static void fill(short[] p0,short p1){
 public static int binarySearch(short[] p0,short p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 return ShortArrays.binarySearch(p0,p1,p2);
 }
-public static int binarySearch(short[] p0,int p1,int p2,short p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
-return ShortArrays.binarySearch(p0,p1,p2,p3,p4);
+public static int binarySearch(short[] p0,int p1,int p2,short p3){
+return ShortArrays.binarySearch(p0,p1,p2,p3);
 }
 public static int binarySearch(short[] p0,short p1){
 return ShortArrays.binarySearch(p0,p1);
 }
-public static int binarySearch(short[] p0,int p1,int p2,short p3){
-return ShortArrays.binarySearch(p0,p1,p2,p3);
+public static int binarySearch(short[] p0,int p1,int p2,short p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
+return ShortArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static void add(short[][] p0,long p1,short p2){
  ShortBigArrays.add(p0,p1,p2);
@@ -457,11 +457,11 @@ public static void fill(short[][] p0,long p1,long p2,short p3){
 public static long binarySearch(short[][] p0,long p1,long p2,short p3){
 return ShortBigArrays.binarySearch(p0,p1,p2,p3);
 }
-public static long binarySearch(short[][] p0,long p1,long p2,short p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
-return ShortBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
 public static long binarySearch(short[][] p0,short p1){
 return ShortBigArrays.binarySearch(p0,p1);
+}
+public static long binarySearch(short[][] p0,long p1,long p2,short p3,it.unimi.dsi.fastutil.shorts.ShortComparator p4){
+return ShortBigArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static long binarySearch(short[][] p0,short p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 return ShortBigArrays.binarySearch(p0,p1,p2);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CollectionIntCollection;
 import org.apache.commons.collections.primitives.adapters.IntCollectionCollection;
 import it.unimi.dsi.fastutil.ints.IntCollections;

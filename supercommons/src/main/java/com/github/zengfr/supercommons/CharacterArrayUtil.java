@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.text.AlphabetConverter;
 import org.apache.commons.lang.ArrayUtils;

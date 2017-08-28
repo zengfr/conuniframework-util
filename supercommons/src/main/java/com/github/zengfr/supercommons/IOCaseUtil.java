@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.filefilter.FileFilterUtils;
@@ -18,13 +18,13 @@ return IOCase.forName(p0);
 public static org.apache.commons.io.IOCase valueOf(java.lang.String p0){
 return IOCase.valueOf(p0);
 }
+public static org.apache.commons.io.filefilter.IOFileFilter nameFileFilter(java.lang.String p0,org.apache.commons.io.IOCase p1){
+return FileFilterUtils.nameFileFilter(p0,p1);
+}
 public static org.apache.commons.io.filefilter.IOFileFilter prefixFileFilter(java.lang.String p0,org.apache.commons.io.IOCase p1){
 return FileFilterUtils.prefixFileFilter(p0,p1);
 }
 public static org.apache.commons.io.filefilter.IOFileFilter suffixFileFilter(java.lang.String p0,org.apache.commons.io.IOCase p1){
 return FileFilterUtils.suffixFileFilter(p0,p1);
-}
-public static org.apache.commons.io.filefilter.IOFileFilter nameFileFilter(java.lang.String p0,org.apache.commons.io.IOCase p1){
-return FileFilterUtils.nameFileFilter(p0,p1);
 }
 }

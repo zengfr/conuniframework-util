@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CharCollectionCollection;
 import org.apache.commons.collections.primitives.adapters.CollectionCharCollection;
 import it.unimi.dsi.fastutil.chars.CharCollections;

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.BooleanUtils;
@@ -174,11 +174,11 @@ import org.apache.commons.lang.WordUtils;
 * zengfr3000@qq.com
 */
 public final class BooleanUtil{ 
-public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getBoolean(p0,p1);
-}
 public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1,java.lang.Boolean p2){
 return MapUtils.getBoolean(p0,p1,p2);
+}
+public static java.lang.Boolean getBoolean(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getBoolean(p0,p1);
 }
 public static <K> java.lang.Boolean getBoolean(java.util.Map<? super K, ?> p0,K p1,java.lang.Boolean p2){
 return MapUtils.getBoolean(p0,p1,p2);
@@ -204,44 +204,41 @@ return BooleanUtils.toInteger(p0,p1,p2,p3);
 public static boolean toBoolean(java.lang.Boolean p0){
 return BooleanUtils.toBoolean(p0);
 }
-public static boolean toBooleanDefaultIfNull(java.lang.Boolean p0,boolean p1){
-return BooleanUtils.toBooleanDefaultIfNull(p0,p1);
+public static boolean isNotFalse(java.lang.Boolean p0){
+return BooleanUtils.isNotFalse(p0);
 }
-public static java.lang.String toStringTrueFalse(java.lang.Boolean p0){
-return BooleanUtils.toStringTrueFalse(p0);
+public static java.lang.String toStringOnOff(java.lang.Boolean p0){
+return BooleanUtils.toStringOnOff(p0);
 }
 public static boolean isTrue(java.lang.Boolean p0){
 return BooleanUtils.isTrue(p0);
 }
-public static boolean isNotTrue(java.lang.Boolean p0){
-return BooleanUtils.isNotTrue(p0);
-}
 public static boolean isFalse(java.lang.Boolean p0){
 return BooleanUtils.isFalse(p0);
 }
-public static boolean isNotFalse(java.lang.Boolean p0){
-return BooleanUtils.isNotFalse(p0);
+public static java.lang.Boolean toBooleanObject(int p0){
+return BooleanUtils.toBooleanObject(p0);
 }
-public static java.lang.String toStringYesNo(java.lang.Boolean p0){
-return BooleanUtils.toStringYesNo(p0);
+public static java.lang.Boolean toBooleanObject(java.lang.Integer p0){
+return BooleanUtils.toBooleanObject(p0);
+}
+public static java.lang.Boolean toBooleanObject(int p0,int p1,int p2,int p3){
+return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
 }
 public static java.lang.Boolean toBooleanObject(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
 return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
 }
-public static java.lang.Boolean toBooleanObject(int p0,int p1,int p2,int p3){
+public static java.lang.Boolean toBooleanObject(java.lang.String p0,java.lang.String p1,java.lang.String p2,java.lang.String p3){
 return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
 }
 public static java.lang.Boolean toBooleanObject(java.lang.String p0){
 return BooleanUtils.toBooleanObject(p0);
 }
-public static java.lang.Boolean toBooleanObject(int p0){
-return BooleanUtils.toBooleanObject(p0);
+public static java.lang.String toStringYesNo(java.lang.Boolean p0){
+return BooleanUtils.toStringYesNo(p0);
 }
-public static java.lang.Boolean toBooleanObject(java.lang.String p0,java.lang.String p1,java.lang.String p2,java.lang.String p3){
-return BooleanUtils.toBooleanObject(p0,p1,p2,p3);
-}
-public static java.lang.Boolean toBooleanObject(java.lang.Integer p0){
-return BooleanUtils.toBooleanObject(p0);
+public static boolean isNotTrue(java.lang.Boolean p0){
+return BooleanUtils.isNotTrue(p0);
 }
 public static java.lang.Integer toIntegerObject(java.lang.Boolean p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
 return BooleanUtils.toIntegerObject(p0,p1,p2,p3);
@@ -249,8 +246,11 @@ return BooleanUtils.toIntegerObject(p0,p1,p2,p3);
 public static java.lang.Integer toIntegerObject(java.lang.Boolean p0){
 return BooleanUtils.toIntegerObject(p0);
 }
-public static java.lang.String toStringOnOff(java.lang.Boolean p0){
-return BooleanUtils.toStringOnOff(p0);
+public static boolean toBooleanDefaultIfNull(java.lang.Boolean p0,boolean p1){
+return BooleanUtils.toBooleanDefaultIfNull(p0,p1);
+}
+public static java.lang.String toStringTrueFalse(java.lang.Boolean p0){
+return BooleanUtils.toStringTrueFalse(p0);
 }
 public static it.unimi.dsi.fastutil.booleans.BooleanSet singleton(java.lang.Boolean p0){
 return BooleanSets.singleton(p0);
@@ -327,14 +327,14 @@ public static void checkArgument(boolean p0,java.lang.Object p1){
 public static void checkArgument(boolean p0){
  Preconditions.checkArgument(p0);
 }
+public static void checkState(boolean p0,java.lang.Object p1){
+ Preconditions.checkState(p0,p1);
+}
 public static void checkState(boolean p0){
  Preconditions.checkState(p0);
 }
 public static void checkState(boolean p0,java.lang.String p1,java.lang.Object... p2){
  Preconditions.checkState(p0,p1,p2);
-}
-public static void checkState(boolean p0,java.lang.Object p1){
- Preconditions.checkState(p0,p1);
 }
 public static boolean isNullOrEmpty(java.lang.String p0){
 return Strings.isNullOrEmpty(p0);
@@ -342,11 +342,11 @@ return Strings.isNullOrEmpty(p0);
 public static boolean lazyStackTraceIsLazy(){
 return Throwables.lazyStackTraceIsLazy();
 }
-public static boolean isWellFormed(byte[] p0){
-return Utf8.isWellFormed(p0);
-}
 public static boolean isWellFormed(byte[] p0,int p1,int p2){
 return Utf8.isWellFormed(p0,p1,p2);
+}
+public static boolean isWellFormed(byte[] p0){
+return Utf8.isWellFormed(p0);
 }
 public static void verify(boolean p0){
  Verify.verify(p0);
@@ -405,16 +405,16 @@ return Iterators.any(p0,p1);
 public static boolean elementsEqual(java.util.Iterator<?> p0,java.util.Iterator<?> p1){
 return Iterators.elementsEqual(p0,p1);
 }
-public static boolean containsOccurrences(com.google.common.collect.Multiset<?> p0,com.google.common.collect.Multiset<?> p1){
-return Multisets.containsOccurrences(p0,p1);
-}
 public static boolean retainOccurrences(com.google.common.collect.Multiset<?> p0,com.google.common.collect.Multiset<?> p1){
 return Multisets.retainOccurrences(p0,p1);
 }
-public static boolean removeOccurrences(com.google.common.collect.Multiset<?> p0,com.google.common.collect.Multiset<?> p1){
-return Multisets.removeOccurrences(p0,p1);
+public static boolean containsOccurrences(com.google.common.collect.Multiset<?> p0,com.google.common.collect.Multiset<?> p1){
+return Multisets.containsOccurrences(p0,p1);
 }
 public static boolean removeOccurrences(com.google.common.collect.Multiset<?> p0,java.lang.Iterable<?> p1){
+return Multisets.removeOccurrences(p0,p1);
+}
+public static boolean removeOccurrences(com.google.common.collect.Multiset<?> p0,com.google.common.collect.Multiset<?> p1){
 return Multisets.removeOccurrences(p0,p1);
 }
 public static void close(java.io.Closeable p0,boolean p1) throws java.io.IOException{
@@ -426,14 +426,14 @@ public static void flush(java.io.Flushable p0,boolean p1) throws java.io.IOExcep
 public static boolean isPowerOfTwo(java.math.BigInteger p0){
 return BigIntegerMath.isPowerOfTwo(p0);
 }
-public static boolean isMathematicalInteger(double p0){
-return DoubleMath.isMathematicalInteger(p0);
+public static boolean fuzzyEquals(double p0,double p1,double p2){
+return DoubleMath.fuzzyEquals(p0,p1,p2);
 }
 public static boolean isPowerOfTwo(double p0){
 return DoubleMath.isPowerOfTwo(p0);
 }
-public static boolean fuzzyEquals(double p0,double p1,double p2){
-return DoubleMath.fuzzyEquals(p0,p1,p2);
+public static boolean isMathematicalInteger(double p0){
+return DoubleMath.isMathematicalInteger(p0);
 }
 public static boolean isPowerOfTwo(int p0){
 return IntMath.isPowerOfTwo(p0);
@@ -444,32 +444,32 @@ return LongMath.isPowerOfTwo(p0);
 public static boolean isValid(java.lang.String p0){
 return HostSpecifier.isValid(p0);
 }
-public static boolean hasEmbeddedIPv4ClientAddress(java.net.Inet6Address p0){
-return InetAddresses.hasEmbeddedIPv4ClientAddress(p0);
-}
-public static boolean isCompatIPv4Address(java.net.Inet6Address p0){
-return InetAddresses.isCompatIPv4Address(p0);
-}
-public static boolean isMappedIPv4Address(java.lang.String p0){
-return InetAddresses.isMappedIPv4Address(p0);
-}
 public static boolean isUriInetAddress(java.lang.String p0){
 return InetAddresses.isUriInetAddress(p0);
-}
-public static boolean isTeredoAddress(java.net.Inet6Address p0){
-return InetAddresses.isTeredoAddress(p0);
 }
 public static boolean is6to4Address(java.net.Inet6Address p0){
 return InetAddresses.is6to4Address(p0);
 }
-public static boolean isInetAddress(java.lang.String p0){
-return InetAddresses.isInetAddress(p0);
+public static boolean isTeredoAddress(java.net.Inet6Address p0){
+return InetAddresses.isTeredoAddress(p0);
+}
+public static boolean isIsatapAddress(java.net.Inet6Address p0){
+return InetAddresses.isIsatapAddress(p0);
 }
 public static boolean isMaximum(java.net.InetAddress p0){
 return InetAddresses.isMaximum(p0);
 }
-public static boolean isIsatapAddress(java.net.Inet6Address p0){
-return InetAddresses.isIsatapAddress(p0);
+public static boolean isInetAddress(java.lang.String p0){
+return InetAddresses.isInetAddress(p0);
+}
+public static boolean isMappedIPv4Address(java.lang.String p0){
+return InetAddresses.isMappedIPv4Address(p0);
+}
+public static boolean isCompatIPv4Address(java.net.Inet6Address p0){
+return InetAddresses.isCompatIPv4Address(p0);
+}
+public static boolean hasEmbeddedIPv4ClientAddress(java.net.Inet6Address p0){
+return InetAddresses.hasEmbeddedIPv4ClientAddress(p0);
 }
 public static int indexOf(boolean[] p0,boolean p1){
 return Booleans.indexOf(p0,p1);
@@ -543,11 +543,17 @@ return TaggedIOException.isTaggedWith(p0,p1);
 public static java.lang.String normalize(java.lang.String p0,boolean p1){
 return FilenameUtils.normalize(p0,p1);
 }
+public static boolean isExtension(java.lang.String p0,java.lang.String p1){
+return FilenameUtils.isExtension(p0,p1);
+}
+public static boolean isExtension(java.lang.String p0,java.util.Collection<java.lang.String> p1){
+return FilenameUtils.isExtension(p0,p1);
+}
+public static boolean isExtension(java.lang.String p0,java.lang.String[] p1){
+return FilenameUtils.isExtension(p0,p1);
+}
 public static boolean equalsOnSystem(java.lang.String p0,java.lang.String p1){
 return FilenameUtils.equalsOnSystem(p0,p1);
-}
-public static boolean equalsNormalized(java.lang.String p0,java.lang.String p1){
-return FilenameUtils.equalsNormalized(p0,p1);
 }
 public static boolean wildcardMatch(java.lang.String p0,java.lang.String p1,org.apache.commons.io.IOCase p2){
 return FilenameUtils.wildcardMatch(p0,p1,p2);
@@ -555,20 +561,14 @@ return FilenameUtils.wildcardMatch(p0,p1,p2);
 public static boolean wildcardMatch(java.lang.String p0,java.lang.String p1){
 return FilenameUtils.wildcardMatch(p0,p1);
 }
-public static boolean isExtension(java.lang.String p0,java.lang.String[] p1){
-return FilenameUtils.isExtension(p0,p1);
-}
-public static boolean isExtension(java.lang.String p0,java.util.Collection<java.lang.String> p1){
-return FilenameUtils.isExtension(p0,p1);
-}
-public static boolean isExtension(java.lang.String p0,java.lang.String p1){
-return FilenameUtils.isExtension(p0,p1);
-}
-public static boolean directoryContains(java.lang.String p0,java.lang.String p1) throws java.io.IOException{
-return FilenameUtils.directoryContains(p0,p1);
+public static boolean equalsNormalized(java.lang.String p0,java.lang.String p1){
+return FilenameUtils.equalsNormalized(p0,p1);
 }
 public static java.lang.String normalizeNoEndSeparator(java.lang.String p0,boolean p1){
 return FilenameUtils.normalizeNoEndSeparator(p0,p1);
+}
+public static boolean directoryContains(java.lang.String p0,java.lang.String p1) throws java.io.IOException{
+return FilenameUtils.directoryContains(p0,p1);
 }
 public static boolean equalsNormalizedOnSystem(java.lang.String p0,java.lang.String p1){
 return FilenameUtils.equalsNormalizedOnSystem(p0,p1);
@@ -591,13 +591,13 @@ return Tailer.create(p0,p1,p2,p3,p4);
 public static org.apache.commons.io.input.Tailer create(java.io.File p0,org.apache.commons.io.input.TailerListener p1,long p2,boolean p3){
 return Tailer.create(p0,p1,p2,p3);
 }
-public static org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(long p0,boolean p1){
-return FileFilterUtils.ageFileFilter(p0,p1);
-}
 public static org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.util.Date p0,boolean p1){
 return FileFilterUtils.ageFileFilter(p0,p1);
 }
 public static org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(java.io.File p0,boolean p1){
+return FileFilterUtils.ageFileFilter(p0,p1);
+}
+public static org.apache.commons.io.filefilter.IOFileFilter ageFileFilter(long p0,boolean p1){
 return FileFilterUtils.ageFileFilter(p0,p1);
 }
 public static org.apache.commons.io.filefilter.IOFileFilter sizeFileFilter(long p0,boolean p1){
@@ -606,20 +606,20 @@ return FileFilterUtils.sizeFileFilter(p0,p1);
 public static boolean contentEquals(java.io.File p0,java.io.File p1) throws java.io.IOException{
 return FileUtils.contentEquals(p0,p1);
 }
-public static void write(java.io.File p0,java.lang.CharSequence p1,java.nio.charset.Charset p2,boolean p3) throws java.io.IOException{
- FileUtils.write(p0,p1,p2,p3);
+public static void write(java.io.File p0,java.lang.CharSequence p1,boolean p2) throws java.io.IOException{
+ FileUtils.write(p0,p1,p2);
 }
 public static void write(java.io.File p0,java.lang.CharSequence p1,java.lang.String p2,boolean p3) throws java.io.IOException{
  FileUtils.write(p0,p1,p2,p3);
 }
-public static void write(java.io.File p0,java.lang.CharSequence p1,boolean p2) throws java.io.IOException{
- FileUtils.write(p0,p1,p2);
+public static void write(java.io.File p0,java.lang.CharSequence p1,java.nio.charset.Charset p2,boolean p3) throws java.io.IOException{
+ FileUtils.write(p0,p1,p2,p3);
 }
 public static java.util.Collection<java.io.File> listFiles(java.io.File p0,java.lang.String[] p1,boolean p2){
 return FileUtils.listFiles(p0,p1,p2);
 }
-public static boolean waitFor(java.io.File p0,int p1){
-return FileUtils.waitFor(p0,p1);
+public static void writeLines(java.io.File p0,java.util.Collection<?> p1,boolean p2) throws java.io.IOException{
+ FileUtils.writeLines(p0,p1,p2);
 }
 public static void writeLines(java.io.File p0,java.lang.String p1,java.util.Collection<?> p2,boolean p3) throws java.io.IOException{
  FileUtils.writeLines(p0,p1,p2,p3);
@@ -627,17 +627,29 @@ public static void writeLines(java.io.File p0,java.lang.String p1,java.util.Coll
 public static void writeLines(java.io.File p0,java.util.Collection<?> p1,java.lang.String p2,boolean p3) throws java.io.IOException{
  FileUtils.writeLines(p0,p1,p2,p3);
 }
-public static void writeLines(java.io.File p0,java.util.Collection<?> p1,boolean p2) throws java.io.IOException{
- FileUtils.writeLines(p0,p1,p2);
-}
 public static void writeLines(java.io.File p0,java.lang.String p1,java.util.Collection<?> p2,java.lang.String p3,boolean p4) throws java.io.IOException{
  FileUtils.writeLines(p0,p1,p2,p3,p4);
 }
 public static boolean contentEqualsIgnoreEOL(java.io.File p0,java.io.File p1,java.lang.String p2) throws java.io.IOException{
 return FileUtils.contentEqualsIgnoreEOL(p0,p1,p2);
 }
-public static java.io.FileOutputStream openOutputStream(java.io.File p0,boolean p1) throws java.io.IOException{
-return FileUtils.openOutputStream(p0,p1);
+public static boolean waitFor(java.io.File p0,int p1){
+return FileUtils.waitFor(p0,p1);
+}
+public static boolean deleteQuietly(java.io.File p0){
+return FileUtils.deleteQuietly(p0);
+}
+public static boolean isFileNewer(java.io.File p0,java.io.File p1){
+return FileUtils.isFileNewer(p0,p1);
+}
+public static boolean isFileNewer(java.io.File p0,java.util.Date p1){
+return FileUtils.isFileNewer(p0,p1);
+}
+public static boolean isFileNewer(java.io.File p0,long p1){
+return FileUtils.isFileNewer(p0,p1);
+}
+public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,java.lang.String[] p1,boolean p2){
+return FileUtils.iterateFiles(p0,p1,p2);
 }
 public static void copyFile(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
  FileUtils.copyFile(p0,p1,p2);
@@ -648,11 +660,11 @@ public static void copyDirectory(java.io.File p0,java.io.File p1,boolean p2) thr
 public static void copyDirectory(java.io.File p0,java.io.File p1,java.io.FileFilter p2,boolean p3) throws java.io.IOException{
  FileUtils.copyDirectory(p0,p1,p2,p3);
 }
-public static java.util.Iterator<java.io.File> iterateFiles(java.io.File p0,java.lang.String[] p1,boolean p2){
-return FileUtils.iterateFiles(p0,p1,p2);
+public static java.io.FileOutputStream openOutputStream(java.io.File p0,boolean p1) throws java.io.IOException{
+return FileUtils.openOutputStream(p0,p1);
 }
-public static boolean isSymlink(java.io.File p0) throws java.io.IOException{
-return FileUtils.isSymlink(p0);
+public static boolean isFileOlder(java.io.File p0,long p1){
+return FileUtils.isFileOlder(p0,p1);
 }
 public static boolean isFileOlder(java.io.File p0,java.io.File p1){
 return FileUtils.isFileOlder(p0,p1);
@@ -660,50 +672,38 @@ return FileUtils.isFileOlder(p0,p1);
 public static boolean isFileOlder(java.io.File p0,java.util.Date p1){
 return FileUtils.isFileOlder(p0,p1);
 }
-public static boolean isFileOlder(java.io.File p0,long p1){
-return FileUtils.isFileOlder(p0,p1);
-}
 public static void moveToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
  FileUtils.moveToDirectory(p0,p1,p2);
 }
-public static boolean deleteQuietly(java.io.File p0){
-return FileUtils.deleteQuietly(p0);
+public static boolean isSymlink(java.io.File p0) throws java.io.IOException{
+return FileUtils.isSymlink(p0);
 }
-public static boolean isFileNewer(java.io.File p0,java.util.Date p1){
-return FileUtils.isFileNewer(p0,p1);
-}
-public static boolean isFileNewer(java.io.File p0,long p1){
-return FileUtils.isFileNewer(p0,p1);
-}
-public static boolean isFileNewer(java.io.File p0,java.io.File p1){
-return FileUtils.isFileNewer(p0,p1);
-}
-public static void moveFileToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
- FileUtils.moveFileToDirectory(p0,p1,p2);
-}
-public static void moveDirectoryToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
- FileUtils.moveDirectoryToDirectory(p0,p1,p2);
-}
-public static boolean directoryContains(java.io.File p0,java.io.File p1) throws java.io.IOException{
-return FileUtils.directoryContains(p0,p1);
-}
-public static void writeStringToFile(java.io.File p0,java.lang.String p1,java.nio.charset.Charset p2,boolean p3) throws java.io.IOException{
- FileUtils.writeStringToFile(p0,p1,p2,p3);
+public static void copyFileToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
+ FileUtils.copyFileToDirectory(p0,p1,p2);
 }
 public static void writeStringToFile(java.io.File p0,java.lang.String p1,boolean p2) throws java.io.IOException{
  FileUtils.writeStringToFile(p0,p1,p2);
 }
-public static void writeStringToFile(java.io.File p0,java.lang.String p1,java.lang.String p2,boolean p3) throws java.io.IOException{
+public static void writeStringToFile(java.io.File p0,java.lang.String p1,java.nio.charset.Charset p2,boolean p3) throws java.io.IOException{
  FileUtils.writeStringToFile(p0,p1,p2,p3);
 }
-public static void writeByteArrayToFile(java.io.File p0,byte[] p1,boolean p2) throws java.io.IOException{
- FileUtils.writeByteArrayToFile(p0,p1,p2);
+public static void writeStringToFile(java.io.File p0,java.lang.String p1,java.lang.String p2,boolean p3) throws java.io.IOException{
+ FileUtils.writeStringToFile(p0,p1,p2,p3);
 }
 public static void writeByteArrayToFile(java.io.File p0,byte[] p1,int p2,int p3,boolean p4) throws java.io.IOException{
  FileUtils.writeByteArrayToFile(p0,p1,p2,p3,p4);
 }
-public static void copyFileToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
- FileUtils.copyFileToDirectory(p0,p1,p2);
+public static void writeByteArrayToFile(java.io.File p0,byte[] p1,boolean p2) throws java.io.IOException{
+ FileUtils.writeByteArrayToFile(p0,p1,p2);
+}
+public static void moveDirectoryToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
+ FileUtils.moveDirectoryToDirectory(p0,p1,p2);
+}
+public static void moveFileToDirectory(java.io.File p0,java.io.File p1,boolean p2) throws java.io.IOException{
+ FileUtils.moveFileToDirectory(p0,p1,p2);
+}
+public static boolean directoryContains(java.io.File p0,java.io.File p1) throws java.io.IOException{
+return FileUtils.directoryContains(p0,p1);
 }
 public static boolean isEmpty(java.util.Collection p0){
 return CollectionUtils.isEmpty(p0);
@@ -720,11 +720,8 @@ return CollectionUtils.containsAny(p0,p1);
 public static boolean isFull(java.util.Collection p0){
 return CollectionUtils.isFull(p0);
 }
-public static boolean isEqualCollection(java.util.Collection p0,java.util.Collection p1){
-return CollectionUtils.isEqualCollection(p0,p1);
-}
-public static boolean isProperSubCollection(java.util.Collection p0,java.util.Collection p1){
-return CollectionUtils.isProperSubCollection(p0,p1);
+public static boolean sizeIsEmpty(java.lang.Object p0){
+return CollectionUtils.sizeIsEmpty(p0);
 }
 public static boolean isSubCollection(java.util.Collection p0,java.util.Collection p1){
 return CollectionUtils.isSubCollection(p0,p1);
@@ -732,8 +729,11 @@ return CollectionUtils.isSubCollection(p0,p1);
 public static boolean addIgnoreNull(java.util.Collection p0,java.lang.Object p1){
 return CollectionUtils.addIgnoreNull(p0,p1);
 }
-public static boolean sizeIsEmpty(java.lang.Object p0){
-return CollectionUtils.sizeIsEmpty(p0);
+public static boolean isProperSubCollection(java.util.Collection p0,java.util.Collection p1){
+return CollectionUtils.isProperSubCollection(p0,p1);
+}
+public static boolean isEqualCollection(java.util.Collection p0,java.util.Collection p1){
+return CollectionUtils.isEqualCollection(p0,p1);
 }
 public static boolean isEmpty(java.util.Map p0){
 return MapUtils.isEmpty(p0);
@@ -741,11 +741,11 @@ return MapUtils.isEmpty(p0);
 public static boolean isNotEmpty(java.util.Map p0){
 return MapUtils.isNotEmpty(p0);
 }
-public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1){
-return MapUtils.getBooleanValue(p0,p1);
-}
 public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1,boolean p2){
 return MapUtils.getBooleanValue(p0,p1,p2);
+}
+public static boolean getBooleanValue(java.util.Map p0,java.lang.Object p1){
+return MapUtils.getBooleanValue(p0,p1);
 }
 public static boolean isEqualSet(java.util.Collection p0,java.util.Collection p1){
 return SetUtils.isEqualSet(p0,p1);
@@ -795,14 +795,20 @@ return CollectionUtils.containsAny(p0,p1);
 public static boolean isFull(java.util.Collection<?> p0){
 return CollectionUtils.isFull(p0);
 }
-public static <E> boolean isEqualCollection(java.util.Collection<? extends E> p0,java.util.Collection<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
-return CollectionUtils.isEqualCollection(p0,p1,p2);
+public static boolean isSubCollection(java.util.Collection<?> p0,java.util.Collection<?> p1){
+return CollectionUtils.isSubCollection(p0,p1);
+}
+public static <T> boolean addIgnoreNull(java.util.Collection<T> p0,T p1){
+return CollectionUtils.addIgnoreNull(p0,p1);
+}
+public static boolean isProperSubCollection(java.util.Collection<?> p0,java.util.Collection<?> p1){
+return CollectionUtils.isProperSubCollection(p0,p1);
 }
 public static boolean isEqualCollection(java.util.Collection<?> p0,java.util.Collection<?> p1){
 return CollectionUtils.isEqualCollection(p0,p1);
 }
-public static boolean isProperSubCollection(java.util.Collection<?> p0,java.util.Collection<?> p1){
-return CollectionUtils.isProperSubCollection(p0,p1);
+public static <E> boolean isEqualCollection(java.util.Collection<? extends E> p0,java.util.Collection<? extends E> p1,org.apache.commons.collections4.Equator<? super E> p2){
+return CollectionUtils.isEqualCollection(p0,p1,p2);
 }
 public static <O> java.util.List<O> collate(java.lang.Iterable<? extends O> p0,java.lang.Iterable<? extends O> p1,java.util.Comparator<? super O> p2,boolean p3){
 return CollectionUtils.collate(p0,p1,p2,p3);
@@ -812,12 +818,6 @@ return CollectionUtils.collate(p0,p1,p2);
 }
 public static <C> boolean matchesAll(java.lang.Iterable<C> p0,org.apache.commons.collections4.Predicate<? super C> p1){
 return CollectionUtils.matchesAll(p0,p1);
-}
-public static boolean isSubCollection(java.util.Collection<?> p0,java.util.Collection<?> p1){
-return CollectionUtils.isSubCollection(p0,p1);
-}
-public static <T> boolean addIgnoreNull(java.util.Collection<T> p0,T p1){
-return CollectionUtils.addIgnoreNull(p0,p1);
 }
 public static <T> boolean filterInverse(java.lang.Iterable<T> p0,org.apache.commons.collections4.Predicate<? super T> p1){
 return CollectionUtils.filterInverse(p0,p1);
@@ -840,11 +840,11 @@ return IteratorUtils.contains(p0,p1);
 public static boolean isEmpty(java.util.Iterator<?> p0){
 return IteratorUtils.isEmpty(p0);
 }
-public static <E> boolean matchesAll(java.util.Iterator<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
-return IteratorUtils.matchesAll(p0,p1);
-}
 public static <E> boolean matchesAny(java.util.Iterator<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
 return IteratorUtils.matchesAny(p0,p1);
+}
+public static <E> boolean matchesAll(java.util.Iterator<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
+return IteratorUtils.matchesAll(p0,p1);
 }
 public static boolean isEqualSet(java.util.Collection<?> p0,java.util.Collection<?> p1){
 return SetUtils.isEqualSet(p0,p1);
@@ -858,17 +858,17 @@ return WhileClosure.whileClosure(p0,p1,p2);
 public static boolean isEqualList(java.util.Collection<?> p0,java.util.Collection<?> p1){
 return ListUtils.isEqualList(p0,p1);
 }
-public static <E> boolean contains(java.lang.Iterable<E> p0,java.lang.Object p1){
-return IterableUtils.contains(p0,p1);
-}
 public static <E> boolean contains(java.lang.Iterable<? extends E> p0,E p1,org.apache.commons.collections4.Equator<? super E> p2){
 return IterableUtils.contains(p0,p1,p2);
 }
-public static <E> boolean matchesAll(java.lang.Iterable<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
-return IterableUtils.matchesAll(p0,p1);
+public static <E> boolean contains(java.lang.Iterable<E> p0,java.lang.Object p1){
+return IterableUtils.contains(p0,p1);
 }
 public static <E> boolean matchesAny(java.lang.Iterable<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
 return IterableUtils.matchesAny(p0,p1);
+}
+public static <E> boolean matchesAll(java.lang.Iterable<E> p0,org.apache.commons.collections4.Predicate<? super E> p1){
+return IterableUtils.matchesAll(p0,p1);
 }
 public static boolean isValidAnnotationMemberType(java.lang.Class<?> p0){
 return AnnotationUtils.isValidAnnotationMemberType(p0);
@@ -948,19 +948,43 @@ return ArrayUtils.isNotEmpty(p0);
 public static <T> boolean isNotEmpty(T[] p0){
 return ArrayUtils.isNotEmpty(p0);
 }
-public static boolean isSameLength(byte[] p0,byte[] p1){
-return ArrayUtils.isSameLength(p0,p1);
+public static boolean isSorted(long[] p0){
+return ArrayUtils.isSorted(p0);
 }
-public static boolean isSameLength(java.lang.Object[] p0,java.lang.Object[] p1){
-return ArrayUtils.isSameLength(p0,p1);
+public static boolean isSorted(int[] p0){
+return ArrayUtils.isSorted(p0);
 }
-public static boolean isSameLength(char[] p0,char[] p1){
-return ArrayUtils.isSameLength(p0,p1);
+public static boolean isSorted(byte[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static <T> boolean isSorted(T[] p0,java.util.Comparator<T> p1){
+return ArrayUtils.isSorted(p0,p1);
+}
+public static boolean isSorted(short[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static boolean isSorted(float[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static boolean isSorted(double[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static boolean isSorted(boolean[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static <T extends java.lang.Comparable<? super T> > boolean isSorted(T[] p0){
+return ArrayUtils.isSorted(p0);
+}
+public static boolean isSorted(char[] p0){
+return ArrayUtils.isSorted(p0);
 }
 public static boolean isSameLength(short[] p0,short[] p1){
 return ArrayUtils.isSameLength(p0,p1);
 }
 public static boolean isSameLength(boolean[] p0,boolean[] p1){
+return ArrayUtils.isSameLength(p0,p1);
+}
+public static boolean isSameLength(int[] p0,int[] p1){
 return ArrayUtils.isSameLength(p0,p1);
 }
 public static boolean isSameLength(long[] p0,long[] p1){
@@ -969,10 +993,16 @@ return ArrayUtils.isSameLength(p0,p1);
 public static boolean isSameLength(float[] p0,float[] p1){
 return ArrayUtils.isSameLength(p0,p1);
 }
+public static boolean isSameLength(java.lang.Object[] p0,java.lang.Object[] p1){
+return ArrayUtils.isSameLength(p0,p1);
+}
+public static boolean isSameLength(byte[] p0,byte[] p1){
+return ArrayUtils.isSameLength(p0,p1);
+}
 public static boolean isSameLength(double[] p0,double[] p1){
 return ArrayUtils.isSameLength(p0,p1);
 }
-public static boolean isSameLength(int[] p0,int[] p1){
+public static boolean isSameLength(char[] p0,char[] p1){
 return ArrayUtils.isSameLength(p0,p1);
 }
 public static boolean isSameType(java.lang.Object p0,java.lang.Object p1){
@@ -983,36 +1013,6 @@ return ArrayUtils.isEquals(p0,p1);
 }
 public static boolean[] toPrimitive(java.lang.Boolean[] p0,boolean p1){
 return ArrayUtils.toPrimitive(p0,p1);
-}
-public static boolean isSorted(int[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(short[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(double[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static <T extends java.lang.Comparable<? super T> > boolean isSorted(T[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(long[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static <T> boolean isSorted(T[] p0,java.util.Comparator<T> p1){
-return ArrayUtils.isSorted(p0,p1);
-}
-public static boolean isSorted(boolean[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(char[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(byte[] p0){
-return ArrayUtils.isSorted(p0);
-}
-public static boolean isSorted(float[] p0){
-return ArrayUtils.isSorted(p0);
 }
 public static boolean and(boolean... p0){
 return BooleanUtils.and(p0);
@@ -1029,23 +1029,23 @@ return BooleanUtils.toInteger(p0);
 public static int toInteger(boolean p0,int p1,int p2){
 return BooleanUtils.toInteger(p0,p1,p2);
 }
-public static boolean toBoolean(java.lang.String p0){
-return BooleanUtils.toBoolean(p0);
-}
 public static boolean toBoolean(java.lang.String p0,java.lang.String p1,java.lang.String p2){
-return BooleanUtils.toBoolean(p0,p1,p2);
-}
-public static boolean toBoolean(int p0,int p1,int p2){
 return BooleanUtils.toBoolean(p0,p1,p2);
 }
 public static boolean toBoolean(int p0){
 return BooleanUtils.toBoolean(p0);
 }
+public static boolean toBoolean(int p0,int p1,int p2){
+return BooleanUtils.toBoolean(p0,p1,p2);
+}
 public static boolean toBoolean(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2){
 return BooleanUtils.toBoolean(p0,p1,p2);
 }
-public static java.lang.String toStringTrueFalse(boolean p0){
-return BooleanUtils.toStringTrueFalse(p0);
+public static boolean toBoolean(java.lang.String p0){
+return BooleanUtils.toBoolean(p0);
+}
+public static java.lang.String toStringOnOff(boolean p0){
+return BooleanUtils.toStringOnOff(p0);
 }
 public static java.lang.String toStringYesNo(boolean p0){
 return BooleanUtils.toStringYesNo(p0);
@@ -1056,8 +1056,8 @@ return BooleanUtils.toIntegerObject(p0,p1,p2);
 public static java.lang.Integer toIntegerObject(boolean p0){
 return BooleanUtils.toIntegerObject(p0);
 }
-public static java.lang.String toStringOnOff(boolean p0){
-return BooleanUtils.toStringOnOff(p0);
+public static java.lang.String toStringTrueFalse(boolean p0){
+return BooleanUtils.toStringTrueFalse(p0);
 }
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class<?> p3,java.lang.String... p4){
 return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
@@ -1065,16 +1065,16 @@ return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2){
 return CompareToBuilder.reflectionCompare(p0,p1,p2);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection<java.lang.String> p2){
-return EqualsBuilder.reflectionEquals(p0,p1,p2);
-}
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class<?> p3,java.lang.String... p4){
 return EqualsBuilder.reflectionEquals(p0,p1,p2,p3,p4);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2){
+return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.lang.String... p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2){
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection<java.lang.String> p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static int reflectionHashCode(int p0,int p1,java.lang.Object p2,boolean p3){
@@ -1113,26 +1113,26 @@ return CharUtils.isAsciiNumeric(p0);
 public static boolean isAsciiAlpha(char p0){
 return CharUtils.isAsciiAlpha(p0);
 }
+public static boolean isAsciiAlphaUpper(char p0){
+return CharUtils.isAsciiAlphaUpper(p0);
+}
 public static boolean isAsciiAlphaLower(char p0){
 return CharUtils.isAsciiAlphaLower(p0);
 }
 public static boolean isAsciiAlphanumeric(char p0){
 return CharUtils.isAsciiAlphanumeric(p0);
 }
-public static boolean isAsciiAlphaUpper(char p0){
-return CharUtils.isAsciiAlphaUpper(p0);
-}
 public static boolean isAssignable(java.lang.Class<?> p0,java.lang.Class<?> p1,boolean p2){
 return ClassUtils.isAssignable(p0,p1,p2);
 }
-public static boolean isAssignable(java.lang.Class<?> p0,java.lang.Class<?> p1){
-return ClassUtils.isAssignable(p0,p1);
+public static boolean isAssignable(java.lang.Class<?>[] p0,java.lang.Class<?>[] p1,boolean p2){
+return ClassUtils.isAssignable(p0,p1,p2);
 }
 public static boolean isAssignable(java.lang.Class<?>[] p0,java.lang.Class<?>... p1){
 return ClassUtils.isAssignable(p0,p1);
 }
-public static boolean isAssignable(java.lang.Class<?>[] p0,java.lang.Class<?>[] p1,boolean p2){
-return ClassUtils.isAssignable(p0,p1,p2);
+public static boolean isAssignable(java.lang.Class<?> p0,java.lang.Class<?> p1){
+return ClassUtils.isAssignable(p0,p1);
 }
 public static boolean isInnerClass(java.lang.Class<?> p0){
 return ClassUtils.isInnerClass(p0);
@@ -1149,11 +1149,11 @@ return EnumUtils.isValidEnum(p0,p1);
 public static boolean isAvailableLocale(java.util.Locale p0){
 return LocaleUtils.isAvailableLocale(p0);
 }
-public static boolean isNumber(java.lang.String p0){
-return NumberUtils.isNumber(p0);
-}
 public static boolean isDigits(java.lang.String p0){
 return NumberUtils.isDigits(p0);
+}
+public static boolean isNumber(java.lang.String p0){
+return NumberUtils.isNumber(p0);
 }
 public static boolean isParsable(java.lang.String p0){
 return NumberUtils.isParsable(p0);
@@ -1161,11 +1161,11 @@ return NumberUtils.isParsable(p0);
 public static <T extends java.lang.Comparable<? super T> > int compare(T p0,T p1,boolean p2){
 return ObjectUtils.compare(p0,p1,p2);
 }
-public static boolean notEqual(java.lang.Object p0,java.lang.Object p1){
-return ObjectUtils.notEqual(p0,p1);
-}
 public static boolean CONST(boolean p0){
 return ObjectUtils.CONST(p0);
+}
+public static boolean notEqual(java.lang.Object p0,java.lang.Object p1){
+return ObjectUtils.notEqual(p0,p1);
 }
 public static java.lang.String random(int p0,boolean p1,boolean p2){
 return RandomStringUtils.random(p0,p1,p2);
@@ -1185,16 +1185,22 @@ return FieldUtils.getDeclaredField(p0,p1,p2);
 public static java.lang.reflect.Field getField(java.lang.Class<?> p0,java.lang.String p1,boolean p2){
 return FieldUtils.getField(p0,p1,p2);
 }
-public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readStaticField(p0,p1,p2);
-}
 public static java.lang.Object readStaticField(java.lang.reflect.Field p0,boolean p1) throws java.lang.IllegalAccessException{
 return FieldUtils.readStaticField(p0,p1);
 }
-public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
-return FieldUtils.readField(p0,p1,p2);
+public static java.lang.Object readStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readStaticField(p0,p1,p2);
+}
+public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1,p2);
+}
+public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
+ FieldUtils.writeStaticField(p0,p1,p2,p3);
 }
 public static java.lang.Object readField(java.lang.Object p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
+return FieldUtils.readField(p0,p1,p2);
+}
+public static java.lang.Object readField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readField(p0,p1,p2);
 }
 public static void writeField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
@@ -1203,35 +1209,29 @@ public static void writeField(java.lang.Object p0,java.lang.String p1,java.lang.
 public static void writeField(java.lang.reflect.Field p0,java.lang.Object p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeField(p0,p1,p2,p3);
 }
-public static void writeStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1,p2,p3);
-}
-public static void writeStaticField(java.lang.reflect.Field p0,java.lang.Object p1,boolean p2) throws java.lang.IllegalAccessException{
- FieldUtils.writeStaticField(p0,p1,p2);
-}
 public static java.lang.Object readDeclaredField(java.lang.Object p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredField(p0,p1,p2);
-}
-public static void removeFinalModifier(java.lang.reflect.Field p0,boolean p1){
- FieldUtils.removeFinalModifier(p0,p1);
 }
 public static java.lang.Object readDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,boolean p2) throws java.lang.IllegalAccessException{
 return FieldUtils.readDeclaredStaticField(p0,p1,p2);
 }
-public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
- FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
+public static void removeFinalModifier(java.lang.reflect.Field p0,boolean p1){
+ FieldUtils.removeFinalModifier(p0,p1);
 }
 public static void writeDeclaredField(java.lang.Object p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
  FieldUtils.writeDeclaredField(p0,p1,p2,p3);
 }
+public static void writeDeclaredStaticField(java.lang.Class<?> p0,java.lang.String p1,java.lang.Object p2,boolean p3) throws java.lang.IllegalAccessException{
+ FieldUtils.writeDeclaredStaticField(p0,p1,p2,p3);
+}
 public static boolean isInstance(java.lang.Object p0,java.lang.reflect.Type p1){
 return TypeUtils.isInstance(p0,p1);
 }
-public static boolean isAssignable(java.lang.reflect.Type p0,java.lang.reflect.Type p1){
-return TypeUtils.isAssignable(p0,p1);
-}
 public static boolean isArrayType(java.lang.reflect.Type p0){
 return TypeUtils.isArrayType(p0);
+}
+public static boolean isAssignable(java.lang.reflect.Type p0,java.lang.reflect.Type p1){
+return TypeUtils.isAssignable(p0,p1);
 }
 public static boolean containsTypeVariables(java.lang.reflect.Type p0){
 return TypeUtils.containsTypeVariables(p0);
@@ -1266,38 +1266,38 @@ return StringUtils.isNumeric(p0);
 public static boolean containsIgnoreCase(java.lang.CharSequence p0,java.lang.CharSequence p1){
 return StringUtils.containsIgnoreCase(p0,p1);
 }
-public static boolean isAlphanumericSpace(java.lang.CharSequence p0){
-return StringUtils.isAlphanumericSpace(p0);
-}
 public static boolean containsWhitespace(java.lang.CharSequence p0){
 return StringUtils.containsWhitespace(p0);
 }
-public static boolean startsWithIgnoreCase(java.lang.CharSequence p0,java.lang.CharSequence p1){
-return StringUtils.startsWithIgnoreCase(p0,p1);
-}
-public static boolean endsWithIgnoreCase(java.lang.CharSequence p0,java.lang.CharSequence p1){
-return StringUtils.endsWithIgnoreCase(p0,p1);
+public static boolean isAlphanumericSpace(java.lang.CharSequence p0){
+return StringUtils.isAlphanumericSpace(p0);
 }
 public static boolean isAnyEmpty(java.lang.CharSequence... p0){
 return StringUtils.isAnyEmpty(p0);
 }
-public static boolean isNotBlank(java.lang.CharSequence p0){
-return StringUtils.isNotBlank(p0);
-}
-public static boolean isAnyBlank(java.lang.CharSequence... p0){
-return StringUtils.isAnyBlank(p0);
-}
 public static boolean isBlank(java.lang.CharSequence p0){
 return StringUtils.isBlank(p0);
 }
-public static boolean isNotEmpty(java.lang.CharSequence p0){
-return StringUtils.isNotEmpty(p0);
+public static boolean isNotBlank(java.lang.CharSequence p0){
+return StringUtils.isNotBlank(p0);
 }
 public static boolean isNoneEmpty(java.lang.CharSequence... p0){
 return StringUtils.isNoneEmpty(p0);
 }
+public static boolean isAnyBlank(java.lang.CharSequence... p0){
+return StringUtils.isAnyBlank(p0);
+}
 public static boolean isNoneBlank(java.lang.CharSequence... p0){
 return StringUtils.isNoneBlank(p0);
+}
+public static boolean isNotEmpty(java.lang.CharSequence p0){
+return StringUtils.isNotEmpty(p0);
+}
+public static boolean containsOnly(java.lang.CharSequence p0,java.lang.String p1){
+return StringUtils.containsOnly(p0,p1);
+}
+public static boolean containsOnly(java.lang.CharSequence p0,char... p1){
+return StringUtils.containsOnly(p0,p1);
 }
 public static boolean containsNone(java.lang.CharSequence p0,char... p1){
 return StringUtils.containsNone(p0,p1);
@@ -1314,35 +1314,35 @@ return StringUtils.containsAny(p0,p1);
 public static boolean containsAny(java.lang.CharSequence p0,java.lang.CharSequence p1){
 return StringUtils.containsAny(p0,p1);
 }
-public static boolean containsOnly(java.lang.CharSequence p0,char... p1){
-return StringUtils.containsOnly(p0,p1);
-}
-public static boolean containsOnly(java.lang.CharSequence p0,java.lang.String p1){
-return StringUtils.containsOnly(p0,p1);
+public static boolean isAlphanumeric(java.lang.CharSequence p0){
+return StringUtils.isAlphanumeric(p0);
 }
 public static boolean isAsciiPrintable(java.lang.CharSequence p0){
 return StringUtils.isAsciiPrintable(p0);
 }
-public static boolean isAllLowerCase(java.lang.CharSequence p0){
-return StringUtils.isAllLowerCase(p0);
-}
-public static boolean isAlphanumeric(java.lang.CharSequence p0){
-return StringUtils.isAlphanumeric(p0);
+public static boolean isAlphaSpace(java.lang.CharSequence p0){
+return StringUtils.isAlphaSpace(p0);
 }
 public static boolean isAllUpperCase(java.lang.CharSequence p0){
 return StringUtils.isAllUpperCase(p0);
 }
+public static boolean isAllLowerCase(java.lang.CharSequence p0){
+return StringUtils.isAllLowerCase(p0);
+}
 public static boolean isNumericSpace(java.lang.CharSequence p0){
 return StringUtils.isNumericSpace(p0);
 }
-public static boolean isAlphaSpace(java.lang.CharSequence p0){
-return StringUtils.isAlphaSpace(p0);
+public static boolean startsWithAny(java.lang.CharSequence p0,java.lang.CharSequence... p1){
+return StringUtils.startsWithAny(p0,p1);
 }
 public static boolean endsWithAny(java.lang.CharSequence p0,java.lang.CharSequence... p1){
 return StringUtils.endsWithAny(p0,p1);
 }
-public static boolean startsWithAny(java.lang.CharSequence p0,java.lang.CharSequence... p1){
-return StringUtils.startsWithAny(p0,p1);
+public static boolean endsWithIgnoreCase(java.lang.CharSequence p0,java.lang.CharSequence p1){
+return StringUtils.endsWithIgnoreCase(p0,p1);
+}
+public static boolean startsWithIgnoreCase(java.lang.CharSequence p0,java.lang.CharSequence p1){
+return StringUtils.startsWithIgnoreCase(p0,p1);
 }
 public static boolean isJavaAwtHeadless(){
 return SystemUtils.isJavaAwtHeadless();
@@ -1353,32 +1353,32 @@ return SystemUtils.isJavaVersionAtLeast(p0);
 public static java.lang.String wrap(java.lang.String p0,int p1,java.lang.String p2,boolean p3){
 return WordUtils.wrap(p0,p1,p2,p3);
 }
-public static boolean isSameDay(java.util.Date p0,java.util.Date p1){
-return DateUtils.isSameDay(p0,p1);
-}
-public static boolean isSameDay(java.util.Calendar p0,java.util.Calendar p1){
-return DateUtils.isSameDay(p0,p1);
-}
-public static boolean isSameInstant(java.util.Calendar p0,java.util.Calendar p1){
-return DateUtils.isSameInstant(p0,p1);
+public static boolean isSameLocalTime(java.util.Calendar p0,java.util.Calendar p1){
+return DateUtils.isSameLocalTime(p0,p1);
 }
 public static boolean isSameInstant(java.util.Date p0,java.util.Date p1){
 return DateUtils.isSameInstant(p0,p1);
 }
-public static boolean isSameLocalTime(java.util.Calendar p0,java.util.Calendar p1){
-return DateUtils.isSameLocalTime(p0,p1);
+public static boolean isSameInstant(java.util.Calendar p0,java.util.Calendar p1){
+return DateUtils.isSameInstant(p0,p1);
 }
-public static boolean truncatedEquals(java.util.Date p0,java.util.Date p1,int p2){
-return DateUtils.truncatedEquals(p0,p1,p2);
+public static boolean isSameDay(java.util.Calendar p0,java.util.Calendar p1){
+return DateUtils.isSameDay(p0,p1);
+}
+public static boolean isSameDay(java.util.Date p0,java.util.Date p1){
+return DateUtils.isSameDay(p0,p1);
 }
 public static boolean truncatedEquals(java.util.Calendar p0,java.util.Calendar p1,int p2){
 return DateUtils.truncatedEquals(p0,p1,p2);
 }
-public static java.lang.String formatPeriod(long p0,long p1,java.lang.String p2,boolean p3,java.util.TimeZone p4){
-return DurationFormatUtils.formatPeriod(p0,p1,p2,p3,p4);
+public static boolean truncatedEquals(java.util.Date p0,java.util.Date p1,int p2){
+return DateUtils.truncatedEquals(p0,p1,p2);
 }
 public static java.lang.String formatDuration(long p0,java.lang.String p1,boolean p2){
 return DurationFormatUtils.formatDuration(p0,p1,p2);
+}
+public static java.lang.String formatPeriod(long p0,long p1,java.lang.String p2,boolean p3,java.util.TimeZone p4){
+return DurationFormatUtils.formatPeriod(p0,p1,p2,p3,p4);
 }
 public static java.lang.String formatDurationWords(long p0,boolean p1,boolean p2){
 return DurationFormatUtils.formatDurationWords(p0,p1,p2);
@@ -1389,17 +1389,17 @@ public static void validState(boolean p0,java.lang.String p1,java.lang.Object...
 public static void validState(boolean p0){
  Validate.validState(p0);
 }
+public static void isTrue(boolean p0,java.lang.String p1,java.lang.Object... p2){
+ Validate.isTrue(p0,p1,p2);
+}
+public static void isTrue(boolean p0,java.lang.String p1,long p2){
+ Validate.isTrue(p0,p1,p2);
+}
 public static void isTrue(boolean p0,java.lang.String p1,double p2){
  Validate.isTrue(p0,p1,p2);
 }
 public static void isTrue(boolean p0){
  Validate.isTrue(p0);
-}
-public static void isTrue(boolean p0,java.lang.String p1,long p2){
- Validate.isTrue(p0,p1,p2);
-}
-public static void isTrue(boolean p0,java.lang.String p1,java.lang.Object... p2){
- Validate.isTrue(p0,p1,p2);
 }
 public static boolean verifyInterpolationArray(double[] p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.NonMonotonicSequenceException{
 return PolynomialFunctionLagrangeForm.verifyInterpolationArray(p0,p1,p2);
@@ -1410,47 +1410,17 @@ return UnivariateSolverUtils.isSequence(p0,p1,p2);
 public static boolean isBracketing(org.apache.commons.math3.analysis.UnivariateFunction p0,double p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException{
 return UnivariateSolverUtils.isBracketing(p0,p1,p2);
 }
-public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
-}
-public static boolean kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,double p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
-}
-public static double kolmogorovSmirnovTest(double[] p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
-return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
-}
-public static boolean homoscedasticTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.homoscedasticTTest(p0,p1,p2);
-}
-public static boolean gTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.gTestDataSetsComparison(p0,p1,p2);
-}
-public static boolean chiSquareTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTestDataSetsComparison(p0,p1,p2);
-}
-public static boolean chiSquareTest(long[][] p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0,p1);
-}
-public static boolean chiSquareTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.chiSquareTest(p0,p1,p2);
-}
-public static boolean tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static boolean tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static boolean tTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
-public static boolean tTest(double p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
-return TestUtils.tTest(p0,p1,p2);
-}
 public static boolean oneWayAnovaTest(java.util.Collection<double[]> p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.ConvergenceException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.oneWayAnovaTest(p0,p1);
 }
 public static boolean pairedTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NoDataException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.pairedTTest(p0,p1,p2);
+}
+public static boolean chiSquareTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0,p1,p2);
+}
+public static boolean chiSquareTest(long[][] p0,double p1) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTest(p0,p1);
 }
 public static boolean gTest(double[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.NotStrictlyPositiveException,org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
 return TestUtils.gTest(p0,p1,p2);
@@ -1458,8 +1428,38 @@ return TestUtils.gTest(p0,p1,p2);
 public static double exactP(double p0,int p1,int p2,boolean p3){
 return TestUtils.exactP(p0,p1,p2,p3);
 }
+public static boolean tTest(double p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static boolean tTest(double p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static boolean tTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
+public static boolean tTest(org.apache.commons.math3.stat.descriptive.StatisticalSummary p0,org.apache.commons.math3.stat.descriptive.StatisticalSummary p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.tTest(p0,p1,p2);
+}
 public static double monteCarloP(double p0,int p1,int p2,boolean p3,int p4){
 return TestUtils.monteCarloP(p0,p1,p2,p3,p4);
+}
+public static boolean homoscedasticTTest(double[] p0,double[] p1,double p2) throws org.apache.commons.math3.exception.NullArgumentException,org.apache.commons.math3.exception.NumberIsTooSmallException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.homoscedasticTTest(p0,p1,p2);
+}
+public static boolean chiSquareTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.chiSquareTestDataSetsComparison(p0,p1,p2);
+}
+public static boolean gTestDataSetsComparison(long[] p0,long[] p1,double p2) throws org.apache.commons.math3.exception.DimensionMismatchException,org.apache.commons.math3.exception.NotPositiveException,org.apache.commons.math3.exception.ZeroException,org.apache.commons.math3.exception.OutOfRangeException,org.apache.commons.math3.exception.MaxCountExceededException{
+return TestUtils.gTestDataSetsComparison(p0,p1,p2);
+}
+public static double kolmogorovSmirnovTest(double[] p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+}
+public static double kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,boolean p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
+}
+public static boolean kolmogorovSmirnovTest(org.apache.commons.math3.distribution.RealDistribution p0,double[] p1,double p2) throws org.apache.commons.math3.exception.InsufficientDataException,org.apache.commons.math3.exception.NullArgumentException{
+return TestUtils.kolmogorovSmirnovTest(p0,p1,p2);
 }
 public static boolean isSymmetric(org.apache.commons.math3.linear.RealMatrix p0,double p1){
 return MatrixUtils.isSymmetric(p0,p1);
@@ -1476,35 +1476,35 @@ return LeastSquaresFactory.create(p0,p1,p2,p3,p4,p5,p6,p7,p8);
 public static boolean parseFixedstring(java.lang.String p0,java.lang.String p1,java.text.ParsePosition p2){
 return CompositeFormat.parseFixedstring(p0,p1,p2);
 }
-public static boolean equalsIncludingNaN(double[] p0,double[] p1){
-return MathArrays.equalsIncludingNaN(p0,p1);
-}
-public static boolean equalsIncludingNaN(float[] p0,float[] p1){
-return MathArrays.equalsIncludingNaN(p0,p1);
-}
-public static void checkOrder(double[] p0,OrderDirection p1,boolean p2) throws org.apache.commons.math3.exception.NonMonotonicSequenceException{
- MathArrays.checkOrder(p0,p1,p2);
-}
-public static boolean checkOrder(double[] p0,OrderDirection p1,boolean p2,boolean p3) throws org.apache.commons.math3.exception.NonMonotonicSequenceException{
-return MathArrays.checkOrder(p0,p1,p2,p3);
-}
-public static boolean checkEqualLength(double[] p0,double[] p1,boolean p2){
-return MathArrays.checkEqualLength(p0,p1,p2);
-}
-public static boolean checkEqualLength(int[] p0,int[] p1,boolean p2){
-return MathArrays.checkEqualLength(p0,p1,p2);
-}
-public static boolean verifyValues(double[] p0,int p1,int p2,boolean p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return MathArrays.verifyValues(p0,p1,p2,p3);
+public static boolean verifyValues(double[] p0,double[] p1,int p2,int p3,boolean p4) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return MathArrays.verifyValues(p0,p1,p2,p3,p4);
 }
 public static boolean verifyValues(double[] p0,double[] p1,int p2,int p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return MathArrays.verifyValues(p0,p1,p2,p3);
 }
-public static boolean verifyValues(double[] p0,double[] p1,int p2,int p3,boolean p4) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return MathArrays.verifyValues(p0,p1,p2,p3,p4);
+public static boolean verifyValues(double[] p0,int p1,int p2,boolean p3) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
+return MathArrays.verifyValues(p0,p1,p2,p3);
 }
 public static boolean verifyValues(double[] p0,int p1,int p2) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
 return MathArrays.verifyValues(p0,p1,p2);
+}
+public static boolean checkEqualLength(int[] p0,int[] p1,boolean p2){
+return MathArrays.checkEqualLength(p0,p1,p2);
+}
+public static boolean checkEqualLength(double[] p0,double[] p1,boolean p2){
+return MathArrays.checkEqualLength(p0,p1,p2);
+}
+public static boolean checkOrder(double[] p0,OrderDirection p1,boolean p2,boolean p3) throws org.apache.commons.math3.exception.NonMonotonicSequenceException{
+return MathArrays.checkOrder(p0,p1,p2,p3);
+}
+public static void checkOrder(double[] p0,OrderDirection p1,boolean p2) throws org.apache.commons.math3.exception.NonMonotonicSequenceException{
+ MathArrays.checkOrder(p0,p1,p2);
+}
+public static boolean equalsIncludingNaN(float[] p0,float[] p1){
+return MathArrays.equalsIncludingNaN(p0,p1);
+}
+public static boolean equalsIncludingNaN(double[] p0,double[] p1){
+return MathArrays.equalsIncludingNaN(p0,p1);
 }
 public static <T extends java.lang.Comparable<? super T> > boolean isMonotonic(T[] p0,OrderDirection p1,boolean p2){
 return MathArrays.isMonotonic(p0,p1,p2);
@@ -1533,11 +1533,11 @@ return Precision.equalsIncludingNaN(p0,p1);
 public static boolean equalsIncludingNaN(double p0,double p1,double p2){
 return Precision.equalsIncludingNaN(p0,p1,p2);
 }
-public static boolean getApplyLocalized(){
-return LocaleBeanUtils.getApplyLocalized();
-}
 public static void setApplyLocalized(boolean p0){
  LocaleBeanUtils.setApplyLocalized(p0);
+}
+public static boolean getApplyLocalized(){
+return LocaleBeanUtils.getApplyLocalized();
 }
 public static boolean initCause(java.lang.Throwable p0,java.lang.Throwable p1){
 return BeanUtils.initCause(p0,p1);
@@ -1548,11 +1548,11 @@ return BeanUtils.getCacheFast(p0);
 public static void setCacheFast(java.util.Map<?, ?> p0,boolean p1){
  BeanUtils.setCacheFast(p0,p1);
 }
-public static boolean isReadable(java.lang.Object p0,java.lang.String p1){
-return PropertyUtils.isReadable(p0,p1);
-}
 public static boolean isWriteable(java.lang.Object p0,java.lang.String p1){
 return PropertyUtils.isWriteable(p0,p1);
+}
+public static boolean isReadable(java.lang.Object p0,java.lang.String p1){
+return PropertyUtils.isReadable(p0,p1);
 }
 public static boolean removeBeanIntrospector(org.apache.commons.beanutils.BeanIntrospector p0){
 return PropertyUtils.removeBeanIntrospector(p0);
@@ -1563,11 +1563,11 @@ public static synchronized void setCacheMethods(boolean p0){
 public static final boolean isAssignmentCompatible(java.lang.Class<?> p0,java.lang.Class<?> p1){
 return MethodUtils.isAssignmentCompatible(p0,p1);
 }
-public static void setDefaultBoolean(boolean p0){
- ConvertUtils.setDefaultBoolean(p0);
-}
 public static boolean getDefaultBoolean(){
 return ConvertUtils.getDefaultBoolean();
+}
+public static void setDefaultBoolean(boolean p0){
+ ConvertUtils.setDefaultBoolean(p0);
 }
 public static boolean isDelimiter(int p0,char[] p1){
 return WordUtils.isDelimiter(p0,p1);
@@ -1611,23 +1611,23 @@ return Byte2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.bytes.Byte2BooleanSortedMap singleton(byte p0,boolean p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
 return Byte2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,byte[] p1,boolean p2){
- ByteArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,byte[] p1,int p2,int p3,boolean p4){
- ByteArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,byte[] p1,byte[] p2,int p3,int p4,boolean p5){
  ByteArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,byte[] p1,byte[] p2,boolean p3){
  ByteArrays.radixSortIndirect(p0,p1,p2,p3);
 }
+public static void radixSortIndirect(int[] p0,byte[] p1,int p2,int p3,boolean p4){
+ ByteArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
 public static void radixSortIndirect(int[] p0,byte[] p1,boolean p2){
  ByteArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void radixSortIndirect(int[] p0,byte[] p1,int p2,int p3,boolean p4){
- ByteArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,byte[] p1,int p2,int p3,boolean p4){
+ ByteArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,byte[] p1,boolean p2){
+ ByteArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.bytes.ByteIterator p0,java.util.function.IntPredicate p1){
 return ByteIterators.all(p0,p1);
@@ -1641,23 +1641,23 @@ return Char2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.chars.Char2BooleanSortedMap singleton(char p0,boolean p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
 return Char2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,char[] p1,boolean p2){
- CharArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
- CharArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,char[] p1,char[] p2,int p3,int p4,boolean p5){
  CharArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,char[] p1,char[] p2,boolean p3){
  CharArrays.radixSortIndirect(p0,p1,p2,p3);
 }
+public static void radixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
+ CharArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
 public static void radixSortIndirect(int[] p0,char[] p1,boolean p2){
  CharArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void radixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
- CharArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,char[] p1,int p2,int p3,boolean p4){
+ CharArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,char[] p1,boolean p2){
+ CharArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.chars.CharIterator p0,java.util.function.IntPredicate p1){
 return CharIterators.all(p0,p1);
@@ -1671,23 +1671,23 @@ return Double2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.doubles.Double2BooleanSortedMap singleton(double p0,boolean p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
 return Double2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,double[] p1,boolean p2){
- DoubleArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,double[] p1,int p2,int p3,boolean p4){
- DoubleArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,double[] p1,double[] p2,boolean p3){
  DoubleArrays.radixSortIndirect(p0,p1,p2,p3);
-}
-public static void radixSortIndirect(int[] p0,double[] p1,double[] p2,int p3,int p4,boolean p5){
- DoubleArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,double[] p1,boolean p2){
  DoubleArrays.radixSortIndirect(p0,p1,p2);
 }
 public static void radixSortIndirect(int[] p0,double[] p1,int p2,int p3,boolean p4){
  DoubleArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void radixSortIndirect(int[] p0,double[] p1,double[] p2,int p3,int p4,boolean p5){
+ DoubleArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
+}
+public static void parallelRadixSortIndirect(int[] p0,double[] p1,int p2,int p3,boolean p4){
+ DoubleArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,double[] p1,boolean p2){
+ DoubleArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.util.function.DoublePredicate p1){
 return DoubleIterators.all(p0,p1);
@@ -1701,11 +1701,11 @@ return Float2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.floats.Float2BooleanSortedMap singleton(float p0,boolean p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
 return Float2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,float[] p1,boolean p2){
- FloatArrays.parallelRadixSortIndirect(p0,p1,p2);
+public static void radixSortIndirect(int[] p0,float[] p1,boolean p2){
+ FloatArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
- FloatArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+public static void radixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
+ FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4);
 }
 public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,boolean p3){
  FloatArrays.radixSortIndirect(p0,p1,p2,p3);
@@ -1713,11 +1713,11 @@ public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,boolean p3){
 public static void radixSortIndirect(int[] p0,float[] p1,float[] p2,int p3,int p4,boolean p5){
  FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
-public static void radixSortIndirect(int[] p0,float[] p1,boolean p2){
- FloatArrays.radixSortIndirect(p0,p1,p2);
+public static void parallelRadixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
+ FloatArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
 }
-public static void radixSortIndirect(int[] p0,float[] p1,int p2,int p3,boolean p4){
- FloatArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,float[] p1,boolean p2){
+ FloatArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.util.function.DoublePredicate p1){
 return FloatIterators.all(p0,p1);
@@ -1731,23 +1731,23 @@ return Int2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.ints.Int2BooleanSortedMap singleton(int p0,boolean p1,it.unimi.dsi.fastutil.ints.IntComparator p2){
 return Int2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,int[] p1,boolean p2){
- IntArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,int[] p1,int p2,int p3,boolean p4){
- IntArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,int[] p1,int[] p2,int p3,int p4,boolean p5){
  IntArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,int[] p1,int[] p2,boolean p3){
  IntArrays.radixSortIndirect(p0,p1,p2,p3);
 }
+public static void radixSortIndirect(int[] p0,int[] p1,int p2,int p3,boolean p4){
+ IntArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
 public static void radixSortIndirect(int[] p0,int[] p1,boolean p2){
  IntArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void radixSortIndirect(int[] p0,int[] p1,int p2,int p3,boolean p4){
- IntArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,int[] p1,int p2,int p3,boolean p4){
+ IntArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,int[] p1,boolean p2){
+ IntArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.ints.IntIterator p0,java.util.function.IntPredicate p1){
 return IntIterators.all(p0,p1);
@@ -1761,23 +1761,23 @@ return Long2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.longs.Long2BooleanSortedMap singleton(long p0,boolean p1,it.unimi.dsi.fastutil.longs.LongComparator p2){
 return Long2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,long[] p1,boolean p2){
- LongArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,long[] p1,int p2,int p3,boolean p4){
- LongArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,long[] p1,long[] p2,int p3,int p4,boolean p5){
  LongArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,long[] p1,long[] p2,boolean p3){
  LongArrays.radixSortIndirect(p0,p1,p2,p3);
 }
+public static void radixSortIndirect(int[] p0,long[] p1,int p2,int p3,boolean p4){
+ LongArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
 public static void radixSortIndirect(int[] p0,long[] p1,boolean p2){
  LongArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void radixSortIndirect(int[] p0,long[] p1,int p2,int p3,boolean p4){
- LongArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,long[] p1,int p2,int p3,boolean p4){
+ LongArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,long[] p1,boolean p2){
+ LongArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.longs.LongIterator p0,java.util.function.LongPredicate p1){
 return LongIterators.all(p0,p1);
@@ -1803,23 +1803,23 @@ return Short2BooleanFunctions.singleton(p0,p1);
 public static it.unimi.dsi.fastutil.shorts.Short2BooleanSortedMap singleton(short p0,boolean p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 return Short2BooleanSortedMaps.singleton(p0,p1,p2);
 }
-public static void parallelRadixSortIndirect(int[] p0,short[] p1,boolean p2){
- ShortArrays.parallelRadixSortIndirect(p0,p1,p2);
-}
-public static void parallelRadixSortIndirect(int[] p0,short[] p1,int p2,int p3,boolean p4){
- ShortArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
-}
 public static void radixSortIndirect(int[] p0,short[] p1,short[] p2,int p3,int p4,boolean p5){
  ShortArrays.radixSortIndirect(p0,p1,p2,p3,p4,p5);
 }
 public static void radixSortIndirect(int[] p0,short[] p1,short[] p2,boolean p3){
  ShortArrays.radixSortIndirect(p0,p1,p2,p3);
 }
+public static void radixSortIndirect(int[] p0,short[] p1,int p2,int p3,boolean p4){
+ ShortArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+}
 public static void radixSortIndirect(int[] p0,short[] p1,boolean p2){
  ShortArrays.radixSortIndirect(p0,p1,p2);
 }
-public static void radixSortIndirect(int[] p0,short[] p1,int p2,int p3,boolean p4){
- ShortArrays.radixSortIndirect(p0,p1,p2,p3,p4);
+public static void parallelRadixSortIndirect(int[] p0,short[] p1,int p2,int p3,boolean p4){
+ ShortArrays.parallelRadixSortIndirect(p0,p1,p2,p3,p4);
+}
+public static void parallelRadixSortIndirect(int[] p0,short[] p1,boolean p2){
+ ShortArrays.parallelRadixSortIndirect(p0,p1,p2);
 }
 public static boolean all(it.unimi.dsi.fastutil.shorts.ShortIterator p0,java.util.function.IntPredicate p1){
 return ShortIterators.all(p0,p1);
@@ -1842,26 +1842,26 @@ return ArrayUtils.isNotEmpty(p0);
 public static boolean xor(boolean[] p0){
 return BooleanUtils.xor(p0);
 }
-public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
-return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
-}
 public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
 return CompareToBuilder.reflectionCompare(p0,p1,p2,p3,p4);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
-return EqualsBuilder.reflectionEquals(p0,p1,p2,p3);
+public static int reflectionCompare(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
+return CompareToBuilder.reflectionCompare(p0,p1,p2,p3);
 }
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1){
-return EqualsBuilder.reflectionEquals(p0,p1);
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.lang.String[] p2){
+return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.util.Collection p2){
 return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1){
+return EqualsBuilder.reflectionEquals(p0,p1);
+}
+public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3){
+return EqualsBuilder.reflectionEquals(p0,p1,p2,p3);
+}
 public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,boolean p2,java.lang.Class p3,java.lang.String[] p4){
 return EqualsBuilder.reflectionEquals(p0,p1,p2,p3,p4);
-}
-public static boolean reflectionEquals(java.lang.Object p0,java.lang.Object p1,java.lang.String[] p2){
-return EqualsBuilder.reflectionEquals(p0,p1,p2);
 }
 public static int reflectionHashCode(int p0,int p1,java.lang.Object p2,boolean p3,java.lang.Class p4){
 return HashCodeBuilder.reflectionHashCode(p0,p1,p2,p3,p4);
@@ -1875,11 +1875,11 @@ return ToStringBuilder.reflectionToString(p0,p1,p2);
 public static java.lang.String reflectionToString(java.lang.Object p0,org.apache.commons.lang.builder.ToStringStyle p1,boolean p2,java.lang.Class p3){
 return ToStringBuilder.reflectionToString(p0,p1,p2,p3);
 }
-public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1){
-return ClassUtils.isAssignable(p0,p1);
-}
 public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1,boolean p2){
 return ClassUtils.isAssignable(p0,p1,p2);
+}
+public static boolean isAssignable(java.lang.Class[] p0,java.lang.Class[] p1){
+return ClassUtils.isAssignable(p0,p1);
 }
 public static boolean isAssignable(java.lang.Class p0,java.lang.Class p1,boolean p2){
 return ClassUtils.isAssignable(p0,p1,p2);
@@ -1893,14 +1893,14 @@ return ClassUtils.isInnerClass(p0);
 public static boolean setCause(java.lang.Throwable p0,java.lang.Throwable p1){
 return ExceptionUtils.setCause(p0,p1);
 }
-public static boolean isCauseMethodName(java.lang.String p0){
-return ExceptionUtils.isCauseMethodName(p0);
-}
 public static boolean isNestedThrowable(java.lang.Throwable p0){
 return ExceptionUtils.isNestedThrowable(p0);
 }
 public static boolean isThrowableNested(){
 return ExceptionUtils.isThrowableNested();
+}
+public static boolean isCauseMethodName(java.lang.String p0){
+return ExceptionUtils.isCauseMethodName(p0);
 }
 public static boolean nextBoolean(){
 return RandomUtils.nextBoolean();
@@ -1965,32 +1965,14 @@ return StringUtils.containsIgnoreCase(p0,p1);
 public static boolean isAlphanumericSpace(java.lang.String p0){
 return StringUtils.isAlphanumericSpace(p0);
 }
-public static boolean startsWithIgnoreCase(java.lang.String p0,java.lang.String p1){
-return StringUtils.startsWithIgnoreCase(p0,p1);
-}
-public static boolean endsWithIgnoreCase(java.lang.String p0,java.lang.String p1){
-return StringUtils.endsWithIgnoreCase(p0,p1);
+public static boolean isBlank(java.lang.String p0){
+return StringUtils.isBlank(p0);
 }
 public static boolean isNotBlank(java.lang.String p0){
 return StringUtils.isNotBlank(p0);
 }
-public static boolean isBlank(java.lang.String p0){
-return StringUtils.isBlank(p0);
-}
 public static boolean isNotEmpty(java.lang.String p0){
 return StringUtils.isNotEmpty(p0);
-}
-public static boolean containsNone(java.lang.String p0,java.lang.String p1){
-return StringUtils.containsNone(p0,p1);
-}
-public static boolean containsNone(java.lang.String p0,char[] p1){
-return StringUtils.containsNone(p0,p1);
-}
-public static boolean containsAny(java.lang.String p0,java.lang.String p1){
-return StringUtils.containsAny(p0,p1);
-}
-public static boolean containsAny(java.lang.String p0,char[] p1){
-return StringUtils.containsAny(p0,p1);
 }
 public static boolean containsOnly(java.lang.String p0,char[] p1){
 return StringUtils.containsOnly(p0,p1);
@@ -1998,29 +1980,47 @@ return StringUtils.containsOnly(p0,p1);
 public static boolean containsOnly(java.lang.String p0,java.lang.String p1){
 return StringUtils.containsOnly(p0,p1);
 }
-public static boolean isAsciiPrintable(java.lang.String p0){
-return StringUtils.isAsciiPrintable(p0);
+public static boolean containsNone(java.lang.String p0,java.lang.String p1){
+return StringUtils.containsNone(p0,p1);
 }
-public static boolean isAllLowerCase(java.lang.String p0){
-return StringUtils.isAllLowerCase(p0);
+public static boolean containsNone(java.lang.String p0,char[] p1){
+return StringUtils.containsNone(p0,p1);
+}
+public static boolean containsAny(java.lang.String p0,char[] p1){
+return StringUtils.containsAny(p0,p1);
+}
+public static boolean containsAny(java.lang.String p0,java.lang.String p1){
+return StringUtils.containsAny(p0,p1);
 }
 public static boolean isAlphanumeric(java.lang.String p0){
 return StringUtils.isAlphanumeric(p0);
 }
-public static boolean isAllUpperCase(java.lang.String p0){
-return StringUtils.isAllUpperCase(p0);
-}
-public static boolean isNumericSpace(java.lang.String p0){
-return StringUtils.isNumericSpace(p0);
+public static boolean isAsciiPrintable(java.lang.String p0){
+return StringUtils.isAsciiPrintable(p0);
 }
 public static boolean isAlphaSpace(java.lang.String p0){
 return StringUtils.isAlphaSpace(p0);
 }
-public static boolean endsWithAny(java.lang.String p0,java.lang.String[] p1){
-return StringUtils.endsWithAny(p0,p1);
+public static boolean isAllUpperCase(java.lang.String p0){
+return StringUtils.isAllUpperCase(p0);
+}
+public static boolean isAllLowerCase(java.lang.String p0){
+return StringUtils.isAllLowerCase(p0);
+}
+public static boolean isNumericSpace(java.lang.String p0){
+return StringUtils.isNumericSpace(p0);
 }
 public static boolean startsWithAny(java.lang.String p0,java.lang.String[] p1){
 return StringUtils.startsWithAny(p0,p1);
+}
+public static boolean endsWithAny(java.lang.String p0,java.lang.String[] p1){
+return StringUtils.endsWithAny(p0,p1);
+}
+public static boolean endsWithIgnoreCase(java.lang.String p0,java.lang.String p1){
+return StringUtils.endsWithIgnoreCase(p0,p1);
+}
+public static boolean startsWithIgnoreCase(java.lang.String p0,java.lang.String p1){
+return StringUtils.startsWithIgnoreCase(p0,p1);
 }
 public static boolean isJavaVersionAtLeast(float p0){
 return SystemUtils.isJavaVersionAtLeast(p0);

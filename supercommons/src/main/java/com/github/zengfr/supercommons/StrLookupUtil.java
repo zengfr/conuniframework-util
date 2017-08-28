@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.text.StrLookup;
 import org.apache.commons.text.StrLookup;
 import org.apache.commons.lang.text.StrLookup;

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.base.Functions;
 import com.google.common.collect.ImmutableSortedSet;
 import com.google.common.collect.ImmutableSortedSetFauxverideShim;
@@ -81,11 +81,11 @@ public static <E> void putUninterruptibly(java.util.concurrent.BlockingQueue<E> 
 public static <E> org.apache.commons.collections4.ResettableIterator<E> singletonIterator(E p0){
 return IteratorUtils.singletonIterator(p0);
 }
-public static <E> java.util.Iterator<E> objectGraphIterator(E p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return IteratorUtils.objectGraphIterator(p0,p1);
-}
 public static <E> java.util.ListIterator<E> singletonListIterator(E p0){
 return IteratorUtils.singletonListIterator(p0);
+}
+public static <E> java.util.Iterator<E> objectGraphIterator(E p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
+return IteratorUtils.objectGraphIterator(p0,p1);
 }
 public static <E> E min(E p0,E p1,java.util.Comparator<E> p2){
 return ComparatorUtils.min(p0,p1,p2);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.doubles.Double2BooleanSortedMaps;
 import it.unimi.dsi.fastutil.doubles.Double2ByteSortedMaps;
 import it.unimi.dsi.fastutil.doubles.Double2CharSortedMaps;
@@ -80,17 +80,17 @@ return Double2ShortSortedMaps.singleton(p0,p1,p2);
 public static it.unimi.dsi.fastutil.doubles.Double2ShortSortedMap singleton(double p0,short p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
 return Double2ShortSortedMaps.singleton(p0,p1,p2);
 }
-public static int binarySearch(double[] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
-return DoubleArrays.binarySearch(p0,p1,p2);
-}
 public static int binarySearch(double[] p0,int p1,int p2,double p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
 return DoubleArrays.binarySearch(p0,p1,p2,p3,p4);
 }
-public static void mergeSort(double[] p0,it.unimi.dsi.fastutil.doubles.DoubleComparator p1){
- DoubleArrays.mergeSort(p0,p1);
+public static int binarySearch(double[] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
+return DoubleArrays.binarySearch(p0,p1,p2);
 }
 public static void mergeSort(double[] p0,int p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3){
  DoubleArrays.mergeSort(p0,p1,p2,p3);
+}
+public static void mergeSort(double[] p0,it.unimi.dsi.fastutil.doubles.DoubleComparator p1){
+ DoubleArrays.mergeSort(p0,p1);
 }
 public static void mergeSort(double[] p0,int p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3,double[] p4){
  DoubleArrays.mergeSort(p0,p1,p2,p3,p4);
@@ -107,11 +107,11 @@ public static void parallelQuickSort(double[] p0,it.unimi.dsi.fastutil.doubles.D
 public static void parallelQuickSort(double[] p0,int p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3){
  DoubleArrays.parallelQuickSort(p0,p1,p2,p3);
 }
-public static long binarySearch(double[][] p0,long p1,long p2,double p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
-return DoubleBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
 public static long binarySearch(double[][] p0,double p1,it.unimi.dsi.fastutil.doubles.DoubleComparator p2){
 return DoubleBigArrays.binarySearch(p0,p1,p2);
+}
+public static long binarySearch(double[][] p0,long p1,long p2,double p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
+return DoubleBigArrays.binarySearch(p0,p1,p2,p3,p4);
 }
 public static void quickSort(double[][] p0,it.unimi.dsi.fastutil.doubles.DoubleComparator p1){
  DoubleBigArrays.quickSort(p0,p1);
@@ -146,23 +146,23 @@ return DoubleIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
 public static int upHeap(double[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.doubles.DoubleComparator p5){
 return DoubleIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
 }
-public static int front(double[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
-return DoubleSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
 public static int[] makeHeap(double[] p0,int p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3){
 return DoubleSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(double[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3){
- DoubleSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(double[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
  DoubleSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(double[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.doubles.DoubleComparator p3){
+ DoubleSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(double[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
 return DoubleSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 }
 public static int upHeap(double[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
 return DoubleSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
+}
+public static int front(double[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.doubles.DoubleComparator p4){
+return DoubleSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
 public static it.unimi.dsi.fastutil.doubles.DoubleSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.doubles.DoubleComparator p1){
 return DoubleSortedSets.singleton(p0,p1);

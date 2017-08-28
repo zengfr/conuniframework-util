@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.hash.Funnels;
 /**
 * @author zengfr
@@ -7,8 +7,8 @@ import com.google.common.hash.Funnels;
 * zengfr3000@qq.com
 */
 public final class FunnelUtil{ 
-public static com.google.common.hash.Funnel<java.lang.CharSequence> unencodedCharsFunnel(){
-return Funnels.unencodedCharsFunnel();
+public static com.google.common.hash.Funnel<java.lang.Integer> integerFunnel(){
+return Funnels.integerFunnel();
 }
 public static com.google.common.hash.Funnel<byte[]> byteArrayFunnel(){
 return Funnels.byteArrayFunnel();
@@ -19,10 +19,10 @@ return Funnels.sequentialFunnel(p0);
 public static com.google.common.hash.Funnel<java.lang.Long> longFunnel(){
 return Funnels.longFunnel();
 }
-public static com.google.common.hash.Funnel<java.lang.Integer> integerFunnel(){
-return Funnels.integerFunnel();
-}
 public static com.google.common.hash.Funnel<java.lang.CharSequence> stringFunnel(java.nio.charset.Charset p0){
 return Funnels.stringFunnel(p0);
+}
+public static com.google.common.hash.Funnel<java.lang.CharSequence> unencodedCharsFunnel(){
+return Funnels.unencodedCharsFunnel();
 }
 }

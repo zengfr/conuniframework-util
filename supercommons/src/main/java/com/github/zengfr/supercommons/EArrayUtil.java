@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.ImmutableSortedSet;
 import com.google.common.collect.ImmutableSortedSetFauxverideShim;
 import com.google.common.collect.ImmutableSet;
@@ -40,32 +40,32 @@ return Lists.asList(p0,p1,p2);
 public static <E> java.util.ArrayList<E> newArrayList(E... p0){
 return Lists.newArrayList(p0);
 }
-public static <E> java.util.HashSet<E> newHashSet(E... p0){
-return Sets.newHashSet(p0);
-}
 public static <E extends java.lang.Enum<E> > com.google.common.collect.ImmutableSet<E> immutableEnumSet(E p0,E... p1){
 return Sets.immutableEnumSet(p0,p1);
+}
+public static <E> java.util.HashSet<E> newHashSet(E... p0){
+return Sets.newHashSet(p0);
 }
 public static <E> java.util.concurrent.atomic.AtomicReferenceArray<E> newReferenceArray(E[] p0){
 return Atomics.newReferenceArray(p0);
 }
-public static <E> org.apache.commons.collections4.ResettableListIterator<E> arrayListIterator(E[] p0,int p1,int p2){
-return IteratorUtils.arrayListIterator(p0,p1,p2);
+public static <E> org.apache.commons.collections4.ResettableListIterator<E> arrayListIterator(E... p0){
+return IteratorUtils.arrayListIterator(p0);
 }
 public static <E> org.apache.commons.collections4.ResettableListIterator<E> arrayListIterator(E[] p0,int p1){
 return IteratorUtils.arrayListIterator(p0,p1);
 }
-public static <E> org.apache.commons.collections4.ResettableListIterator<E> arrayListIterator(E... p0){
-return IteratorUtils.arrayListIterator(p0);
-}
-public static <E> org.apache.commons.collections4.ResettableIterator<E> arrayIterator(E[] p0,int p1){
-return IteratorUtils.arrayIterator(p0,p1);
+public static <E> org.apache.commons.collections4.ResettableListIterator<E> arrayListIterator(E[] p0,int p1,int p2){
+return IteratorUtils.arrayListIterator(p0,p1,p2);
 }
 public static <E> org.apache.commons.collections4.ResettableIterator<E> arrayIterator(E[] p0,int p1,int p2){
 return IteratorUtils.arrayIterator(p0,p1,p2);
 }
 public static <E> org.apache.commons.collections4.ResettableIterator<E> arrayIterator(E... p0){
 return IteratorUtils.arrayIterator(p0);
+}
+public static <E> org.apache.commons.collections4.ResettableIterator<E> arrayIterator(E[] p0,int p1){
+return IteratorUtils.arrayIterator(p0,p1);
 }
 public static <E extends java.lang.Enum<E> > long generateBitVector(java.lang.Class<E> p0,E... p1){
 return EnumUtils.generateBitVector(p0,p1);

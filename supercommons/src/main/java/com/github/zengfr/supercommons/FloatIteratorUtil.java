@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.FloatIteratorIterator;
 import org.apache.commons.collections.primitives.adapters.IteratorFloatIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableFloatIterator;
@@ -20,11 +20,11 @@ return FloatIteratorIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.FloatIterator wrap(java.util.Iterator p0){
 return IteratorFloatIterator.wrap(p0);
 }
-public static org.apache.commons.collections.primitives.FloatIterator unmodifiableFloatIterator(org.apache.commons.collections.primitives.FloatIterator p0){
-return FloatCollections.unmodifiableFloatIterator(p0);
-}
 public static org.apache.commons.collections.primitives.FloatIterator getEmptyFloatIterator(){
 return FloatCollections.getEmptyFloatIterator();
+}
+public static org.apache.commons.collections.primitives.FloatIterator unmodifiableFloatIterator(org.apache.commons.collections.primitives.FloatIterator p0){
+return FloatCollections.unmodifiableFloatIterator(p0);
 }
 public static org.apache.commons.collections.primitives.FloatIterator singletonFloatIterator(float p0){
 return FloatCollections.singletonFloatIterator(p0);
@@ -89,22 +89,22 @@ return FloatIterators.pour(p0);
 public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.util.Iterator p0){
 return FloatIterators.asFloatIterator(p0);
 }
-public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.lang.CharSequence p1) throws java.io.IOException{
+public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.io.DataOutput p1) throws java.io.IOException{
  BinIO.storeFloats(p0,p1);
 }
 public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.io.File p1) throws java.io.IOException{
  BinIO.storeFloats(p0,p1);
 }
-public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.io.DataOutput p1) throws java.io.IOException{
+public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.lang.CharSequence p1) throws java.io.IOException{
  BinIO.storeFloats(p0,p1);
 }
 public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.lang.CharSequence p0) throws java.io.IOException{
 return BinIO.asFloatIterator(p0);
 }
-public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.io.File p0) throws java.io.IOException{
+public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.io.DataInput p0){
 return BinIO.asFloatIterator(p0);
 }
-public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.io.DataInput p0){
+public static it.unimi.dsi.fastutil.floats.FloatIterator asFloatIterator(java.io.File p0) throws java.io.IOException{
 return BinIO.asFloatIterator(p0);
 }
 public static void storeFloats(it.unimi.dsi.fastutil.floats.FloatIterator p0,java.io.PrintStream p1){

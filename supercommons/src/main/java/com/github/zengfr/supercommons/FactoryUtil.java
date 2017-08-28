@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.TransformerUtils;
 import org.apache.commons.collections.MapUtils;
 import org.apache.commons.collections.map.DefaultedMap;
@@ -28,14 +28,14 @@ public final class FactoryUtil{
 public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Factory p0){
 return TransformerUtils.asTransformer(p0);
 }
-public static java.util.SortedMap lazySortedMap(java.util.SortedMap p0,org.apache.commons.collections.Factory p1){
-return MapUtils.lazySortedMap(p0,p1);
-}
 public static java.util.Map lazyMap(java.util.Map p0,org.apache.commons.collections.Factory p1){
 return MapUtils.lazyMap(p0,p1);
 }
 public static java.util.Map multiValueMap(java.util.Map p0,org.apache.commons.collections.Factory p1){
 return MapUtils.multiValueMap(p0,p1);
+}
+public static java.util.SortedMap lazySortedMap(java.util.SortedMap p0,org.apache.commons.collections.Factory p1){
+return MapUtils.lazySortedMap(p0,p1);
 }
 public static java.util.Map decorate(java.util.Map p0,org.apache.commons.collections.Factory p1){
 return DefaultedMap.decorate(p0,p1);
@@ -52,8 +52,8 @@ return FactoryUtils.instantiateFactory(p0);
 public static org.apache.commons.collections.Factory instantiateFactory(java.lang.Class p0,java.lang.Class[] p1,java.lang.Object[] p2){
 return FactoryUtils.instantiateFactory(p0,p1,p2);
 }
-public static org.apache.commons.collections.Factory constantFactory(java.lang.Object p0){
-return FactoryUtils.constantFactory(p0);
+public static org.apache.commons.collections.Factory nullFactory(){
+return FactoryUtils.nullFactory();
 }
 public static org.apache.commons.collections.Factory exceptionFactory(){
 return FactoryUtils.exceptionFactory();
@@ -61,8 +61,8 @@ return FactoryUtils.exceptionFactory();
 public static org.apache.commons.collections.Factory prototypeFactory(java.lang.Object p0){
 return FactoryUtils.prototypeFactory(p0);
 }
-public static org.apache.commons.collections.Factory nullFactory(){
-return FactoryUtils.nullFactory();
+public static org.apache.commons.collections.Factory constantFactory(java.lang.Object p0){
+return FactoryUtils.constantFactory(p0);
 }
 public static org.apache.commons.collections.Factory getInstance(java.lang.Object p0){
 return PrototypeFactory.getInstance(p0);
@@ -85,10 +85,10 @@ return FactoryUtils.instantiateFactory(p0);
 public static <T> org.apache.commons.collections4.Factory<T> instantiateFactory(java.lang.Class<T> p0,java.lang.Class<?>[] p1,java.lang.Object[] p2){
 return FactoryUtils.instantiateFactory(p0,p1,p2);
 }
-public static <T> org.apache.commons.collections4.Factory<T> constantFactory(T p0){
-return FactoryUtils.constantFactory(p0);
-}
 public static <T> org.apache.commons.collections4.Factory<T> prototypeFactory(T p0){
 return FactoryUtils.prototypeFactory(p0);
+}
+public static <T> org.apache.commons.collections4.Factory<T> constantFactory(T p0){
+return FactoryUtils.constantFactory(p0);
 }
 }

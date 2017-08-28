@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.DoubleIteratorIterator;
 import org.apache.commons.collections.primitives.adapters.IteratorDoubleIterator;
 import org.apache.commons.collections.primitives.decorators.UnmodifiableDoubleIterator;
@@ -22,11 +22,11 @@ return IteratorDoubleIterator.wrap(p0);
 public static org.apache.commons.collections.primitives.DoubleIterator singletonDoubleIterator(double p0){
 return DoubleCollections.singletonDoubleIterator(p0);
 }
-public static org.apache.commons.collections.primitives.DoubleIterator unmodifiableDoubleIterator(org.apache.commons.collections.primitives.DoubleIterator p0){
-return DoubleCollections.unmodifiableDoubleIterator(p0);
-}
 public static org.apache.commons.collections.primitives.DoubleIterator getEmptyDoubleIterator(){
 return DoubleCollections.getEmptyDoubleIterator();
+}
+public static org.apache.commons.collections.primitives.DoubleIterator unmodifiableDoubleIterator(org.apache.commons.collections.primitives.DoubleIterator p0){
+return DoubleCollections.unmodifiableDoubleIterator(p0);
 }
 public static boolean all(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.util.function.DoublePredicate p1){
 return DoubleIterators.all(p0,p1);
@@ -76,37 +76,37 @@ return DoubleIterators.any(p0,p1);
 public static it.unimi.dsi.fastutil.doubles.DoubleIterator unmodifiable(it.unimi.dsi.fastutil.doubles.DoubleIterator p0){
 return DoubleIterators.unmodifiable(p0);
 }
-public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,int p1){
-return DoubleIterators.pour(p0,p1);
-}
-public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1){
-return DoubleIterators.pour(p0,p1);
-}
-public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1,int p2){
-return DoubleIterators.pour(p0,p1,p2);
+public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.util.Iterator p0){
+return DoubleIterators.asDoubleIterator(p0);
 }
 public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0){
 return DoubleIterators.pour(p0);
 }
-public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.util.Iterator p0){
-return DoubleIterators.asDoubleIterator(p0);
+public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1,int p2){
+return DoubleIterators.pour(p0,p1,p2);
 }
-public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.lang.CharSequence p1) throws java.io.IOException{
+public static int pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,it.unimi.dsi.fastutil.doubles.DoubleCollection p1){
+return DoubleIterators.pour(p0,p1);
+}
+public static it.unimi.dsi.fastutil.doubles.DoubleList pour(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,int p1){
+return DoubleIterators.pour(p0,p1);
+}
+public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.io.DataOutput p1) throws java.io.IOException{
  BinIO.storeDoubles(p0,p1);
 }
 public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.io.File p1) throws java.io.IOException{
  BinIO.storeDoubles(p0,p1);
 }
-public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.io.DataOutput p1) throws java.io.IOException{
+public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.lang.CharSequence p1) throws java.io.IOException{
  BinIO.storeDoubles(p0,p1);
 }
 public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.io.DataInput p0){
 return BinIO.asDoubleIterator(p0);
 }
-public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.io.File p0) throws java.io.IOException{
+public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.lang.CharSequence p0) throws java.io.IOException{
 return BinIO.asDoubleIterator(p0);
 }
-public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.lang.CharSequence p0) throws java.io.IOException{
+public static it.unimi.dsi.fastutil.doubles.DoubleIterator asDoubleIterator(java.io.File p0) throws java.io.IOException{
 return BinIO.asDoubleIterator(p0);
 }
 public static void storeDoubles(it.unimi.dsi.fastutil.doubles.DoubleIterator p0,java.io.PrintStream p1){

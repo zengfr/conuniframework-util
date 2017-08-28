@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.BagUtils;
 import org.apache.commons.collections.TransformerUtils;
 import org.apache.commons.collections.CollectionUtils;
@@ -66,61 +66,10 @@ return BagUtils.transformedBag(p0,p1);
 public static org.apache.commons.collections.SortedBag transformedSortedBag(org.apache.commons.collections.SortedBag p0,org.apache.commons.collections.Transformer p1){
 return BagUtils.transformedSortedBag(p0,p1);
 }
-public static org.apache.commons.collections.Transformer switchMapTransformer(java.util.Map p0){
-return TransformerUtils.switchMapTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer stringValueTransformer(){
-return TransformerUtils.stringValueTransformer();
-}
-public static org.apache.commons.collections.Transformer chainedTransformer(org.apache.commons.collections.Transformer p0,org.apache.commons.collections.Transformer p1){
-return TransformerUtils.chainedTransformer(p0,p1);
-}
-public static org.apache.commons.collections.Transformer chainedTransformer(org.apache.commons.collections.Transformer[] p0){
-return TransformerUtils.chainedTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer chainedTransformer(java.util.Collection p0){
-return TransformerUtils.chainedTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer invokerTransformer(java.lang.String p0,java.lang.Class[] p1,java.lang.Object[] p2){
-return TransformerUtils.invokerTransformer(p0,p1,p2);
-}
-public static org.apache.commons.collections.Transformer invokerTransformer(java.lang.String p0){
-return TransformerUtils.invokerTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer constantTransformer(java.lang.Object p0){
-return TransformerUtils.constantTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
-return TransformerUtils.switchTransformer(p0,p1,p2);
-}
-public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate[] p0,org.apache.commons.collections.Transformer[] p1){
-return TransformerUtils.switchTransformer(p0,p1);
-}
-public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate[] p0,org.apache.commons.collections.Transformer[] p1,org.apache.commons.collections.Transformer p2){
-return TransformerUtils.switchTransformer(p0,p1,p2);
-}
-public static org.apache.commons.collections.Transformer switchTransformer(java.util.Map p0){
-return TransformerUtils.switchTransformer(p0);
-}
-public static org.apache.commons.collections.Transformer exceptionTransformer(){
-return TransformerUtils.exceptionTransformer();
-}
-public static org.apache.commons.collections.Transformer instantiateTransformer(java.lang.Class[] p0,java.lang.Object[] p1){
-return TransformerUtils.instantiateTransformer(p0,p1);
-}
-public static org.apache.commons.collections.Transformer instantiateTransformer(){
-return TransformerUtils.instantiateTransformer();
-}
-public static org.apache.commons.collections.Transformer nopTransformer(){
-return TransformerUtils.nopTransformer();
-}
-public static org.apache.commons.collections.Transformer nullTransformer(){
-return TransformerUtils.nullTransformer();
-}
-public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Predicate p0){
+public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Closure p0){
 return TransformerUtils.asTransformer(p0);
 }
-public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Closure p0){
+public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Predicate p0){
 return TransformerUtils.asTransformer(p0);
 }
 public static org.apache.commons.collections.Transformer asTransformer(org.apache.commons.collections.Factory p0){
@@ -129,8 +78,59 @@ return TransformerUtils.asTransformer(p0);
 public static org.apache.commons.collections.Transformer mapTransformer(java.util.Map p0){
 return TransformerUtils.mapTransformer(p0);
 }
+public static org.apache.commons.collections.Transformer nopTransformer(){
+return TransformerUtils.nopTransformer();
+}
 public static org.apache.commons.collections.Transformer cloneTransformer(){
 return TransformerUtils.cloneTransformer();
+}
+public static org.apache.commons.collections.Transformer nullTransformer(){
+return TransformerUtils.nullTransformer();
+}
+public static org.apache.commons.collections.Transformer invokerTransformer(java.lang.String p0){
+return TransformerUtils.invokerTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer invokerTransformer(java.lang.String p0,java.lang.Class[] p1,java.lang.Object[] p2){
+return TransformerUtils.invokerTransformer(p0,p1,p2);
+}
+public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate[] p0,org.apache.commons.collections.Transformer[] p1){
+return TransformerUtils.switchTransformer(p0,p1);
+}
+public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
+return TransformerUtils.switchTransformer(p0,p1,p2);
+}
+public static org.apache.commons.collections.Transformer switchTransformer(org.apache.commons.collections.Predicate[] p0,org.apache.commons.collections.Transformer[] p1,org.apache.commons.collections.Transformer p2){
+return TransformerUtils.switchTransformer(p0,p1,p2);
+}
+public static org.apache.commons.collections.Transformer switchTransformer(java.util.Map p0){
+return TransformerUtils.switchTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer stringValueTransformer(){
+return TransformerUtils.stringValueTransformer();
+}
+public static org.apache.commons.collections.Transformer switchMapTransformer(java.util.Map p0){
+return TransformerUtils.switchMapTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer chainedTransformer(org.apache.commons.collections.Transformer p0,org.apache.commons.collections.Transformer p1){
+return TransformerUtils.chainedTransformer(p0,p1);
+}
+public static org.apache.commons.collections.Transformer chainedTransformer(java.util.Collection p0){
+return TransformerUtils.chainedTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer chainedTransformer(org.apache.commons.collections.Transformer[] p0){
+return TransformerUtils.chainedTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer exceptionTransformer(){
+return TransformerUtils.exceptionTransformer();
+}
+public static org.apache.commons.collections.Transformer constantTransformer(java.lang.Object p0){
+return TransformerUtils.constantTransformer(p0);
+}
+public static org.apache.commons.collections.Transformer instantiateTransformer(java.lang.Class[] p0,java.lang.Object[] p1){
+return TransformerUtils.instantiateTransformer(p0,p1);
+}
+public static org.apache.commons.collections.Transformer instantiateTransformer(){
+return TransformerUtils.instantiateTransformer();
 }
 public static java.util.Collection collect(java.util.Collection p0,org.apache.commons.collections.Transformer p1){
 return CollectionUtils.collect(p0,p1);
@@ -150,17 +150,17 @@ public static void transform(java.util.Collection p0,org.apache.commons.collecti
 public static java.util.Collection transformedCollection(java.util.Collection p0,org.apache.commons.collections.Transformer p1){
 return CollectionUtils.transformedCollection(p0,p1);
 }
-public static java.util.SortedMap transformedSortedMap(java.util.SortedMap p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
-return MapUtils.transformedSortedMap(p0,p1,p2);
-}
-public static java.util.SortedMap lazySortedMap(java.util.SortedMap p0,org.apache.commons.collections.Transformer p1){
-return MapUtils.lazySortedMap(p0,p1);
-}
 public static java.util.Map transformedMap(java.util.Map p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
 return MapUtils.transformedMap(p0,p1,p2);
 }
 public static java.util.Map lazyMap(java.util.Map p0,org.apache.commons.collections.Transformer p1){
 return MapUtils.lazyMap(p0,p1);
+}
+public static java.util.SortedMap lazySortedMap(java.util.SortedMap p0,org.apache.commons.collections.Transformer p1){
+return MapUtils.lazySortedMap(p0,p1);
+}
+public static java.util.SortedMap transformedSortedMap(java.util.SortedMap p0,org.apache.commons.collections.Transformer p1,org.apache.commons.collections.Transformer p2){
+return MapUtils.transformedSortedMap(p0,p1,p2);
 }
 public static org.apache.commons.collections.SortedBag decorate(org.apache.commons.collections.SortedBag p0,org.apache.commons.collections.Transformer p1){
 return TransformedSortedBag.decorate(p0,p1);
@@ -189,11 +189,11 @@ return DefaultedMap.decorate(p0,p1);
 public static java.util.SortedMap decorate(java.util.SortedMap p0,org.apache.commons.collections.Transformer p1){
 return LazySortedMap.decorate(p0,p1);
 }
-public static java.util.Iterator objectGraphIterator(java.lang.Object p0,org.apache.commons.collections.Transformer p1){
-return IteratorUtils.objectGraphIterator(p0,p1);
-}
 public static java.util.Iterator transformedIterator(java.util.Iterator p0,org.apache.commons.collections.Transformer p1){
 return IteratorUtils.transformedIterator(p0,p1);
+}
+public static java.util.Iterator objectGraphIterator(java.lang.Object p0,org.apache.commons.collections.Transformer p1){
+return IteratorUtils.objectGraphIterator(p0,p1);
 }
 public static java.util.SortedSet transformedSortedSet(java.util.SortedSet p0,org.apache.commons.collections.Transformer p1){
 return SetUtils.transformedSortedSet(p0,p1);
@@ -276,32 +276,44 @@ return PredicateUtils.transformedPredicate(p0,p1);
 public static org.apache.commons.collections.Buffer decorate(org.apache.commons.collections.Buffer p0,org.apache.commons.collections.Transformer p1){
 return TransformedBuffer.decorate(p0,p1);
 }
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchMapTransformer(java.util.Map<I, org.apache.commons.collections4.Transformer<I, O>> p0){
-return TransformerUtils.switchMapTransformer(p0);
+public static <T> org.apache.commons.collections4.Transformer<T, T> asTransformer(org.apache.commons.collections4.Closure<? super T> p0){
+return TransformerUtils.asTransformer(p0);
 }
-public static <T> org.apache.commons.collections4.Transformer<T, T> chainedTransformer(java.util.Collection<? extends org.apache.commons.collections4.Transformer<? super T, ? extends T>> p0){
-return TransformerUtils.chainedTransformer(p0);
+public static <T> org.apache.commons.collections4.Transformer<T, java.lang.Boolean> asTransformer(org.apache.commons.collections4.Predicate<? super T> p0){
+return TransformerUtils.asTransformer(p0);
 }
-public static <T> org.apache.commons.collections4.Transformer<T, T> chainedTransformer(org.apache.commons.collections4.Transformer<? super T, ? extends T>... p0){
-return TransformerUtils.chainedTransformer(p0);
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> asTransformer(org.apache.commons.collections4.Factory<? extends O> p0){
+return TransformerUtils.asTransformer(p0);
+}
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> mapTransformer(java.util.Map<? super I, ? extends O> p0){
+return TransformerUtils.mapTransformer(p0);
 }
 public static <I,O> org.apache.commons.collections4.Transformer<I, O> invokerTransformer(java.lang.String p0,java.lang.Class<?>[] p1,java.lang.Object[] p2){
 return TransformerUtils.invokerTransformer(p0,p1,p2);
 }
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> constantTransformer(O p0){
-return TransformerUtils.constantTransformer(p0);
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(org.apache.commons.collections4.Predicate<? super I> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1,org.apache.commons.collections4.Transformer<? super I, ? extends O> p2){
+return TransformerUtils.switchTransformer(p0,p1,p2);
 }
 public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(org.apache.commons.collections4.Predicate<? super I>[] p0,org.apache.commons.collections4.Transformer<? super I, ? extends O>[] p1){
 return TransformerUtils.switchTransformer(p0,p1);
 }
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(java.util.Map<org.apache.commons.collections4.Predicate<I>, org.apache.commons.collections4.Transformer<I, O>> p0){
-return TransformerUtils.switchTransformer(p0);
-}
 public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(org.apache.commons.collections4.Predicate<? super I>[] p0,org.apache.commons.collections4.Transformer<? super I, ? extends O>[] p1,org.apache.commons.collections4.Transformer<? super I, ? extends O> p2){
 return TransformerUtils.switchTransformer(p0,p1,p2);
 }
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(org.apache.commons.collections4.Predicate<? super I> p0,org.apache.commons.collections4.Transformer<? super I, ? extends O> p1,org.apache.commons.collections4.Transformer<? super I, ? extends O> p2){
-return TransformerUtils.switchTransformer(p0,p1,p2);
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchTransformer(java.util.Map<org.apache.commons.collections4.Predicate<I>, org.apache.commons.collections4.Transformer<I, O>> p0){
+return TransformerUtils.switchTransformer(p0);
+}
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> switchMapTransformer(java.util.Map<I, org.apache.commons.collections4.Transformer<I, O>> p0){
+return TransformerUtils.switchMapTransformer(p0);
+}
+public static <T> org.apache.commons.collections4.Transformer<T, T> chainedTransformer(org.apache.commons.collections4.Transformer<? super T, ? extends T>... p0){
+return TransformerUtils.chainedTransformer(p0);
+}
+public static <T> org.apache.commons.collections4.Transformer<T, T> chainedTransformer(java.util.Collection<? extends org.apache.commons.collections4.Transformer<? super T, ? extends T>> p0){
+return TransformerUtils.chainedTransformer(p0);
+}
+public static <I,O> org.apache.commons.collections4.Transformer<I, O> constantTransformer(O p0){
+return TransformerUtils.constantTransformer(p0);
 }
 public static <T> org.apache.commons.collections4.Transformer<java.lang.Class<? extends T>, T> instantiateTransformer(java.lang.Class<?>[] p0,java.lang.Object[] p1){
 return TransformerUtils.instantiateTransformer(p0,p1);
@@ -311,18 +323,6 @@ return TransformerUtils.ifTransformer(p0,p1,p2);
 }
 public static <T> org.apache.commons.collections4.Transformer<T, T> ifTransformer(org.apache.commons.collections4.Predicate<? super T> p0,org.apache.commons.collections4.Transformer<? super T, ? extends T> p1){
 return TransformerUtils.ifTransformer(p0,p1);
-}
-public static <T> org.apache.commons.collections4.Transformer<T, java.lang.Boolean> asTransformer(org.apache.commons.collections4.Predicate<? super T> p0){
-return TransformerUtils.asTransformer(p0);
-}
-public static <T> org.apache.commons.collections4.Transformer<T, T> asTransformer(org.apache.commons.collections4.Closure<? super T> p0){
-return TransformerUtils.asTransformer(p0);
-}
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> asTransformer(org.apache.commons.collections4.Factory<? extends O> p0){
-return TransformerUtils.asTransformer(p0);
-}
-public static <I,O> org.apache.commons.collections4.Transformer<I, O> mapTransformer(java.util.Map<? super I, ? extends O> p0){
-return TransformerUtils.mapTransformer(p0);
 }
 public static <T> org.apache.commons.collections4.Transformer<T, java.lang.Boolean> predicateTransformer(org.apache.commons.collections4.Predicate<? super T> p0){
 return PredicateTransformer.predicateTransformer(p0);

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.CollectionFloatCollection;
 import org.apache.commons.collections.primitives.adapters.FloatCollectionCollection;
 import it.unimi.dsi.fastutil.floats.FloatCollections;

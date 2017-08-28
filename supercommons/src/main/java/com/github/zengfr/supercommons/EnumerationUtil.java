@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.collect.Iterators;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.collections.IteratorUtils;
@@ -20,11 +20,11 @@ public static void addAll(java.util.Collection p0,java.util.Enumeration p1){
 public static java.util.Enumeration asEnumeration(java.util.Iterator p0){
 return IteratorUtils.asEnumeration(p0);
 }
-public static java.util.Iterator asIterator(java.util.Enumeration p0){
-return IteratorUtils.asIterator(p0);
-}
 public static java.util.Iterator asIterator(java.util.Enumeration p0,java.util.Collection p1){
 return IteratorUtils.asIterator(p0,p1);
+}
+public static java.util.Iterator asIterator(java.util.Enumeration p0){
+return IteratorUtils.asIterator(p0);
 }
 public static java.util.List toList(java.util.Enumeration p0){
 return EnumerationUtils.toList(p0);

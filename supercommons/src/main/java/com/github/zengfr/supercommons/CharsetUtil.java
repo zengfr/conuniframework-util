@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.lang3.CharSet;
 import it.unimi.dsi.fastutil.chars.CharSets;
 import org.apache.commons.lang.CharSet;

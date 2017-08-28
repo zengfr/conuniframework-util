@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import org.apache.commons.collections.primitives.adapters.ByteCollectionCollection;
 import org.apache.commons.collections.primitives.adapters.CollectionByteCollection;
 import it.unimi.dsi.fastutil.bytes.ByteCollections;

@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.io.BaseEncoding;
 /**
 * @author zengfr
@@ -13,13 +13,13 @@ return BaseEncoding.base32Hex();
 public static com.google.common.io.BaseEncoding base64(){
 return BaseEncoding.base64();
 }
-public static com.google.common.io.BaseEncoding base64Url(){
-return BaseEncoding.base64Url();
-}
 public static com.google.common.io.BaseEncoding base32(){
 return BaseEncoding.base32();
 }
 public static com.google.common.io.BaseEncoding base16(){
 return BaseEncoding.base16();
+}
+public static com.google.common.io.BaseEncoding base64Url(){
+return BaseEncoding.base64Url();
 }
 }

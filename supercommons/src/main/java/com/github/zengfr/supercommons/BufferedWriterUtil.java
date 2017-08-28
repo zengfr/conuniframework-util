@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import com.google.common.io.Files;
 import org.apache.commons.io.IOUtils;
 /**

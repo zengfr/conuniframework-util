@@ -1,4 +1,4 @@
-package com.zengfr.supercommons;
+package com.github.zengfr.supercommons;
 import it.unimi.dsi.fastutil.chars.Char2BooleanSortedMaps;
 import it.unimi.dsi.fastutil.chars.Char2ByteSortedMaps;
 import it.unimi.dsi.fastutil.chars.Char2CharSortedMaps;
@@ -89,11 +89,11 @@ return CharArrays.binarySearch(p0,p1,p2,p3,p4);
 public static void mergeSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
  CharArrays.mergeSort(p0,p1);
 }
-public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3,char[] p4){
- CharArrays.mergeSort(p0,p1,p2,p3,p4);
-}
 public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
  CharArrays.mergeSort(p0,p1,p2,p3);
+}
+public static void mergeSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3,char[] p4){
+ CharArrays.mergeSort(p0,p1,p2,p3,p4);
 }
 public static void quickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
  CharArrays.quickSort(p0,p1);
@@ -101,11 +101,11 @@ public static void quickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparato
 public static void quickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
  CharArrays.quickSort(p0,p1,p2,p3);
 }
-public static void parallelQuickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
- CharArrays.parallelQuickSort(p0,p1,p2,p3);
-}
 public static void parallelQuickSort(char[] p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
  CharArrays.parallelQuickSort(p0,p1);
+}
+public static void parallelQuickSort(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
+ CharArrays.parallelQuickSort(p0,p1,p2,p3);
 }
 public static long binarySearch(char[][] p0,long p1,long p2,char p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
 return CharBigArrays.binarySearch(p0,p1,p2,p3,p4);
@@ -146,23 +146,23 @@ return CharIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
 public static int upHeap(char[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.chars.CharComparator p5){
 return CharIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
 }
-public static int front(char[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
-return CharSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
 public static int[] makeHeap(char[] p0,int p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
 return CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
-public static void makeHeap(char[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
- CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
 public static void makeHeap(char[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
  CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+public static void makeHeap(char[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.chars.CharComparator p3){
+ CharSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
 }
 public static int downHeap(char[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
 return CharSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
 }
 public static int upHeap(char[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
 return CharSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
+}
+public static int front(char[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.chars.CharComparator p4){
+return CharSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
 }
 public static it.unimi.dsi.fastutil.chars.CharSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.chars.CharComparator p1){
 return CharSortedSets.singleton(p0,p1);
