@@ -1,5 +1,5 @@
 # Super-Commons
-Super Commons
+Super Commons-Integration commons and utils all in one.
 
 <dependencies>
 		<dependency>
