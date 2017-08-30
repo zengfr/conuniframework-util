@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.optim.MaxIter;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.optim.MaxIter;
 * zengfr3000@qq.com
 */
 public final class MaxIterUtil{ 
+/**
+*public static org.apache.commons.math3.optim.MaxIter org.apache.commons.math3.optim.MaxIter.unlimited()
+*/ 
 public static org.apache.commons.math3.optim.MaxIter unlimited(){
-return MaxIter.unlimited();
+	return org.apache.commons.math3.optim.MaxIter.unlimited();
 }
 }

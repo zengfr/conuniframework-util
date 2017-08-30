@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.LinkedListMultimap;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,13 +6,22 @@ import com.google.common.collect.LinkedListMultimap;
 * zengfr3000@qq.com
 */
 public final class LinkedListMultimapUtil{ 
+/**
+*public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> com.google.common.collect.LinkedListMultimap.create()
+*/ 
 public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> create(){
-return LinkedListMultimap.create();
+	return com.google.common.collect.LinkedListMultimap.create();
 }
+/**
+*public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> com.google.common.collect.LinkedListMultimap.create(com.google.common.collect.Multimap<? extends K, ? extends V>)
+*/ 
 public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> create(com.google.common.collect.Multimap<? extends K, ? extends V> p0){
-return LinkedListMultimap.create(p0);
+	return com.google.common.collect.LinkedListMultimap.create(p0);
 }
+/**
+*public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> com.google.common.collect.LinkedListMultimap.create(int)
+*/ 
 public static <K,V> com.google.common.collect.LinkedListMultimap<K, V> create(int p0){
-return LinkedListMultimap.create(p0);
+	return com.google.common.collect.LinkedListMultimap.create(p0);
 }
 }

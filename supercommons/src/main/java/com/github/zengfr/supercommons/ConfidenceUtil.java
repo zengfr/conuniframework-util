@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import edu.umd.cs.findbugs.annotations.Confidence;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import edu.umd.cs.findbugs.annotations.Confidence;
 * zengfr3000@qq.com
 */
 public final class ConfidenceUtil{ 
+/**
+*public static edu.umd.cs.findbugs.annotations.Confidence edu.umd.cs.findbugs.annotations.Confidence.valueOf(java.lang.String)
+*/ 
 public static edu.umd.cs.findbugs.annotations.Confidence valueOf(java.lang.String p0){
-return Confidence.valueOf(p0);
+	return edu.umd.cs.findbugs.annotations.Confidence.valueOf(p0);
 }
 }

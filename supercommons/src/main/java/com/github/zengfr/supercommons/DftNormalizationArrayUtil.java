@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.transform.DftNormalization;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.transform.DftNormalization;
 * zengfr3000@qq.com
 */
 public final class DftNormalizationArrayUtil{ 
+/**
+*public static org.apache.commons.math3.transform.DftNormalization[] org.apache.commons.math3.transform.DftNormalization.values()
+*/ 
 public static org.apache.commons.math3.transform.DftNormalization[] values(){
-return DftNormalization.values();
+	return org.apache.commons.math3.transform.DftNormalization.values();
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Queues;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.Queues;
 * zengfr3000@qq.com
 */
 public final class SynchronousQueueUtil{ 
+/**
+*public static <E> java.util.concurrent.SynchronousQueue<E> com.google.common.collect.Queues.newSynchronousQueue()
+*/ 
 public static <E> java.util.concurrent.SynchronousQueue<E> newSynchronousQueue(){
-return Queues.newSynchronousQueue();
+	return com.google.common.collect.Queues.newSynchronousQueue();
 }
 }

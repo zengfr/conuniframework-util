@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.stat.descriptive.moment.FirstMoment;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.stat.descriptive.moment.FirstMoment;
 * zengfr3000@qq.com
 */
 public final class FirstMomentUtil{ 
+/**
+*public static void org.apache.commons.math3.stat.descriptive.moment.FirstMoment.copy(org.apache.commons.math3.stat.descriptive.moment.FirstMoment,org.apache.commons.math3.stat.descriptive.moment.FirstMoment) throws org.apache.commons.math3.exception.NullArgumentException
+*/ 
 public static void copy(org.apache.commons.math3.stat.descriptive.moment.FirstMoment p0,org.apache.commons.math3.stat.descriptive.moment.FirstMoment p1) throws org.apache.commons.math3.exception.NullArgumentException{
- FirstMoment.copy(p0,p1);
+	 org.apache.commons.math3.stat.descriptive.moment.FirstMoment.copy(p0,p1);
 }
 }

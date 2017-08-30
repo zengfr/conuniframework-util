@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.io.FileUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.io.FileUtils;
 * zengfr3000@qq.com
 */
 public final class FileInputStreamUtil{ 
+/**
+*public static java.io.FileInputStream org.apache.commons.io.FileUtils.openInputStream(java.io.File) throws java.io.IOException
+*/ 
 public static java.io.FileInputStream openInputStream(java.io.File p0) throws java.io.IOException{
-return FileUtils.openInputStream(p0);
+	return org.apache.commons.io.FileUtils.openInputStream(p0);
 }
 }

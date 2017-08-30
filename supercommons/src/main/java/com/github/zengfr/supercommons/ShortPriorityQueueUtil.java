@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.shorts.ShortPriorityQueues;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import it.unimi.dsi.fastutil.shorts.ShortPriorityQueues;
 * zengfr3000@qq.com
 */
 public final class ShortPriorityQueueUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.shorts.ShortPriorityQueue it.unimi.dsi.fastutil.shorts.ShortPriorityQueues.synchronize(it.unimi.dsi.fastutil.shorts.ShortPriorityQueue)
+*/ 
 public static it.unimi.dsi.fastutil.shorts.ShortPriorityQueue synchronize(it.unimi.dsi.fastutil.shorts.ShortPriorityQueue p0){
-return ShortPriorityQueues.synchronize(p0);
+	return it.unimi.dsi.fastutil.shorts.ShortPriorityQueues.synchronize(p0);
 }
+/**
+*public static it.unimi.dsi.fastutil.shorts.ShortPriorityQueue it.unimi.dsi.fastutil.shorts.ShortPriorityQueues.synchronize(it.unimi.dsi.fastutil.shorts.ShortPriorityQueue,java.lang.Object)
+*/ 
 public static it.unimi.dsi.fastutil.shorts.ShortPriorityQueue synchronize(it.unimi.dsi.fastutil.shorts.ShortPriorityQueue p0,java.lang.Object p1){
-return ShortPriorityQueues.synchronize(p0,p1);
+	return it.unimi.dsi.fastutil.shorts.ShortPriorityQueues.synchronize(p0,p1);
 }
 }

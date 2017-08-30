@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.ListenableFutureTask;
-import com.google.common.util.concurrent.Runnables;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import com.google.common.util.concurrent.Runnables;
 * zengfr3000@qq.com
 */
 public final class RunnableUtil{ 
+/**
+*public static <V> com.google.common.util.concurrent.ListenableFutureTask<V> com.google.common.util.concurrent.ListenableFutureTask.create(java.lang.Runnable,V)
+*/ 
 public static <V> com.google.common.util.concurrent.ListenableFutureTask<V> create(java.lang.Runnable p0,V p1){
-return ListenableFutureTask.create(p0,p1);
+	return com.google.common.util.concurrent.ListenableFutureTask.create(p0,p1);
 }
+/**
+*public static java.lang.Runnable com.google.common.util.concurrent.Runnables.doNothing()
+*/ 
 public static java.lang.Runnable doNothing(){
-return Runnables.doNothing();
+	return com.google.common.util.concurrent.Runnables.doNothing();
 }
 }

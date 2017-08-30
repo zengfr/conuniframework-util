@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.collections.specialized.NumberType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.collections.specialized.NumberType;
 * zengfr3000@qq.com
 */
 public final class NumberTypeUtil{ 
+/**
+*public static com.facebook.collections.specialized.NumberType com.facebook.collections.specialized.NumberType.valueOf(java.lang.String)
+*/ 
 public static com.facebook.collections.specialized.NumberType valueOf(java.lang.String p0){
-return NumberType.valueOf(p0);
+	return com.facebook.collections.specialized.NumberType.valueOf(p0);
 }
 }

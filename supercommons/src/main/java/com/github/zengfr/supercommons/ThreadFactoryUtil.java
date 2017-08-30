@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.MoreExecutors;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.util.concurrent.MoreExecutors;
 * zengfr3000@qq.com
 */
 public final class ThreadFactoryUtil{ 
+/**
+*public static java.util.concurrent.ThreadFactory com.google.common.util.concurrent.MoreExecutors.platformThreadFactory()
+*/ 
 public static java.util.concurrent.ThreadFactory platformThreadFactory(){
-return MoreExecutors.platformThreadFactory();
+	return com.google.common.util.concurrent.MoreExecutors.platformThreadFactory();
 }
 }

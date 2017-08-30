@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.complex.ComplexField;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.complex.ComplexField;
 * zengfr3000@qq.com
 */
 public final class ComplexFieldUtil{ 
+/**
+*public static org.apache.commons.math3.complex.ComplexField org.apache.commons.math3.complex.ComplexField.getInstance()
+*/ 
 public static org.apache.commons.math3.complex.ComplexField getInstance(){
-return ComplexField.getInstance();
+	return org.apache.commons.math3.complex.ComplexField.getInstance();
 }
 }

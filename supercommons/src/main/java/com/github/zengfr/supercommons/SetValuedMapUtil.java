@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.MultiMapUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.MultiMapUtils;
 * zengfr3000@qq.com
 */
 public final class SetValuedMapUtil{ 
+/**
+*public static <K,V> org.apache.commons.collections4.SetValuedMap<K, V> org.apache.commons.collections4.MultiMapUtils.newSetValuedHashMap()
+*/ 
 public static <K,V> org.apache.commons.collections4.SetValuedMap<K, V> newSetValuedHashMap(){
-return MultiMapUtils.newSetValuedHashMap();
+	return org.apache.commons.collections4.MultiMapUtils.newSetValuedHashMap();
 }
 }

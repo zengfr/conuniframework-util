@@ -1,9 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections.IteratorUtils;
-import org.apache.commons.collections.iterators.UnmodifiableMapIterator;
-import org.apache.commons.collections4.IteratorUtils;
-import org.apache.commons.collections4.iterators.UnmodifiableMapIterator;
-import org.apache.commons.collections4.iterators.EmptyMapIterator;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -11,19 +6,34 @@ import org.apache.commons.collections4.iterators.EmptyMapIterator;
 * zengfr3000@qq.com
 */
 public final class MapIteratorUtil{ 
-public static org.apache.commons.collections.MapIterator unmodifiableMapIterator(org.apache.commons.collections.MapIterator p0){
-return IteratorUtils.unmodifiableMapIterator(p0);
-}
+/**
+*public static org.apache.commons.collections.MapIterator org.apache.commons.collections.IteratorUtils.emptyMapIterator()
+*/ 
 public static org.apache.commons.collections.MapIterator emptyMapIterator(){
-return IteratorUtils.emptyMapIterator();
+	return org.apache.commons.collections.IteratorUtils.emptyMapIterator();
 }
+/**
+*public static org.apache.commons.collections.MapIterator org.apache.commons.collections.IteratorUtils.unmodifiableMapIterator(org.apache.commons.collections.MapIterator)
+*/ 
+public static org.apache.commons.collections.MapIterator unmodifiableMapIterator(org.apache.commons.collections.MapIterator p0){
+	return org.apache.commons.collections.IteratorUtils.unmodifiableMapIterator(p0);
+}
+/**
+*public static org.apache.commons.collections.MapIterator org.apache.commons.collections.iterators.UnmodifiableMapIterator.decorate(org.apache.commons.collections.MapIterator)
+*/ 
 public static org.apache.commons.collections.MapIterator decorate(org.apache.commons.collections.MapIterator p0){
-return UnmodifiableMapIterator.decorate(p0);
+	return org.apache.commons.collections.iterators.UnmodifiableMapIterator.decorate(p0);
 }
+/**
+*public static <K,V> org.apache.commons.collections4.MapIterator<K, V> org.apache.commons.collections4.IteratorUtils.unmodifiableMapIterator(org.apache.commons.collections4.MapIterator<K, V>)
+*/ 
 public static <K,V> org.apache.commons.collections4.MapIterator<K, V> unmodifiableMapIterator(org.apache.commons.collections4.MapIterator<K, V> p0){
-return IteratorUtils.unmodifiableMapIterator(p0);
+	return org.apache.commons.collections4.IteratorUtils.unmodifiableMapIterator(p0);
 }
+/**
+*public static <K,V> org.apache.commons.collections4.MapIterator<K, V> org.apache.commons.collections4.iterators.UnmodifiableMapIterator.unmodifiableMapIterator(org.apache.commons.collections4.MapIterator<? extends K, ? extends V>)
+*/ 
 public static <K,V> org.apache.commons.collections4.MapIterator<K, V> unmodifiableMapIterator(org.apache.commons.collections4.MapIterator<? extends K, ? extends V> p0){
-return UnmodifiableMapIterator.unmodifiableMapIterator(p0);
+	return org.apache.commons.collections4.iterators.UnmodifiableMapIterator.unmodifiableMapIterator(p0);
 }
 }

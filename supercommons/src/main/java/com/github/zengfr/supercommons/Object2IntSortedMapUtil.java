@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.objects.Object2IntSortedMaps;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,28 +6,52 @@ import it.unimi.dsi.fastutil.objects.Object2IntSortedMaps;
 * zengfr3000@qq.com
 */
 public final class Object2IntSortedMapUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.emptyMap()
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> emptyMap(){
-return Object2IntSortedMaps.emptyMap();
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.emptyMap();
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(K,java.lang.Integer)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,java.lang.Integer p1){
-return Object2IntSortedMaps.singleton(p0,p1);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(p0,p1);
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(K,int)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,int p1){
-return Object2IntSortedMaps.singleton(p0,p1);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(p0,p1);
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(K,java.lang.Integer,java.util.Comparator<? super K>)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,java.lang.Integer p1,java.util.Comparator<? super K> p2){
-return Object2IntSortedMaps.singleton(p0,p1,p2);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(p0,p1,p2);
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(K,int,java.util.Comparator<? super K>)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> singleton(K p0,int p1,java.util.Comparator<? super K> p2){
-return Object2IntSortedMaps.singleton(p0,p1,p2);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.singleton(p0,p1,p2);
 }
-public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> unmodifiable(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> p0){
-return Object2IntSortedMaps.unmodifiable(p0);
-}
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.synchronize(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K>,java.lang.Object)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> synchronize(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> p0,java.lang.Object p1){
-return Object2IntSortedMaps.synchronize(p0,p1);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.synchronize(p0,p1);
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.synchronize(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K>)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> synchronize(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> p0){
-return Object2IntSortedMaps.synchronize(p0);
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.synchronize(p0);
+}
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.unmodifiable(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> unmodifiable(it.unimi.dsi.fastutil.objects.Object2IntSortedMap<K> p0){
+	return it.unimi.dsi.fastutil.objects.Object2IntSortedMaps.unmodifiable(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.fitting.GaussianCurveFitter;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.fitting.GaussianCurveFitter;
 * zengfr3000@qq.com
 */
 public final class GaussianCurveFitterUtil{ 
+/**
+*public static org.apache.commons.math3.fitting.GaussianCurveFitter org.apache.commons.math3.fitting.GaussianCurveFitter.create()
+*/ 
 public static org.apache.commons.math3.fitting.GaussianCurveFitter create(){
-return GaussianCurveFitter.create();
+	return org.apache.commons.math3.fitting.GaussianCurveFitter.create();
 }
 }

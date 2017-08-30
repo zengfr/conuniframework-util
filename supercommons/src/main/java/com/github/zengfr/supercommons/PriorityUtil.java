@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import edu.umd.cs.findbugs.annotations.Priority;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import edu.umd.cs.findbugs.annotations.Priority;
 * zengfr3000@qq.com
 */
 public final class PriorityUtil{ 
+/**
+*public static edu.umd.cs.findbugs.annotations.Priority edu.umd.cs.findbugs.annotations.Priority.valueOf(java.lang.String)
+*/ 
 public static edu.umd.cs.findbugs.annotations.Priority valueOf(java.lang.String p0){
-return Priority.valueOf(p0);
+	return edu.umd.cs.findbugs.annotations.Priority.valueOf(p0);
 }
 }

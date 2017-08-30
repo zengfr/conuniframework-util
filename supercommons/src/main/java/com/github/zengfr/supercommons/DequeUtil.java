@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Queues;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.Queues;
 * zengfr3000@qq.com
 */
 public final class DequeUtil{ 
+/**
+*public static <E> java.util.Deque<E> com.google.common.collect.Queues.synchronizedDeque(java.util.Deque<E>)
+*/ 
 public static <E> java.util.Deque<E> synchronizedDeque(java.util.Deque<E> p0){
-return Queues.synchronizedDeque(p0);
+	return com.google.common.collect.Queues.synchronizedDeque(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.ode.sampling.DummyStepHandler;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.ode.sampling.DummyStepHandler;
 * zengfr3000@qq.com
 */
 public final class DummyStepHandlerUtil{ 
+/**
+*public static org.apache.commons.math3.ode.sampling.DummyStepHandler org.apache.commons.math3.ode.sampling.DummyStepHandler.getInstance()
+*/ 
 public static org.apache.commons.math3.ode.sampling.DummyStepHandler getInstance(){
-return DummyStepHandler.getInstance();
+	return org.apache.commons.math3.ode.sampling.DummyStepHandler.getInstance();
 }
 }

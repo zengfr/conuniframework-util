@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.util.TimeUtil;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.util.TimeUtil;
 * zengfr3000@qq.com
 */
 public final class DateTimeUtil{ 
+/**
+*public static void com.facebook.util.TimeUtil.setNow(org.joda.time.DateTime)
+*/ 
 public static void setNow(org.joda.time.DateTime p0){
- TimeUtil.setNow(p0);
+	 com.facebook.util.TimeUtil.setNow(p0);
 }
 }

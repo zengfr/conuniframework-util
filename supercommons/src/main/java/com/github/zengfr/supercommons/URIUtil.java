@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.io.IOUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.io.IOUtils;
 * zengfr3000@qq.com
 */
 public final class URIUtil{ 
+/**
+*public static byte[] org.apache.commons.io.IOUtils.toByteArray(java.net.URI) throws java.io.IOException
+*/ 
 public static byte[] toByteArray(java.net.URI p0) throws java.io.IOException{
-return IOUtils.toByteArray(p0);
+	return org.apache.commons.io.IOUtils.toByteArray(p0);
 }
 }

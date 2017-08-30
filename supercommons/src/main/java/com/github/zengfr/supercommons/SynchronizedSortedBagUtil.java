@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.bag.SynchronizedSortedBag;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.bag.SynchronizedSortedBag;
 * zengfr3000@qq.com
 */
 public final class SynchronizedSortedBagUtil{ 
+/**
+*public static <E> org.apache.commons.collections4.bag.SynchronizedSortedBag<E> org.apache.commons.collections4.bag.SynchronizedSortedBag.synchronizedSortedBag(org.apache.commons.collections4.SortedBag<E>)
+*/ 
 public static <E> org.apache.commons.collections4.bag.SynchronizedSortedBag<E> synchronizedSortedBag(org.apache.commons.collections4.SortedBag<E> p0){
-return SynchronizedSortedBag.synchronizedSortedBag(p0);
+	return org.apache.commons.collections4.bag.SynchronizedSortedBag.synchronizedSortedBag(p0);
 }
 }

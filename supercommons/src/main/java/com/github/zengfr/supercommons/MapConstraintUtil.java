@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.MapConstraints;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.MapConstraints;
 * zengfr3000@qq.com
 */
 public final class MapConstraintUtil{ 
+/**
+*public static com.google.common.collect.MapConstraint<java.lang.Object, java.lang.Object> com.google.common.collect.MapConstraints.notNull()
+*/ 
 public static com.google.common.collect.MapConstraint<java.lang.Object, java.lang.Object> notNull(){
-return MapConstraints.notNull();
+	return com.google.common.collect.MapConstraints.notNull();
 }
 }

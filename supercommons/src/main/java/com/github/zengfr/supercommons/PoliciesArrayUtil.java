@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.CycleDetectingLockFactory.Policies;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.util.concurrent.CycleDetectingLockFactory.Policies;
 * zengfr3000@qq.com
 */
 public final class PoliciesArrayUtil{ 
-public static com.google.common.util.concurrent.CycleDetectingLockFactory.Policies[] values(){
-return Policies.values();
+/**
+*public static com.google.common.util.concurrent.CycleDetectingLockFactory$Policies[] com.google.common.util.concurrent.CycleDetectingLockFactory$Policies.values()
+*/ 
+public static Policies[] values(){
+	return com.google.common.util.concurrent.CycleDetectingLockFactory.Policies.values();
 }
 }

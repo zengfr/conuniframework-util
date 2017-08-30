@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList;
 * zengfr3000@qq.com
 */
 public final class ReferenceBigArrayBigListUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(K[][],long)
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> wrap(K[][] p0,long p1){
-return ReferenceBigArrayBigList.wrap(p0,p1);
+	return it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(p0,p1);
 }
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(K[][])
+*/ 
 public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> wrap(K[][] p0){
-return ReferenceBigArrayBigList.wrap(p0);
+	return it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(p0);
 }
 }

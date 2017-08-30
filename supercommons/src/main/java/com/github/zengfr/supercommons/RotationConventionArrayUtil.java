@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.geometry.euclidean.threed.RotationConvention;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.geometry.euclidean.threed.RotationConvention;
 * zengfr3000@qq.com
 */
 public final class RotationConventionArrayUtil{ 
+/**
+*public static org.apache.commons.math3.geometry.euclidean.threed.RotationConvention[] org.apache.commons.math3.geometry.euclidean.threed.RotationConvention.values()
+*/ 
 public static org.apache.commons.math3.geometry.euclidean.threed.RotationConvention[] values(){
-return RotationConvention.values();
+	return org.apache.commons.math3.geometry.euclidean.threed.RotationConvention.values();
 }
 }

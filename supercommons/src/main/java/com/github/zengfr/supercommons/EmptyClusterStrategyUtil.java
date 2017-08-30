@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy;
-import org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,7 +6,10 @@ import org.apache.commons.math3.stat.clustering.KMeansPlusPlusClusterer.EmptyClu
 * zengfr3000@qq.com
 */
 public final class EmptyClusterStrategyUtil{ 
-public static org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy valueOf(java.lang.String p0){
-return EmptyClusterStrategy.valueOf(p0);
+/**
+*public static org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$EmptyClusterStrategy org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer$EmptyClusterStrategy.valueOf(java.lang.String)
+*/ 
+public static EmptyClusterStrategy valueOf(java.lang.String p0){
+	return org.apache.commons.math3.ml.clustering.KMeansPlusPlusClusterer.EmptyClusterStrategy.valueOf(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import java.lang.reflect.AccessibleObject;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import java.lang.reflect.AccessibleObject;
 * zengfr3000@qq.com
 */
 public final class AccessibleObjectArrayUtil{ 
+/**
+*public static void java.lang.reflect.AccessibleObject.setAccessible(java.lang.reflect.AccessibleObject[],boolean) throws java.lang.SecurityException
+*/ 
 public static void setAccessible(java.lang.reflect.AccessibleObject[] p0,boolean p1) throws java.lang.SecurityException{
- AccessibleObject.setAccessible(p0,p1);
+	 java.lang.reflect.AccessibleObject.setAccessible(p0,p1);
 }
 }

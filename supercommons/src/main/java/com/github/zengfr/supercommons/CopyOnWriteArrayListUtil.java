@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Lists;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.collect.Lists;
 * zengfr3000@qq.com
 */
 public final class CopyOnWriteArrayListUtil{ 
-public static <E> java.util.concurrent.CopyOnWriteArrayList<E> newCopyOnWriteArrayList(){
-return Lists.newCopyOnWriteArrayList();
-}
+/**
+*public static <E> java.util.concurrent.CopyOnWriteArrayList<E> com.google.common.collect.Lists.newCopyOnWriteArrayList(java.lang.Iterable<? extends E>)
+*/ 
 public static <E> java.util.concurrent.CopyOnWriteArrayList<E> newCopyOnWriteArrayList(java.lang.Iterable<? extends E> p0){
-return Lists.newCopyOnWriteArrayList(p0);
+	return com.google.common.collect.Lists.newCopyOnWriteArrayList(p0);
+}
+/**
+*public static <E> java.util.concurrent.CopyOnWriteArrayList<E> com.google.common.collect.Lists.newCopyOnWriteArrayList()
+*/ 
+public static <E> java.util.concurrent.CopyOnWriteArrayList<E> newCopyOnWriteArrayList(){
+	return com.google.common.collect.Lists.newCopyOnWriteArrayList();
 }
 }

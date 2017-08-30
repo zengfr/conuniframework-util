@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.SortedLists.KeyPresentBehavior;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.SortedLists.KeyPresentBehavior;
 * zengfr3000@qq.com
 */
 public final class KeyPresentBehaviorUtil{ 
-public static com.google.common.collect.SortedLists.KeyPresentBehavior valueOf(java.lang.String p0){
-return KeyPresentBehavior.valueOf(p0);
+/**
+*public static com.google.common.collect.SortedLists$KeyPresentBehavior com.google.common.collect.SortedLists$KeyPresentBehavior.valueOf(java.lang.String)
+*/ 
+public static KeyPresentBehavior valueOf(java.lang.String p0){
+	return com.google.common.collect.SortedLists.KeyPresentBehavior.valueOf(p0);
 }
 }

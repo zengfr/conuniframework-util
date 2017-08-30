@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.escape.Escapers;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.escape.Escapers;
 * zengfr3000@qq.com
 */
 public final class CharEscaperUtil{ 
+/**
+*public static java.lang.String com.google.common.escape.Escapers.computeReplacement(com.google.common.escape.CharEscaper,char)
+*/ 
 public static java.lang.String computeReplacement(com.google.common.escape.CharEscaper p0,char p1){
-return Escapers.computeReplacement(p0,p1);
+	return com.google.common.escape.Escapers.computeReplacement(p0,p1);
 }
 }

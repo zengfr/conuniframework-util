@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.text.CharacterPredicates;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.text.CharacterPredicates;
 * zengfr3000@qq.com
 */
 public final class CharacterPredicatesUtil{ 
+/**
+*public static org.apache.commons.text.CharacterPredicates org.apache.commons.text.CharacterPredicates.valueOf(java.lang.String)
+*/ 
 public static org.apache.commons.text.CharacterPredicates valueOf(java.lang.String p0){
-return CharacterPredicates.valueOf(p0);
+	return org.apache.commons.text.CharacterPredicates.valueOf(p0);
 }
 }

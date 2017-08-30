@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.reflect.ClassPath;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.reflect.ClassPath;
 * zengfr3000@qq.com
 */
 public final class ClassPathUtil{ 
+/**
+*public static com.google.common.reflect.ClassPath com.google.common.reflect.ClassPath.from(java.lang.ClassLoader) throws java.io.IOException
+*/ 
 public static com.google.common.reflect.ClassPath from(java.lang.ClassLoader p0) throws java.io.IOException{
-return ClassPath.from(p0);
+	return com.google.common.reflect.ClassPath.from(p0);
 }
 }

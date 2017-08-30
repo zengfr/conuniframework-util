@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.floats.FloatArrayList;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import it.unimi.dsi.fastutil.floats.FloatArrayList;
 * zengfr3000@qq.com
 */
 public final class FloatArrayListUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.floats.FloatArrayList it.unimi.dsi.fastutil.floats.FloatArrayList.wrap(float[])
+*/ 
 public static it.unimi.dsi.fastutil.floats.FloatArrayList wrap(float[] p0){
-return FloatArrayList.wrap(p0);
+	return it.unimi.dsi.fastutil.floats.FloatArrayList.wrap(p0);
 }
+/**
+*public static it.unimi.dsi.fastutil.floats.FloatArrayList it.unimi.dsi.fastutil.floats.FloatArrayList.wrap(float[],int)
+*/ 
 public static it.unimi.dsi.fastutil.floats.FloatArrayList wrap(float[] p0,int p1){
-return FloatArrayList.wrap(p0,p1);
+	return it.unimi.dsi.fastutil.floats.FloatArrayList.wrap(p0,p1);
 }
 }

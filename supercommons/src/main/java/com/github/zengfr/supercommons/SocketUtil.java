@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.io.IOUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.io.IOUtils;
 * zengfr3000@qq.com
 */
 public final class SocketUtil{ 
+/**
+*public static void org.apache.commons.io.IOUtils.closeQuietly(java.net.Socket)
+*/ 
 public static void closeQuietly(java.net.Socket p0){
- IOUtils.closeQuietly(p0);
+	 org.apache.commons.io.IOUtils.closeQuietly(p0);
 }
 }

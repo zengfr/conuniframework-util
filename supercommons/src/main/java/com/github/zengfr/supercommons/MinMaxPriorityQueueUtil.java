@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.MinMaxPriorityQueue;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.collect.MinMaxPriorityQueue;
 * zengfr3000@qq.com
 */
 public final class MinMaxPriorityQueueUtil{ 
+/**
+*public static <E> com.google.common.collect.MinMaxPriorityQueue<E> com.google.common.collect.MinMaxPriorityQueue.create()
+*/ 
 public static <E extends java.lang.Comparable<E> > com.google.common.collect.MinMaxPriorityQueue<E> create(){
-return MinMaxPriorityQueue.create();
+	return com.google.common.collect.MinMaxPriorityQueue.create();
 }
+/**
+*public static <E> com.google.common.collect.MinMaxPriorityQueue<E> com.google.common.collect.MinMaxPriorityQueue.create(java.lang.Iterable<? extends E>)
+*/ 
 public static <E extends java.lang.Comparable<E> > com.google.common.collect.MinMaxPriorityQueue<E> create(java.lang.Iterable<? extends E> p0){
-return MinMaxPriorityQueue.create(p0);
+	return com.google.common.collect.MinMaxPriorityQueue.create(p0);
 }
 }

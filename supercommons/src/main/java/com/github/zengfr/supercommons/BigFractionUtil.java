@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.fraction.BigFractionFormat;
-import org.apache.commons.math3.fraction.BigFraction;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import org.apache.commons.math3.fraction.BigFraction;
 * zengfr3000@qq.com
 */
 public final class BigFractionUtil{ 
+/**
+*public static java.lang.String org.apache.commons.math3.fraction.BigFractionFormat.formatBigFraction(org.apache.commons.math3.fraction.BigFraction)
+*/ 
 public static java.lang.String formatBigFraction(org.apache.commons.math3.fraction.BigFraction p0){
-return BigFractionFormat.formatBigFraction(p0);
+	return org.apache.commons.math3.fraction.BigFractionFormat.formatBigFraction(p0);
 }
+/**
+*public static org.apache.commons.math3.fraction.BigFraction org.apache.commons.math3.fraction.BigFraction.getReducedFraction(int,int)
+*/ 
 public static org.apache.commons.math3.fraction.BigFraction getReducedFraction(int p0,int p1){
-return BigFraction.getReducedFraction(p0,p1);
+	return org.apache.commons.math3.fraction.BigFraction.getReducedFraction(p0,p1);
 }
 }

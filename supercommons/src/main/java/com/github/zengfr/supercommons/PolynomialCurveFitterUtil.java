@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.fitting.PolynomialCurveFitter;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.fitting.PolynomialCurveFitter;
 * zengfr3000@qq.com
 */
 public final class PolynomialCurveFitterUtil{ 
+/**
+*public static org.apache.commons.math3.fitting.PolynomialCurveFitter org.apache.commons.math3.fitting.PolynomialCurveFitter.create(int)
+*/ 
 public static org.apache.commons.math3.fitting.PolynomialCurveFitter create(int p0){
-return PolynomialCurveFitter.create(p0);
+	return org.apache.commons.math3.fitting.PolynomialCurveFitter.create(p0);
 }
 }

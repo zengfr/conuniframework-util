@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.util.TimeInterval;
-import com.facebook.util.TimeIntervalType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import com.facebook.util.TimeIntervalType;
 * zengfr3000@qq.com
 */
 public final class TimeIntervalTypeUtil{ 
+/**
+*public static com.facebook.util.TimeInterval com.facebook.util.TimeInterval.withTypeAndLength(com.facebook.util.TimeIntervalType,int)
+*/ 
 public static com.facebook.util.TimeInterval withTypeAndLength(com.facebook.util.TimeIntervalType p0,int p1){
-return TimeInterval.withTypeAndLength(p0,p1);
+	return com.facebook.util.TimeInterval.withTypeAndLength(p0,p1);
 }
+/**
+*public static com.facebook.util.TimeIntervalType com.facebook.util.TimeIntervalType.valueOf(java.lang.String)
+*/ 
 public static com.facebook.util.TimeIntervalType valueOf(java.lang.String p0){
-return TimeIntervalType.valueOf(p0);
+	return com.facebook.util.TimeIntervalType.valueOf(p0);
 }
 }

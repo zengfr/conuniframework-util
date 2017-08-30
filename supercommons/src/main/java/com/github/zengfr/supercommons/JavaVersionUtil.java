@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.lang3.JavaVersion;
-import org.apache.commons.lang3.SystemUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import org.apache.commons.lang3.SystemUtils;
 * zengfr3000@qq.com
 */
 public final class JavaVersionUtil{ 
+/**
+*public static org.apache.commons.lang3.JavaVersion org.apache.commons.lang3.JavaVersion.valueOf(java.lang.String)
+*/ 
 public static org.apache.commons.lang3.JavaVersion valueOf(java.lang.String p0){
-return JavaVersion.valueOf(p0);
+	return org.apache.commons.lang3.JavaVersion.valueOf(p0);
 }
+/**
+*public static boolean org.apache.commons.lang3.SystemUtils.isJavaVersionAtLeast(org.apache.commons.lang3.JavaVersion)
+*/ 
 public static boolean isJavaVersionAtLeast(org.apache.commons.lang3.JavaVersion p0){
-return SystemUtils.isJavaVersionAtLeast(p0);
+	return org.apache.commons.lang3.SystemUtils.isJavaVersionAtLeast(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Multisets;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.Multisets;
 * zengfr3000@qq.com
 */
 public final class SortedMultisetUtil{ 
+/**
+*public static <E> com.google.common.collect.SortedMultiset<E> com.google.common.collect.Multisets.unmodifiableSortedMultiset(com.google.common.collect.SortedMultiset<E>)
+*/ 
 public static <E> com.google.common.collect.SortedMultiset<E> unmodifiableSortedMultiset(com.google.common.collect.SortedMultiset<E> p0){
-return Multisets.unmodifiableSortedMultiset(p0);
+	return com.google.common.collect.Multisets.unmodifiableSortedMultiset(p0);
 }
 }

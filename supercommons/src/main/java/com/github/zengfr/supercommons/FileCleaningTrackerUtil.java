@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.io.FileCleaner;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.io.FileCleaner;
 * zengfr3000@qq.com
 */
 public final class FileCleaningTrackerUtil{ 
+/**
+*public static org.apache.commons.io.FileCleaningTracker org.apache.commons.io.FileCleaner.getInstance()
+*/ 
 public static org.apache.commons.io.FileCleaningTracker getInstance(){
-return FileCleaner.getInstance();
+	return org.apache.commons.io.FileCleaner.getInstance();
 }
 }

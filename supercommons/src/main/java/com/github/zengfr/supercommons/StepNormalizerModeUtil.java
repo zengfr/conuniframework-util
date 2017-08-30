@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.ode.sampling.StepNormalizerMode;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.ode.sampling.StepNormalizerMode;
 * zengfr3000@qq.com
 */
 public final class StepNormalizerModeUtil{ 
+/**
+*public static org.apache.commons.math3.ode.sampling.StepNormalizerMode org.apache.commons.math3.ode.sampling.StepNormalizerMode.valueOf(java.lang.String)
+*/ 
 public static org.apache.commons.math3.ode.sampling.StepNormalizerMode valueOf(java.lang.String p0){
-return StepNormalizerMode.valueOf(p0);
+	return org.apache.commons.math3.ode.sampling.StepNormalizerMode.valueOf(p0);
 }
 }

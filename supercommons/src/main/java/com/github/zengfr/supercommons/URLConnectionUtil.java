@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.io.IOUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import org.apache.commons.io.IOUtils;
 * zengfr3000@qq.com
 */
 public final class URLConnectionUtil{ 
+/**
+*public static void org.apache.commons.io.IOUtils.close(java.net.URLConnection)
+*/ 
 public static void close(java.net.URLConnection p0){
- IOUtils.close(p0);
+	 org.apache.commons.io.IOUtils.close(p0);
 }
+/**
+*public static byte[] org.apache.commons.io.IOUtils.toByteArray(java.net.URLConnection) throws java.io.IOException
+*/ 
 public static byte[] toByteArray(java.net.URLConnection p0) throws java.io.IOException{
-return IOUtils.toByteArray(p0);
+	return org.apache.commons.io.IOUtils.toByteArray(p0);
 }
 }

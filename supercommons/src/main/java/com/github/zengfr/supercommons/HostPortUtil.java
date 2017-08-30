@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.collections.HostPort;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.collections.HostPort;
 * zengfr3000@qq.com
 */
 public final class HostPortUtil{ 
+/**
+*public static com.facebook.collections.HostPort com.facebook.collections.HostPort.fromString(java.lang.String)
+*/ 
 public static com.facebook.collections.HostPort fromString(java.lang.String p0){
-return HostPort.fromString(p0);
+	return com.facebook.collections.HostPort.fromString(p0);
 }
 }

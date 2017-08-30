@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.MutableClassToInstanceMap;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.collect.MutableClassToInstanceMap;
 * zengfr3000@qq.com
 */
 public final class MutableClassToInstanceMapUtil{ 
+/**
+*public static <B> com.google.common.collect.MutableClassToInstanceMap<B> com.google.common.collect.MutableClassToInstanceMap.create()
+*/ 
 public static <B> com.google.common.collect.MutableClassToInstanceMap<B> create(){
-return MutableClassToInstanceMap.create();
+	return com.google.common.collect.MutableClassToInstanceMap.create();
 }
+/**
+*public static <B> com.google.common.collect.MutableClassToInstanceMap<B> com.google.common.collect.MutableClassToInstanceMap.create(java.util.Map<java.lang.Class<? extends B>, B>)
+*/ 
 public static <B> com.google.common.collect.MutableClassToInstanceMap<B> create(java.util.Map<java.lang.Class<? extends B>, B> p0){
-return MutableClassToInstanceMap.create(p0);
+	return com.google.common.collect.MutableClassToInstanceMap.create(p0);
 }
 }

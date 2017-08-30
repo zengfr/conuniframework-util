@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.io.ByteSource;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.io.ByteSource;
 * zengfr3000@qq.com
 */
 public final class ByteSourceArrayUtil{ 
-public static com.google.common.io.ByteSource concat(.. p0){
-return ByteSource.concat(p0);
+/**
+*public static com.google.common.io.ByteSource com.google.common.io.ByteSource.concat(com.google.common.io.ByteSource...)
+*/ 
+public static com.google.common.io.ByteSource concat(com.google.common.io.ByteSource... p0){
+	return com.google.common.io.ByteSource.concat(p0);
 }
 }

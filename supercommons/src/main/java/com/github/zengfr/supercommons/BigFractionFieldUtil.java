@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.fraction.BigFractionField;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.fraction.BigFractionField;
 * zengfr3000@qq.com
 */
 public final class BigFractionFieldUtil{ 
+/**
+*public static org.apache.commons.math3.fraction.BigFractionField org.apache.commons.math3.fraction.BigFractionField.getInstance()
+*/ 
 public static org.apache.commons.math3.fraction.BigFractionField getInstance(){
-return BigFractionField.getInstance();
+	return org.apache.commons.math3.fraction.BigFractionField.getInstance();
 }
 }

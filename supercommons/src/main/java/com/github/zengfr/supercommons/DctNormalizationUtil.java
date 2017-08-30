@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.transform.DctNormalization;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.transform.DctNormalization;
 * zengfr3000@qq.com
 */
 public final class DctNormalizationUtil{ 
+/**
+*public static org.apache.commons.math3.transform.DctNormalization org.apache.commons.math3.transform.DctNormalization.valueOf(java.lang.String)
+*/ 
 public static org.apache.commons.math3.transform.DctNormalization valueOf(java.lang.String p0){
-return DctNormalization.valueOf(p0);
+	return org.apache.commons.math3.transform.DctNormalization.valueOf(p0);
 }
 }

@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Multisets;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import com.google.common.collect.Multisets;
 * zengfr3000@qq.com
 */
 public final class EntryUtil{ 
-public static <K,V> java.util.Map.java.util.Map.Entry<K, V> immutableEntry(K p0,V p1){
-return Maps.immutableEntry(p0,p1);
+/**
+*public static <K,V> java.util.Map.java.util.Map$Entry<K, V> com.google.common.collect.Maps.immutableEntry(K,V)
+*/ 
+public static <K,V> Entry<K, V> immutableEntry(K p0,V p1){
+	return com.google.common.collect.Maps.immutableEntry(p0,p1);
 }
-public static <E> com.google.common.collect.Multiset.com.google.common.collect.Multiset.Entry<E> immutableEntry(E p0,int p1){
-return Multisets.immutableEntry(p0,p1);
+/**
+*public static <E> com.google.common.collect.Multiset.com.google.common.collect.Multiset$Entry<E> com.google.common.collect.Multisets.immutableEntry(E,int)
+*/ 
+public static <E> Entry<E> immutableEntry(E p0,int p1){
+	return com.google.common.collect.Multisets.immutableEntry(p0,p1);
 }
 }

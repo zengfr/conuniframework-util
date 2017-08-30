@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.lang3.tuple.ImmutablePair;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.lang3.tuple.ImmutablePair;
 * zengfr3000@qq.com
 */
 public final class ImmutablePairUtil{ 
+/**
+*public static <L,R> org.apache.commons.lang3.tuple.ImmutablePair<L, R> org.apache.commons.lang3.tuple.ImmutablePair.of(L,R)
+*/ 
 public static <L,R> org.apache.commons.lang3.tuple.ImmutablePair<L, R> of(L p0,R p1){
-return ImmutablePair.of(p0,p1);
+	return org.apache.commons.lang3.tuple.ImmutablePair.of(p0,p1);
 }
 }

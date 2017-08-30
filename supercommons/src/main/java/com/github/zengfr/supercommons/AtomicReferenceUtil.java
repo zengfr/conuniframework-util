@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.Atomics;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.util.concurrent.Atomics;
 * zengfr3000@qq.com
 */
 public final class AtomicReferenceUtil{ 
+/**
+*public static <V> java.util.concurrent.atomic.AtomicReference<V> com.google.common.util.concurrent.Atomics.newReference()
+*/ 
 public static <V> java.util.concurrent.atomic.AtomicReference<V> newReference(){
-return Atomics.newReference();
+	return com.google.common.util.concurrent.Atomics.newReference();
 }
+/**
+*public static <V> java.util.concurrent.atomic.AtomicReference<V> com.google.common.util.concurrent.Atomics.newReference(V)
+*/ 
 public static <V> java.util.concurrent.atomic.AtomicReference<V> newReference(V p0){
-return Atomics.newReference(p0);
+	return com.google.common.util.concurrent.Atomics.newReference(p0);
 }
 }

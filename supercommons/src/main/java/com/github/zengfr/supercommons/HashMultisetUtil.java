@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.HashMultiset;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,13 +6,22 @@ import com.google.common.collect.HashMultiset;
 * zengfr3000@qq.com
 */
 public final class HashMultisetUtil{ 
+/**
+*public static <E> com.google.common.collect.HashMultiset<E> com.google.common.collect.HashMultiset.create(int)
+*/ 
 public static <E> com.google.common.collect.HashMultiset<E> create(int p0){
-return HashMultiset.create(p0);
+	return com.google.common.collect.HashMultiset.create(p0);
 }
+/**
+*public static <E> com.google.common.collect.HashMultiset<E> com.google.common.collect.HashMultiset.create(java.lang.Iterable<? extends E>)
+*/ 
 public static <E> com.google.common.collect.HashMultiset<E> create(java.lang.Iterable<? extends E> p0){
-return HashMultiset.create(p0);
+	return com.google.common.collect.HashMultiset.create(p0);
 }
+/**
+*public static <E> com.google.common.collect.HashMultiset<E> com.google.common.collect.HashMultiset.create()
+*/ 
 public static <E> com.google.common.collect.HashMultiset<E> create(){
-return HashMultiset.create();
+	return com.google.common.collect.HashMultiset.create();
 }
 }

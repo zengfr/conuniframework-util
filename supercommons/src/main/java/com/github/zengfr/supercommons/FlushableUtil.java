@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.io.Flushables;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.io.Flushables;
 * zengfr3000@qq.com
 */
 public final class FlushableUtil{ 
+/**
+*public static void com.google.common.io.Flushables.flush(java.io.Flushable,boolean) throws java.io.IOException
+*/ 
 public static void flush(java.io.Flushable p0,boolean p1) throws java.io.IOException{
- Flushables.flush(p0,p1);
+	 com.google.common.io.Flushables.flush(p0,p1);
 }
+/**
+*public static void com.google.common.io.Flushables.flushQuietly(java.io.Flushable)
+*/ 
 public static void flushQuietly(java.io.Flushable p0){
- Flushables.flushQuietly(p0);
+	 com.google.common.io.Flushables.flushQuietly(p0);
 }
 }

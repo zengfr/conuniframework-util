@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.iterators.PushbackIterator;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.iterators.PushbackIterator;
 * zengfr3000@qq.com
 */
 public final class PushbackIteratorUtil{ 
+/**
+*public static <E> org.apache.commons.collections4.iterators.PushbackIterator<E> org.apache.commons.collections4.iterators.PushbackIterator.pushbackIterator(java.util.Iterator<? extends E>)
+*/ 
 public static <E> org.apache.commons.collections4.iterators.PushbackIterator<E> pushbackIterator(java.util.Iterator<? extends E> p0){
-return PushbackIterator.pushbackIterator(p0);
+	return org.apache.commons.collections4.iterators.PushbackIterator.pushbackIterator(p0);
 }
 }

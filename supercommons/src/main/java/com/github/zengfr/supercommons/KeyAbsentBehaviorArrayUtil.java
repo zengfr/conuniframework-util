@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.SortedLists.KeyAbsentBehavior;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.SortedLists.KeyAbsentBehavior;
 * zengfr3000@qq.com
 */
 public final class KeyAbsentBehaviorArrayUtil{ 
-public static com.google.common.collect.SortedLists.KeyAbsentBehavior[] values(){
-return KeyAbsentBehavior.values();
+/**
+*public static com.google.common.collect.SortedLists$KeyAbsentBehavior[] com.google.common.collect.SortedLists$KeyAbsentBehavior.values()
+*/ 
+public static KeyAbsentBehavior[] values(){
+	return com.google.common.collect.SortedLists.KeyAbsentBehavior.values();
 }
 }

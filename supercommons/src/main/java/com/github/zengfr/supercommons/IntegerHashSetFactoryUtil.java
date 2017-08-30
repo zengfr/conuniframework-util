@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.collections.specialized.IntegerHashSetFactory;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.facebook.collections.specialized.IntegerHashSetFactory;
 * zengfr3000@qq.com
 */
 public final class IntegerHashSetFactoryUtil{ 
+/**
+*public static com.facebook.collections.specialized.IntegerHashSetFactory com.facebook.collections.specialized.IntegerHashSetFactory.withInitialSize(int)
+*/ 
 public static com.facebook.collections.specialized.IntegerHashSetFactory withInitialSize(int p0){
-return IntegerHashSetFactory.withInitialSize(p0);
+	return com.facebook.collections.specialized.IntegerHashSetFactory.withInitialSize(p0);
 }
+/**
+*public static com.facebook.collections.specialized.IntegerHashSetFactory com.facebook.collections.specialized.IntegerHashSetFactory.withMaxSize(int)
+*/ 
 public static com.facebook.collections.specialized.IntegerHashSetFactory withMaxSize(int p0){
-return IntegerHashSetFactory.withMaxSize(p0);
+	return com.facebook.collections.specialized.IntegerHashSetFactory.withMaxSize(p0);
 }
 }

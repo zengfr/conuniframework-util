@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.apache.commons.lang.exception.ExceptionUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,7 +6,10 @@ import org.apache.commons.lang.exception.ExceptionUtils;
 * zengfr3000@qq.com
 */
 public final class PrintWriterUtil{ 
+/**
+*public static void org.apache.commons.lang3.exception.ExceptionUtils.printRootCauseStackTrace(java.lang.Throwable,java.io.PrintWriter)
+*/ 
 public static void printRootCauseStackTrace(java.lang.Throwable p0,java.io.PrintWriter p1){
- ExceptionUtils.printRootCauseStackTrace(p0,p1);
+	 org.apache.commons.lang3.exception.ExceptionUtils.printRootCauseStackTrace(p0,p1);
 }
 }

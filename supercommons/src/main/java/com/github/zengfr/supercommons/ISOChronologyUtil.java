@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.util.TimeUtil;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.util.TimeUtil;
 * zengfr3000@qq.com
 */
 public final class ISOChronologyUtil{ 
+/**
+*public static org.joda.time.chrono.ISOChronology com.facebook.util.TimeUtil.getChronology(java.lang.String)
+*/ 
 public static org.joda.time.chrono.ISOChronology getChronology(java.lang.String p0){
-return TimeUtil.getChronology(p0);
+	return com.facebook.util.TimeUtil.getChronology(p0);
 }
 }

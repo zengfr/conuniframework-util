@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.util.MathArrays.Position;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.util.MathArrays.Position;
 * zengfr3000@qq.com
 */
 public final class PositionArrayUtil{ 
-public static org.apache.commons.math3.util.MathArrays.Position[] values(){
-return Position.values();
+/**
+*public static org.apache.commons.math3.util.MathArrays$Position[] org.apache.commons.math3.util.MathArrays$Position.values()
+*/ 
+public static Position[] values(){
+	return org.apache.commons.math3.util.MathArrays.Position.values();
 }
 }

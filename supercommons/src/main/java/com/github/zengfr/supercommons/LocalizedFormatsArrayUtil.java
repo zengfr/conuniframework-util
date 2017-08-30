@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.exception.util.LocalizedFormats;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.exception.util.LocalizedFormats;
 * zengfr3000@qq.com
 */
 public final class LocalizedFormatsArrayUtil{ 
+/**
+*public static org.apache.commons.math3.exception.util.LocalizedFormats[] org.apache.commons.math3.exception.util.LocalizedFormats.values()
+*/ 
 public static org.apache.commons.math3.exception.util.LocalizedFormats[] values(){
-return LocalizedFormats.values();
+	return org.apache.commons.math3.exception.util.LocalizedFormats.values();
 }
 }

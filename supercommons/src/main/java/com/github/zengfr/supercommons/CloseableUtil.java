@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.io.Closeables;
-import org.apache.commons.io.IOUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import org.apache.commons.io.IOUtils;
 * zengfr3000@qq.com
 */
 public final class CloseableUtil{ 
+/**
+*public static void com.google.common.io.Closeables.close(java.io.Closeable,boolean) throws java.io.IOException
+*/ 
 public static void close(java.io.Closeable p0,boolean p1) throws java.io.IOException{
- Closeables.close(p0,p1);
+	 com.google.common.io.Closeables.close(p0,p1);
 }
+/**
+*public static void org.apache.commons.io.IOUtils.closeQuietly(java.io.Closeable)
+*/ 
 public static void closeQuietly(java.io.Closeable p0){
- IOUtils.closeQuietly(p0);
+	 org.apache.commons.io.IOUtils.closeQuietly(p0);
 }
 }

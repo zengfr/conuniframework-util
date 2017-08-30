@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.beanutils.BeanUtilsBean;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import org.apache.commons.beanutils.BeanUtilsBean;
 * zengfr3000@qq.com
 */
 public final class BeanUtilsBeanUtil{ 
+/**
+*public static org.apache.commons.beanutils.BeanUtilsBean org.apache.commons.beanutils.BeanUtilsBean.getInstance()
+*/ 
 public static org.apache.commons.beanutils.BeanUtilsBean getInstance(){
-return BeanUtilsBean.getInstance();
+	return org.apache.commons.beanutils.BeanUtilsBean.getInstance();
 }
+/**
+*public static void org.apache.commons.beanutils.BeanUtilsBean.setInstance(org.apache.commons.beanutils.BeanUtilsBean)
+*/ 
 public static void setInstance(org.apache.commons.beanutils.BeanUtilsBean p0){
- BeanUtilsBean.setInstance(p0);
+	 org.apache.commons.beanutils.BeanUtilsBean.setInstance(p0);
 }
 }

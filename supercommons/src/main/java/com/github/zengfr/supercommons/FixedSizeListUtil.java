@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.list.FixedSizeList;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.list.FixedSizeList;
 * zengfr3000@qq.com
 */
 public final class FixedSizeListUtil{ 
+/**
+*public static <E> org.apache.commons.collections4.list.FixedSizeList<E> org.apache.commons.collections4.list.FixedSizeList.fixedSizeList(java.util.List<E>)
+*/ 
 public static <E> org.apache.commons.collections4.list.FixedSizeList<E> fixedSizeList(java.util.List<E> p0){
-return FixedSizeList.fixedSizeList(p0);
+	return org.apache.commons.collections4.list.FixedSizeList.fixedSizeList(p0);
 }
 }

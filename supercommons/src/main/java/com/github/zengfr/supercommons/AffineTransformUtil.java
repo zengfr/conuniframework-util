@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.geometry.euclidean.twod.Line;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.geometry.euclidean.twod.Line;
 * zengfr3000@qq.com
 */
 public final class AffineTransformUtil{ 
+/**
+*public static org.apache.commons.math3.geometry.partitioning.Transform<org.apache.commons.math3.geometry.euclidean.twod.Euclidean2D, org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D> org.apache.commons.math3.geometry.euclidean.twod.Line.getTransform(java.awt.geom.AffineTransform) throws org.apache.commons.math3.exception.MathIllegalArgumentException
+*/ 
 public static org.apache.commons.math3.geometry.partitioning.Transform<org.apache.commons.math3.geometry.euclidean.twod.Euclidean2D, org.apache.commons.math3.geometry.euclidean.oned.Euclidean1D> getTransform(java.awt.geom.AffineTransform p0) throws org.apache.commons.math3.exception.MathIllegalArgumentException{
-return Line.getTransform(p0);
+	return org.apache.commons.math3.geometry.euclidean.twod.Line.getTransform(p0);
 }
 }

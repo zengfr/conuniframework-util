@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.collectionsbase.ReferenceCourier;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.collectionsbase.ReferenceCourier;
 * zengfr3000@qq.com
 */
 public final class ReferenceCourierUtil{ 
+/**
+*public static <T2> com.facebook.collectionsbase.ReferenceCourier<T2> com.facebook.collectionsbase.ReferenceCourier.empty()
+*/ 
 public static <T2> com.facebook.collectionsbase.ReferenceCourier<T2> empty(){
-return ReferenceCourier.empty();
+	return com.facebook.collectionsbase.ReferenceCourier.empty();
 }
 }

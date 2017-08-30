@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.chars.CharIterators;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import it.unimi.dsi.fastutil.chars.CharIterators;
 * zengfr3000@qq.com
 */
 public final class CharBidirectionalIteratorUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.chars.CharBidirectionalIterator it.unimi.dsi.fastutil.chars.CharIterators.unmodifiable(it.unimi.dsi.fastutil.chars.CharBidirectionalIterator)
+*/ 
 public static it.unimi.dsi.fastutil.chars.CharBidirectionalIterator unmodifiable(it.unimi.dsi.fastutil.chars.CharBidirectionalIterator p0){
-return CharIterators.unmodifiable(p0);
+	return it.unimi.dsi.fastutil.chars.CharIterators.unmodifiable(p0);
 }
 }

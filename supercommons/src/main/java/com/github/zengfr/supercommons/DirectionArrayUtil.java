@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction;
 * zengfr3000@qq.com
 */
 public final class DirectionArrayUtil{ 
-public static org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction[] values(){
-return Direction.values();
+/**
+*public static org.apache.commons.math3.stat.descriptive.moment.SemiVariance$Direction[] org.apache.commons.math3.stat.descriptive.moment.SemiVariance$Direction.values()
+*/ 
+public static Direction[] values(){
+	return org.apache.commons.math3.stat.descriptive.moment.SemiVariance.Direction.values();
 }
 }

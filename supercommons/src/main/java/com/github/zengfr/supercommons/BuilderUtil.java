@@ -1,28 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.ContiguousSet;
-import com.google.common.collect.ImmutableSortedSet;
-import com.google.common.collect.ImmutableSet;
-import com.google.common.collect.ImmutableBiMap;
-import com.google.common.collect.ImmutableMap;
-import com.google.common.collect.ImmutableClassToInstanceMap;
-import com.google.common.collect.ImmutableList;
-import com.google.common.collect.ImmutableListMultimap;
-import com.google.common.collect.ImmutableMultimap;
-import com.google.common.collect.ImmutableMultiset;
-import com.google.common.collect.ImmutableRangeMap;
-import com.google.common.collect.ImmutableRangeSet;
-import com.google.common.collect.ImmutableSetMultimap;
-import com.google.common.collect.ImmutableSortedMap;
-import com.google.common.collect.ImmutableSortedMapFauxverideShim;
-import com.google.common.collect.ImmutableSortedMultiset;
-import com.google.common.collect.ImmutableSortedMultisetFauxverideShim;
-import com.google.common.collect.ImmutableSortedSetFauxverideShim;
-import com.google.common.collect.ImmutableTable;
-import com.google.common.collect.MinMaxPriorityQueue;
-import com.google.common.escape.Escapers;
-import com.google.common.reflect.ImmutableTypeToInstanceMap;
-import org.apache.commons.collections4.collection.PredicatedCollection;
-import org.apache.commons.text.StringEscapeUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -30,37 +6,70 @@ import org.apache.commons.text.StringEscapeUtils;
 * zengfr3000@qq.com
 */
 public final class BuilderUtil{ 
-public static <E> com.google.common.collect.ImmutableSortedSet.com.google.common.collect.ImmutableSortedSet.Builder<E> builder(){
-return ContiguousSet.builder();
+/**
+*public static <E> com.google.common.collect.ImmutableSortedSet.com.google.common.collect.ImmutableSortedSet$Builder<E> com.google.common.collect.ContiguousSet.builder()
+*/ 
+public static <E> Builder<E> builder(){
+	return com.google.common.collect.ContiguousSet.builder();
 }
+/**
+*public static <E> com.google.common.collect.ImmutableSortedSet.com.google.common.collect.ImmutableSortedSet$Builder<E> com.google.common.collect.ImmutableSortedSet.naturalOrder()
+*/ 
 public static <E extends java.lang.Comparable<?> > Builder<E> naturalOrder(){
-return ImmutableSortedSet.naturalOrder();
+	return com.google.common.collect.ImmutableSortedSet.naturalOrder();
 }
+/**
+*public static <E> com.google.common.collect.ImmutableSortedSet.com.google.common.collect.ImmutableSortedSet$Builder<E> com.google.common.collect.ImmutableSortedSet.reverseOrder()
+*/ 
 public static <E extends java.lang.Comparable<?> > Builder<E> reverseOrder(){
-return ImmutableSortedSet.reverseOrder();
+	return com.google.common.collect.ImmutableSortedSet.reverseOrder();
 }
+/**
+*public static <E> com.google.common.collect.ImmutableSortedSet.com.google.common.collect.ImmutableSortedSet$Builder<E> com.google.common.collect.ImmutableSortedSet.orderedBy(java.util.Comparator<E>)
+*/ 
 public static <E> Builder<E> orderedBy(java.util.Comparator<E> p0){
-return ImmutableSortedSet.orderedBy(p0);
+	return com.google.common.collect.ImmutableSortedSet.orderedBy(p0);
 }
+/**
+*public static <K,V> com.google.common.collect.ImmutableSortedMap.com.google.common.collect.ImmutableSortedMap$Builder<K, V> com.google.common.collect.ImmutableSortedMap.orderedBy(java.util.Comparator<K>)
+*/ 
 public static <K,V> Builder<K, V> orderedBy(java.util.Comparator<K> p0){
-return ImmutableSortedMap.orderedBy(p0);
+	return com.google.common.collect.ImmutableSortedMap.orderedBy(p0);
 }
+/**
+*public static com.google.common.collect.MinMaxPriorityQueue.com.google.common.collect.MinMaxPriorityQueue$Builder<java.lang.Comparable> com.google.common.collect.MinMaxPriorityQueue.maximumSize(int)
+*/ 
 public static Builder<java.lang.Comparable> maximumSize(int p0){
-return MinMaxPriorityQueue.maximumSize(p0);
+	return com.google.common.collect.MinMaxPriorityQueue.maximumSize(p0);
 }
+/**
+*public static com.google.common.collect.MinMaxPriorityQueue.com.google.common.collect.MinMaxPriorityQueue$Builder<java.lang.Comparable> com.google.common.collect.MinMaxPriorityQueue.expectedSize(int)
+*/ 
 public static Builder<java.lang.Comparable> expectedSize(int p0){
-return MinMaxPriorityQueue.expectedSize(p0);
+	return com.google.common.collect.MinMaxPriorityQueue.expectedSize(p0);
 }
+/**
+*public static <B> com.google.common.collect.MinMaxPriorityQueue.com.google.common.collect.MinMaxPriorityQueue$Builder<B> com.google.common.collect.MinMaxPriorityQueue.orderedBy(java.util.Comparator<B>)
+*/ 
 public static <B> Builder<B> orderedBy(java.util.Comparator<B> p0){
-return MinMaxPriorityQueue.orderedBy(p0);
+	return com.google.common.collect.MinMaxPriorityQueue.orderedBy(p0);
 }
+/**
+*public static <E> org.apache.commons.collections4.collection.PredicatedCollection.org.apache.commons.collections4.collection.PredicatedCollection$Builder<E> org.apache.commons.collections4.collection.PredicatedCollection.builder(org.apache.commons.collections4.Predicate<? super E>)
+*/ 
 public static <E> Builder<E> builder(org.apache.commons.collections4.Predicate<? super E> p0){
-return PredicatedCollection.builder(p0);
+	return org.apache.commons.collections4.collection.PredicatedCollection.builder(p0);
 }
+/**
+*public static <E> org.apache.commons.collections4.collection.PredicatedCollection.org.apache.commons.collections4.collection.PredicatedCollection$Builder<E> org.apache.commons.collections4.collection.PredicatedCollection.notNullBuilder()
+*/ 
 public static <E> Builder<E> notNullBuilder(){
-return PredicatedCollection.notNullBuilder();
+	return org.apache.commons.collections4.collection.PredicatedCollection.notNullBuilder();
 }
+/**
+*public static org.apache.commons.text.StringEscapeUtils$Builder org.apache.commons.text.StringEscapeUtils.builder(org.apache.commons.text.translate.CharSequenceTranslator)
+*/ 
 public static Builder builder(org.apache.commons.text.translate.CharSequenceTranslator p0){
-return StringEscapeUtils.builder(p0);
+	return org.apache.commons.text.StringEscapeUtils.builder(p0);
 }
 }

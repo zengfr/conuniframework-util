@@ -1,7 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.lang3.math.NumberUtils;
-import org.apache.commons.lang.math.NumberUtils;
-import org.apache.commons.lang.NumberUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +6,10 @@ import org.apache.commons.lang.NumberUtils;
 * zengfr3000@qq.com
 */
 public final class BigDecimalUtil{ 
+/**
+*public static java.math.BigDecimal org.apache.commons.lang3.math.NumberUtils.createBigDecimal(java.lang.String)
+*/ 
 public static java.math.BigDecimal createBigDecimal(java.lang.String p0){
-return NumberUtils.createBigDecimal(p0);
+	return org.apache.commons.lang3.math.NumberUtils.createBigDecimal(p0);
 }
 }

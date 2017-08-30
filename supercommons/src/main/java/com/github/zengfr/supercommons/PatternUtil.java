@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.base.Predicates;
-import com.google.common.base.Splitter;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,10 +6,16 @@ import com.google.common.base.Splitter;
 * zengfr3000@qq.com
 */
 public final class PatternUtil{ 
+/**
+*public static com.google.common.base.Predicate<java.lang.CharSequence> com.google.common.base.Predicates.contains(java.util.regex.Pattern)
+*/ 
 public static com.google.common.base.Predicate<java.lang.CharSequence> contains(java.util.regex.Pattern p0){
-return Predicates.contains(p0);
+	return com.google.common.base.Predicates.contains(p0);
 }
+/**
+*public static com.google.common.base.Splitter com.google.common.base.Splitter.on(java.util.regex.Pattern)
+*/ 
 public static com.google.common.base.Splitter on(java.util.regex.Pattern p0){
-return Splitter.on(p0);
+	return com.google.common.base.Splitter.on(p0);
 }
 }

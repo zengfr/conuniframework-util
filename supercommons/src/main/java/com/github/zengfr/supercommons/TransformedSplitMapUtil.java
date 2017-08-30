@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.splitmap.TransformedSplitMap;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.splitmap.TransformedSplitMap;
 * zengfr3000@qq.com
 */
 public final class TransformedSplitMapUtil{ 
+/**
+*public static <J,K,U,V> org.apache.commons.collections4.splitmap.TransformedSplitMap<J, K, U, V> org.apache.commons.collections4.splitmap.TransformedSplitMap.transformingMap(java.util.Map<K, V>,org.apache.commons.collections4.Transformer<? super J, ? extends K>,org.apache.commons.collections4.Transformer<? super U, ? extends V>)
+*/ 
 public static <J,K,U,V> org.apache.commons.collections4.splitmap.TransformedSplitMap<J, K, U, V> transformingMap(java.util.Map<K, V> p0,org.apache.commons.collections4.Transformer<? super J, ? extends K> p1,org.apache.commons.collections4.Transformer<? super U, ? extends V> p2){
-return TransformedSplitMap.transformingMap(p0,p1,p2);
+	return org.apache.commons.collections4.splitmap.TransformedSplitMap.transformingMap(p0,p1,p2);
 }
 }

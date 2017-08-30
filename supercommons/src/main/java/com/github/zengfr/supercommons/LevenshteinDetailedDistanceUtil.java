@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.text.similarity.LevenshteinDetailedDistance;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.text.similarity.LevenshteinDetailedDistance;
 * zengfr3000@qq.com
 */
 public final class LevenshteinDetailedDistanceUtil{ 
+/**
+*public static org.apache.commons.text.similarity.LevenshteinDetailedDistance org.apache.commons.text.similarity.LevenshteinDetailedDistance.getDefaultInstance()
+*/ 
 public static org.apache.commons.text.similarity.LevenshteinDetailedDistance getDefaultInstance(){
-return LevenshteinDetailedDistance.getDefaultInstance();
+	return org.apache.commons.text.similarity.LevenshteinDetailedDistance.getDefaultInstance();
 }
 }

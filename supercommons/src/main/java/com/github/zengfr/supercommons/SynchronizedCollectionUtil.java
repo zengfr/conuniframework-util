@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.collection.SynchronizedCollection;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.collection.SynchronizedCollection;
 * zengfr3000@qq.com
 */
 public final class SynchronizedCollectionUtil{ 
+/**
+*public static <T> org.apache.commons.collections4.collection.SynchronizedCollection<T> org.apache.commons.collections4.collection.SynchronizedCollection.synchronizedCollection(java.util.Collection<T>)
+*/ 
 public static <T> org.apache.commons.collections4.collection.SynchronizedCollection<T> synchronizedCollection(java.util.Collection<T> p0){
-return SynchronizedCollection.synchronizedCollection(p0);
+	return org.apache.commons.collections4.collection.SynchronizedCollection.synchronizedCollection(p0);
 }
 }

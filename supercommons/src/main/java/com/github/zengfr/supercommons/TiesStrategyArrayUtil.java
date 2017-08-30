@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.stat.ranking.TiesStrategy;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.stat.ranking.TiesStrategy;
 * zengfr3000@qq.com
 */
 public final class TiesStrategyArrayUtil{ 
+/**
+*public static org.apache.commons.math3.stat.ranking.TiesStrategy[] org.apache.commons.math3.stat.ranking.TiesStrategy.values()
+*/ 
 public static org.apache.commons.math3.stat.ranking.TiesStrategy[] values(){
-return TiesStrategy.values();
+	return org.apache.commons.math3.stat.ranking.TiesStrategy.values();
 }
 }

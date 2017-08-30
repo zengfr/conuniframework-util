@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import edu.umd.cs.findbugs.annotations.When;
-import javax.annotation.meta.When;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,7 +6,10 @@ import javax.annotation.meta.When;
 * zengfr3000@qq.com
 */
 public final class WhenArrayUtil{ 
+/**
+*public static edu.umd.cs.findbugs.annotations.When[] edu.umd.cs.findbugs.annotations.When.values()
+*/ 
 public static edu.umd.cs.findbugs.annotations.When[] values(){
-return When.values();
+	return edu.umd.cs.findbugs.annotations.When.values();
 }
 }

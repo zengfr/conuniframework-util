@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.MoreExecutors;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.util.concurrent.MoreExecutors;
 * zengfr3000@qq.com
 */
 public final class ListeningScheduledExecutorServiceUtil{ 
+/**
+*public static com.google.common.util.concurrent.ListeningScheduledExecutorService com.google.common.util.concurrent.MoreExecutors.listeningDecorator(java.util.concurrent.ScheduledExecutorService)
+*/ 
 public static com.google.common.util.concurrent.ListeningScheduledExecutorService listeningDecorator(java.util.concurrent.ScheduledExecutorService p0){
-return MoreExecutors.listeningDecorator(p0);
+	return com.google.common.util.concurrent.MoreExecutors.listeningDecorator(p0);
 }
 }

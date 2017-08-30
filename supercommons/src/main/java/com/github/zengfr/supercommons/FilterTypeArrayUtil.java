@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.ode.events.FilterType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.ode.events.FilterType;
 * zengfr3000@qq.com
 */
 public final class FilterTypeArrayUtil{ 
+/**
+*public static org.apache.commons.math3.ode.events.FilterType[] org.apache.commons.math3.ode.events.FilterType.values()
+*/ 
 public static org.apache.commons.math3.ode.events.FilterType[] values(){
-return FilterType.values();
+	return org.apache.commons.math3.ode.events.FilterType.values();
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.base.Stopwatch;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +6,28 @@ import com.google.common.base.Stopwatch;
 * zengfr3000@qq.com
 */
 public final class StopwatchUtil{ 
-public static com.google.common.base.Stopwatch createStarted(com.google.common.base.Ticker p0){
-return Stopwatch.createStarted(p0);
-}
-public static com.google.common.base.Stopwatch createStarted(){
-return Stopwatch.createStarted();
-}
+/**
+*public static com.google.common.base.Stopwatch com.google.common.base.Stopwatch.createUnstarted()
+*/ 
 public static com.google.common.base.Stopwatch createUnstarted(){
-return Stopwatch.createUnstarted();
+	return com.google.common.base.Stopwatch.createUnstarted();
 }
+/**
+*public static com.google.common.base.Stopwatch com.google.common.base.Stopwatch.createUnstarted(com.google.common.base.Ticker)
+*/ 
 public static com.google.common.base.Stopwatch createUnstarted(com.google.common.base.Ticker p0){
-return Stopwatch.createUnstarted(p0);
+	return com.google.common.base.Stopwatch.createUnstarted(p0);
+}
+/**
+*public static com.google.common.base.Stopwatch com.google.common.base.Stopwatch.createStarted()
+*/ 
+public static com.google.common.base.Stopwatch createStarted(){
+	return com.google.common.base.Stopwatch.createStarted();
+}
+/**
+*public static com.google.common.base.Stopwatch com.google.common.base.Stopwatch.createStarted(com.google.common.base.Ticker)
+*/ 
+public static com.google.common.base.Stopwatch createStarted(com.google.common.base.Ticker p0){
+	return com.google.common.base.Stopwatch.createStarted(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.base.StandardSystemProperty;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.base.StandardSystemProperty;
 * zengfr3000@qq.com
 */
 public final class StandardSystemPropertyArrayUtil{ 
+/**
+*public static com.google.common.base.StandardSystemProperty[] com.google.common.base.StandardSystemProperty.values()
+*/ 
 public static com.google.common.base.StandardSystemProperty[] values(){
-return StandardSystemProperty.values();
+	return com.google.common.base.StandardSystemProperty.values();
 }
 }

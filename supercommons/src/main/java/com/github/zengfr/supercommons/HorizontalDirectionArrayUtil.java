@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalD
 * zengfr3000@qq.com
 */
 public final class HorizontalDirectionArrayUtil{ 
-public static org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection[] values(){
-return HorizontalDirection.values();
+/**
+*public static org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D$HorizontalDirection[] org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D$HorizontalDirection.values()
+*/ 
+public static HorizontalDirection[] values(){
+	return org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.HorizontalDirection.values();
 }
 }

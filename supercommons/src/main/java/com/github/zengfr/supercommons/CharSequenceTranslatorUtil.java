@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.text.StringEscapeUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.text.StringEscapeUtils;
 * zengfr3000@qq.com
 */
 public final class CharSequenceTranslatorUtil{ 
+/**
+*public static org.apache.commons.text.StringEscapeUtils$Builder org.apache.commons.text.StringEscapeUtils.builder(org.apache.commons.text.translate.CharSequenceTranslator)
+*/ 
 public static Builder builder(org.apache.commons.text.translate.CharSequenceTranslator p0){
-return StringEscapeUtils.builder(p0);
+	return org.apache.commons.text.StringEscapeUtils.builder(p0);
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.io.FastBufferedInputStream.LineTerminator;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import it.unimi.dsi.fastutil.io.FastBufferedInputStream.LineTerminator;
 * zengfr3000@qq.com
 */
 public final class LineTerminatorArrayUtil{ 
-public static it.unimi.dsi.fastutil.io.FastBufferedInputStream.LineTerminator[] values(){
-return LineTerminator.values();
+/**
+*public static it.unimi.dsi.fastutil.io.FastBufferedInputStream$LineTerminator[] it.unimi.dsi.fastutil.io.FastBufferedInputStream$LineTerminator.values()
+*/ 
+public static LineTerminator[] values(){
+	return it.unimi.dsi.fastutil.io.FastBufferedInputStream.LineTerminator.values();
 }
 }

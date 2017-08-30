@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Maps;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.Maps;
 * zengfr3000@qq.com
 */
 public final class ConcurrentMapUtil{ 
+/**
+*public static <K,V> java.util.concurrent.ConcurrentMap<K, V> com.google.common.collect.Maps.newConcurrentMap()
+*/ 
 public static <K,V> java.util.concurrent.ConcurrentMap<K, V> newConcurrentMap(){
-return Maps.newConcurrentMap();
+	return com.google.common.collect.Maps.newConcurrentMap();
 }
 }

@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.stat.descriptive.moment.SemiVariance;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.stat.descriptive.moment.SemiVariance;
 * zengfr3000@qq.com
 */
 public final class SemiVarianceUtil{ 
+/**
+*public static void org.apache.commons.math3.stat.descriptive.moment.SemiVariance.copy(org.apache.commons.math3.stat.descriptive.moment.SemiVariance,org.apache.commons.math3.stat.descriptive.moment.SemiVariance) throws org.apache.commons.math3.exception.NullArgumentException
+*/ 
 public static void copy(org.apache.commons.math3.stat.descriptive.moment.SemiVariance p0,org.apache.commons.math3.stat.descriptive.moment.SemiVariance p1) throws org.apache.commons.math3.exception.NullArgumentException{
- SemiVariance.copy(p0,p1);
+	 org.apache.commons.math3.stat.descriptive.moment.SemiVariance.copy(p0,p1);
 }
 }

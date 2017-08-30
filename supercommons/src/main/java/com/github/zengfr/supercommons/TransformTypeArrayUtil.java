@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.transform.TransformType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.transform.TransformType;
 * zengfr3000@qq.com
 */
 public final class TransformTypeArrayUtil{ 
+/**
+*public static org.apache.commons.math3.transform.TransformType[] org.apache.commons.math3.transform.TransformType.values()
+*/ 
 public static org.apache.commons.math3.transform.TransformType[] values(){
-return TransformType.values();
+	return org.apache.commons.math3.transform.TransformType.values();
 }
 }

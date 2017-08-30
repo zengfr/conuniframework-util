@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.SettableFuture;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.util.concurrent.SettableFuture;
 * zengfr3000@qq.com
 */
 public final class SettableFutureUtil{ 
+/**
+*public static <V> com.google.common.util.concurrent.SettableFuture<V> com.google.common.util.concurrent.SettableFuture.create()
+*/ 
 public static <V> com.google.common.util.concurrent.SettableFuture<V> create(){
-return SettableFuture.create();
+	return com.google.common.util.concurrent.SettableFuture.create();
 }
 }

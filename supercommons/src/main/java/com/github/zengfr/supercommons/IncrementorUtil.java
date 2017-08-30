@@ -1,7 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory;
-import org.apache.commons.math3.util.Incrementor;
-import org.apache.commons.math3.util.IntegerSequence.Incrementor;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,13 +6,22 @@ import org.apache.commons.math3.util.IntegerSequence.Incrementor;
 * zengfr3000@qq.com
 */
 public final class IncrementorUtil{ 
+/**
+*public static org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory.countEvaluations(org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem,org.apache.commons.math3.util.Incrementor)
+*/ 
 public static org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem countEvaluations(org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem p0,org.apache.commons.math3.util.Incrementor p1){
-return LeastSquaresFactory.countEvaluations(p0,p1);
+	return org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory.countEvaluations(p0,p1);
 }
-public static org.apache.commons.math3.util.Incrementor wrap(org.apache.commons.math3.util.IntegerSequence.Incrementor p0){
-return Incrementor.wrap(p0);
+/**
+*public static org.apache.commons.math3.util.Incrementor org.apache.commons.math3.util.Incrementor.wrap(org.apache.commons.math3.util.IntegerSequence$Incrementor)
+*/ 
+public static org.apache.commons.math3.util.Incrementor Incrementor p0){
+	return org.apache.commons.math3.util.Incrementor.wrap(p0);
 }
-public static org.apache.commons.math3.util.IntegerSequence.Incrementor create(){
-return Incrementor.create();
+/**
+*public static org.apache.commons.math3.util.IntegerSequence$Incrementor org.apache.commons.math3.util.IntegerSequence$Incrementor.create()
+*/ 
+public static Incrementor create(){
+	return org.apache.commons.math3.util.IntegerSequence.Incrementor.create();
 }
 }

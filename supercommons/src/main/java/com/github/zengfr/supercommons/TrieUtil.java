@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.TrieUtils;
-import org.apache.commons.collections4.trie.UnmodifiableTrie;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,7 +6,10 @@ import org.apache.commons.collections4.trie.UnmodifiableTrie;
 * zengfr3000@qq.com
 */
 public final class TrieUtil{ 
+/**
+*public static <K,V> org.apache.commons.collections4.Trie<K, V> org.apache.commons.collections4.TrieUtils.unmodifiableTrie(org.apache.commons.collections4.Trie<K, ? extends V>)
+*/ 
 public static <K,V> org.apache.commons.collections4.Trie<K, V> unmodifiableTrie(org.apache.commons.collections4.Trie<K, ? extends V> p0){
-return TrieUtils.unmodifiableTrie(p0);
+	return org.apache.commons.collections4.TrieUtils.unmodifiableTrie(p0);
 }
 }

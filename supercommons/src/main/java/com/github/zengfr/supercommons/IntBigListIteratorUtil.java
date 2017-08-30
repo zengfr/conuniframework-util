@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import it.unimi.dsi.fastutil.ints.IntBigListIterators;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,13 +6,22 @@ import it.unimi.dsi.fastutil.ints.IntBigListIterators;
 * zengfr3000@qq.com
 */
 public final class IntBigListIteratorUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.ints.IntBigListIterator it.unimi.dsi.fastutil.ints.IntBigListIterators.singleton(int)
+*/ 
 public static it.unimi.dsi.fastutil.ints.IntBigListIterator singleton(int p0){
-return IntBigListIterators.singleton(p0);
+	return it.unimi.dsi.fastutil.ints.IntBigListIterators.singleton(p0);
 }
+/**
+*public static it.unimi.dsi.fastutil.ints.IntBigListIterator it.unimi.dsi.fastutil.ints.IntBigListIterators.unmodifiable(it.unimi.dsi.fastutil.ints.IntBigListIterator)
+*/ 
 public static it.unimi.dsi.fastutil.ints.IntBigListIterator unmodifiable(it.unimi.dsi.fastutil.ints.IntBigListIterator p0){
-return IntBigListIterators.unmodifiable(p0);
+	return it.unimi.dsi.fastutil.ints.IntBigListIterators.unmodifiable(p0);
 }
+/**
+*public static it.unimi.dsi.fastutil.ints.IntBigListIterator it.unimi.dsi.fastutil.ints.IntBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.ints.IntListIterator)
+*/ 
 public static it.unimi.dsi.fastutil.ints.IntBigListIterator asBigListIterator(it.unimi.dsi.fastutil.ints.IntListIterator p0){
-return IntBigListIterators.asBigListIterator(p0);
+	return it.unimi.dsi.fastutil.ints.IntBigListIterators.asBigListIterator(p0);
 }
 }

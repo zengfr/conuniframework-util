@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.io.ByteStreams;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,13 +6,22 @@ import com.google.common.io.ByteStreams;
 * zengfr3000@qq.com
 */
 public final class ByteArrayDataOutputUtil{ 
+/**
+*public static com.google.common.io.ByteArrayDataOutput com.google.common.io.ByteStreams.newDataOutput()
+*/ 
 public static com.google.common.io.ByteArrayDataOutput newDataOutput(){
-return ByteStreams.newDataOutput();
+	return com.google.common.io.ByteStreams.newDataOutput();
 }
+/**
+*public static com.google.common.io.ByteArrayDataOutput com.google.common.io.ByteStreams.newDataOutput(int)
+*/ 
 public static com.google.common.io.ByteArrayDataOutput newDataOutput(int p0){
-return ByteStreams.newDataOutput(p0);
+	return com.google.common.io.ByteStreams.newDataOutput(p0);
 }
+/**
+*public static com.google.common.io.ByteArrayDataOutput com.google.common.io.ByteStreams.newDataOutput(java.io.ByteArrayOutputStream)
+*/ 
 public static com.google.common.io.ByteArrayDataOutput newDataOutput(java.io.ByteArrayOutputStream p0){
-return ByteStreams.newDataOutput(p0);
+	return com.google.common.io.ByteStreams.newDataOutput(p0);
 }
 }

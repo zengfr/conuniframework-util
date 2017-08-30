@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.queue.TransformedQueue;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import org.apache.commons.collections4.queue.TransformedQueue;
 * zengfr3000@qq.com
 */
 public final class TransformedQueueUtil{ 
-public static <E> org.apache.commons.collections4.queue.TransformedQueue<E> transformedQueue(java.util.Queue<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return TransformedQueue.transformedQueue(p0,p1);
-}
+/**
+*public static <E> org.apache.commons.collections4.queue.TransformedQueue<E> org.apache.commons.collections4.queue.TransformedQueue.transformingQueue(java.util.Queue<E>,org.apache.commons.collections4.Transformer<? super E, ? extends E>)
+*/ 
 public static <E> org.apache.commons.collections4.queue.TransformedQueue<E> transformingQueue(java.util.Queue<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
-return TransformedQueue.transformingQueue(p0,p1);
+	return org.apache.commons.collections4.queue.TransformedQueue.transformingQueue(p0,p1);
+}
+/**
+*public static <E> org.apache.commons.collections4.queue.TransformedQueue<E> org.apache.commons.collections4.queue.TransformedQueue.transformedQueue(java.util.Queue<E>,org.apache.commons.collections4.Transformer<? super E, ? extends E>)
+*/ 
+public static <E> org.apache.commons.collections4.queue.TransformedQueue<E> transformedQueue(java.util.Queue<E> p0,org.apache.commons.collections4.Transformer<? super E, ? extends E> p1){
+	return org.apache.commons.collections4.queue.TransformedQueue.transformedQueue(p0,p1);
 }
 }

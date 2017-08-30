@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.util.concurrent.Uninterruptibles;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +6,16 @@ import com.google.common.util.concurrent.Uninterruptibles;
 * zengfr3000@qq.com
 */
 public final class ThreadUtil{ 
+/**
+*public static void com.google.common.util.concurrent.Uninterruptibles.joinUninterruptibly(java.lang.Thread)
+*/ 
 public static void joinUninterruptibly(java.lang.Thread p0){
- Uninterruptibles.joinUninterruptibly(p0);
+	 com.google.common.util.concurrent.Uninterruptibles.joinUninterruptibly(p0);
 }
+/**
+*public static void com.google.common.util.concurrent.Uninterruptibles.joinUninterruptibly(java.lang.Thread,long,java.util.concurrent.TimeUnit)
+*/ 
 public static void joinUninterruptibly(java.lang.Thread p0,long p1,java.util.concurrent.TimeUnit p2){
- Uninterruptibles.joinUninterruptibly(p0,p1,p2);
+	 com.google.common.util.concurrent.Uninterruptibles.joinUninterruptibly(p0,p1,p2);
 }
 }

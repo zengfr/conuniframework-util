@@ -1,6 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.optim.nonlinear.scalar.GoalType;
-import org.apache.commons.math3.optimization.GoalType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -8,7 +6,10 @@ import org.apache.commons.math3.optimization.GoalType;
 * zengfr3000@qq.com
 */
 public final class GoalTypeUtil{ 
+/**
+*public static org.apache.commons.math3.optim.nonlinear.scalar.GoalType org.apache.commons.math3.optim.nonlinear.scalar.GoalType.valueOf(java.lang.String)
+*/ 
 public static org.apache.commons.math3.optim.nonlinear.scalar.GoalType valueOf(java.lang.String p0){
-return GoalType.valueOf(p0);
+	return org.apache.commons.math3.optim.nonlinear.scalar.GoalType.valueOf(p0);
 }
 }

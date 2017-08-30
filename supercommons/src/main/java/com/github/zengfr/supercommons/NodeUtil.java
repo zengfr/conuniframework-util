@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.collections4.IteratorUtils;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.collections4.IteratorUtils;
 * zengfr3000@qq.com
 */
 public final class NodeUtil{ 
+/**
+*public static org.apache.commons.collections4.iterators.NodeListIterator org.apache.commons.collections4.IteratorUtils.nodeListIterator(org.w3c.dom.Node)
+*/ 
 public static org.apache.commons.collections4.iterators.NodeListIterator nodeListIterator(org.w3c.dom.Node p0){
-return IteratorUtils.nodeListIterator(p0);
+	return org.apache.commons.collections4.IteratorUtils.nodeListIterator(p0);
 }
 }

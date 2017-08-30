@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.io.Closer;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.io.Closer;
 * zengfr3000@qq.com
 */
 public final class CloserUtil{ 
+/**
+*public static com.google.common.io.Closer com.google.common.io.Closer.create()
+*/ 
 public static com.google.common.io.Closer create(){
-return Closer.create();
+	return com.google.common.io.Closer.create();
 }
 }

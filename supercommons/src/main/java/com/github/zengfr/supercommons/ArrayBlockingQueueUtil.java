@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.collect.Queues;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.google.common.collect.Queues;
 * zengfr3000@qq.com
 */
 public final class ArrayBlockingQueueUtil{ 
+/**
+*public static <E> java.util.concurrent.ArrayBlockingQueue<E> com.google.common.collect.Queues.newArrayBlockingQueue(int)
+*/ 
 public static <E> java.util.concurrent.ArrayBlockingQueue<E> newArrayBlockingQueue(int p0){
-return Queues.newArrayBlockingQueue(p0);
+	return com.google.common.collect.Queues.newArrayBlockingQueue(p0);
 }
 }

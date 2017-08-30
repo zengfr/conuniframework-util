@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.util.TimeIntervalType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.util.TimeIntervalType;
 * zengfr3000@qq.com
 */
 public final class TimeIntervalTypeArrayUtil{ 
+/**
+*public static com.facebook.util.TimeIntervalType[] com.facebook.util.TimeIntervalType.values()
+*/ 
 public static com.facebook.util.TimeIntervalType[] values(){
-return TimeIntervalType.values();
+	return com.facebook.util.TimeIntervalType.values();
 }
 }

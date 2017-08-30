@@ -1,5 +1,7 @@
 package com.github.zengfr.supercommons;
+
 import org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection;
+
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +9,10 @@ import org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDir
 * zengfr3000@qq.com
 */
 public final class VerticalDirectionUtil{ 
-public static org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection valueOf(java.lang.String p0){
-return VerticalDirection.valueOf(p0);
+/**
+*public static org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D$VerticalDirection org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D$VerticalDirection.valueOf(java.lang.String)
+*/ 
+public static VerticalDirection valueOf(java.lang.String p0){
+	return org.apache.commons.math3.ml.neuralnet.twod.NeuronSquareMesh2D.VerticalDirection.valueOf(p0);
 }
 }

@@ -1,8 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.google.common.escape.Escapers;
-import com.google.common.html.HtmlEscapers;
-import com.google.common.net.UrlEscapers;
-import com.google.common.xml.XmlEscapers;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -10,25 +6,46 @@ import com.google.common.xml.XmlEscapers;
 * zengfr3000@qq.com
 */
 public final class EscaperUtil{ 
+/**
+*public static com.google.common.escape.Escaper com.google.common.escape.Escapers.nullEscaper()
+*/ 
 public static com.google.common.escape.Escaper nullEscaper(){
-return Escapers.nullEscaper();
+	return com.google.common.escape.Escapers.nullEscaper();
 }
+/**
+*public static com.google.common.escape.Escaper com.google.common.html.HtmlEscapers.htmlEscaper()
+*/ 
 public static com.google.common.escape.Escaper htmlEscaper(){
-return HtmlEscapers.htmlEscaper();
+	return com.google.common.html.HtmlEscapers.htmlEscaper();
 }
-public static com.google.common.escape.Escaper urlFormParameterEscaper(){
-return UrlEscapers.urlFormParameterEscaper();
-}
-public static com.google.common.escape.Escaper urlPathSegmentEscaper(){
-return UrlEscapers.urlPathSegmentEscaper();
-}
+/**
+*public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlFragmentEscaper()
+*/ 
 public static com.google.common.escape.Escaper urlFragmentEscaper(){
-return UrlEscapers.urlFragmentEscaper();
+	return com.google.common.net.UrlEscapers.urlFragmentEscaper();
 }
+/**
+*public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlPathSegmentEscaper()
+*/ 
+public static com.google.common.escape.Escaper urlPathSegmentEscaper(){
+	return com.google.common.net.UrlEscapers.urlPathSegmentEscaper();
+}
+/**
+*public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlFormParameterEscaper()
+*/ 
+public static com.google.common.escape.Escaper urlFormParameterEscaper(){
+	return com.google.common.net.UrlEscapers.urlFormParameterEscaper();
+}
+/**
+*public static com.google.common.escape.Escaper com.google.common.xml.XmlEscapers.xmlAttributeEscaper()
+*/ 
 public static com.google.common.escape.Escaper xmlAttributeEscaper(){
-return XmlEscapers.xmlAttributeEscaper();
+	return com.google.common.xml.XmlEscapers.xmlAttributeEscaper();
 }
+/**
+*public static com.google.common.escape.Escaper com.google.common.xml.XmlEscapers.xmlContentEscaper()
+*/ 
 public static com.google.common.escape.Escaper xmlContentEscaper(){
-return XmlEscapers.xmlContentEscaper();
+	return com.google.common.xml.XmlEscapers.xmlContentEscaper();
 }
 }

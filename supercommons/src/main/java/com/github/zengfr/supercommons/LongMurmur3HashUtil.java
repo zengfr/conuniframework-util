@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import com.facebook.util.digest.LongMurmur3Hash;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import com.facebook.util.digest.LongMurmur3Hash;
 * zengfr3000@qq.com
 */
 public final class LongMurmur3HashUtil{ 
+/**
+*public static com.facebook.util.digest.LongMurmur3Hash com.facebook.util.digest.LongMurmur3Hash.getInstance()
+*/ 
 public static com.facebook.util.digest.LongMurmur3Hash getInstance(){
-return LongMurmur3Hash.getInstance();
+	return com.facebook.util.digest.LongMurmur3Hash.getInstance();
 }
 }

@@ -1,1 +1,6 @@
 /.metadata/
+*.class
+*.jar
+target/
+/.sonarlint/
+classes/

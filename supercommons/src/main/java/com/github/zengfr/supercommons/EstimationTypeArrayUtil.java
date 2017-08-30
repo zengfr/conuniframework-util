@@ -1,5 +1,4 @@
 package com.github.zengfr.supercommons;
-import org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,7 +6,10 @@ import org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType;
 * zengfr3000@qq.com
 */
 public final class EstimationTypeArrayUtil{ 
-public static org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType[] values(){
-return EstimationType.values();
+/**
+*public static org.apache.commons.math3.stat.descriptive.rank.Percentile$EstimationType[] org.apache.commons.math3.stat.descriptive.rank.Percentile$EstimationType.values()
+*/ 
+public static EstimationType[] values(){
+	return org.apache.commons.math3.stat.descriptive.rank.Percentile.EstimationType.values();
 }
 }
