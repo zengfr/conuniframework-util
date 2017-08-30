@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class FloatBigListUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.floats.FloatBigList it.unimi.dsi.fastutil.floats.FloatBigLists.asBigList(it.unimi.dsi.fastutil.floats.FloatList)
+*/ 
+public static it.unimi.dsi.fastutil.floats.FloatBigList asBigList(it.unimi.dsi.fastutil.floats.FloatList p0){
+	return it.unimi.dsi.fastutil.floats.FloatBigLists.asBigList(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.floats.FloatBigList it.unimi.dsi.fastutil.floats.FloatBigLists.shuffle(it.unimi.dsi.fastutil.floats.FloatBigList,java.util.Random)
 */ 
@@ -23,12 +31,6 @@ public static it.unimi.dsi.fastutil.floats.FloatBigList singleton(float p0){
 */ 
 public static it.unimi.dsi.fastutil.floats.FloatBigList singleton(java.lang.Object p0){
 	return it.unimi.dsi.fastutil.floats.FloatBigLists.singleton(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.floats.FloatBigList it.unimi.dsi.fastutil.floats.FloatBigLists.asBigList(it.unimi.dsi.fastutil.floats.FloatList)
-*/ 
-public static it.unimi.dsi.fastutil.floats.FloatBigList asBigList(it.unimi.dsi.fastutil.floats.FloatList p0){
-	return it.unimi.dsi.fastutil.floats.FloatBigLists.asBigList(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.floats.FloatBigList it.unimi.dsi.fastutil.floats.FloatBigLists.synchronize(it.unimi.dsi.fastutil.floats.FloatBigList)

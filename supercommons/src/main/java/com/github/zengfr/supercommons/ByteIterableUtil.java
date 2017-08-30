@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,12 +8,6 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ByteIterableUtil{ 
-/**
-*public static it.unimi.dsi.fastutil.bytes.ByteCollection it.unimi.dsi.fastutil.bytes.ByteCollections.asCollection(it.unimi.dsi.fastutil.bytes.ByteIterable)
-*/ 
-public static it.unimi.dsi.fastutil.bytes.ByteCollection asCollection(it.unimi.dsi.fastutil.bytes.ByteIterable p0){
-	return it.unimi.dsi.fastutil.bytes.ByteCollections.asCollection(p0);
-}
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteIterable it.unimi.dsi.fastutil.io.BinIO.asByteIterable(java.io.File)
 */ 
@@ -23,5 +19,11 @@ public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.io.Fi
 */ 
 public static it.unimi.dsi.fastutil.bytes.ByteIterable asByteIterable(java.lang.CharSequence p0){
 	return it.unimi.dsi.fastutil.io.BinIO.asByteIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.bytes.ByteCollection it.unimi.dsi.fastutil.bytes.ByteCollections.asCollection(it.unimi.dsi.fastutil.bytes.ByteIterable)
+*/ 
+public static it.unimi.dsi.fastutil.bytes.ByteCollection asCollection(it.unimi.dsi.fastutil.bytes.ByteIterable p0){
+	return it.unimi.dsi.fastutil.bytes.ByteCollections.asCollection(p0);
 }
 }

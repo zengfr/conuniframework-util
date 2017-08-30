@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,16 +15,16 @@ public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> asCollection
 	return it.unimi.dsi.fastutil.objects.ObjectCollections.asCollection(p0);
 }
 /**
-*public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K> p0){
-	return it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(p0);
-}
-/**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K>,java.lang.Object)
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K> p0,java.lang.Object p1){
 	return it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(p0,p1);
+}
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> synchronize(it.unimi.dsi.fastutil.objects.ObjectCollection<K> p0){
+	return it.unimi.dsi.fastutil.objects.ObjectCollections.synchronize(p0);
 }
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectCollection<K> it.unimi.dsi.fastutil.objects.ObjectCollections.unmodifiable(it.unimi.dsi.fastutil.objects.ObjectCollection<K>)

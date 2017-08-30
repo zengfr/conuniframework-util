@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,15 +15,15 @@ public static com.google.common.io.ByteArrayDataInput newDataInput(byte[] p0,int
 	return com.google.common.io.ByteStreams.newDataInput(p0,p1);
 }
 /**
-*public static com.google.common.io.ByteArrayDataInput com.google.common.io.ByteStreams.newDataInput(byte[])
-*/ 
-public static com.google.common.io.ByteArrayDataInput newDataInput(byte[] p0){
-	return com.google.common.io.ByteStreams.newDataInput(p0);
-}
-/**
 *public static com.google.common.io.ByteArrayDataInput com.google.common.io.ByteStreams.newDataInput(java.io.ByteArrayInputStream)
 */ 
 public static com.google.common.io.ByteArrayDataInput newDataInput(java.io.ByteArrayInputStream p0){
+	return com.google.common.io.ByteStreams.newDataInput(p0);
+}
+/**
+*public static com.google.common.io.ByteArrayDataInput com.google.common.io.ByteStreams.newDataInput(byte[])
+*/ 
+public static com.google.common.io.ByteArrayDataInput newDataInput(byte... p0){
 	return com.google.common.io.ByteStreams.newDataInput(p0);
 }
 }

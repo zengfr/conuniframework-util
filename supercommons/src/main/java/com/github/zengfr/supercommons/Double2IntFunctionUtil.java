@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Double2IntFunctionUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.primitive(java.util.function.Function<? super java.lang.Double, ? extends java.lang.Integer>)
+*/ 
+public static it.unimi.dsi.fastutil.doubles.Double2IntFunction primitive(java.util.function.Function<? super java.lang.Double, ? extends java.lang.Integer> p0){
+	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.primitive(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.singleton(java.lang.Double,java.lang.Integer)
 */ 
@@ -19,27 +27,21 @@ public static it.unimi.dsi.fastutil.doubles.Double2IntFunction singleton(double 
 	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.singleton(p0,p1);
 }
 /**
-*public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction,java.lang.Object)
-*/ 
-public static it.unimi.dsi.fastutil.doubles.Double2IntFunction synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction p0,java.lang.Object p1){
-	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(p0,p1);
-}
-/**
 *public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction)
 */ 
 public static it.unimi.dsi.fastutil.doubles.Double2IntFunction synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction p0){
 	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(p0);
 }
 /**
+*public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction,java.lang.Object)
+*/ 
+public static it.unimi.dsi.fastutil.doubles.Double2IntFunction synchronize(it.unimi.dsi.fastutil.doubles.Double2IntFunction p0,java.lang.Object p1){
+	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.synchronize(p0,p1);
+}
+/**
 *public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.unmodifiable(it.unimi.dsi.fastutil.doubles.Double2IntFunction)
 */ 
 public static it.unimi.dsi.fastutil.doubles.Double2IntFunction unmodifiable(it.unimi.dsi.fastutil.doubles.Double2IntFunction p0){
 	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.doubles.Double2IntFunction it.unimi.dsi.fastutil.doubles.Double2IntFunctions.primitive(java.util.function.Function<? super java.lang.Double, ? extends java.lang.Integer>)
-*/ 
-public static it.unimi.dsi.fastutil.doubles.Double2IntFunction primitive(java.util.function.Function<? super java.lang.Double, ? extends java.lang.Integer> p0){
-	return it.unimi.dsi.fastutil.doubles.Double2IntFunctions.primitive(p0);
 }
 }

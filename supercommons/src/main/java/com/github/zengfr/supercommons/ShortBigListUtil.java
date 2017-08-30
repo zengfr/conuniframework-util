@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ShortBigListUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.shorts.ShortBigList it.unimi.dsi.fastutil.shorts.ShortBigLists.asBigList(it.unimi.dsi.fastutil.shorts.ShortList)
+*/ 
+public static it.unimi.dsi.fastutil.shorts.ShortBigList asBigList(it.unimi.dsi.fastutil.shorts.ShortList p0){
+	return it.unimi.dsi.fastutil.shorts.ShortBigLists.asBigList(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.shorts.ShortBigList it.unimi.dsi.fastutil.shorts.ShortBigLists.shuffle(it.unimi.dsi.fastutil.shorts.ShortBigList,java.util.Random)
 */ 
@@ -23,12 +31,6 @@ public static it.unimi.dsi.fastutil.shorts.ShortBigList singleton(short p0){
 */ 
 public static it.unimi.dsi.fastutil.shorts.ShortBigList singleton(java.lang.Object p0){
 	return it.unimi.dsi.fastutil.shorts.ShortBigLists.singleton(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.shorts.ShortBigList it.unimi.dsi.fastutil.shorts.ShortBigLists.asBigList(it.unimi.dsi.fastutil.shorts.ShortList)
-*/ 
-public static it.unimi.dsi.fastutil.shorts.ShortBigList asBigList(it.unimi.dsi.fastutil.shorts.ShortList p0){
-	return it.unimi.dsi.fastutil.shorts.ShortBigLists.asBigList(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.shorts.ShortBigList it.unimi.dsi.fastutil.shorts.ShortBigLists.synchronize(it.unimi.dsi.fastutil.shorts.ShortBigList)

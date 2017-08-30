@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,18 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Float2DoubleSortedMapUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.floats.Float2DoubleMap$Entry> it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterable(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap p0){
+	return it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.floats.Float2DoubleMap$Entry> it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterator(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap p0){
+	return it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.singleton(float,double)
 */ 
@@ -29,18 +43,6 @@ public static it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap singleton(java.
 */ 
 public static it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap singleton(float p0,double p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
 	return it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.singleton(p0,p1,p2);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.floats.Float2DoubleMap$Entry> it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterator(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap p0){
-	return it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.floats.Float2DoubleMap$Entry> it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterable(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap p0){
-	return it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.fastIterable(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap it.unimi.dsi.fastutil.floats.Float2DoubleSortedMaps.synchronize(it.unimi.dsi.fastutil.floats.Float2DoubleSortedMap,java.lang.Object)

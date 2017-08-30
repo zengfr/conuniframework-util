@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ObjectListUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> it.unimi.dsi.fastutil.objects.ObjectLists.emptyList()
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> emptyList(){
+	return it.unimi.dsi.fastutil.objects.ObjectLists.emptyList();
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> it.unimi.dsi.fastutil.objects.ObjectIterators.pour(java.util.Iterator<K>,int)
 */ 
@@ -17,12 +25,6 @@ public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> pour(java.util.Ite
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> pour(java.util.Iterator<K> p0){
 	return it.unimi.dsi.fastutil.objects.ObjectIterators.pour(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> it.unimi.dsi.fastutil.objects.ObjectLists.emptyList()
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> emptyList(){
-	return it.unimi.dsi.fastutil.objects.ObjectLists.emptyList();
 }
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectList<K> it.unimi.dsi.fastutil.objects.ObjectLists.shuffle(it.unimi.dsi.fastutil.objects.ObjectList<K>,java.util.Random)

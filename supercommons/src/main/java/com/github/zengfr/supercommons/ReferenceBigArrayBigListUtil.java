@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -15,7 +17,7 @@ public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> wrap
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(K[][])
 */ 
-public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> wrap(K[][] p0){
+public static <K> it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList<K> wrap(K[]... p0){
 	return it.unimi.dsi.fastutil.objects.ReferenceBigArrayBigList.wrap(p0);
 }
 }

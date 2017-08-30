@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -21,7 +23,7 @@ public static com.facebook.collections.ByteArray wrap(byte[] p0,int p1,int p2){
 /**
 *public static com.facebook.collections.ByteArray com.facebook.collections.ByteArray.wrap(byte[])
 */ 
-public static com.facebook.collections.ByteArray wrap(byte[] p0){
+public static com.facebook.collections.ByteArray wrap(byte... p0){
 	return com.facebook.collections.ByteArray.wrap(p0);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -15,7 +17,7 @@ public static <E> java.util.concurrent.atomic.AtomicReferenceArray<E> newReferen
 /**
 *public static <E> java.util.concurrent.atomic.AtomicReferenceArray<E> com.google.common.util.concurrent.Atomics.newReferenceArray(E[])
 */ 
-public static <E> java.util.concurrent.atomic.AtomicReferenceArray<E> newReferenceArray(E[] p0){
+public static <E> java.util.concurrent.atomic.AtomicReferenceArray<E> newReferenceArray(E... p0){
 	return com.google.common.util.concurrent.Atomics.newReferenceArray(p0);
 }
 }

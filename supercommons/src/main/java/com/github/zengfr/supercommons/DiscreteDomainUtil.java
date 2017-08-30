@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,15 +15,15 @@ public static com.google.common.collect.DiscreteDomain<java.math.BigInteger> big
 	return com.google.common.collect.DiscreteDomain.bigIntegers();
 }
 /**
-*public static com.google.common.collect.DiscreteDomain<java.lang.Long> com.google.common.collect.DiscreteDomain.longs()
-*/ 
-public static com.google.common.collect.DiscreteDomain<java.lang.Long> longs(){
-	return com.google.common.collect.DiscreteDomain.longs();
-}
-/**
 *public static com.google.common.collect.DiscreteDomain<java.lang.Integer> com.google.common.collect.DiscreteDomain.integers()
 */ 
 public static com.google.common.collect.DiscreteDomain<java.lang.Integer> integers(){
 	return com.google.common.collect.DiscreteDomain.integers();
+}
+/**
+*public static com.google.common.collect.DiscreteDomain<java.lang.Long> com.google.common.collect.DiscreteDomain.longs()
+*/ 
+public static com.google.common.collect.DiscreteDomain<java.lang.Long> longs(){
+	return com.google.common.collect.DiscreteDomain.longs();
 }
 }

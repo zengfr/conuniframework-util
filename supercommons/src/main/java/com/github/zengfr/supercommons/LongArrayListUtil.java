@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class LongArrayListUtil{
 /**
 *public static it.unimi.dsi.fastutil.longs.LongArrayList it.unimi.dsi.fastutil.longs.LongArrayList.wrap(long[])
 */ 
-public static it.unimi.dsi.fastutil.longs.LongArrayList wrap(long[] p0){
+public static it.unimi.dsi.fastutil.longs.LongArrayList wrap(long... p0){
 	return it.unimi.dsi.fastutil.longs.LongArrayList.wrap(p0);
 }
 /**

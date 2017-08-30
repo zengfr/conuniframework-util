@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -15,7 +17,7 @@ public static it.unimi.dsi.fastutil.booleans.BooleanIterator concat(it.unimi.dsi
 /**
 *public static it.unimi.dsi.fastutil.booleans.BooleanIterator it.unimi.dsi.fastutil.booleans.BooleanIterators.concat(it.unimi.dsi.fastutil.booleans.BooleanIterator[])
 */ 
-public static it.unimi.dsi.fastutil.booleans.BooleanIterator concat(it.unimi.dsi.fastutil.booleans.BooleanIterator[] p0){
+public static it.unimi.dsi.fastutil.booleans.BooleanIterator concat(it.unimi.dsi.fastutil.booleans.BooleanIterator... p0){
 	return it.unimi.dsi.fastutil.booleans.BooleanIterators.concat(p0);
 }
 }

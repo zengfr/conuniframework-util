@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,18 +8,6 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class NumericEntityEscaperUtil{ 
-/**
-*public static org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper.outsideOf(int,int)
-*/ 
-public static org.apache.commons.lang3.text.translate.NumericEntityEscaper outsideOf(int p0,int p1){
-	return org.apache.commons.lang3.text.translate.NumericEntityEscaper.outsideOf(p0,p1);
-}
-/**
-*public static org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper.between(int,int)
-*/ 
-public static org.apache.commons.lang3.text.translate.NumericEntityEscaper between(int p0,int p1){
-	return org.apache.commons.lang3.text.translate.NumericEntityEscaper.between(p0,p1);
-}
 /**
 *public static org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper.above(int)
 */ 
@@ -29,5 +19,17 @@ public static org.apache.commons.lang3.text.translate.NumericEntityEscaper above
 */ 
 public static org.apache.commons.lang3.text.translate.NumericEntityEscaper below(int p0){
 	return org.apache.commons.lang3.text.translate.NumericEntityEscaper.below(p0);
+}
+/**
+*public static org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper.between(int,int)
+*/ 
+public static org.apache.commons.lang3.text.translate.NumericEntityEscaper between(int p0,int p1){
+	return org.apache.commons.lang3.text.translate.NumericEntityEscaper.between(p0,p1);
+}
+/**
+*public static org.apache.commons.lang3.text.translate.NumericEntityEscaper org.apache.commons.lang3.text.translate.NumericEntityEscaper.outsideOf(int,int)
+*/ 
+public static org.apache.commons.lang3.text.translate.NumericEntityEscaper outsideOf(int p0,int p1){
+	return org.apache.commons.lang3.text.translate.NumericEntityEscaper.outsideOf(p0,p1);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Reference2ShortFunctionUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Short>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Short> p0){
+	return it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.primitive(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.singleton(K,java.lang.Short)
 */ 
@@ -35,11 +43,5 @@ public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> synch
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> unmodifiable(it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> p0){
 	return it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Short>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.Reference2ShortFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Short> p0){
-	return it.unimi.dsi.fastutil.objects.Reference2ShortFunctions.primitive(p0);
 }
 }

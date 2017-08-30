@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,6 +15,12 @@ public static org.apache.commons.lang3.concurrent.ConcurrentException extractCau
 	return org.apache.commons.lang3.concurrent.ConcurrentUtils.extractCause(p0);
 }
 /**
+*public static org.apache.commons.lang3.concurrent.ConcurrentRuntimeException org.apache.commons.lang3.concurrent.ConcurrentUtils.extractCauseUnchecked(java.util.concurrent.ExecutionException)
+*/ 
+public static org.apache.commons.lang3.concurrent.ConcurrentRuntimeException extractCauseUnchecked(java.util.concurrent.ExecutionException p0){
+	return org.apache.commons.lang3.concurrent.ConcurrentUtils.extractCauseUnchecked(p0);
+}
+/**
 *public static void org.apache.commons.lang3.concurrent.ConcurrentUtils.handleCause(java.util.concurrent.ExecutionException) throws org.apache.commons.lang3.concurrent.ConcurrentException
 */ 
 public static void handleCause(java.util.concurrent.ExecutionException p0) throws org.apache.commons.lang3.concurrent.ConcurrentException{
@@ -23,11 +31,5 @@ public static void handleCause(java.util.concurrent.ExecutionException p0) throw
 */ 
 public static void handleCauseUnchecked(java.util.concurrent.ExecutionException p0){
 	 org.apache.commons.lang3.concurrent.ConcurrentUtils.handleCauseUnchecked(p0);
-}
-/**
-*public static org.apache.commons.lang3.concurrent.ConcurrentRuntimeException org.apache.commons.lang3.concurrent.ConcurrentUtils.extractCauseUnchecked(java.util.concurrent.ExecutionException)
-*/ 
-public static org.apache.commons.lang3.concurrent.ConcurrentRuntimeException extractCauseUnchecked(java.util.concurrent.ExecutionException p0){
-	return org.apache.commons.lang3.concurrent.ConcurrentUtils.extractCauseUnchecked(p0);
 }
 }

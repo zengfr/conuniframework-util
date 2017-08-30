@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,16 +15,16 @@ public static it.unimi.dsi.fastutil.booleans.BooleanBigList asBigList(it.unimi.d
 	return it.unimi.dsi.fastutil.booleans.BooleanBigLists.asBigList(p0);
 }
 /**
-*public static it.unimi.dsi.fastutil.booleans.BooleanList it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(it.unimi.dsi.fastutil.booleans.BooleanIterator)
-*/ 
-public static it.unimi.dsi.fastutil.booleans.BooleanList pour(it.unimi.dsi.fastutil.booleans.BooleanIterator p0){
-	return it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(p0);
-}
-/**
 *public static it.unimi.dsi.fastutil.booleans.BooleanList it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(it.unimi.dsi.fastutil.booleans.BooleanIterator,int)
 */ 
 public static it.unimi.dsi.fastutil.booleans.BooleanList pour(it.unimi.dsi.fastutil.booleans.BooleanIterator p0,int p1){
 	return it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(p0,p1);
+}
+/**
+*public static it.unimi.dsi.fastutil.booleans.BooleanList it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(it.unimi.dsi.fastutil.booleans.BooleanIterator)
+*/ 
+public static it.unimi.dsi.fastutil.booleans.BooleanList pour(it.unimi.dsi.fastutil.booleans.BooleanIterator p0){
+	return it.unimi.dsi.fastutil.booleans.BooleanIterators.pour(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.booleans.BooleanList it.unimi.dsi.fastutil.booleans.BooleanLists.shuffle(it.unimi.dsi.fastutil.booleans.BooleanList,java.util.Random)

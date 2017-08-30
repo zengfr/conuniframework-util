@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,10 @@ package com.github.zengfr.supercommons;
 */
 public final class FractionUtil{ 
 /**
-*public static org.apache.commons.lang3.math.Fraction org.apache.commons.lang3.math.Fraction.getReducedFraction(int,int)
+*public static java.lang.String org.apache.commons.math3.fraction.FractionFormat.formatFraction(org.apache.commons.math3.fraction.Fraction)
 */ 
-public static org.apache.commons.lang3.math.Fraction getReducedFraction(int p0,int p1){
-	return org.apache.commons.lang3.math.Fraction.getReducedFraction(p0,p1);
-}
-/**
-*public static org.apache.commons.lang3.math.Fraction org.apache.commons.lang3.math.Fraction.getFraction(int,int)
-*/ 
-public static org.apache.commons.lang3.math.Fraction getFraction(int p0,int p1){
-	return org.apache.commons.lang3.math.Fraction.getFraction(p0,p1);
+public static java.lang.String formatFraction(org.apache.commons.math3.fraction.Fraction p0){
+	return org.apache.commons.math3.fraction.FractionFormat.formatFraction(p0);
 }
 /**
 *public static org.apache.commons.lang3.math.Fraction org.apache.commons.lang3.math.Fraction.getFraction(int,int,int)
@@ -37,9 +33,15 @@ public static org.apache.commons.lang3.math.Fraction getFraction(java.lang.Strin
 	return org.apache.commons.lang3.math.Fraction.getFraction(p0);
 }
 /**
-*public static java.lang.String org.apache.commons.math3.fraction.FractionFormat.formatFraction(org.apache.commons.math3.fraction.Fraction)
+*public static org.apache.commons.lang3.math.Fraction org.apache.commons.lang3.math.Fraction.getFraction(int,int)
 */ 
-public static java.lang.String formatFraction(org.apache.commons.math3.fraction.Fraction p0){
-	return org.apache.commons.math3.fraction.FractionFormat.formatFraction(p0);
+public static org.apache.commons.lang3.math.Fraction getFraction(int p0,int p1){
+	return org.apache.commons.lang3.math.Fraction.getFraction(p0,p1);
+}
+/**
+*public static org.apache.commons.lang3.math.Fraction org.apache.commons.lang3.math.Fraction.getReducedFraction(int,int)
+*/ 
+public static org.apache.commons.lang3.math.Fraction getReducedFraction(int p0,int p1){
+	return org.apache.commons.lang3.math.Fraction.getReducedFraction(p0,p1);
 }
 }

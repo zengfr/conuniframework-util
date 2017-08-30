@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,40 +9,16 @@ package com.github.zengfr.supercommons;
 */
 public final class IntListUtil{ 
 /**
-*public static java.util.List org.apache.commons.collections.primitives.adapters.IntListList.wrap(org.apache.commons.collections.primitives.IntList)
+*public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(it.unimi.dsi.fastutil.ints.IntList)
 */ 
-public static java.util.List wrap(org.apache.commons.collections.primitives.IntList p0){
-	return org.apache.commons.collections.primitives.adapters.IntListList.wrap(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.adapters.ListIntList.wrap(java.util.List)
-*/ 
-public static org.apache.commons.collections.primitives.IntList wrap(java.util.List p0){
-	return org.apache.commons.collections.primitives.adapters.ListIntList.wrap(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.IntCollections.unmodifiableIntList(org.apache.commons.collections.primitives.IntList) throws java.lang.NullPointerException
-*/ 
-public static org.apache.commons.collections.primitives.IntList unmodifiableIntList(org.apache.commons.collections.primitives.IntList p0) throws java.lang.NullPointerException{
-	return org.apache.commons.collections.primitives.IntCollections.unmodifiableIntList(p0);
+public static it.unimi.dsi.fastutil.ints.IntBigList asBigList(it.unimi.dsi.fastutil.ints.IntList p0){
+	return it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(p0);
 }
 /**
 *public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.IntCollections.getEmptyIntList()
 */ 
 public static org.apache.commons.collections.primitives.IntList getEmptyIntList(){
 	return org.apache.commons.collections.primitives.IntCollections.getEmptyIntList();
-}
-/**
-*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.IntCollections.singletonIntList(int)
-*/ 
-public static org.apache.commons.collections.primitives.IntList singletonIntList(int p0){
-	return org.apache.commons.collections.primitives.IntCollections.singletonIntList(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(it.unimi.dsi.fastutil.ints.IntList)
-*/ 
-public static it.unimi.dsi.fastutil.ints.IntBigList asBigList(it.unimi.dsi.fastutil.ints.IntList p0){
-	return it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.ints.IntList it.unimi.dsi.fastutil.ints.IntIterators.pour(it.unimi.dsi.fastutil.ints.IntIterator)
@@ -73,6 +51,12 @@ public static it.unimi.dsi.fastutil.ints.IntList singleton(java.lang.Object p0){
 	return it.unimi.dsi.fastutil.ints.IntLists.singleton(p0);
 }
 /**
+*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.IntCollections.singletonIntList(int)
+*/ 
+public static org.apache.commons.collections.primitives.IntList singletonIntList(int p0){
+	return org.apache.commons.collections.primitives.IntCollections.singletonIntList(p0);
+}
+/**
 *public static it.unimi.dsi.fastutil.ints.IntList it.unimi.dsi.fastutil.ints.IntLists.synchronize(it.unimi.dsi.fastutil.ints.IntList)
 */ 
 public static it.unimi.dsi.fastutil.ints.IntList synchronize(it.unimi.dsi.fastutil.ints.IntList p0){
@@ -89,5 +73,23 @@ public static it.unimi.dsi.fastutil.ints.IntList synchronize(it.unimi.dsi.fastut
 */ 
 public static it.unimi.dsi.fastutil.ints.IntList unmodifiable(it.unimi.dsi.fastutil.ints.IntList p0){
 	return it.unimi.dsi.fastutil.ints.IntLists.unmodifiable(p0);
+}
+/**
+*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.IntCollections.unmodifiableIntList(org.apache.commons.collections.primitives.IntList) throws java.lang.NullPointerException
+*/ 
+public static org.apache.commons.collections.primitives.IntList unmodifiableIntList(org.apache.commons.collections.primitives.IntList p0) throws java.lang.NullPointerException{
+	return org.apache.commons.collections.primitives.IntCollections.unmodifiableIntList(p0);
+}
+/**
+*public static java.util.List org.apache.commons.collections.primitives.adapters.IntListList.wrap(org.apache.commons.collections.primitives.IntList)
+*/ 
+public static java.util.List wrap(org.apache.commons.collections.primitives.IntList p0){
+	return org.apache.commons.collections.primitives.adapters.IntListList.wrap(p0);
+}
+/**
+*public static org.apache.commons.collections.primitives.IntList org.apache.commons.collections.primitives.adapters.ListIntList.wrap(java.util.List)
+*/ 
+public static org.apache.commons.collections.primitives.IntList wrap(java.util.List p0){
+	return org.apache.commons.collections.primitives.adapters.ListIntList.wrap(p0);
 }
 }

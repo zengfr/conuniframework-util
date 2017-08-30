@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -15,7 +17,7 @@ public static <T extends org.apache.commons.math3.FieldElement<T> > T[][] create
 /**
 *public static <T> T[][] org.apache.commons.math3.linear.BlockFieldMatrix.toBlocksLayout(T[][]) throws org.apache.commons.math3.exception.DimensionMismatchException
 */ 
-public static <T extends org.apache.commons.math3.FieldElement<T> > T[][] toBlocksLayout(T[][] p0) throws org.apache.commons.math3.exception.DimensionMismatchException{
+public static <T extends org.apache.commons.math3.FieldElement<T> > T[][] toBlocksLayout(T[]... p0) throws org.apache.commons.math3.exception.DimensionMismatchException{
 	return org.apache.commons.math3.linear.BlockFieldMatrix.toBlocksLayout(p0);
 }
 }

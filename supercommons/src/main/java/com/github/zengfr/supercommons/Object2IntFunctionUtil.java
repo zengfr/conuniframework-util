@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Object2IntFunctionUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> it.unimi.dsi.fastutil.objects.Object2IntFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Integer>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Integer> p0){
+	return it.unimi.dsi.fastutil.objects.Object2IntFunctions.primitive(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> it.unimi.dsi.fastutil.objects.Object2IntFunctions.singleton(K,java.lang.Integer)
 */ 
@@ -35,11 +43,5 @@ public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> synchroniz
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> unmodifiable(it.unimi.dsi.fastutil.objects.Object2IntFunction<K> p0){
 	return it.unimi.dsi.fastutil.objects.Object2IntFunctions.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> it.unimi.dsi.fastutil.objects.Object2IntFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Integer>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.Object2IntFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Integer> p0){
-	return it.unimi.dsi.fastutil.objects.Object2IntFunctions.primitive(p0);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ObjectBigListUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> it.unimi.dsi.fastutil.objects.ObjectBigLists.asBigList(it.unimi.dsi.fastutil.objects.ObjectList<K>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> asBigList(it.unimi.dsi.fastutil.objects.ObjectList<K> p0){
+	return it.unimi.dsi.fastutil.objects.ObjectBigLists.asBigList(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> it.unimi.dsi.fastutil.objects.ObjectBigLists.emptyList()
 */ 
@@ -23,12 +31,6 @@ public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> shuffle(it.unim
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> singleton(K p0){
 	return it.unimi.dsi.fastutil.objects.ObjectBigLists.singleton(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> it.unimi.dsi.fastutil.objects.ObjectBigLists.asBigList(it.unimi.dsi.fastutil.objects.ObjectList<K>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> asBigList(it.unimi.dsi.fastutil.objects.ObjectList<K> p0){
-	return it.unimi.dsi.fastutil.objects.ObjectBigLists.asBigList(p0);
 }
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectBigList<K> it.unimi.dsi.fastutil.objects.ObjectBigLists.synchronize(it.unimi.dsi.fastutil.objects.ObjectBigList<K>)

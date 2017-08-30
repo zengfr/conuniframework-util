@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +9,10 @@ package com.github.zengfr.supercommons;
 */
 public final class BoundTypeUtil{ 
 /**
-*public static com.google.common.collect.BoundType com.google.common.collect.BoundType.valueOf(java.lang.String)
+*public static <C> com.google.common.collect.Range<C> com.google.common.collect.Range.downTo(C,com.google.common.collect.BoundType)
 */ 
-public static com.google.common.collect.BoundType valueOf(java.lang.String p0){
-	return com.google.common.collect.BoundType.valueOf(p0);
+public static <C extends java.lang.Comparable<?> > com.google.common.collect.Range<C> downTo(C p0,com.google.common.collect.BoundType p1){
+	return com.google.common.collect.Range.downTo(p0,p1);
 }
 /**
 *public static <C> com.google.common.collect.Range<C> com.google.common.collect.Range.range(C,com.google.common.collect.BoundType,C,com.google.common.collect.BoundType)
@@ -25,9 +27,9 @@ public static <C extends java.lang.Comparable<?> > com.google.common.collect.Ran
 	return com.google.common.collect.Range.upTo(p0,p1);
 }
 /**
-*public static <C> com.google.common.collect.Range<C> com.google.common.collect.Range.downTo(C,com.google.common.collect.BoundType)
+*public static com.google.common.collect.BoundType com.google.common.collect.BoundType.valueOf(java.lang.String)
 */ 
-public static <C extends java.lang.Comparable<?> > com.google.common.collect.Range<C> downTo(C p0,com.google.common.collect.BoundType p1){
-	return com.google.common.collect.Range.downTo(p0,p1);
+public static com.google.common.collect.BoundType valueOf(java.lang.String p0){
+	return com.google.common.collect.BoundType.valueOf(p0);
 }
 }

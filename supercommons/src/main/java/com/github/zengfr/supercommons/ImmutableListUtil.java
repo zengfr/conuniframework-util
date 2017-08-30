@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ImmutableListUtil{ 
+/**
+*public static com.google.common.collect.ImmutableList<java.lang.Character> com.google.common.collect.Lists.charactersOf(java.lang.String)
+*/ 
+public static com.google.common.collect.ImmutableList<java.lang.Character> charactersOf(java.lang.String p0){
+	return com.google.common.collect.Lists.charactersOf(p0);
+}
 /**
 *public static <E> com.google.common.collect.ImmutableList<E> com.google.common.collect.ImmutableList.copyOf(java.util.Collection<? extends E>)
 */ 
@@ -21,7 +29,7 @@ public static <E> com.google.common.collect.ImmutableList<E> copyOf(java.lang.It
 /**
 *public static <E> com.google.common.collect.ImmutableList<E> com.google.common.collect.ImmutableList.copyOf(E[])
 */ 
-public static <E> com.google.common.collect.ImmutableList<E> copyOf(E[] p0){
+public static <E> com.google.common.collect.ImmutableList<E> copyOf(E... p0){
 	return com.google.common.collect.ImmutableList.copyOf(p0);
 }
 /**
@@ -29,6 +37,12 @@ public static <E> com.google.common.collect.ImmutableList<E> copyOf(E[] p0){
 */ 
 public static <E> com.google.common.collect.ImmutableList<E> copyOf(java.util.Iterator<? extends E> p0){
 	return com.google.common.collect.ImmutableList.copyOf(p0);
+}
+/**
+*public static <T> com.google.common.collect.ImmutableList<com.google.common.util.concurrent.ListenableFuture<T>> com.google.common.util.concurrent.Futures.inCompletionOrder(java.lang.Iterable<? extends com.google.common.util.concurrent.ListenableFuture<? extends T>>)
+*/ 
+public static <T> com.google.common.collect.ImmutableList<com.google.common.util.concurrent.ListenableFuture<T>> inCompletionOrder(java.lang.Iterable<? extends com.google.common.util.concurrent.ListenableFuture<? extends T>> p0){
+	return com.google.common.util.concurrent.Futures.inCompletionOrder(p0);
 }
 /**
 *public static <E> com.google.common.collect.ImmutableList<E> com.google.common.collect.ImmutableList.of(E,E,E,E,E)
@@ -107,17 +121,5 @@ public static <E> com.google.common.collect.ImmutableList<E> of(E p0,E p1,E p2,E
 */ 
 public static <E> com.google.common.collect.ImmutableList<E> of(E p0,E p1,E p2,E p3,E p4,E p5,E p6,E p7,E p8){
 	return com.google.common.collect.ImmutableList.of(p0,p1,p2,p3,p4,p5,p6,p7,p8);
-}
-/**
-*public static com.google.common.collect.ImmutableList<java.lang.Character> com.google.common.collect.Lists.charactersOf(java.lang.String)
-*/ 
-public static com.google.common.collect.ImmutableList<java.lang.Character> charactersOf(java.lang.String p0){
-	return com.google.common.collect.Lists.charactersOf(p0);
-}
-/**
-*public static <T> com.google.common.collect.ImmutableList<com.google.common.util.concurrent.ListenableFuture<T>> com.google.common.util.concurrent.Futures.inCompletionOrder(java.lang.Iterable<? extends com.google.common.util.concurrent.ListenableFuture<? extends T>>)
-*/ 
-public static <T> com.google.common.collect.ImmutableList<com.google.common.util.concurrent.ListenableFuture<T>> inCompletionOrder(java.lang.Iterable<? extends com.google.common.util.concurrent.ListenableFuture<? extends T>> p0){
-	return com.google.common.util.concurrent.Futures.inCompletionOrder(p0);
 }
 }

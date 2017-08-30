@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class SplitterUtil{ 
+/**
+*public static com.google.common.base.Splitter com.google.common.base.Splitter.fixedLength(int)
+*/ 
+public static com.google.common.base.Splitter fixedLength(int p0){
+	return com.google.common.base.Splitter.fixedLength(p0);
+}
 /**
 *public static com.google.common.base.Splitter com.google.common.base.Splitter.on(java.lang.String)
 */ 
@@ -29,12 +37,6 @@ public static com.google.common.base.Splitter on(char p0){
 */ 
 public static com.google.common.base.Splitter on(java.util.regex.Pattern p0){
 	return com.google.common.base.Splitter.on(p0);
-}
-/**
-*public static com.google.common.base.Splitter com.google.common.base.Splitter.fixedLength(int)
-*/ 
-public static com.google.common.base.Splitter fixedLength(int p0){
-	return com.google.common.base.Splitter.fixedLength(p0);
 }
 /**
 *public static com.google.common.base.Splitter com.google.common.base.Splitter.onPattern(java.lang.String)

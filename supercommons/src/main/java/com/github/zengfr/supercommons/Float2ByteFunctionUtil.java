@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Float2ByteFunctionUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.floats.Float2ByteFunction it.unimi.dsi.fastutil.floats.Float2ByteFunctions.primitive(java.util.function.Function<? super java.lang.Float, ? extends java.lang.Byte>)
+*/ 
+public static it.unimi.dsi.fastutil.floats.Float2ByteFunction primitive(java.util.function.Function<? super java.lang.Float, ? extends java.lang.Byte> p0){
+	return it.unimi.dsi.fastutil.floats.Float2ByteFunctions.primitive(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2ByteFunction it.unimi.dsi.fastutil.floats.Float2ByteFunctions.singleton(java.lang.Float,java.lang.Byte)
 */ 
@@ -35,11 +43,5 @@ public static it.unimi.dsi.fastutil.floats.Float2ByteFunction synchronize(it.uni
 */ 
 public static it.unimi.dsi.fastutil.floats.Float2ByteFunction unmodifiable(it.unimi.dsi.fastutil.floats.Float2ByteFunction p0){
 	return it.unimi.dsi.fastutil.floats.Float2ByteFunctions.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.floats.Float2ByteFunction it.unimi.dsi.fastutil.floats.Float2ByteFunctions.primitive(java.util.function.Function<? super java.lang.Float, ? extends java.lang.Byte>)
-*/ 
-public static it.unimi.dsi.fastutil.floats.Float2ByteFunction primitive(java.util.function.Function<? super java.lang.Float, ? extends java.lang.Byte> p0){
-	return it.unimi.dsi.fastutil.floats.Float2ByteFunctions.primitive(p0);
 }
 }

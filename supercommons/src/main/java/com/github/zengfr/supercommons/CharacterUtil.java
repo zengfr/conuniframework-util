@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,48 +8,6 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class CharacterUtil{ 
-/**
-*public static int org.apache.commons.lang3.CharUtils.toIntValue(java.lang.Character,int)
-*/ 
-public static int toIntValue(java.lang.Character p0,int p1){
-	return org.apache.commons.lang3.CharUtils.toIntValue(p0,p1);
-}
-/**
-*public static int org.apache.commons.lang3.CharUtils.toIntValue(java.lang.Character)
-*/ 
-public static int toIntValue(java.lang.Character p0){
-	return org.apache.commons.lang3.CharUtils.toIntValue(p0);
-}
-/**
-*public static char org.apache.commons.lang3.CharUtils.toChar(java.lang.Character)
-*/ 
-public static char toChar(java.lang.Character p0){
-	return org.apache.commons.lang3.CharUtils.toChar(p0);
-}
-/**
-*public static char org.apache.commons.lang3.CharUtils.toChar(java.lang.Character,char)
-*/ 
-public static char toChar(java.lang.Character p0,char p1){
-	return org.apache.commons.lang3.CharUtils.toChar(p0,p1);
-}
-/**
-*public static java.lang.String org.apache.commons.lang3.CharUtils.unicodeEscaped(java.lang.Character)
-*/ 
-public static java.lang.String unicodeEscaped(java.lang.Character p0){
-	return org.apache.commons.lang3.CharUtils.unicodeEscaped(p0);
-}
-/**
-*public static java.lang.Character org.apache.commons.lang3.CharUtils.toCharacterObject(char)
-*/ 
-public static java.lang.Character toCharacterObject(char p0){
-	return org.apache.commons.lang3.CharUtils.toCharacterObject(p0);
-}
-/**
-*public static java.lang.Character org.apache.commons.lang3.CharUtils.toCharacterObject(java.lang.String)
-*/ 
-public static java.lang.Character toCharacterObject(java.lang.String p0){
-	return org.apache.commons.lang3.CharUtils.toCharacterObject(p0);
-}
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.singleton(java.lang.Byte,java.lang.Character)
 */ 
@@ -245,5 +205,47 @@ public static it.unimi.dsi.fastutil.shorts.Short2CharFunction singleton(java.lan
 */ 
 public static it.unimi.dsi.fastutil.shorts.Short2CharSortedMap singleton(java.lang.Short p0,java.lang.Character p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 	return it.unimi.dsi.fastutil.shorts.Short2CharSortedMaps.singleton(p0,p1,p2);
+}
+/**
+*public static char org.apache.commons.lang3.CharUtils.toChar(java.lang.Character,char)
+*/ 
+public static char toChar(java.lang.Character p0,char p1){
+	return org.apache.commons.lang3.CharUtils.toChar(p0,p1);
+}
+/**
+*public static char org.apache.commons.lang3.CharUtils.toChar(java.lang.Character)
+*/ 
+public static char toChar(java.lang.Character p0){
+	return org.apache.commons.lang3.CharUtils.toChar(p0);
+}
+/**
+*public static java.lang.Character org.apache.commons.lang3.CharUtils.toCharacterObject(java.lang.String)
+*/ 
+public static java.lang.Character toCharacterObject(java.lang.String p0){
+	return org.apache.commons.lang3.CharUtils.toCharacterObject(p0);
+}
+/**
+*public static java.lang.Character org.apache.commons.lang3.CharUtils.toCharacterObject(char)
+*/ 
+public static java.lang.Character toCharacterObject(char p0){
+	return org.apache.commons.lang3.CharUtils.toCharacterObject(p0);
+}
+/**
+*public static int org.apache.commons.lang3.CharUtils.toIntValue(java.lang.Character,int)
+*/ 
+public static int toIntValue(java.lang.Character p0,int p1){
+	return org.apache.commons.lang3.CharUtils.toIntValue(p0,p1);
+}
+/**
+*public static int org.apache.commons.lang3.CharUtils.toIntValue(java.lang.Character)
+*/ 
+public static int toIntValue(java.lang.Character p0){
+	return org.apache.commons.lang3.CharUtils.toIntValue(p0);
+}
+/**
+*public static java.lang.String org.apache.commons.lang3.CharUtils.unicodeEscaped(java.lang.Character)
+*/ 
+public static java.lang.String unicodeEscaped(java.lang.Character p0){
+	return org.apache.commons.lang3.CharUtils.unicodeEscaped(p0);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class IntBigArrayBigListUtil{
 /**
 *public static it.unimi.dsi.fastutil.ints.IntBigArrayBigList it.unimi.dsi.fastutil.ints.IntBigArrayBigList.wrap(int[][])
 */ 
-public static it.unimi.dsi.fastutil.ints.IntBigArrayBigList wrap(int[][] p0){
+public static it.unimi.dsi.fastutil.ints.IntBigArrayBigList wrap(int[]... p0){
 	return it.unimi.dsi.fastutil.ints.IntBigArrayBigList.wrap(p0);
 }
 /**

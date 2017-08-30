@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,9 +9,9 @@ package com.github.zengfr.supercommons;
 */
 public final class ResourceBundleUtil{ 
 /**
-*public static java.util.Map org.apache.commons.collections.MapUtils.toMap(java.util.ResourceBundle)
+*public static java.util.Map<java.lang.String, java.lang.Object> org.apache.commons.collections4.MapUtils.toMap(java.util.ResourceBundle)
 */ 
-public static java.util.Map toMap(java.util.ResourceBundle p0){
-	return org.apache.commons.collections.MapUtils.toMap(p0);
+public static java.util.Map<java.lang.String, java.lang.Object> toMap(java.util.ResourceBundle p0){
+	return org.apache.commons.collections4.MapUtils.toMap(p0);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,34 +9,10 @@ package com.github.zengfr.supercommons;
 */
 public final class IntegerUtil{ 
 /**
-*public static java.lang.Integer com.google.common.primitives.Ints.tryParse(java.lang.String)
+*public static java.lang.Integer org.apache.commons.lang3.math.NumberUtils.createInteger(java.lang.String)
 */ 
-public static java.lang.Integer tryParse(java.lang.String p0){
-	return com.google.common.primitives.Ints.tryParse(p0);
-}
-/**
-*public static java.lang.Integer com.google.common.primitives.Ints.tryParse(java.lang.String,int)
-*/ 
-public static java.lang.Integer tryParse(java.lang.String p0,int p1){
-	return com.google.common.primitives.Ints.tryParse(p0,p1);
-}
-/**
-*public static java.lang.Integer org.apache.commons.collections.MapUtils.getInteger(java.util.Map,java.lang.Object,java.lang.Integer)
-*/ 
-public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1,java.lang.Integer p2){
-	return org.apache.commons.collections.MapUtils.getInteger(p0,p1,p2);
-}
-/**
-*public static java.lang.Integer org.apache.commons.collections.MapUtils.getInteger(java.util.Map,java.lang.Object)
-*/ 
-public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
-	return org.apache.commons.collections.MapUtils.getInteger(p0,p1);
-}
-/**
-*public static <K> java.lang.Integer org.apache.commons.collections4.MapUtils.getInteger(java.util.Map<? super K, ?>,K)
-*/ 
-public static <K> java.lang.Integer getInteger(java.util.Map<? super K, ?> p0,K p1){
-	return org.apache.commons.collections4.MapUtils.getInteger(p0,p1);
+public static java.lang.Integer createInteger(java.lang.String p0){
+	return org.apache.commons.lang3.math.NumberUtils.createInteger(p0);
 }
 /**
 *public static <K> java.lang.Integer org.apache.commons.collections4.MapUtils.getInteger(java.util.Map<? super K, ?>,K,java.lang.Integer)
@@ -43,52 +21,22 @@ public static <K> java.lang.Integer getInteger(java.util.Map<? super K, ?> p0,K 
 	return org.apache.commons.collections4.MapUtils.getInteger(p0,p1,p2);
 }
 /**
-*public static boolean org.apache.commons.lang3.BooleanUtils.toBoolean(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+*public static <K> java.lang.Integer org.apache.commons.collections4.MapUtils.getInteger(java.util.Map<? super K, ?>,K)
 */ 
-public static boolean toBoolean(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2){
-	return org.apache.commons.lang3.BooleanUtils.toBoolean(p0,p1,p2);
+public static <K> java.lang.Integer getInteger(java.util.Map<? super K, ?> p0,K p1){
+	return org.apache.commons.collections4.MapUtils.getInteger(p0,p1);
 }
 /**
-*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(boolean)
+*public static java.lang.Integer org.apache.commons.collections.MapUtils.getInteger(java.util.Map,java.lang.Object)
 */ 
-public static java.lang.Integer toIntegerObject(boolean p0){
-	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0);
+public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1){
+	return org.apache.commons.collections.MapUtils.getInteger(p0,p1);
 }
 /**
-*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+*public static java.lang.Integer org.apache.commons.collections.MapUtils.getInteger(java.util.Map,java.lang.Object,java.lang.Integer)
 */ 
-public static java.lang.Integer toIntegerObject(java.lang.Boolean p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
-	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0,p1,p2,p3);
-}
-/**
-*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(boolean,java.lang.Integer,java.lang.Integer)
-*/ 
-public static java.lang.Integer toIntegerObject(boolean p0,java.lang.Integer p1,java.lang.Integer p2){
-	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0,p1,p2);
-}
-/**
-*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(java.lang.Boolean)
-*/ 
-public static java.lang.Integer toIntegerObject(java.lang.Boolean p0){
-	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0);
-}
-/**
-*public static java.lang.Boolean org.apache.commons.lang3.BooleanUtils.toBooleanObject(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
-*/ 
-public static java.lang.Boolean toBooleanObject(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
-	return org.apache.commons.lang3.BooleanUtils.toBooleanObject(p0,p1,p2,p3);
-}
-/**
-*public static java.lang.Boolean org.apache.commons.lang3.BooleanUtils.toBooleanObject(java.lang.Integer)
-*/ 
-public static java.lang.Boolean toBooleanObject(java.lang.Integer p0){
-	return org.apache.commons.lang3.BooleanUtils.toBooleanObject(p0);
-}
-/**
-*public static java.lang.Integer org.apache.commons.lang3.math.NumberUtils.createInteger(java.lang.String)
-*/ 
-public static java.lang.Integer createInteger(java.lang.String p0){
-	return org.apache.commons.lang3.math.NumberUtils.createInteger(p0);
+public static java.lang.Integer getInteger(java.util.Map p0,java.lang.Object p1,java.lang.Integer p2){
+	return org.apache.commons.collections.MapUtils.getInteger(p0,p1,p2);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2IntFunction it.unimi.dsi.fastutil.bytes.Byte2IntFunctions.singleton(java.lang.Byte,java.lang.Integer)
@@ -287,5 +235,59 @@ public static it.unimi.dsi.fastutil.shorts.Short2IntFunction singleton(java.lang
 */ 
 public static it.unimi.dsi.fastutil.shorts.Short2IntSortedMap singleton(java.lang.Short p0,java.lang.Integer p1,it.unimi.dsi.fastutil.shorts.ShortComparator p2){
 	return it.unimi.dsi.fastutil.shorts.Short2IntSortedMaps.singleton(p0,p1,p2);
+}
+/**
+*public static boolean org.apache.commons.lang3.BooleanUtils.toBoolean(java.lang.Integer,java.lang.Integer,java.lang.Integer)
+*/ 
+public static boolean toBoolean(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2){
+	return org.apache.commons.lang3.BooleanUtils.toBoolean(p0,p1,p2);
+}
+/**
+*public static java.lang.Boolean org.apache.commons.lang3.BooleanUtils.toBooleanObject(java.lang.Integer,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+*/ 
+public static java.lang.Boolean toBooleanObject(java.lang.Integer p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
+	return org.apache.commons.lang3.BooleanUtils.toBooleanObject(p0,p1,p2,p3);
+}
+/**
+*public static java.lang.Boolean org.apache.commons.lang3.BooleanUtils.toBooleanObject(java.lang.Integer)
+*/ 
+public static java.lang.Boolean toBooleanObject(java.lang.Integer p0){
+	return org.apache.commons.lang3.BooleanUtils.toBooleanObject(p0);
+}
+/**
+*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(boolean)
+*/ 
+public static java.lang.Integer toIntegerObject(boolean p0){
+	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0);
+}
+/**
+*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(boolean,java.lang.Integer,java.lang.Integer)
+*/ 
+public static java.lang.Integer toIntegerObject(boolean p0,java.lang.Integer p1,java.lang.Integer p2){
+	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0,p1,p2);
+}
+/**
+*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(java.lang.Boolean,java.lang.Integer,java.lang.Integer,java.lang.Integer)
+*/ 
+public static java.lang.Integer toIntegerObject(java.lang.Boolean p0,java.lang.Integer p1,java.lang.Integer p2,java.lang.Integer p3){
+	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0,p1,p2,p3);
+}
+/**
+*public static java.lang.Integer org.apache.commons.lang3.BooleanUtils.toIntegerObject(java.lang.Boolean)
+*/ 
+public static java.lang.Integer toIntegerObject(java.lang.Boolean p0){
+	return org.apache.commons.lang3.BooleanUtils.toIntegerObject(p0);
+}
+/**
+*public static java.lang.Integer com.google.common.primitives.Ints.tryParse(java.lang.String)
+*/ 
+public static java.lang.Integer tryParse(java.lang.String p0){
+	return com.google.common.primitives.Ints.tryParse(p0);
+}
+/**
+*public static java.lang.Integer com.google.common.primitives.Ints.tryParse(java.lang.String,int)
+*/ 
+public static java.lang.Integer tryParse(java.lang.String p0,int p1){
+	return com.google.common.primitives.Ints.tryParse(p0,p1);
 }
 }

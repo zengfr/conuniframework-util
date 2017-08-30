@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,22 @@ package com.github.zengfr.supercommons;
 */
 public final class EscaperUtil{ 
 /**
+*public static com.google.common.escape.Escaper com.google.common.html.HtmlEscapers.htmlEscaper()
+*/ 
+public static com.google.common.escape.Escaper htmlEscaper(){
+	return com.google.common.html.HtmlEscapers.htmlEscaper();
+}
+/**
 *public static com.google.common.escape.Escaper com.google.common.escape.Escapers.nullEscaper()
 */ 
 public static com.google.common.escape.Escaper nullEscaper(){
 	return com.google.common.escape.Escapers.nullEscaper();
 }
 /**
-*public static com.google.common.escape.Escaper com.google.common.html.HtmlEscapers.htmlEscaper()
+*public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlFormParameterEscaper()
 */ 
-public static com.google.common.escape.Escaper htmlEscaper(){
-	return com.google.common.html.HtmlEscapers.htmlEscaper();
+public static com.google.common.escape.Escaper urlFormParameterEscaper(){
+	return com.google.common.net.UrlEscapers.urlFormParameterEscaper();
 }
 /**
 *public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlFragmentEscaper()
@@ -29,12 +37,6 @@ public static com.google.common.escape.Escaper urlFragmentEscaper(){
 */ 
 public static com.google.common.escape.Escaper urlPathSegmentEscaper(){
 	return com.google.common.net.UrlEscapers.urlPathSegmentEscaper();
-}
-/**
-*public static com.google.common.escape.Escaper com.google.common.net.UrlEscapers.urlFormParameterEscaper()
-*/ 
-public static com.google.common.escape.Escaper urlFormParameterEscaper(){
-	return com.google.common.net.UrlEscapers.urlFormParameterEscaper();
 }
 /**
 *public static com.google.common.escape.Escaper com.google.common.xml.XmlEscapers.xmlAttributeEscaper()

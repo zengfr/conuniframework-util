@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -17,6 +19,18 @@ public static <K,V> com.google.common.collect.ImmutableMap<K, V> copyOf(java.lan
 */ 
 public static <K,V> com.google.common.collect.ImmutableMap<K, V> copyOf(java.util.Map<? extends K, ? extends V> p0){
 	return com.google.common.collect.ImmutableMap.copyOf(p0);
+}
+/**
+*public static com.google.common.collect.ImmutableMap<java.lang.String, java.lang.String> com.google.common.collect.Maps.fromProperties(java.util.Properties)
+*/ 
+public static com.google.common.collect.ImmutableMap<java.lang.String, java.lang.String> fromProperties(java.util.Properties p0){
+	return com.google.common.collect.Maps.fromProperties(p0);
+}
+/**
+*public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.Maps.immutableEnumMap(java.util.Map<K, ? extends V>)
+*/ 
+public static <K extends java.lang.Enum<K> ,V> com.google.common.collect.ImmutableMap<K, V> immutableEnumMap(java.util.Map<K, ? extends V> p0){
+	return com.google.common.collect.Maps.immutableEnumMap(p0);
 }
 /**
 *public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.ImmutableMap.of(K,V,K,V,K,V,K,V)
@@ -55,15 +69,15 @@ public static <K,V> com.google.common.collect.ImmutableMap<K, V> of(K p0,V p1){
 	return com.google.common.collect.ImmutableMap.of(p0,p1);
 }
 /**
-*public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.Maps.toMap(java.lang.Iterable<K>,com.google.common.base.Function<? super K, V>)
-*/ 
-public static <K,V> com.google.common.collect.ImmutableMap<K, V> toMap(java.lang.Iterable<K> p0,com.google.common.base.Function<? super K, V> p1){
-	return com.google.common.collect.Maps.toMap(p0,p1);
-}
-/**
 *public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.Maps.toMap(java.util.Iterator<K>,com.google.common.base.Function<? super K, V>)
 */ 
 public static <K,V> com.google.common.collect.ImmutableMap<K, V> toMap(java.util.Iterator<K> p0,com.google.common.base.Function<? super K, V> p1){
+	return com.google.common.collect.Maps.toMap(p0,p1);
+}
+/**
+*public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.Maps.toMap(java.lang.Iterable<K>,com.google.common.base.Function<? super K, V>)
+*/ 
+public static <K,V> com.google.common.collect.ImmutableMap<K, V> toMap(java.lang.Iterable<K> p0,com.google.common.base.Function<? super K, V> p1){
 	return com.google.common.collect.Maps.toMap(p0,p1);
 }
 /**
@@ -77,17 +91,5 @@ public static <K,V> com.google.common.collect.ImmutableMap<K, V> uniqueIndex(jav
 */ 
 public static <K,V> com.google.common.collect.ImmutableMap<K, V> uniqueIndex(java.lang.Iterable<V> p0,com.google.common.base.Function<? super V, K> p1){
 	return com.google.common.collect.Maps.uniqueIndex(p0,p1);
-}
-/**
-*public static com.google.common.collect.ImmutableMap<java.lang.String, java.lang.String> com.google.common.collect.Maps.fromProperties(java.util.Properties)
-*/ 
-public static com.google.common.collect.ImmutableMap<java.lang.String, java.lang.String> fromProperties(java.util.Properties p0){
-	return com.google.common.collect.Maps.fromProperties(p0);
-}
-/**
-*public static <K,V> com.google.common.collect.ImmutableMap<K, V> com.google.common.collect.Maps.immutableEnumMap(java.util.Map<K, ? extends V>)
-*/ 
-public static <K extends java.lang.Enum<K> ,V> com.google.common.collect.ImmutableMap<K, V> immutableEnumMap(java.util.Map<K, ? extends V> p0){
-	return com.google.common.collect.Maps.immutableEnumMap(p0);
 }
 }

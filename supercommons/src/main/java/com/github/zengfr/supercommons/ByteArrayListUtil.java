@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class ByteArrayListUtil{
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteArrayList it.unimi.dsi.fastutil.bytes.ByteArrayList.wrap(byte[])
 */ 
-public static it.unimi.dsi.fastutil.bytes.ByteArrayList wrap(byte[] p0){
+public static it.unimi.dsi.fastutil.bytes.ByteArrayList wrap(byte... p0){
 	return it.unimi.dsi.fastutil.bytes.ByteArrayList.wrap(p0);
 }
 /**

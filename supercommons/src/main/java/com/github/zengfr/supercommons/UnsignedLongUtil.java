@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class UnsignedLongUtil{ 
+/**
+*public static com.google.common.primitives.UnsignedLong com.google.common.primitives.UnsignedLong.fromLongBits(long)
+*/ 
+public static com.google.common.primitives.UnsignedLong fromLongBits(long p0){
+	return com.google.common.primitives.UnsignedLong.fromLongBits(p0);
+}
 /**
 *public static com.google.common.primitives.UnsignedLong com.google.common.primitives.UnsignedLong.valueOf(java.lang.String,int)
 */ 
@@ -29,11 +37,5 @@ public static com.google.common.primitives.UnsignedLong valueOf(java.lang.String
 */ 
 public static com.google.common.primitives.UnsignedLong valueOf(java.math.BigInteger p0){
 	return com.google.common.primitives.UnsignedLong.valueOf(p0);
-}
-/**
-*public static com.google.common.primitives.UnsignedLong com.google.common.primitives.UnsignedLong.fromLongBits(long)
-*/ 
-public static com.google.common.primitives.UnsignedLong fromLongBits(long p0){
-	return com.google.common.primitives.UnsignedLong.fromLongBits(p0);
 }
 }

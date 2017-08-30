@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Byte2CharFunctionUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.primitive(java.util.function.Function<? super java.lang.Byte, ? extends java.lang.Character>)
+*/ 
+public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction primitive(java.util.function.Function<? super java.lang.Byte, ? extends java.lang.Character> p0){
+	return it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.primitive(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.singleton(java.lang.Byte,java.lang.Character)
 */ 
@@ -35,11 +43,5 @@ public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction synchronize(it.unimi
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction unmodifiable(it.unimi.dsi.fastutil.bytes.Byte2CharFunction p0){
 	return it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.primitive(java.util.function.Function<? super java.lang.Byte, ? extends java.lang.Character>)
-*/ 
-public static it.unimi.dsi.fastutil.bytes.Byte2CharFunction primitive(java.util.function.Function<? super java.lang.Byte, ? extends java.lang.Character> p0){
-	return it.unimi.dsi.fastutil.bytes.Byte2CharFunctions.primitive(p0);
 }
 }

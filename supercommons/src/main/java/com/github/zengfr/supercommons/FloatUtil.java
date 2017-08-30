@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,22 +9,178 @@ package com.github.zengfr.supercommons;
 */
 public final class FloatUtil{ 
 /**
-*public static java.lang.Float com.google.common.primitives.Floats.tryParse(java.lang.String)
+*public static float org.apache.commons.lang3.ObjectUtils.CONST(float)
 */ 
-public static java.lang.Float tryParse(java.lang.String p0){
-	return com.google.common.primitives.Floats.tryParse(p0);
+public static float CONST(float p0){
+	return org.apache.commons.lang3.ObjectUtils.CONST(p0);
 }
 /**
-*public static java.lang.Float org.apache.commons.collections.MapUtils.getFloat(java.util.Map,java.lang.Object,java.lang.Float)
+*public static float org.apache.commons.math3.util.FastMath.abs(float)
 */ 
-public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1,java.lang.Float p2){
-	return org.apache.commons.collections.MapUtils.getFloat(p0,p1,p2);
+public static float abs(float p0){
+	return org.apache.commons.math3.util.FastMath.abs(p0);
 }
 /**
-*public static java.lang.Float org.apache.commons.collections.MapUtils.getFloat(java.util.Map,java.lang.Object)
+*public static float[] org.apache.commons.lang3.ArrayUtils.add(float[],int,float)
 */ 
-public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1){
-	return org.apache.commons.collections.MapUtils.getFloat(p0,p1);
+public static float[] add(float[] p0,int p1,float p2){
+	return org.apache.commons.lang3.ArrayUtils.add(p0,p1,p2);
+}
+/**
+*public static float[] org.apache.commons.lang3.ArrayUtils.add(float[],float)
+*/ 
+public static float[] add(float[] p0,float p1){
+	return org.apache.commons.lang3.ArrayUtils.add(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.add(float[][],long,float)
+*/ 
+public static void add(float[][] p0,long p1,float p2){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.add(p0,p1,p2);
+}
+/**
+*public static int it.unimi.dsi.fastutil.HashCommon.arraySize(int,float)
+*/ 
+public static int arraySize(int p0,float p1){
+	return it.unimi.dsi.fastutil.HashCommon.arraySize(p0,p1);
+}
+/**
+*public static long it.unimi.dsi.fastutil.HashCommon.bigArraySize(long,float)
+*/ 
+public static long bigArraySize(long p0,float p1){
+	return it.unimi.dsi.fastutil.HashCommon.bigArraySize(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int binarySearch(float[] p0,int p1,int p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float)
+*/ 
+public static int binarySearch(float[] p0,float p1){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float)
+*/ 
+public static int binarySearch(float[] p0,int p1,int p2,float p3){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float)
+*/ 
+public static long binarySearch(float[][] p0,float p1){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static long binarySearch(float[][] p0,long p1,long p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float)
+*/ 
+public static long binarySearch(float[][] p0,long p1,long p2,float p3){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static long binarySearch(float[][] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static int com.google.common.primitives.Floats.compare(float,float)
+*/ 
+public static int compare(float p0,float p1){
+	return com.google.common.primitives.Floats.compare(p0,p1);
+}
+/**
+*public static boolean com.google.common.primitives.Floats.contains(float[],float)
+*/ 
+public static boolean contains(float[] p0,float p1){
+	return com.google.common.primitives.Floats.contains(p0,p1);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.copySign(float,float)
+*/ 
+public static float copySign(float p0,float p1){
+	return org.apache.commons.math3.util.FastMath.copySign(p0,p1);
+}
+/**
+*public static java.lang.Float org.apache.commons.lang3.math.NumberUtils.createFloat(java.lang.String)
+*/ 
+public static java.lang.Float createFloat(java.lang.String p0){
+	return org.apache.commons.lang3.math.NumberUtils.createFloat(p0);
+}
+/**
+*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float,int)
+*/ 
+public static boolean equalsIncludingNaN(float p0,float p1,int p2){
+	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1,p2);
+}
+/**
+*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float,float)
+*/ 
+public static boolean equalsIncludingNaN(float p0,float p1,float p2){
+	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1,p2);
+}
+/**
+*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float)
+*/ 
+public static boolean equalsIncludingNaN(float p0,float p1){
+	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.fill(float[],float)
+*/ 
+public static void fill(float[] p0,float p1){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.fill(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.fill(float[],int,int,float)
+*/ 
+public static void fill(float[] p0,int p1,int p2,float p3){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.fill(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(float[][],long,long,float)
+*/ 
+public static void fill(float[][] p0,long p1,long p2,float p3){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(float[][],float)
+*/ 
+public static void fill(float[][] p0,float p1){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.HashCommon.float2int(float)
+*/ 
+public static int float2int(float p0){
+	return it.unimi.dsi.fastutil.HashCommon.float2int(p0);
+}
+/**
+*public static float org.apache.commons.beanutils.ConvertUtils.getDefaultFloat()
+*/ 
+public static float getDefaultFloat(){
+	return org.apache.commons.beanutils.ConvertUtils.getDefaultFloat();
+}
+/**
+*public static int org.apache.commons.math3.util.FastMath.getExponent(float)
+*/ 
+public static int getExponent(float p0){
+	return org.apache.commons.math3.util.FastMath.getExponent(p0);
 }
 /**
 *public static <K> java.lang.Float org.apache.commons.collections4.MapUtils.getFloat(java.util.Map<? super K, ?>,K,java.lang.Float)
@@ -37,10 +195,238 @@ public static <K> java.lang.Float getFloat(java.util.Map<? super K, ?> p0,K p1){
 	return org.apache.commons.collections4.MapUtils.getFloat(p0,p1);
 }
 /**
-*public static java.lang.Float org.apache.commons.lang3.math.NumberUtils.createFloat(java.lang.String)
+*public static java.lang.Float org.apache.commons.collections.MapUtils.getFloat(java.util.Map,java.lang.Object,java.lang.Float)
 */ 
-public static java.lang.Float createFloat(java.lang.String p0){
-	return org.apache.commons.lang3.math.NumberUtils.createFloat(p0);
+public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1,java.lang.Float p2){
+	return org.apache.commons.collections.MapUtils.getFloat(p0,p1,p2);
+}
+/**
+*public static java.lang.Float org.apache.commons.collections.MapUtils.getFloat(java.util.Map,java.lang.Object)
+*/ 
+public static java.lang.Float getFloat(java.util.Map p0,java.lang.Object p1){
+	return org.apache.commons.collections.MapUtils.getFloat(p0,p1);
+}
+/**
+*public static <K> float org.apache.commons.collections4.MapUtils.getFloatValue(java.util.Map<? super K, ?>,K)
+*/ 
+public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1){
+	return org.apache.commons.collections4.MapUtils.getFloatValue(p0,p1);
+}
+/**
+*public static <K> float org.apache.commons.collections4.MapUtils.getFloatValue(java.util.Map<? super K, ?>,K,float)
+*/ 
+public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1,float p2){
+	return org.apache.commons.collections4.MapUtils.getFloatValue(p0,p1,p2);
+}
+/**
+*public static float org.apache.commons.collections.MapUtils.getFloatValue(java.util.Map,java.lang.Object,float)
+*/ 
+public static float getFloatValue(java.util.Map p0,java.lang.Object p1,float p2){
+	return org.apache.commons.collections.MapUtils.getFloatValue(p0,p1,p2);
+}
+/**
+*public static float org.apache.commons.collections.MapUtils.getFloatValue(java.util.Map,java.lang.Object)
+*/ 
+public static float getFloatValue(java.util.Map p0,java.lang.Object p1){
+	return org.apache.commons.collections.MapUtils.getFloatValue(p0,p1);
+}
+/**
+*public static float org.apache.commons.lang.SystemUtils.getJavaVersion()
+*/ 
+public static float getJavaVersion(){
+	return org.apache.commons.lang.SystemUtils.getJavaVersion();
+}
+/**
+*public static int com.google.common.primitives.Floats.indexOf(float[],float)
+*/ 
+public static int indexOf(float[] p0,float p1){
+	return com.google.common.primitives.Floats.indexOf(p0,p1);
+}
+/**
+*public static int org.apache.commons.lang3.ArrayUtils.indexOf(float[],float,int)
+*/ 
+public static int indexOf(float[] p0,float p1,int p2){
+	return org.apache.commons.lang3.ArrayUtils.indexOf(p0,p1,p2);
+}
+/**
+*public static boolean com.google.common.primitives.Floats.isFinite(float)
+*/ 
+public static boolean isFinite(float p0){
+	return com.google.common.primitives.Floats.isFinite(p0);
+}
+/**
+*public static boolean org.apache.commons.lang.SystemUtils.isJavaVersionAtLeast(float)
+*/ 
+public static boolean isJavaVersionAtLeast(float p0){
+	return org.apache.commons.lang.SystemUtils.isJavaVersionAtLeast(p0);
+}
+/**
+*public static int com.google.common.primitives.Floats.lastIndexOf(float[],float)
+*/ 
+public static int lastIndexOf(float[] p0,float p1){
+	return com.google.common.primitives.Floats.lastIndexOf(p0,p1);
+}
+/**
+*public static int org.apache.commons.lang3.ArrayUtils.lastIndexOf(float[],float,int)
+*/ 
+public static int lastIndexOf(float[] p0,float p1,int p2){
+	return org.apache.commons.lang3.ArrayUtils.lastIndexOf(p0,p1,p2);
+}
+/**
+*public static float com.google.common.primitives.Floats.max(float...)
+*/ 
+public static float max(float... p0){
+	return com.google.common.primitives.Floats.max(p0);
+}
+/**
+*public static float org.apache.commons.lang3.math.IEEE754rUtils.max(float,float,float)
+*/ 
+public static float max(float p0,float p1,float p2){
+	return org.apache.commons.lang3.math.IEEE754rUtils.max(p0,p1,p2);
+}
+/**
+*public static float org.apache.commons.lang3.math.IEEE754rUtils.max(float,float)
+*/ 
+public static float max(float p0,float p1){
+	return org.apache.commons.lang3.math.IEEE754rUtils.max(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.HashCommon.maxFill(int,float)
+*/ 
+public static int maxFill(int p0,float p1){
+	return it.unimi.dsi.fastutil.HashCommon.maxFill(p0,p1);
+}
+/**
+*public static long it.unimi.dsi.fastutil.HashCommon.maxFill(long,float)
+*/ 
+public static long maxFill(long p0,float p1){
+	return it.unimi.dsi.fastutil.HashCommon.maxFill(p0,p1);
+}
+/**
+*public static float com.google.common.primitives.Floats.min(float...)
+*/ 
+public static float min(float... p0){
+	return com.google.common.primitives.Floats.min(p0);
+}
+/**
+*public static float org.apache.commons.lang3.math.IEEE754rUtils.min(float,float,float)
+*/ 
+public static float min(float p0,float p1,float p2){
+	return org.apache.commons.lang3.math.IEEE754rUtils.min(p0,p1,p2);
+}
+/**
+*public static float org.apache.commons.lang3.math.IEEE754rUtils.min(float,float)
+*/ 
+public static float min(float p0,float p1){
+	return org.apache.commons.lang3.math.IEEE754rUtils.min(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.mul(float[][],long,float)
+*/ 
+public static void mul(float[][] p0,long p1,float p2){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.mul(p0,p1,p2);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.nextAfter(float,double)
+*/ 
+public static float nextAfter(float p0,double p1){
+	return org.apache.commons.math3.util.FastMath.nextAfter(p0,p1);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.nextDown(float)
+*/ 
+public static float nextDown(float p0){
+	return org.apache.commons.math3.util.FastMath.nextDown(p0);
+}
+/**
+*public static float org.apache.commons.lang3.RandomUtils.nextFloat(float,float)
+*/ 
+public static float nextFloat(float p0,float p1){
+	return org.apache.commons.lang3.RandomUtils.nextFloat(p0,p1);
+}
+/**
+*public static float org.apache.commons.lang.math.RandomUtils.nextFloat()
+*/ 
+public static float nextFloat(){
+	return org.apache.commons.lang.math.RandomUtils.nextFloat();
+}
+/**
+*public static float org.apache.commons.lang.math.RandomUtils.nextFloat(java.util.Random)
+*/ 
+public static float nextFloat(java.util.Random p0){
+	return org.apache.commons.lang.math.RandomUtils.nextFloat(p0);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.nextUp(float)
+*/ 
+public static float nextUp(float p0){
+	return org.apache.commons.math3.util.FastMath.nextUp(p0);
+}
+/**
+*public static float org.apache.commons.io.EndianUtils.readSwappedFloat(java.io.InputStream) throws java.io.IOException
+*/ 
+public static float readSwappedFloat(java.io.InputStream p0) throws java.io.IOException{
+	return org.apache.commons.io.EndianUtils.readSwappedFloat(p0);
+}
+/**
+*public static float org.apache.commons.io.EndianUtils.readSwappedFloat(byte[],int)
+*/ 
+public static float readSwappedFloat(byte[] p0,int p1){
+	return org.apache.commons.io.EndianUtils.readSwappedFloat(p0,p1);
+}
+/**
+*public static float[] org.apache.commons.lang3.ArrayUtils.removeElement(float[],float)
+*/ 
+public static float[] removeElement(float[] p0,float p1){
+	return org.apache.commons.lang3.ArrayUtils.removeElement(p0,p1);
+}
+/**
+*public static int org.apache.commons.math3.util.FastMath.round(float)
+*/ 
+public static int round(float p0){
+	return org.apache.commons.math3.util.FastMath.round(p0);
+}
+/**
+*public static float org.apache.commons.math3.util.Precision.round(float,int)
+*/ 
+public static float round(float p0,int p1){
+	return org.apache.commons.math3.util.Precision.round(p0,p1);
+}
+/**
+*public static float org.apache.commons.math3.util.Precision.round(float,int,int) throws org.apache.commons.math3.exception.MathArithmeticException,org.apache.commons.math3.exception.MathIllegalArgumentException
+*/ 
+public static float round(float p0,int p1,int p2) throws org.apache.commons.math3.exception.MathArithmeticException,org.apache.commons.math3.exception.MathIllegalArgumentException{
+	return org.apache.commons.math3.util.Precision.round(p0,p1,p2);
+}
+/**
+*public static float it.unimi.dsi.fastutil.SafeMath.safeDoubleToFloat(double)
+*/ 
+public static float safeDoubleToFloat(double p0){
+	return it.unimi.dsi.fastutil.SafeMath.safeDoubleToFloat(p0);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.scalb(float,int)
+*/ 
+public static float scalb(float p0,int p1){
+	return org.apache.commons.math3.util.FastMath.scalb(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.set(float[][],long,float)
+*/ 
+public static void set(float[][] p0,long p1,float p2){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.set(p0,p1,p2);
+}
+/**
+*public static void org.apache.commons.beanutils.ConvertUtils.setDefaultFloat(float)
+*/ 
+public static void setDefaultFloat(float p0){
+	 org.apache.commons.beanutils.ConvertUtils.setDefaultFloat(p0);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.signum(float)
+*/ 
+public static float signum(float p0){
+	return org.apache.commons.math3.util.FastMath.signum(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2FloatFunction it.unimi.dsi.fastutil.bytes.Byte2FloatFunctions.singleton(java.lang.Byte,java.lang.Float)
@@ -241,342 +627,6 @@ public static it.unimi.dsi.fastutil.shorts.Short2FloatSortedMap singleton(java.l
 	return it.unimi.dsi.fastutil.shorts.Short2FloatSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static float com.google.common.primitives.Floats.min(float...)
-*/ 
-public static float min(float... p0){
-	return com.google.common.primitives.Floats.min(p0);
-}
-/**
-*public static float com.google.common.primitives.Floats.max(float...)
-*/ 
-public static float max(float... p0){
-	return com.google.common.primitives.Floats.max(p0);
-}
-/**
-*public static int com.google.common.primitives.Floats.indexOf(float[],float)
-*/ 
-public static int indexOf(float[] p0,float p1){
-	return com.google.common.primitives.Floats.indexOf(p0,p1);
-}
-/**
-*public static int com.google.common.primitives.Floats.compare(float,float)
-*/ 
-public static int compare(float p0,float p1){
-	return com.google.common.primitives.Floats.compare(p0,p1);
-}
-/**
-*public static boolean com.google.common.primitives.Floats.contains(float[],float)
-*/ 
-public static boolean contains(float[] p0,float p1){
-	return com.google.common.primitives.Floats.contains(p0,p1);
-}
-/**
-*public static int com.google.common.primitives.Floats.lastIndexOf(float[],float)
-*/ 
-public static int lastIndexOf(float[] p0,float p1){
-	return com.google.common.primitives.Floats.lastIndexOf(p0,p1);
-}
-/**
-*public static boolean com.google.common.primitives.Floats.isFinite(float)
-*/ 
-public static boolean isFinite(float p0){
-	return com.google.common.primitives.Floats.isFinite(p0);
-}
-/**
-*public static float org.apache.commons.io.EndianUtils.readSwappedFloat(byte[],int)
-*/ 
-public static float readSwappedFloat(byte[] p0,int p1){
-	return org.apache.commons.io.EndianUtils.readSwappedFloat(p0,p1);
-}
-/**
-*public static float org.apache.commons.io.EndianUtils.readSwappedFloat(java.io.InputStream) throws java.io.IOException
-*/ 
-public static float readSwappedFloat(java.io.InputStream p0) throws java.io.IOException{
-	return org.apache.commons.io.EndianUtils.readSwappedFloat(p0);
-}
-/**
-*public static float org.apache.commons.io.EndianUtils.swapFloat(float)
-*/ 
-public static float swapFloat(float p0){
-	return org.apache.commons.io.EndianUtils.swapFloat(p0);
-}
-/**
-*public static void org.apache.commons.io.EndianUtils.writeSwappedFloat(java.io.OutputStream,float) throws java.io.IOException
-*/ 
-public static void writeSwappedFloat(java.io.OutputStream p0,float p1) throws java.io.IOException{
-	 org.apache.commons.io.EndianUtils.writeSwappedFloat(p0,p1);
-}
-/**
-*public static void org.apache.commons.io.EndianUtils.writeSwappedFloat(byte[],int,float)
-*/ 
-public static void writeSwappedFloat(byte[] p0,int p1,float p2){
-	 org.apache.commons.io.EndianUtils.writeSwappedFloat(p0,p1,p2);
-}
-/**
-*public static float org.apache.commons.collections.MapUtils.getFloatValue(java.util.Map,java.lang.Object,float)
-*/ 
-public static float getFloatValue(java.util.Map p0,java.lang.Object p1,float p2){
-	return org.apache.commons.collections.MapUtils.getFloatValue(p0,p1,p2);
-}
-/**
-*public static float org.apache.commons.collections.MapUtils.getFloatValue(java.util.Map,java.lang.Object)
-*/ 
-public static float getFloatValue(java.util.Map p0,java.lang.Object p1){
-	return org.apache.commons.collections.MapUtils.getFloatValue(p0,p1);
-}
-/**
-*public static <K> float org.apache.commons.collections4.MapUtils.getFloatValue(java.util.Map<? super K, ?>,K,float)
-*/ 
-public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1,float p2){
-	return org.apache.commons.collections4.MapUtils.getFloatValue(p0,p1,p2);
-}
-/**
-*public static <K> float org.apache.commons.collections4.MapUtils.getFloatValue(java.util.Map<? super K, ?>,K)
-*/ 
-public static <K> float getFloatValue(java.util.Map<? super K, ?> p0,K p1){
-	return org.apache.commons.collections4.MapUtils.getFloatValue(p0,p1);
-}
-/**
-*public static float[] org.apache.commons.lang3.ArrayUtils.add(float[],int,float)
-*/ 
-public static float[] add(float[] p0,int p1,float p2){
-	return org.apache.commons.lang3.ArrayUtils.add(p0,p1,p2);
-}
-/**
-*public static float[] org.apache.commons.lang3.ArrayUtils.add(float[],float)
-*/ 
-public static float[] add(float[] p0,float p1){
-	return org.apache.commons.lang3.ArrayUtils.add(p0,p1);
-}
-/**
-*public static int org.apache.commons.lang3.ArrayUtils.indexOf(float[],float,int)
-*/ 
-public static int indexOf(float[] p0,float p1,int p2){
-	return org.apache.commons.lang3.ArrayUtils.indexOf(p0,p1,p2);
-}
-/**
-*public static int org.apache.commons.lang3.ArrayUtils.lastIndexOf(float[],float,int)
-*/ 
-public static int lastIndexOf(float[] p0,float p1,int p2){
-	return org.apache.commons.lang3.ArrayUtils.lastIndexOf(p0,p1,p2);
-}
-/**
-*public static float[] org.apache.commons.lang3.ArrayUtils.removeElement(float[],float)
-*/ 
-public static float[] removeElement(float[] p0,float p1){
-	return org.apache.commons.lang3.ArrayUtils.removeElement(p0,p1);
-}
-/**
-*public static float[] org.apache.commons.lang3.ArrayUtils.toPrimitive(java.lang.Float[],float)
-*/ 
-public static float[] toPrimitive(java.lang.Float[] p0,float p1){
-	return org.apache.commons.lang3.ArrayUtils.toPrimitive(p0,p1);
-}
-/**
-*public static float org.apache.commons.lang3.math.IEEE754rUtils.min(float,float,float)
-*/ 
-public static float min(float p0,float p1,float p2){
-	return org.apache.commons.lang3.math.IEEE754rUtils.min(p0,p1,p2);
-}
-/**
-*public static float org.apache.commons.lang3.math.IEEE754rUtils.min(float,float)
-*/ 
-public static float min(float p0,float p1){
-	return org.apache.commons.lang3.math.IEEE754rUtils.min(p0,p1);
-}
-/**
-*public static float org.apache.commons.lang3.math.IEEE754rUtils.max(float,float,float)
-*/ 
-public static float max(float p0,float p1,float p2){
-	return org.apache.commons.lang3.math.IEEE754rUtils.max(p0,p1,p2);
-}
-/**
-*public static float org.apache.commons.lang3.math.IEEE754rUtils.max(float,float)
-*/ 
-public static float max(float p0,float p1){
-	return org.apache.commons.lang3.math.IEEE754rUtils.max(p0,p1);
-}
-/**
-*public static float org.apache.commons.lang3.math.NumberUtils.toFloat(java.lang.String,float)
-*/ 
-public static float toFloat(java.lang.String p0,float p1){
-	return org.apache.commons.lang3.math.NumberUtils.toFloat(p0,p1);
-}
-/**
-*public static float org.apache.commons.lang3.math.NumberUtils.toFloat(java.lang.String)
-*/ 
-public static float toFloat(java.lang.String p0){
-	return org.apache.commons.lang3.math.NumberUtils.toFloat(p0);
-}
-/**
-*public static float org.apache.commons.lang3.ObjectUtils.CONST(float)
-*/ 
-public static float CONST(float p0){
-	return org.apache.commons.lang3.ObjectUtils.CONST(p0);
-}
-/**
-*public static float org.apache.commons.lang3.RandomUtils.nextFloat(float,float)
-*/ 
-public static float nextFloat(float p0,float p1){
-	return org.apache.commons.lang3.RandomUtils.nextFloat(p0,p1);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.abs(float)
-*/ 
-public static float abs(float p0){
-	return org.apache.commons.math3.util.FastMath.abs(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.scalb(float,int)
-*/ 
-public static float scalb(float p0,int p1){
-	return org.apache.commons.math3.util.FastMath.scalb(p0,p1);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.copySign(float,float)
-*/ 
-public static float copySign(float p0,float p1){
-	return org.apache.commons.math3.util.FastMath.copySign(p0,p1);
-}
-/**
-*public static int org.apache.commons.math3.util.FastMath.getExponent(float)
-*/ 
-public static int getExponent(float p0){
-	return org.apache.commons.math3.util.FastMath.getExponent(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.signum(float)
-*/ 
-public static float signum(float p0){
-	return org.apache.commons.math3.util.FastMath.signum(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.nextAfter(float,double)
-*/ 
-public static float nextAfter(float p0,double p1){
-	return org.apache.commons.math3.util.FastMath.nextAfter(p0,p1);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.nextDown(float)
-*/ 
-public static float nextDown(float p0){
-	return org.apache.commons.math3.util.FastMath.nextDown(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.nextUp(float)
-*/ 
-public static float nextUp(float p0){
-	return org.apache.commons.math3.util.FastMath.nextUp(p0);
-}
-/**
-*public static int org.apache.commons.math3.util.FastMath.round(float)
-*/ 
-public static int round(float p0){
-	return org.apache.commons.math3.util.FastMath.round(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.FastMath.ulp(float)
-*/ 
-public static float ulp(float p0){
-	return org.apache.commons.math3.util.FastMath.ulp(p0);
-}
-/**
-*public static float org.apache.commons.math3.util.Precision.round(float,int)
-*/ 
-public static float round(float p0,int p1){
-	return org.apache.commons.math3.util.Precision.round(p0,p1);
-}
-/**
-*public static float org.apache.commons.math3.util.Precision.round(float,int,int) throws org.apache.commons.math3.exception.MathArithmeticException,org.apache.commons.math3.exception.MathIllegalArgumentException
-*/ 
-public static float round(float p0,int p1,int p2) throws org.apache.commons.math3.exception.MathArithmeticException,org.apache.commons.math3.exception.MathIllegalArgumentException{
-	return org.apache.commons.math3.util.Precision.round(p0,p1,p2);
-}
-/**
-*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float,int)
-*/ 
-public static boolean equalsIncludingNaN(float p0,float p1,int p2){
-	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1,p2);
-}
-/**
-*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float,float)
-*/ 
-public static boolean equalsIncludingNaN(float p0,float p1,float p2){
-	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1,p2);
-}
-/**
-*public static boolean org.apache.commons.math3.util.Precision.equalsIncludingNaN(float,float)
-*/ 
-public static boolean equalsIncludingNaN(float p0,float p1){
-	return org.apache.commons.math3.util.Precision.equalsIncludingNaN(p0,p1);
-}
-/**
-*public static float org.apache.commons.beanutils.ConvertUtils.getDefaultFloat()
-*/ 
-public static float getDefaultFloat(){
-	return org.apache.commons.beanutils.ConvertUtils.getDefaultFloat();
-}
-/**
-*public static void org.apache.commons.beanutils.ConvertUtils.setDefaultFloat(float)
-*/ 
-public static void setDefaultFloat(float p0){
-	 org.apache.commons.beanutils.ConvertUtils.setDefaultFloat(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.FloatList org.apache.commons.collections.primitives.FloatCollections.singletonFloatList(float)
-*/ 
-public static org.apache.commons.collections.primitives.FloatList singletonFloatList(float p0){
-	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatList(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.FloatIterator org.apache.commons.collections.primitives.FloatCollections.singletonFloatIterator(float)
-*/ 
-public static org.apache.commons.collections.primitives.FloatIterator singletonFloatIterator(float p0){
-	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatIterator(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.FloatListIterator org.apache.commons.collections.primitives.FloatCollections.singletonFloatListIterator(float)
-*/ 
-public static org.apache.commons.collections.primitives.FloatListIterator singletonFloatListIterator(float p0){
-	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatListIterator(p0);
-}
-/**
-*public static int it.unimi.dsi.fastutil.HashCommon.arraySize(int,float)
-*/ 
-public static int arraySize(int p0,float p1){
-	return it.unimi.dsi.fastutil.HashCommon.arraySize(p0,p1);
-}
-/**
-*public static long it.unimi.dsi.fastutil.HashCommon.bigArraySize(long,float)
-*/ 
-public static long bigArraySize(long p0,float p1){
-	return it.unimi.dsi.fastutil.HashCommon.bigArraySize(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.HashCommon.float2int(float)
-*/ 
-public static int float2int(float p0){
-	return it.unimi.dsi.fastutil.HashCommon.float2int(p0);
-}
-/**
-*public static long it.unimi.dsi.fastutil.HashCommon.maxFill(long,float)
-*/ 
-public static long maxFill(long p0,float p1){
-	return it.unimi.dsi.fastutil.HashCommon.maxFill(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.HashCommon.maxFill(int,float)
-*/ 
-public static int maxFill(int p0,float p1){
-	return it.unimi.dsi.fastutil.HashCommon.maxFill(p0,p1);
-}
-/**
-*public static float it.unimi.dsi.fastutil.SafeMath.safeDoubleToFloat(double)
-*/ 
-public static float safeDoubleToFloat(double p0){
-	return it.unimi.dsi.fastutil.SafeMath.safeDoubleToFloat(p0);
-}
-/**
 *public static it.unimi.dsi.fastutil.bytes.Byte2FloatFunction it.unimi.dsi.fastutil.bytes.Byte2FloatFunctions.singleton(byte,float)
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2FloatFunction singleton(byte p0,float p1){
@@ -721,96 +771,6 @@ public static it.unimi.dsi.fastutil.floats.Float2ShortSortedMap singleton(float 
 	return it.unimi.dsi.fastutil.floats.Float2ShortSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.fill(float[],int,int,float)
-*/ 
-public static void fill(float[] p0,int p1,int p2,float p3){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.fill(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.fill(float[],float)
-*/ 
-public static void fill(float[] p0,float p1){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.fill(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int binarySearch(float[] p0,int p1,int p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float)
-*/ 
-public static int binarySearch(float[] p0,float p1){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float)
-*/ 
-public static int binarySearch(float[] p0,int p1,int p2,float p3){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.add(float[][],long,float)
-*/ 
-public static void add(float[][] p0,long p1,float p2){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.add(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.set(float[][],long,float)
-*/ 
-public static void set(float[][] p0,long p1,float p2){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.set(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(float[][],long,long,float)
-*/ 
-public static void fill(float[][] p0,long p1,long p2,float p3){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(float[][],float)
-*/ 
-public static void fill(float[][] p0,float p1){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.fill(p0,p1);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float)
-*/ 
-public static long binarySearch(float[][] p0,float p1){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float)
-*/ 
-public static long binarySearch(float[][] p0,long p1,long p2,float p3){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static long binarySearch(float[][] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static long binarySearch(float[][] p0,long p1,long p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.mul(float[][],long,float)
-*/ 
-public static void mul(float[][] p0,long p1,float p2){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.mul(p0,p1,p2);
-}
-/**
 *public static it.unimi.dsi.fastutil.floats.FloatBigListIterator it.unimi.dsi.fastutil.floats.FloatBigListIterators.singleton(float)
 */ 
 public static it.unimi.dsi.fastutil.floats.FloatBigListIterator singleton(float p0){
@@ -871,39 +831,69 @@ public static it.unimi.dsi.fastutil.shorts.Short2FloatSortedMap singleton(short 
 	return it.unimi.dsi.fastutil.shorts.Short2FloatSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static float org.apache.commons.lang.math.IEEE754rUtils.min(float[])
+*public static org.apache.commons.collections.primitives.FloatIterator org.apache.commons.collections.primitives.FloatCollections.singletonFloatIterator(float)
 */ 
-public static float min(float[] p0){
-	return org.apache.commons.lang.math.IEEE754rUtils.min(p0);
+public static org.apache.commons.collections.primitives.FloatIterator singletonFloatIterator(float p0){
+	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatIterator(p0);
 }
 /**
-*public static float org.apache.commons.lang.math.IEEE754rUtils.max(float[])
+*public static org.apache.commons.collections.primitives.FloatList org.apache.commons.collections.primitives.FloatCollections.singletonFloatList(float)
 */ 
-public static float max(float[] p0){
-	return org.apache.commons.lang.math.IEEE754rUtils.max(p0);
+public static org.apache.commons.collections.primitives.FloatList singletonFloatList(float p0){
+	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatList(p0);
 }
 /**
-*public static float org.apache.commons.lang.math.RandomUtils.nextFloat()
+*public static org.apache.commons.collections.primitives.FloatListIterator org.apache.commons.collections.primitives.FloatCollections.singletonFloatListIterator(float)
 */ 
-public static float nextFloat(){
-	return org.apache.commons.lang.math.RandomUtils.nextFloat();
+public static org.apache.commons.collections.primitives.FloatListIterator singletonFloatListIterator(float p0){
+	return org.apache.commons.collections.primitives.FloatCollections.singletonFloatListIterator(p0);
 }
 /**
-*public static float org.apache.commons.lang.math.RandomUtils.nextFloat(java.util.Random)
+*public static float org.apache.commons.io.EndianUtils.swapFloat(float)
 */ 
-public static float nextFloat(java.util.Random p0){
-	return org.apache.commons.lang.math.RandomUtils.nextFloat(p0);
+public static float swapFloat(float p0){
+	return org.apache.commons.io.EndianUtils.swapFloat(p0);
 }
 /**
-*public static boolean org.apache.commons.lang.SystemUtils.isJavaVersionAtLeast(float)
+*public static float org.apache.commons.lang3.math.NumberUtils.toFloat(java.lang.String,float)
 */ 
-public static boolean isJavaVersionAtLeast(float p0){
-	return org.apache.commons.lang.SystemUtils.isJavaVersionAtLeast(p0);
+public static float toFloat(java.lang.String p0,float p1){
+	return org.apache.commons.lang3.math.NumberUtils.toFloat(p0,p1);
 }
 /**
-*public static float org.apache.commons.lang.SystemUtils.getJavaVersion()
+*public static float org.apache.commons.lang3.math.NumberUtils.toFloat(java.lang.String)
 */ 
-public static float getJavaVersion(){
-	return org.apache.commons.lang.SystemUtils.getJavaVersion();
+public static float toFloat(java.lang.String p0){
+	return org.apache.commons.lang3.math.NumberUtils.toFloat(p0);
+}
+/**
+*public static float[] org.apache.commons.lang3.ArrayUtils.toPrimitive(java.lang.Float[],float)
+*/ 
+public static float[] toPrimitive(java.lang.Float[] p0,float p1){
+	return org.apache.commons.lang3.ArrayUtils.toPrimitive(p0,p1);
+}
+/**
+*public static java.lang.Float com.google.common.primitives.Floats.tryParse(java.lang.String)
+*/ 
+public static java.lang.Float tryParse(java.lang.String p0){
+	return com.google.common.primitives.Floats.tryParse(p0);
+}
+/**
+*public static float org.apache.commons.math3.util.FastMath.ulp(float)
+*/ 
+public static float ulp(float p0){
+	return org.apache.commons.math3.util.FastMath.ulp(p0);
+}
+/**
+*public static void org.apache.commons.io.EndianUtils.writeSwappedFloat(byte[],int,float)
+*/ 
+public static void writeSwappedFloat(byte[] p0,int p1,float p2){
+	 org.apache.commons.io.EndianUtils.writeSwappedFloat(p0,p1,p2);
+}
+/**
+*public static void org.apache.commons.io.EndianUtils.writeSwappedFloat(java.io.OutputStream,float) throws java.io.IOException
+*/ 
+public static void writeSwappedFloat(java.io.OutputStream p0,float p1) throws java.io.IOException{
+	 org.apache.commons.io.EndianUtils.writeSwappedFloat(p0,p1);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Reference2BooleanFunctionUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Boolean>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Boolean> p0){
+	return it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.primitive(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.singleton(K,java.lang.Boolean)
 */ 
@@ -35,11 +43,5 @@ public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> syn
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> unmodifiable(it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> p0){
 	return it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Boolean>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.Reference2BooleanFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Boolean> p0){
-	return it.unimi.dsi.fastutil.objects.Reference2BooleanFunctions.primitive(p0);
 }
 }

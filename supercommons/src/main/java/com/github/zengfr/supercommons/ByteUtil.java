@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,178 @@ package com.github.zengfr.supercommons;
 */
 public final class ByteUtil{ 
 /**
-*public static java.lang.Byte org.apache.commons.collections.MapUtils.getByte(java.util.Map,java.lang.Object)
+*public static byte org.apache.commons.lang3.ObjectUtils.CONST(byte)
 */ 
-public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1){
-	return org.apache.commons.collections.MapUtils.getByte(p0,p1);
+public static byte CONST(byte p0){
+	return org.apache.commons.lang3.ObjectUtils.CONST(p0);
 }
 /**
-*public static java.lang.Byte org.apache.commons.collections.MapUtils.getByte(java.util.Map,java.lang.Object,java.lang.Byte)
+*public static byte org.apache.commons.lang3.ObjectUtils.CONST_BYTE(int) throws java.lang.IllegalArgumentException
 */ 
-public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
-	return org.apache.commons.collections.MapUtils.getByte(p0,p1,p2);
+public static byte CONST_BYTE(int p0) throws java.lang.IllegalArgumentException{
+	return org.apache.commons.lang3.ObjectUtils.CONST_BYTE(p0);
+}
+/**
+*public static byte[] org.apache.commons.lang3.ArrayUtils.add(byte[],int,byte)
+*/ 
+public static byte[] add(byte[] p0,int p1,byte p2){
+	return org.apache.commons.lang3.ArrayUtils.add(p0,p1,p2);
+}
+/**
+*public static byte[] org.apache.commons.lang3.ArrayUtils.add(byte[],byte)
+*/ 
+public static byte[] add(byte[] p0,byte p1){
+	return org.apache.commons.lang3.ArrayUtils.add(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.add(byte[][],long,byte)
+*/ 
+public static void add(byte[][] p0,long p1,byte p2){
+	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.add(p0,p1,p2);
+}
+/**
+*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
+*/ 
+public static int binarySearch(byte[] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
+	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],int,int,byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
+*/ 
+public static int binarySearch(byte[] p0,int p1,int p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
+	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],byte)
+*/ 
+public static int binarySearch(byte[] p0,byte p1){
+	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],int,int,byte)
+*/ 
+public static int binarySearch(byte[] p0,int p1,int p2,byte p3){
+	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2,p3);
+}
+/**
+*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],byte)
+*/ 
+public static long binarySearch(byte[][] p0,byte p1){
+	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1);
+}
+/**
+*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],long,long,byte)
+*/ 
+public static long binarySearch(byte[][] p0,long p1,long p2,byte p3){
+	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2,p3);
+}
+/**
+*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],long,long,byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
+*/ 
+public static long binarySearch(byte[][] p0,long p1,long p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
+	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
+*/ 
+public static long binarySearch(byte[][] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
+	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static byte org.apache.commons.lang3.Conversion.binaryToByte(boolean[],int,byte,int,int)
+*/ 
+public static byte binaryToByte(boolean[] p0,int p1,byte p2,int p3,int p4){
+	return org.apache.commons.lang3.Conversion.binaryToByte(p0,p1,p2,p3,p4);
+}
+/**
+*public static boolean[] org.apache.commons.lang3.Conversion.byteToBinary(byte,int,boolean[],int,int)
+*/ 
+public static boolean[] byteToBinary(byte p0,int p1,boolean[] p2,int p3,int p4){
+	return org.apache.commons.lang3.Conversion.byteToBinary(p0,p1,p2,p3,p4);
+}
+/**
+*public static java.lang.String org.apache.commons.lang3.Conversion.byteToHex(byte,int,java.lang.String,int,int)
+*/ 
+public static java.lang.String byteToHex(byte p0,int p1,java.lang.String p2,int p3,int p4){
+	return org.apache.commons.lang3.Conversion.byteToHex(p0,p1,p2,p3,p4);
+}
+/**
+*public static byte com.google.common.primitives.SignedBytes.checkedCast(long)
+*/ 
+public static byte checkedCast(long p0){
+	return com.google.common.primitives.SignedBytes.checkedCast(p0);
+}
+/**
+*public static int com.google.common.primitives.SignedBytes.compare(byte,byte)
+*/ 
+public static int compare(byte p0,byte p1){
+	return com.google.common.primitives.SignedBytes.compare(p0,p1);
+}
+/**
+*public static boolean com.google.common.primitives.Bytes.contains(byte[],byte)
+*/ 
+public static boolean contains(byte[] p0,byte p1){
+	return com.google.common.primitives.Bytes.contains(p0,p1);
+}
+/**
+*public static byte org.apache.commons.math3.util.MathUtils.copySign(byte,byte) throws org.apache.commons.math3.exception.MathArithmeticException
+*/ 
+public static byte copySign(byte p0,byte p1) throws org.apache.commons.math3.exception.MathArithmeticException{
+	return org.apache.commons.math3.util.MathUtils.copySign(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteArrays.fill(byte[],int,int,byte)
+*/ 
+public static void fill(byte[] p0,int p1,int p2,byte p3){
+	 it.unimi.dsi.fastutil.bytes.ByteArrays.fill(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteArrays.fill(byte[],byte)
+*/ 
+public static void fill(byte[] p0,byte p1){
+	 it.unimi.dsi.fastutil.bytes.ByteArrays.fill(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(byte[][],byte)
+*/ 
+public static void fill(byte[][] p0,byte p1){
+	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(byte[][],long,long,byte)
+*/ 
+public static void fill(byte[][] p0,long p1,long p2,byte p3){
+	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(p0,p1,p2,p3);
+}
+/**
+*public static char com.google.common.primitives.Chars.fromBytes(byte,byte)
+*/ 
+public static char fromBytes(byte p0,byte p1){
+	return com.google.common.primitives.Chars.fromBytes(p0,p1);
+}
+/**
+*public static int com.google.common.primitives.Ints.fromBytes(byte,byte,byte,byte)
+*/ 
+public static int fromBytes(byte p0,byte p1,byte p2,byte p3){
+	return com.google.common.primitives.Ints.fromBytes(p0,p1,p2,p3);
+}
+/**
+*public static long com.google.common.primitives.Longs.fromBytes(byte,byte,byte,byte,byte,byte,byte,byte)
+*/ 
+public static long fromBytes(byte p0,byte p1,byte p2,byte p3,byte p4,byte p5,byte p6,byte p7){
+	return com.google.common.primitives.Longs.fromBytes(p0,p1,p2,p3,p4,p5,p6,p7);
+}
+/**
+*public static it.unimi.dsi.fastutil.bytes.ByteListIterator it.unimi.dsi.fastutil.bytes.ByteIterators.fromTo(byte,byte)
+*/ 
+public static it.unimi.dsi.fastutil.bytes.ByteListIterator fromTo(byte p0,byte p1){
+	return it.unimi.dsi.fastutil.bytes.ByteIterators.fromTo(p0,p1);
+}
+/**
+*public static <K> java.lang.Byte org.apache.commons.collections4.MapUtils.getByte(java.util.Map<? super K, ?>,K,java.lang.Byte)
+*/ 
+public static <K> java.lang.Byte getByte(java.util.Map<? super K, ?> p0,K p1,java.lang.Byte p2){
+	return org.apache.commons.collections4.MapUtils.getByte(p0,p1,p2);
 }
 /**
 *public static <K> java.lang.Byte org.apache.commons.collections4.MapUtils.getByte(java.util.Map<? super K, ?>,K)
@@ -25,10 +189,166 @@ public static <K> java.lang.Byte getByte(java.util.Map<? super K, ?> p0,K p1){
 	return org.apache.commons.collections4.MapUtils.getByte(p0,p1);
 }
 /**
-*public static <K> java.lang.Byte org.apache.commons.collections4.MapUtils.getByte(java.util.Map<? super K, ?>,K,java.lang.Byte)
+*public static java.lang.Byte org.apache.commons.collections.MapUtils.getByte(java.util.Map,java.lang.Object,java.lang.Byte)
 */ 
-public static <K> java.lang.Byte getByte(java.util.Map<? super K, ?> p0,K p1,java.lang.Byte p2){
-	return org.apache.commons.collections4.MapUtils.getByte(p0,p1,p2);
+public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1,java.lang.Byte p2){
+	return org.apache.commons.collections.MapUtils.getByte(p0,p1,p2);
+}
+/**
+*public static java.lang.Byte org.apache.commons.collections.MapUtils.getByte(java.util.Map,java.lang.Object)
+*/ 
+public static java.lang.Byte getByte(java.util.Map p0,java.lang.Object p1){
+	return org.apache.commons.collections.MapUtils.getByte(p0,p1);
+}
+/**
+*public static <K> byte org.apache.commons.collections4.MapUtils.getByteValue(java.util.Map<? super K, ?>,K,byte)
+*/ 
+public static <K> byte getByteValue(java.util.Map<? super K, ?> p0,K p1,byte p2){
+	return org.apache.commons.collections4.MapUtils.getByteValue(p0,p1,p2);
+}
+/**
+*public static <K> byte org.apache.commons.collections4.MapUtils.getByteValue(java.util.Map<? super K, ?>,K)
+*/ 
+public static <K> byte getByteValue(java.util.Map<? super K, ?> p0,K p1){
+	return org.apache.commons.collections4.MapUtils.getByteValue(p0,p1);
+}
+/**
+*public static byte org.apache.commons.collections.MapUtils.getByteValue(java.util.Map,java.lang.Object,byte)
+*/ 
+public static byte getByteValue(java.util.Map p0,java.lang.Object p1,byte p2){
+	return org.apache.commons.collections.MapUtils.getByteValue(p0,p1,p2);
+}
+/**
+*public static byte org.apache.commons.collections.MapUtils.getByteValue(java.util.Map,java.lang.Object)
+*/ 
+public static byte getByteValue(java.util.Map p0,java.lang.Object p1){
+	return org.apache.commons.collections.MapUtils.getByteValue(p0,p1);
+}
+/**
+*public static byte org.apache.commons.beanutils.ConvertUtils.getDefaultByte()
+*/ 
+public static byte getDefaultByte(){
+	return org.apache.commons.beanutils.ConvertUtils.getDefaultByte();
+}
+/**
+*public static byte org.apache.commons.lang3.Conversion.hexToByte(java.lang.String,int,byte,int,int)
+*/ 
+public static byte hexToByte(java.lang.String p0,int p1,byte p2,int p3,int p4){
+	return org.apache.commons.lang3.Conversion.hexToByte(p0,p1,p2,p3,p4);
+}
+/**
+*public static int com.google.common.primitives.Bytes.indexOf(byte[],byte)
+*/ 
+public static int indexOf(byte[] p0,byte p1){
+	return com.google.common.primitives.Bytes.indexOf(p0,p1);
+}
+/**
+*public static int org.apache.commons.lang3.ArrayUtils.indexOf(byte[],byte,int)
+*/ 
+public static int indexOf(byte[] p0,byte p1,int p2){
+	return org.apache.commons.lang3.ArrayUtils.indexOf(p0,p1,p2);
+}
+/**
+*public static int com.google.common.primitives.Bytes.lastIndexOf(byte[],byte)
+*/ 
+public static int lastIndexOf(byte[] p0,byte p1){
+	return com.google.common.primitives.Bytes.lastIndexOf(p0,p1);
+}
+/**
+*public static int org.apache.commons.lang3.ArrayUtils.lastIndexOf(byte[],byte,int)
+*/ 
+public static int lastIndexOf(byte[] p0,byte p1,int p2){
+	return org.apache.commons.lang3.ArrayUtils.lastIndexOf(p0,p1,p2);
+}
+/**
+*public static byte com.google.common.primitives.SignedBytes.max(byte...)
+*/ 
+public static byte max(byte... p0){
+	return com.google.common.primitives.SignedBytes.max(p0);
+}
+/**
+*public static byte org.apache.commons.lang3.math.NumberUtils.max(byte,byte,byte)
+*/ 
+public static byte max(byte p0,byte p1,byte p2){
+	return org.apache.commons.lang3.math.NumberUtils.max(p0,p1,p2);
+}
+/**
+*public static byte com.google.common.primitives.SignedBytes.min(byte...)
+*/ 
+public static byte min(byte... p0){
+	return com.google.common.primitives.SignedBytes.min(p0);
+}
+/**
+*public static byte org.apache.commons.lang3.math.NumberUtils.min(byte,byte,byte)
+*/ 
+public static byte min(byte p0,byte p1,byte p2){
+	return org.apache.commons.lang3.math.NumberUtils.min(p0,p1,p2);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.mul(byte[][],long,byte)
+*/ 
+public static void mul(byte[][] p0,long p1,byte p2){
+	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.mul(p0,p1,p2);
+}
+/**
+*public static byte[] com.facebook.collections.PackedByteArray.packComparable(java.util.List<byte[]>,byte,byte)
+*/ 
+public static byte[] packComparable(java.util.List<byte[]> p0,byte p1,byte p2){
+	return com.facebook.collections.PackedByteArray.packComparable(p0,p1,p2);
+}
+/**
+*public static byte com.google.common.primitives.UnsignedBytes.parseUnsignedByte(java.lang.String,int)
+*/ 
+public static byte parseUnsignedByte(java.lang.String p0,int p1){
+	return com.google.common.primitives.UnsignedBytes.parseUnsignedByte(p0,p1);
+}
+/**
+*public static byte com.google.common.primitives.UnsignedBytes.parseUnsignedByte(java.lang.String)
+*/ 
+public static byte parseUnsignedByte(java.lang.String p0){
+	return com.google.common.primitives.UnsignedBytes.parseUnsignedByte(p0);
+}
+/**
+*public static byte[] com.facebook.collections.PackedByteArray.readByteArray(java.io.DataInput,byte) throws java.io.IOException
+*/ 
+public static byte[] readByteArray(java.io.DataInput p0,byte p1) throws java.io.IOException{
+	return com.facebook.collections.PackedByteArray.readByteArray(p0,p1);
+}
+/**
+*public static java.util.List<byte[]> com.facebook.collections.PackedByteArray.readByteArrayList(java.io.DataInput,byte,byte) throws java.io.IOException
+*/ 
+public static java.util.List<byte[]> readByteArrayList(java.io.DataInput p0,byte p1,byte p2) throws java.io.IOException{
+	return com.facebook.collections.PackedByteArray.readByteArrayList(p0,p1,p2);
+}
+/**
+*public static byte[] org.apache.commons.lang3.ArrayUtils.removeElement(byte[],byte)
+*/ 
+public static byte[] removeElement(byte[] p0,byte p1){
+	return org.apache.commons.lang3.ArrayUtils.removeElement(p0,p1);
+}
+/**
+*public static byte it.unimi.dsi.fastutil.SafeMath.safeIntToByte(int)
+*/ 
+public static byte safeIntToByte(int p0){
+	return it.unimi.dsi.fastutil.SafeMath.safeIntToByte(p0);
+}
+/**
+*public static byte com.google.common.primitives.SignedBytes.saturatedCast(long)
+*/ 
+public static byte saturatedCast(long p0){
+	return com.google.common.primitives.SignedBytes.saturatedCast(p0);
+}
+/**
+*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.set(byte[][],long,byte)
+*/ 
+public static void set(byte[][] p0,long p1,byte p2){
+	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.set(p0,p1,p2);
+}
+/**
+*public static void org.apache.commons.beanutils.ConvertUtils.setDefaultByte(byte)
+*/ 
+public static void setDefaultByte(byte p0){
+	 org.apache.commons.beanutils.ConvertUtils.setDefaultByte(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2BooleanFunction it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions.singleton(java.lang.Byte,java.lang.Boolean)
@@ -229,252 +549,6 @@ public static it.unimi.dsi.fastutil.shorts.Short2ByteSortedMap singleton(java.la
 	return it.unimi.dsi.fastutil.shorts.Short2ByteSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static int com.google.common.primitives.Bytes.indexOf(byte[],byte)
-*/ 
-public static int indexOf(byte[] p0,byte p1){
-	return com.google.common.primitives.Bytes.indexOf(p0,p1);
-}
-/**
-*public static boolean com.google.common.primitives.Bytes.contains(byte[],byte)
-*/ 
-public static boolean contains(byte[] p0,byte p1){
-	return com.google.common.primitives.Bytes.contains(p0,p1);
-}
-/**
-*public static int com.google.common.primitives.Bytes.lastIndexOf(byte[],byte)
-*/ 
-public static int lastIndexOf(byte[] p0,byte p1){
-	return com.google.common.primitives.Bytes.lastIndexOf(p0,p1);
-}
-/**
-*public static char com.google.common.primitives.Chars.fromBytes(byte,byte)
-*/ 
-public static char fromBytes(byte p0,byte p1){
-	return com.google.common.primitives.Chars.fromBytes(p0,p1);
-}
-/**
-*public static int com.google.common.primitives.Ints.fromBytes(byte,byte,byte,byte)
-*/ 
-public static int fromBytes(byte p0,byte p1,byte p2,byte p3){
-	return com.google.common.primitives.Ints.fromBytes(p0,p1,p2,p3);
-}
-/**
-*public static long com.google.common.primitives.Longs.fromBytes(byte,byte,byte,byte,byte,byte,byte,byte)
-*/ 
-public static long fromBytes(byte p0,byte p1,byte p2,byte p3,byte p4,byte p5,byte p6,byte p7){
-	return com.google.common.primitives.Longs.fromBytes(p0,p1,p2,p3,p4,p5,p6,p7);
-}
-/**
-*public static byte com.google.common.primitives.SignedBytes.min(byte...)
-*/ 
-public static byte min(byte... p0){
-	return com.google.common.primitives.SignedBytes.min(p0);
-}
-/**
-*public static byte com.google.common.primitives.SignedBytes.max(byte...)
-*/ 
-public static byte max(byte... p0){
-	return com.google.common.primitives.SignedBytes.max(p0);
-}
-/**
-*public static int com.google.common.primitives.SignedBytes.compare(byte,byte)
-*/ 
-public static int compare(byte p0,byte p1){
-	return com.google.common.primitives.SignedBytes.compare(p0,p1);
-}
-/**
-*public static byte com.google.common.primitives.SignedBytes.saturatedCast(long)
-*/ 
-public static byte saturatedCast(long p0){
-	return com.google.common.primitives.SignedBytes.saturatedCast(p0);
-}
-/**
-*public static byte com.google.common.primitives.SignedBytes.checkedCast(long)
-*/ 
-public static byte checkedCast(long p0){
-	return com.google.common.primitives.SignedBytes.checkedCast(p0);
-}
-/**
-*public static int com.google.common.primitives.UnsignedBytes.toInt(byte)
-*/ 
-public static int toInt(byte p0){
-	return com.google.common.primitives.UnsignedBytes.toInt(p0);
-}
-/**
-*public static byte com.google.common.primitives.UnsignedBytes.parseUnsignedByte(java.lang.String,int)
-*/ 
-public static byte parseUnsignedByte(java.lang.String p0,int p1){
-	return com.google.common.primitives.UnsignedBytes.parseUnsignedByte(p0,p1);
-}
-/**
-*public static byte com.google.common.primitives.UnsignedBytes.parseUnsignedByte(java.lang.String)
-*/ 
-public static byte parseUnsignedByte(java.lang.String p0){
-	return com.google.common.primitives.UnsignedBytes.parseUnsignedByte(p0);
-}
-/**
-*public static byte org.apache.commons.collections.MapUtils.getByteValue(java.util.Map,java.lang.Object)
-*/ 
-public static byte getByteValue(java.util.Map p0,java.lang.Object p1){
-	return org.apache.commons.collections.MapUtils.getByteValue(p0,p1);
-}
-/**
-*public static byte org.apache.commons.collections.MapUtils.getByteValue(java.util.Map,java.lang.Object,byte)
-*/ 
-public static byte getByteValue(java.util.Map p0,java.lang.Object p1,byte p2){
-	return org.apache.commons.collections.MapUtils.getByteValue(p0,p1,p2);
-}
-/**
-*public static <K> byte org.apache.commons.collections4.MapUtils.getByteValue(java.util.Map<? super K, ?>,K,byte)
-*/ 
-public static <K> byte getByteValue(java.util.Map<? super K, ?> p0,K p1,byte p2){
-	return org.apache.commons.collections4.MapUtils.getByteValue(p0,p1,p2);
-}
-/**
-*public static <K> byte org.apache.commons.collections4.MapUtils.getByteValue(java.util.Map<? super K, ?>,K)
-*/ 
-public static <K> byte getByteValue(java.util.Map<? super K, ?> p0,K p1){
-	return org.apache.commons.collections4.MapUtils.getByteValue(p0,p1);
-}
-/**
-*public static byte[] org.apache.commons.lang3.ArrayUtils.add(byte[],int,byte)
-*/ 
-public static byte[] add(byte[] p0,int p1,byte p2){
-	return org.apache.commons.lang3.ArrayUtils.add(p0,p1,p2);
-}
-/**
-*public static byte[] org.apache.commons.lang3.ArrayUtils.add(byte[],byte)
-*/ 
-public static byte[] add(byte[] p0,byte p1){
-	return org.apache.commons.lang3.ArrayUtils.add(p0,p1);
-}
-/**
-*public static int org.apache.commons.lang3.ArrayUtils.indexOf(byte[],byte,int)
-*/ 
-public static int indexOf(byte[] p0,byte p1,int p2){
-	return org.apache.commons.lang3.ArrayUtils.indexOf(p0,p1,p2);
-}
-/**
-*public static int org.apache.commons.lang3.ArrayUtils.lastIndexOf(byte[],byte,int)
-*/ 
-public static int lastIndexOf(byte[] p0,byte p1,int p2){
-	return org.apache.commons.lang3.ArrayUtils.lastIndexOf(p0,p1,p2);
-}
-/**
-*public static byte[] org.apache.commons.lang3.ArrayUtils.removeElement(byte[],byte)
-*/ 
-public static byte[] removeElement(byte[] p0,byte p1){
-	return org.apache.commons.lang3.ArrayUtils.removeElement(p0,p1);
-}
-/**
-*public static byte[] org.apache.commons.lang3.ArrayUtils.toPrimitive(java.lang.Byte[],byte)
-*/ 
-public static byte[] toPrimitive(java.lang.Byte[] p0,byte p1){
-	return org.apache.commons.lang3.ArrayUtils.toPrimitive(p0,p1);
-}
-/**
-*public static byte org.apache.commons.lang3.Conversion.hexToByte(java.lang.String,int,byte,int,int)
-*/ 
-public static byte hexToByte(java.lang.String p0,int p1,byte p2,int p3,int p4){
-	return org.apache.commons.lang3.Conversion.hexToByte(p0,p1,p2,p3,p4);
-}
-/**
-*public static byte org.apache.commons.lang3.Conversion.binaryToByte(boolean[],int,byte,int,int)
-*/ 
-public static byte binaryToByte(boolean[] p0,int p1,byte p2,int p3,int p4){
-	return org.apache.commons.lang3.Conversion.binaryToByte(p0,p1,p2,p3,p4);
-}
-/**
-*public static java.lang.String org.apache.commons.lang3.Conversion.byteToHex(byte,int,java.lang.String,int,int)
-*/ 
-public static java.lang.String byteToHex(byte p0,int p1,java.lang.String p2,int p3,int p4){
-	return org.apache.commons.lang3.Conversion.byteToHex(p0,p1,p2,p3,p4);
-}
-/**
-*public static boolean[] org.apache.commons.lang3.Conversion.byteToBinary(byte,int,boolean[],int,int)
-*/ 
-public static boolean[] byteToBinary(byte p0,int p1,boolean[] p2,int p3,int p4){
-	return org.apache.commons.lang3.Conversion.byteToBinary(p0,p1,p2,p3,p4);
-}
-/**
-*public static byte org.apache.commons.lang3.math.NumberUtils.min(byte,byte,byte)
-*/ 
-public static byte min(byte p0,byte p1,byte p2){
-	return org.apache.commons.lang3.math.NumberUtils.min(p0,p1,p2);
-}
-/**
-*public static byte org.apache.commons.lang3.math.NumberUtils.max(byte,byte,byte)
-*/ 
-public static byte max(byte p0,byte p1,byte p2){
-	return org.apache.commons.lang3.math.NumberUtils.max(p0,p1,p2);
-}
-/**
-*public static byte org.apache.commons.lang3.math.NumberUtils.toByte(java.lang.String)
-*/ 
-public static byte toByte(java.lang.String p0){
-	return org.apache.commons.lang3.math.NumberUtils.toByte(p0);
-}
-/**
-*public static byte org.apache.commons.lang3.math.NumberUtils.toByte(java.lang.String,byte)
-*/ 
-public static byte toByte(java.lang.String p0,byte p1){
-	return org.apache.commons.lang3.math.NumberUtils.toByte(p0,p1);
-}
-/**
-*public static byte org.apache.commons.lang3.ObjectUtils.CONST(byte)
-*/ 
-public static byte CONST(byte p0){
-	return org.apache.commons.lang3.ObjectUtils.CONST(p0);
-}
-/**
-*public static byte org.apache.commons.lang3.ObjectUtils.CONST_BYTE(int) throws java.lang.IllegalArgumentException
-*/ 
-public static byte CONST_BYTE(int p0) throws java.lang.IllegalArgumentException{
-	return org.apache.commons.lang3.ObjectUtils.CONST_BYTE(p0);
-}
-/**
-*public static byte org.apache.commons.math3.util.MathUtils.copySign(byte,byte) throws org.apache.commons.math3.exception.MathArithmeticException
-*/ 
-public static byte copySign(byte p0,byte p1) throws org.apache.commons.math3.exception.MathArithmeticException{
-	return org.apache.commons.math3.util.MathUtils.copySign(p0,p1);
-}
-/**
-*public static void org.apache.commons.beanutils.ConvertUtils.setDefaultByte(byte)
-*/ 
-public static void setDefaultByte(byte p0){
-	 org.apache.commons.beanutils.ConvertUtils.setDefaultByte(p0);
-}
-/**
-*public static byte org.apache.commons.beanutils.ConvertUtils.getDefaultByte()
-*/ 
-public static byte getDefaultByte(){
-	return org.apache.commons.beanutils.ConvertUtils.getDefaultByte();
-}
-/**
-*public static org.apache.commons.collections.primitives.ByteList org.apache.commons.collections.primitives.ByteCollections.singletonByteList(byte)
-*/ 
-public static org.apache.commons.collections.primitives.ByteList singletonByteList(byte p0){
-	return org.apache.commons.collections.primitives.ByteCollections.singletonByteList(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.ByteIterator org.apache.commons.collections.primitives.ByteCollections.singletonByteIterator(byte)
-*/ 
-public static org.apache.commons.collections.primitives.ByteIterator singletonByteIterator(byte p0){
-	return org.apache.commons.collections.primitives.ByteCollections.singletonByteIterator(p0);
-}
-/**
-*public static org.apache.commons.collections.primitives.ByteListIterator org.apache.commons.collections.primitives.ByteCollections.singletonByteListIterator(byte)
-*/ 
-public static org.apache.commons.collections.primitives.ByteListIterator singletonByteListIterator(byte p0){
-	return org.apache.commons.collections.primitives.ByteCollections.singletonByteListIterator(p0);
-}
-/**
-*public static byte it.unimi.dsi.fastutil.SafeMath.safeIntToByte(int)
-*/ 
-public static byte safeIntToByte(int p0){
-	return it.unimi.dsi.fastutil.SafeMath.safeIntToByte(p0);
-}
-/**
 *public static it.unimi.dsi.fastutil.bytes.Byte2BooleanFunction it.unimi.dsi.fastutil.bytes.Byte2BooleanFunctions.singleton(byte,boolean)
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2BooleanFunction singleton(byte p0,boolean p1){
@@ -583,106 +657,10 @@ public static it.unimi.dsi.fastutil.bytes.Byte2ShortSortedMap singleton(byte p0,
 	return it.unimi.dsi.fastutil.bytes.Byte2ShortSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static void it.unimi.dsi.fastutil.bytes.ByteArrays.fill(byte[],int,int,byte)
-*/ 
-public static void fill(byte[] p0,int p1,int p2,byte p3){
-	 it.unimi.dsi.fastutil.bytes.ByteArrays.fill(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteArrays.fill(byte[],byte)
-*/ 
-public static void fill(byte[] p0,byte p1){
-	 it.unimi.dsi.fastutil.bytes.ByteArrays.fill(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],int,int,byte)
-*/ 
-public static int binarySearch(byte[] p0,int p1,int p2,byte p3){
-	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2,p3);
-}
-/**
-*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],byte)
-*/ 
-public static int binarySearch(byte[] p0,byte p1){
-	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1);
-}
-/**
-*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],int,int,byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
-*/ 
-public static int binarySearch(byte[] p0,int p1,int p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
-	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(byte[],byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
-*/ 
-public static int binarySearch(byte[] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
-	return it.unimi.dsi.fastutil.bytes.ByteArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.add(byte[][],long,byte)
-*/ 
-public static void add(byte[][] p0,long p1,byte p2){
-	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.add(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.set(byte[][],long,byte)
-*/ 
-public static void set(byte[][] p0,long p1,byte p2){
-	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.set(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(byte[][],byte)
-*/ 
-public static void fill(byte[][] p0,byte p1){
-	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(p0,p1);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(byte[][],long,long,byte)
-*/ 
-public static void fill(byte[][] p0,long p1,long p2,byte p3){
-	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.fill(p0,p1,p2,p3);
-}
-/**
-*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],long,long,byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
-*/ 
-public static long binarySearch(byte[][] p0,long p1,long p2,byte p3,it.unimi.dsi.fastutil.bytes.ByteComparator p4){
-	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],byte)
-*/ 
-public static long binarySearch(byte[][] p0,byte p1){
-	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1);
-}
-/**
-*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
-*/ 
-public static long binarySearch(byte[][] p0,byte p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
-	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static long it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(byte[][],long,long,byte)
-*/ 
-public static long binarySearch(byte[][] p0,long p1,long p2,byte p3){
-	return it.unimi.dsi.fastutil.bytes.ByteBigArrays.binarySearch(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.ByteBigArrays.mul(byte[][],long,byte)
-*/ 
-public static void mul(byte[][] p0,long p1,byte p2){
-	 it.unimi.dsi.fastutil.bytes.ByteBigArrays.mul(p0,p1,p2);
-}
-/**
 *public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator it.unimi.dsi.fastutil.bytes.ByteBigListIterators.singleton(byte)
 */ 
 public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator singleton(byte p0){
 	return it.unimi.dsi.fastutil.bytes.ByteBigListIterators.singleton(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.bytes.ByteListIterator it.unimi.dsi.fastutil.bytes.ByteIterators.fromTo(byte,byte)
-*/ 
-public static it.unimi.dsi.fastutil.bytes.ByteListIterator fromTo(byte p0,byte p1){
-	return it.unimi.dsi.fastutil.bytes.ByteIterators.fromTo(p0,p1);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteSortedSet it.unimi.dsi.fastutil.bytes.ByteSortedSets.singleton(byte,it.unimi.dsi.fastutil.bytes.ByteComparator)
@@ -775,39 +753,51 @@ public static it.unimi.dsi.fastutil.shorts.Short2ByteSortedMap singleton(short p
 	return it.unimi.dsi.fastutil.shorts.Short2ByteSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static byte[] com.facebook.collections.PackedByteArray.packComparable(java.util.List<byte[]>,byte,byte)
+*public static org.apache.commons.collections.primitives.ByteIterator org.apache.commons.collections.primitives.ByteCollections.singletonByteIterator(byte)
 */ 
-public static byte[] packComparable(java.util.List<byte[]> p0,byte p1,byte p2){
-	return com.facebook.collections.PackedByteArray.packComparable(p0,p1,p2);
+public static org.apache.commons.collections.primitives.ByteIterator singletonByteIterator(byte p0){
+	return org.apache.commons.collections.primitives.ByteCollections.singletonByteIterator(p0);
 }
 /**
-*public static byte[] com.facebook.collections.PackedByteArray.readByteArray(java.io.DataInput,byte) throws java.io.IOException
+*public static org.apache.commons.collections.primitives.ByteList org.apache.commons.collections.primitives.ByteCollections.singletonByteList(byte)
 */ 
-public static byte[] readByteArray(java.io.DataInput p0,byte p1) throws java.io.IOException{
-	return com.facebook.collections.PackedByteArray.readByteArray(p0,p1);
+public static org.apache.commons.collections.primitives.ByteList singletonByteList(byte p0){
+	return org.apache.commons.collections.primitives.ByteCollections.singletonByteList(p0);
+}
+/**
+*public static org.apache.commons.collections.primitives.ByteListIterator org.apache.commons.collections.primitives.ByteCollections.singletonByteListIterator(byte)
+*/ 
+public static org.apache.commons.collections.primitives.ByteListIterator singletonByteListIterator(byte p0){
+	return org.apache.commons.collections.primitives.ByteCollections.singletonByteListIterator(p0);
+}
+/**
+*public static byte org.apache.commons.lang3.math.NumberUtils.toByte(java.lang.String)
+*/ 
+public static byte toByte(java.lang.String p0){
+	return org.apache.commons.lang3.math.NumberUtils.toByte(p0);
+}
+/**
+*public static byte org.apache.commons.lang3.math.NumberUtils.toByte(java.lang.String,byte)
+*/ 
+public static byte toByte(java.lang.String p0,byte p1){
+	return org.apache.commons.lang3.math.NumberUtils.toByte(p0,p1);
+}
+/**
+*public static int com.google.common.primitives.UnsignedBytes.toInt(byte)
+*/ 
+public static int toInt(byte p0){
+	return com.google.common.primitives.UnsignedBytes.toInt(p0);
+}
+/**
+*public static byte[] org.apache.commons.lang3.ArrayUtils.toPrimitive(java.lang.Byte[],byte)
+*/ 
+public static byte[] toPrimitive(java.lang.Byte[] p0,byte p1){
+	return org.apache.commons.lang3.ArrayUtils.toPrimitive(p0,p1);
 }
 /**
 *public static java.util.List<byte[]> com.facebook.collections.PackedByteArray.unpackComparable(byte[],byte,byte)
 */ 
 public static java.util.List<byte[]> unpackComparable(byte[] p0,byte p1,byte p2){
 	return com.facebook.collections.PackedByteArray.unpackComparable(p0,p1,p2);
-}
-/**
-*public static java.util.List<byte[]> com.facebook.collections.PackedByteArray.readByteArrayList(java.io.DataInput,byte,byte) throws java.io.IOException
-*/ 
-public static java.util.List<byte[]> readByteArrayList(java.io.DataInput p0,byte p1,byte p2) throws java.io.IOException{
-	return com.facebook.collections.PackedByteArray.readByteArrayList(p0,p1,p2);
-}
-/**
-*public static byte org.apache.commons.lang.math.NumberUtils.min(byte[])
-*/ 
-public static byte min(byte[] p0){
-	return org.apache.commons.lang.math.NumberUtils.min(p0);
-}
-/**
-*public static byte org.apache.commons.lang.math.NumberUtils.max(byte[])
-*/ 
-public static byte max(byte[] p0){
-	return org.apache.commons.lang.math.NumberUtils.max(p0);
 }
 }

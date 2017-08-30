@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class CArrayUtil{
 /**
 *public static <C> boolean org.apache.commons.collections4.CollectionUtils.addAll(java.util.Collection<C>,C[])
 */ 
-public static <C> boolean addAll(java.util.Collection<C> p0,C[] p1){
+public static <C> boolean addAll(java.util.Collection<C> p0,C... p1){
 	return org.apache.commons.collections4.CollectionUtils.addAll(p0,p1);
 }
 }

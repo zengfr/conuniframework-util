@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,24 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Float2FloatMapUtil{ 
+/**
+*public static void it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastForEach(it.unimi.dsi.fastutil.floats.Float2FloatMap,java.util.function.Consumer<? super it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry>)
+*/ 
+public static void fastForEach(it.unimi.dsi.fastutil.floats.Float2FloatMap p0,java.util.function.Consumer<? super Entry> p1){
+	 it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastForEach(p0,p1);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectIterable<it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry> it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterable(it.unimi.dsi.fastutil.floats.Float2FloatMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectIterable<Entry> fastIterable(it.unimi.dsi.fastutil.floats.Float2FloatMap p0){
+	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectIterator<it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry> it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterator(it.unimi.dsi.fastutil.floats.Float2FloatMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectIterator<Entry> fastIterator(it.unimi.dsi.fastutil.floats.Float2FloatMap p0){
+	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2FloatMap it.unimi.dsi.fastutil.floats.Float2FloatMaps.singleton(float,float)
 */ 
@@ -17,18 +37,6 @@ public static it.unimi.dsi.fastutil.floats.Float2FloatMap singleton(float p0,flo
 */ 
 public static it.unimi.dsi.fastutil.floats.Float2FloatMap singleton(java.lang.Float p0,java.lang.Float p1){
 	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.singleton(p0,p1);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectIterator<it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry> it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterator(it.unimi.dsi.fastutil.floats.Float2FloatMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectIterator<Entry> fastIterator(it.unimi.dsi.fastutil.floats.Float2FloatMap p0){
-	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectIterable<it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry> it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterable(it.unimi.dsi.fastutil.floats.Float2FloatMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectIterable<Entry> fastIterable(it.unimi.dsi.fastutil.floats.Float2FloatMap p0){
-	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastIterable(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2FloatMap it.unimi.dsi.fastutil.floats.Float2FloatMaps.synchronize(it.unimi.dsi.fastutil.floats.Float2FloatMap,java.lang.Object)
@@ -47,11 +55,5 @@ public static it.unimi.dsi.fastutil.floats.Float2FloatMap synchronize(it.unimi.d
 */ 
 public static it.unimi.dsi.fastutil.floats.Float2FloatMap unmodifiable(it.unimi.dsi.fastutil.floats.Float2FloatMap p0){
 	return it.unimi.dsi.fastutil.floats.Float2FloatMaps.unmodifiable(p0);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastForEach(it.unimi.dsi.fastutil.floats.Float2FloatMap,java.util.function.Consumer<? super it.unimi.dsi.fastutil.floats.Float2FloatMap$Entry>)
-*/ 
-public static void fastForEach(it.unimi.dsi.fastutil.floats.Float2FloatMap p0,java.util.function.Consumer<? super Entry> p1){
-	 it.unimi.dsi.fastutil.floats.Float2FloatMaps.fastForEach(p0,p1);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,18 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Byte2DoubleSortedMapUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.bytes.Byte2DoubleMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterable(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap p0){
+	return it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.bytes.Byte2DoubleMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterator(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap p0){
+	return it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.singleton(byte,double)
 */ 
@@ -29,18 +43,6 @@ public static it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap singleton(java.la
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap singleton(byte p0,double p1,it.unimi.dsi.fastutil.bytes.ByteComparator p2){
 	return it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.singleton(p0,p1,p2);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.bytes.Byte2DoubleMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterator(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap p0){
-	return it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.bytes.Byte2DoubleMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterable(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap p0){
-	return it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.fastIterable(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMaps.synchronize(it.unimi.dsi.fastutil.bytes.Byte2DoubleSortedMap,java.lang.Object)

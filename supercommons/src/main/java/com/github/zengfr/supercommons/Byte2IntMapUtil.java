@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,24 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Byte2IntMapUtil{ 
+/**
+*public static void it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastForEach(it.unimi.dsi.fastutil.bytes.Byte2IntMap,java.util.function.Consumer<? super it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry>)
+*/ 
+public static void fastForEach(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0,java.util.function.Consumer<? super Entry> p1){
+	 it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastForEach(p0,p1);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectIterable<it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterable(it.unimi.dsi.fastutil.bytes.Byte2IntMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectIterable<Entry> fastIterable(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0){
+	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectIterator<it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterator(it.unimi.dsi.fastutil.bytes.Byte2IntMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectIterator<Entry> fastIterator(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0){
+	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2IntMap it.unimi.dsi.fastutil.bytes.Byte2IntMaps.singleton(byte,int)
 */ 
@@ -17,18 +37,6 @@ public static it.unimi.dsi.fastutil.bytes.Byte2IntMap singleton(byte p0,int p1){
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2IntMap singleton(java.lang.Byte p0,java.lang.Integer p1){
 	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.singleton(p0,p1);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectIterator<it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterator(it.unimi.dsi.fastutil.bytes.Byte2IntMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectIterator<Entry> fastIterator(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0){
-	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectIterable<it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry> it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterable(it.unimi.dsi.fastutil.bytes.Byte2IntMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectIterable<Entry> fastIterable(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0){
-	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastIterable(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.Byte2IntMap it.unimi.dsi.fastutil.bytes.Byte2IntMaps.synchronize(it.unimi.dsi.fastutil.bytes.Byte2IntMap,java.lang.Object)
@@ -47,11 +55,5 @@ public static it.unimi.dsi.fastutil.bytes.Byte2IntMap synchronize(it.unimi.dsi.f
 */ 
 public static it.unimi.dsi.fastutil.bytes.Byte2IntMap unmodifiable(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0){
 	return it.unimi.dsi.fastutil.bytes.Byte2IntMaps.unmodifiable(p0);
-}
-/**
-*public static void it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastForEach(it.unimi.dsi.fastutil.bytes.Byte2IntMap,java.util.function.Consumer<? super it.unimi.dsi.fastutil.bytes.Byte2IntMap$Entry>)
-*/ 
-public static void fastForEach(it.unimi.dsi.fastutil.bytes.Byte2IntMap p0,java.util.function.Consumer<? super Entry> p1){
-	 it.unimi.dsi.fastutil.bytes.Byte2IntMaps.fastForEach(p0,p1);
 }
 }

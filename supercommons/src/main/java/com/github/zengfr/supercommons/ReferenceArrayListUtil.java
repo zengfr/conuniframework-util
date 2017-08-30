@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class ReferenceArrayListUtil{
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ReferenceArrayList<K> it.unimi.dsi.fastutil.objects.ReferenceArrayList.wrap(K[])
 */ 
-public static <K> it.unimi.dsi.fastutil.objects.ReferenceArrayList<K> wrap(K[] p0){
+public static <K> it.unimi.dsi.fastutil.objects.ReferenceArrayList<K> wrap(K... p0){
 	return it.unimi.dsi.fastutil.objects.ReferenceArrayList.wrap(p0);
 }
 /**

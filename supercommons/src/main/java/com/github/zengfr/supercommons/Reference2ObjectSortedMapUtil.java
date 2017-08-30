@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -25,16 +27,16 @@ public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V
 	return it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V>)
-*/ 
-public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> p0){
-	return it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(p0);
-}
-/**
 *public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V>,java.lang.Object)
 */ 
 public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> p0,java.lang.Object p1){
 	return it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(p0,p1);
+}
+/**
+*public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V>)
+*/ 
+public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> synchronize(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> p0){
+	return it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.synchronize(p0);
 }
 /**
 *public static <K,V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V> it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMaps.unmodifiable(it.unimi.dsi.fastutil.objects.Reference2ObjectSortedMap<K, V>)

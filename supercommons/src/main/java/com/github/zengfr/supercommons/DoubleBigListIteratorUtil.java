@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class DoubleBigListIteratorUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.doubles.DoubleListIterator)
+*/ 
+public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator asBigListIterator(it.unimi.dsi.fastutil.doubles.DoubleListIterator p0){
+	return it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.asBigListIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.singleton(double)
 */ 
@@ -17,11 +25,5 @@ public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator singleton(doub
 */ 
 public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator unmodifiable(it.unimi.dsi.fastutil.doubles.DoubleBigListIterator p0){
 	return it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.doubles.DoubleListIterator)
-*/ 
-public static it.unimi.dsi.fastutil.doubles.DoubleBigListIterator asBigListIterator(it.unimi.dsi.fastutil.doubles.DoubleListIterator p0){
-	return it.unimi.dsi.fastutil.doubles.DoubleBigListIterators.asBigListIterator(p0);
 }
 }

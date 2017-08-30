@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,12 +8,6 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ListeningExecutorServiceUtil{ 
-/**
-*public static com.google.common.util.concurrent.ListeningExecutorService com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor()
-*/ 
-public static com.google.common.util.concurrent.ListeningExecutorService sameThreadExecutor(){
-	return com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor();
-}
 /**
 *public static com.google.common.util.concurrent.ListeningExecutorService com.google.common.util.concurrent.MoreExecutors.listeningDecorator(java.util.concurrent.ExecutorService)
 */ 
@@ -23,5 +19,11 @@ public static com.google.common.util.concurrent.ListeningExecutorService listeni
 */ 
 public static com.google.common.util.concurrent.ListeningExecutorService newDirectExecutorService(){
 	return com.google.common.util.concurrent.MoreExecutors.newDirectExecutorService();
+}
+/**
+*public static com.google.common.util.concurrent.ListeningExecutorService com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor()
+*/ 
+public static com.google.common.util.concurrent.ListeningExecutorService sameThreadExecutor(){
+	return com.google.common.util.concurrent.MoreExecutors.sameThreadExecutor();
 }
 }

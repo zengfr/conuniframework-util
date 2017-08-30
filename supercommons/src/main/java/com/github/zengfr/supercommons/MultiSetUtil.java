@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,10 +9,10 @@ package com.github.zengfr.supercommons;
 */
 public final class MultisetUtil{ 
 /**
-*public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.sum(com.google.common.collect.Multiset<? extends E>,com.google.common.collect.Multiset<? extends E>)
+*public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.difference(com.google.common.collect.Multiset<E>,com.google.common.collect.Multiset<?>)
 */ 
-public static <E> com.google.common.collect.Multiset<E> sum(com.google.common.collect.Multiset<? extends E> p0,com.google.common.collect.Multiset<? extends E> p1){
-	return com.google.common.collect.Multisets.sum(p0,p1);
+public static <E> com.google.common.collect.Multiset<E> difference(com.google.common.collect.Multiset<E> p0,com.google.common.collect.Multiset<?> p1){
+	return com.google.common.collect.Multisets.difference(p0,p1);
 }
 /**
 *public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.filter(com.google.common.collect.Multiset<E>,com.google.common.base.Predicate<? super E>)
@@ -25,16 +27,16 @@ public static <E> com.google.common.collect.Multiset<E> intersection(com.google.
 	return com.google.common.collect.Multisets.intersection(p0,p1);
 }
 /**
+*public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.sum(com.google.common.collect.Multiset<? extends E>,com.google.common.collect.Multiset<? extends E>)
+*/ 
+public static <E> com.google.common.collect.Multiset<E> sum(com.google.common.collect.Multiset<? extends E> p0,com.google.common.collect.Multiset<? extends E> p1){
+	return com.google.common.collect.Multisets.sum(p0,p1);
+}
+/**
 *public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.union(com.google.common.collect.Multiset<? extends E>,com.google.common.collect.Multiset<? extends E>)
 */ 
 public static <E> com.google.common.collect.Multiset<E> union(com.google.common.collect.Multiset<? extends E> p0,com.google.common.collect.Multiset<? extends E> p1){
 	return com.google.common.collect.Multisets.union(p0,p1);
-}
-/**
-*public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.difference(com.google.common.collect.Multiset<E>,com.google.common.collect.Multiset<?>)
-*/ 
-public static <E> com.google.common.collect.Multiset<E> difference(com.google.common.collect.Multiset<E> p0,com.google.common.collect.Multiset<?> p1){
-	return com.google.common.collect.Multisets.difference(p0,p1);
 }
 /**
 *public static <E> com.google.common.collect.Multiset<E> com.google.common.collect.Multisets.unmodifiableMultiset(com.google.common.collect.ImmutableMultiset<E>)

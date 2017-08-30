@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -27,7 +29,7 @@ public static <E> com.google.common.collect.ImmutableSortedSet<E> copyOf(java.la
 /**
 *public static <E> com.google.common.collect.ImmutableSortedSet<E> com.google.common.collect.ImmutableSortedSet.copyOf(E[])
 */ 
-public static <E extends java.lang.Comparable<? super E> > com.google.common.collect.ImmutableSortedSet<E> copyOf(E[] p0){
+public static <E extends java.lang.Comparable<? super E> > com.google.common.collect.ImmutableSortedSet<E> copyOf(E... p0){
 	return com.google.common.collect.ImmutableSortedSet.copyOf(p0);
 }
 /**
@@ -47,6 +49,12 @@ public static <E> com.google.common.collect.ImmutableSortedSet<E> copyOf(java.ut
 */ 
 public static <E> com.google.common.collect.ImmutableSortedSet<E> copyOf(java.util.Comparator<? super E> p0,java.util.Collection<? extends E> p1){
 	return com.google.common.collect.ImmutableSortedSet.copyOf(p0,p1);
+}
+/**
+*public static <E> com.google.common.collect.ImmutableSortedSet<E> com.google.common.collect.ImmutableSortedSet.copyOfSorted(java.util.SortedSet<E>)
+*/ 
+public static <E> com.google.common.collect.ImmutableSortedSet<E> copyOfSorted(java.util.SortedSet<E> p0){
+	return com.google.common.collect.ImmutableSortedSet.copyOfSorted(p0);
 }
 /**
 *public static <E> com.google.common.collect.ImmutableSortedSet<E> com.google.common.collect.ImmutableSortedSet.of(E,E,E,E)
@@ -89,11 +97,5 @@ public static <E extends java.lang.Comparable<? super E> > com.google.common.col
 */ 
 public static <E extends java.lang.Comparable<? super E> > com.google.common.collect.ImmutableSortedSet<E> of(E p0){
 	return com.google.common.collect.ImmutableSortedSet.of(p0);
-}
-/**
-*public static <E> com.google.common.collect.ImmutableSortedSet<E> com.google.common.collect.ImmutableSortedSet.copyOfSorted(java.util.SortedSet<E>)
-*/ 
-public static <E> com.google.common.collect.ImmutableSortedSet<E> copyOfSorted(java.util.SortedSet<E> p0){
-	return com.google.common.collect.ImmutableSortedSet.copyOfSorted(p0);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ByteBigListUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.bytes.ByteBigList it.unimi.dsi.fastutil.bytes.ByteBigLists.asBigList(it.unimi.dsi.fastutil.bytes.ByteList)
+*/ 
+public static it.unimi.dsi.fastutil.bytes.ByteBigList asBigList(it.unimi.dsi.fastutil.bytes.ByteList p0){
+	return it.unimi.dsi.fastutil.bytes.ByteBigLists.asBigList(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteBigList it.unimi.dsi.fastutil.bytes.ByteBigLists.shuffle(it.unimi.dsi.fastutil.bytes.ByteBigList,java.util.Random)
 */ 
@@ -23,12 +31,6 @@ public static it.unimi.dsi.fastutil.bytes.ByteBigList singleton(byte p0){
 */ 
 public static it.unimi.dsi.fastutil.bytes.ByteBigList singleton(java.lang.Object p0){
 	return it.unimi.dsi.fastutil.bytes.ByteBigLists.singleton(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.bytes.ByteBigList it.unimi.dsi.fastutil.bytes.ByteBigLists.asBigList(it.unimi.dsi.fastutil.bytes.ByteList)
-*/ 
-public static it.unimi.dsi.fastutil.bytes.ByteBigList asBigList(it.unimi.dsi.fastutil.bytes.ByteList p0){
-	return it.unimi.dsi.fastutil.bytes.ByteBigLists.asBigList(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteBigList it.unimi.dsi.fastutil.bytes.ByteBigLists.synchronize(it.unimi.dsi.fastutil.bytes.ByteBigList)

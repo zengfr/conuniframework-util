@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,15 +15,15 @@ public static org.apache.commons.math3.fitting.leastsquares.LeastSquaresProblem 
 	return org.apache.commons.math3.fitting.leastsquares.LeastSquaresFactory.countEvaluations(p0,p1);
 }
 /**
-*public static org.apache.commons.math3.util.Incrementor org.apache.commons.math3.util.Incrementor.wrap(org.apache.commons.math3.util.IntegerSequence$Incrementor)
-*/ 
-public static org.apache.commons.math3.util.Incrementor Incrementor p0){
-	return org.apache.commons.math3.util.Incrementor.wrap(p0);
-}
-/**
 *public static org.apache.commons.math3.util.IntegerSequence$Incrementor org.apache.commons.math3.util.IntegerSequence$Incrementor.create()
 */ 
 public static Incrementor create(){
 	return org.apache.commons.math3.util.IntegerSequence.Incrementor.create();
+}
+/**
+*public static org.apache.commons.math3.util.Incrementor org.apache.commons.math3.util.Incrementor.wrap(org.apache.commons.math3.util.IntegerSequence$Incrementor)
+*/ 
+public static org.apache.commons.math3.util.Incrementor Incrementor p0){
+	return org.apache.commons.math3.util.Incrementor.wrap(p0);
 }
 }

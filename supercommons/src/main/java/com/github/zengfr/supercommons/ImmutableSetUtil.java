@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -21,7 +23,7 @@ public static <E> com.google.common.collect.ImmutableSet<E> copyOf(java.util.Col
 /**
 *public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.ImmutableSet.copyOf(E[])
 */ 
-public static <E> com.google.common.collect.ImmutableSet<E> copyOf(E[] p0){
+public static <E> com.google.common.collect.ImmutableSet<E> copyOf(E... p0){
 	return com.google.common.collect.ImmutableSet.copyOf(p0);
 }
 /**
@@ -29,6 +31,18 @@ public static <E> com.google.common.collect.ImmutableSet<E> copyOf(E[] p0){
 */ 
 public static <E> com.google.common.collect.ImmutableSet<E> copyOf(java.util.Iterator<? extends E> p0){
 	return com.google.common.collect.ImmutableSet.copyOf(p0);
+}
+/**
+*public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.Sets.immutableEnumSet(java.lang.Iterable<E>)
+*/ 
+public static <E extends java.lang.Enum<E> > com.google.common.collect.ImmutableSet<E> immutableEnumSet(java.lang.Iterable<E> p0){
+	return com.google.common.collect.Sets.immutableEnumSet(p0);
+}
+/**
+*public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.Sets.immutableEnumSet(E,E...)
+*/ 
+public static <E extends java.lang.Enum<E> > com.google.common.collect.ImmutableSet<E> immutableEnumSet(E p0,E... p1){
+	return com.google.common.collect.Sets.immutableEnumSet(p0,p1);
 }
 /**
 *public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.ImmutableSet.of(E,E,E,E,E)
@@ -71,17 +85,5 @@ public static <E> com.google.common.collect.ImmutableSet<E> of(E p0,E p1,E p2,E 
 */ 
 public static <E> com.google.common.collect.ImmutableSet<E> of(E p0,E p1,E p2,E p3){
 	return com.google.common.collect.ImmutableSet.of(p0,p1,p2,p3);
-}
-/**
-*public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.Sets.immutableEnumSet(E,E...)
-*/ 
-public static <E extends java.lang.Enum<E> > com.google.common.collect.ImmutableSet<E> immutableEnumSet(E p0,E... p1){
-	return com.google.common.collect.Sets.immutableEnumSet(p0,p1);
-}
-/**
-*public static <E> com.google.common.collect.ImmutableSet<E> com.google.common.collect.Sets.immutableEnumSet(java.lang.Iterable<E>)
-*/ 
-public static <E extends java.lang.Enum<E> > com.google.common.collect.ImmutableSet<E> immutableEnumSet(java.lang.Iterable<E> p0){
-	return com.google.common.collect.Sets.immutableEnumSet(p0);
 }
 }

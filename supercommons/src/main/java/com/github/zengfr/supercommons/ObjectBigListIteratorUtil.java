@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ObjectBigListIteratorUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> it.unimi.dsi.fastutil.objects.ObjectBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.objects.ObjectListIterator<K>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> asBigListIterator(it.unimi.dsi.fastutil.objects.ObjectListIterator<K> p0){
+	return it.unimi.dsi.fastutil.objects.ObjectBigListIterators.asBigListIterator(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> it.unimi.dsi.fastutil.objects.ObjectBigListIterators.singleton(K)
 */ 
@@ -17,11 +25,5 @@ public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> singlet
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> unmodifiable(it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> p0){
 	return it.unimi.dsi.fastutil.objects.ObjectBigListIterators.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> it.unimi.dsi.fastutil.objects.ObjectBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.objects.ObjectListIterator<K>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.ObjectBigListIterator<K> asBigListIterator(it.unimi.dsi.fastutil.objects.ObjectListIterator<K> p0){
-	return it.unimi.dsi.fastutil.objects.ObjectBigListIterators.asBigListIterator(p0);
 }
 }

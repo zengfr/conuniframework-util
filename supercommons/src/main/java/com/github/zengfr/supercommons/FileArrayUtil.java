@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class FileArrayUtil{ 
+/**
+*public static java.io.File[] org.apache.commons.io.FileUtils.convertFileCollectionToFileArray(java.util.Collection<java.io.File>)
+*/ 
+public static java.io.File[] convertFileCollectionToFileArray(java.util.Collection<java.io.File> p0){
+	return org.apache.commons.io.FileUtils.convertFileCollectionToFileArray(p0);
+}
 /**
 *public static java.io.File[] org.apache.commons.io.filefilter.FileFilterUtils.filter(org.apache.commons.io.filefilter.IOFileFilter,java.io.File...)
 */ 
@@ -33,19 +41,13 @@ public static java.util.Set<java.io.File> filterSet(org.apache.commons.io.filefi
 /**
 *public static java.io.File[] org.apache.commons.io.FileUtils.toFiles(java.net.URL[])
 */ 
-public static java.io.File[] toFiles(java.net.URL[] p0){
+public static java.io.File[] toFiles(java.net.URL... p0){
 	return org.apache.commons.io.FileUtils.toFiles(p0);
 }
 /**
 *public static java.net.URL[] org.apache.commons.io.FileUtils.toURLs(java.io.File[]) throws java.io.IOException
 */ 
-public static java.net.URL[] toURLs(java.io.File[] p0) throws java.io.IOException{
+public static java.net.URL[] toURLs(java.io.File... p0) throws java.io.IOException{
 	return org.apache.commons.io.FileUtils.toURLs(p0);
-}
-/**
-*public static java.io.File[] org.apache.commons.io.FileUtils.convertFileCollectionToFileArray(java.util.Collection<java.io.File>)
-*/ 
-public static java.io.File[] convertFileCollectionToFileArray(java.util.Collection<java.io.File> p0){
-	return org.apache.commons.io.FileUtils.convertFileCollectionToFileArray(p0);
 }
 }

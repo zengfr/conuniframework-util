@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Reference2DoubleFunctionUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Double>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Double> p0){
+	return it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.primitive(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.singleton(K,java.lang.Double)
 */ 
@@ -35,11 +43,5 @@ public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> sync
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> unmodifiable(it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> p0){
 	return it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Double>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.Reference2DoubleFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Double> p0){
-	return it.unimi.dsi.fastutil.objects.Reference2DoubleFunctions.primitive(p0);
 }
 }

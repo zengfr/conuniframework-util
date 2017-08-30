@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,15 +9,15 @@ package com.github.zengfr.supercommons;
 */
 public final class WrapDynaClassUtil{ 
 /**
-*public static org.apache.commons.beanutils.WrapDynaClass org.apache.commons.beanutils.WrapDynaClass.createDynaClass(java.lang.Class<?>,org.apache.commons.beanutils.PropertyUtilsBean)
-*/ 
-public static org.apache.commons.beanutils.WrapDynaClass createDynaClass(java.lang.Class<?> p0,org.apache.commons.beanutils.PropertyUtilsBean p1){
-	return org.apache.commons.beanutils.WrapDynaClass.createDynaClass(p0,p1);
-}
-/**
 *public static org.apache.commons.beanutils.WrapDynaClass org.apache.commons.beanutils.WrapDynaClass.createDynaClass(java.lang.Class<?>)
 */ 
 public static org.apache.commons.beanutils.WrapDynaClass createDynaClass(java.lang.Class<?> p0){
 	return org.apache.commons.beanutils.WrapDynaClass.createDynaClass(p0);
+}
+/**
+*public static org.apache.commons.beanutils.WrapDynaClass org.apache.commons.beanutils.WrapDynaClass.createDynaClass(java.lang.Class<?>,org.apache.commons.beanutils.PropertyUtilsBean)
+*/ 
+public static org.apache.commons.beanutils.WrapDynaClass createDynaClass(java.lang.Class<?> p0,org.apache.commons.beanutils.PropertyUtilsBean p1){
+	return org.apache.commons.beanutils.WrapDynaClass.createDynaClass(p0,p1);
 }
 }

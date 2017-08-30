@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,162 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class FloatComparatorUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.floats.FloatComparator it.unimi.dsi.fastutil.floats.FloatComparators.asFloatComparator(java.util.Comparator<? super java.lang.Float>)
+*/ 
+public static it.unimi.dsi.fastutil.floats.FloatComparator asFloatComparator(java.util.Comparator<? super java.lang.Float> p0){
+	return it.unimi.dsi.fastutil.floats.FloatComparators.asFloatComparator(p0);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int binarySearch(float[] p0,int p1,int p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static long binarySearch(float[][] p0,long p1,long p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3,p4);
+}
+/**
+*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static long binarySearch(float[][] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatHeaps.downHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int downHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	return it.unimi.dsi.fastutil.floats.FloatHeaps.downHeap(p0,p1,p2,p3);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.downHeap(float[],int[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int downHeap(float[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
+	return it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.downHeap(float[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int downHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
+}
+/**
+*public static java.util.Comparator<? super java.util.Map.java.util.Map$Entry<java.lang.Float, ?>> it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.entryComparator(it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static java.util.Comparator<? super Entry<java.lang.Float, ?>> entryComparator(it.unimi.dsi.fastutil.floats.FloatComparator p0){
+	return it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.entryComparator(p0);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.front(float[],int[],int,int[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int front(float[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatHeaps.makeHeap(float[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void makeHeap(float[] p0,int p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
+	 it.unimi.dsi.fastutil.floats.FloatHeaps.makeHeap(p0,p1,p2);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(float[],int,int,int[],int[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void makeHeap(float[] p0,int p1,int p2,int[] p3,int[] p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
+	 it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(p0,p1,p2,p3,p4,p5);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(float[],int[],int[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void makeHeap(float[] p0,int[] p1,int[] p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	 it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+/**
+*public static int[] it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int[] makeHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void makeHeap(float[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	 it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int,int,int[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void makeHeap(float[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	 it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator,float[])
+*/ 
+public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3,float... p4){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1,p2,p3,p4);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void mergeSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1);
+}
+/**
+*public static it.unimi.dsi.fastutil.floats.FloatComparator it.unimi.dsi.fastutil.floats.FloatComparators.oppositeComparator(it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static it.unimi.dsi.fastutil.floats.FloatComparator oppositeComparator(it.unimi.dsi.fastutil.floats.FloatComparator p0){
+	return it.unimi.dsi.fastutil.floats.FloatComparators.oppositeComparator(p0);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void parallelQuickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void parallelQuickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void quickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void quickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	 it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(p0,p1,p2,p3);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(float[][],it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void quickSort(float[][] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(p0,p1);
+}
+/**
+*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(float[][],long,long,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static void quickSort(float[][] p0,long p1,long p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	 it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(p0,p1,p2,p3);
+}
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2BooleanSortedMap it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.singleton(java.lang.Float,java.lang.Boolean,it.unimi.dsi.fastutil.floats.FloatComparator)
 */ 
@@ -17,12 +175,6 @@ public static it.unimi.dsi.fastutil.floats.Float2BooleanSortedMap singleton(java
 */ 
 public static it.unimi.dsi.fastutil.floats.Float2BooleanSortedMap singleton(float p0,boolean p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
 	return it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.singleton(p0,p1,p2);
-}
-/**
-*public static java.util.Comparator<? super java.util.Map.java.util.Map$Entry<java.lang.Float, ?>> it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.entryComparator(it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static java.util.Comparator<? super Entry<java.lang.Float, ?>> entryComparator(it.unimi.dsi.fastutil.floats.FloatComparator p0){
-	return it.unimi.dsi.fastutil.floats.Float2BooleanSortedMaps.entryComparator(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.floats.Float2ByteSortedMap it.unimi.dsi.fastutil.floats.Float2ByteSortedMaps.singleton(java.lang.Float,java.lang.Byte,it.unimi.dsi.fastutil.floats.FloatComparator)
@@ -121,174 +273,6 @@ public static it.unimi.dsi.fastutil.floats.Float2ShortSortedMap singleton(float 
 	return it.unimi.dsi.fastutil.floats.Float2ShortSortedMaps.singleton(p0,p1,p2);
 }
 /**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],int,int,float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int binarySearch(float[] p0,int p1,int p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(float[],float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int binarySearch(float[] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-	return it.unimi.dsi.fastutil.floats.FloatArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void mergeSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator,float[])
-*/ 
-public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3,float[] p4){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1,p2,p3,p4);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void mergeSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.mergeSort(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void parallelQuickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(p0,p1);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void parallelQuickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.parallelQuickSort(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void quickSort(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(float[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void quickSort(float[] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
-	 it.unimi.dsi.fastutil.floats.FloatArrays.quickSort(p0,p1);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static long binarySearch(float[][] p0,float p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2);
-}
-/**
-*public static long it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(float[][],long,long,float,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static long binarySearch(float[][] p0,long p1,long p2,float p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatBigArrays.binarySearch(p0,p1,p2,p3,p4);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(float[][],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void quickSort(float[][] p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(p0,p1);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(float[][],long,long,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void quickSort(float[][] p0,long p1,long p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	 it.unimi.dsi.fastutil.floats.FloatBigArrays.quickSort(p0,p1,p2,p3);
-}
-/**
-*public static it.unimi.dsi.fastutil.floats.FloatComparator it.unimi.dsi.fastutil.floats.FloatComparators.asFloatComparator(java.util.Comparator<? super java.lang.Float>)
-*/ 
-public static it.unimi.dsi.fastutil.floats.FloatComparator asFloatComparator(java.util.Comparator<? super java.lang.Float> p0){
-	return it.unimi.dsi.fastutil.floats.FloatComparators.asFloatComparator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.floats.FloatComparator it.unimi.dsi.fastutil.floats.FloatComparators.oppositeComparator(it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static it.unimi.dsi.fastutil.floats.FloatComparator oppositeComparator(it.unimi.dsi.fastutil.floats.FloatComparator p0){
-	return it.unimi.dsi.fastutil.floats.FloatComparators.oppositeComparator(p0);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatHeaps.downHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int downHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	return it.unimi.dsi.fastutil.floats.FloatHeaps.downHeap(p0,p1,p2,p3);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatHeaps.upHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int upHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	return it.unimi.dsi.fastutil.floats.FloatHeaps.upHeap(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatHeaps.makeHeap(float[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void makeHeap(float[] p0,int p1,it.unimi.dsi.fastutil.floats.FloatComparator p2){
-	 it.unimi.dsi.fastutil.floats.FloatHeaps.makeHeap(p0,p1,p2);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.downHeap(float[],int[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int downHeap(float[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
-	return it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.downHeap(p0,p1,p2,p3,p4,p5);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.upHeap(float[],int[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int upHeap(float[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
-	return it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(float[],int,int,int[],int[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void makeHeap(float[] p0,int p1,int p2,int[] p3,int[] p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
-	 it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(p0,p1,p2,p3,p4,p5);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(float[],int[],int[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void makeHeap(float[] p0,int[] p1,int[] p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	 it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.downHeap(float[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int downHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.downHeap(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.upHeap(float[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int upHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
-}
-/**
-*public static int[] it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int[] makeHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int[],int,it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void makeHeap(float[] p0,int[] p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
-	 it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3);
-}
-/**
-*public static void it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(float[],int,int,int[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static void makeHeap(float[] p0,int p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	 it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.makeHeap(p0,p1,p2,p3,p4);
-}
-/**
-*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.front(float[],int[],int,int[],it.unimi.dsi.fastutil.floats.FloatComparator)
-*/ 
-public static int front(float[] p0,int[] p1,int p2,int[] p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
-	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.front(p0,p1,p2,p3,p4);
-}
-/**
 *public static it.unimi.dsi.fastutil.floats.FloatSortedSet it.unimi.dsi.fastutil.floats.FloatSortedSets.singleton(java.lang.Object,it.unimi.dsi.fastutil.floats.FloatComparator)
 */ 
 public static it.unimi.dsi.fastutil.floats.FloatSortedSet singleton(java.lang.Object p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
@@ -299,5 +283,23 @@ public static it.unimi.dsi.fastutil.floats.FloatSortedSet singleton(java.lang.Ob
 */ 
 public static it.unimi.dsi.fastutil.floats.FloatSortedSet singleton(float p0,it.unimi.dsi.fastutil.floats.FloatComparator p1){
 	return it.unimi.dsi.fastutil.floats.FloatSortedSets.singleton(p0,p1);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatHeaps.upHeap(float[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int upHeap(float[] p0,int p1,int p2,it.unimi.dsi.fastutil.floats.FloatComparator p3){
+	return it.unimi.dsi.fastutil.floats.FloatHeaps.upHeap(p0,p1,p2,p3);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.upHeap(float[],int[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int upHeap(float[] p0,int[] p1,int[] p2,int p3,int p4,it.unimi.dsi.fastutil.floats.FloatComparator p5){
+	return it.unimi.dsi.fastutil.floats.FloatIndirectHeaps.upHeap(p0,p1,p2,p3,p4,p5);
+}
+/**
+*public static int it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.upHeap(float[],int[],int,int,it.unimi.dsi.fastutil.floats.FloatComparator)
+*/ 
+public static int upHeap(float[] p0,int[] p1,int p2,int p3,it.unimi.dsi.fastutil.floats.FloatComparator p4){
+	return it.unimi.dsi.fastutil.floats.FloatSemiIndirectHeaps.upHeap(p0,p1,p2,p3,p4);
 }
 }

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -31,15 +33,15 @@ public static <E> java.util.ArrayList<E> newArrayList(java.lang.Iterable<? exten
 	return com.google.common.collect.Lists.newArrayList(p0);
 }
 /**
-*public static <E> java.util.ArrayList<E> com.google.common.collect.Lists.newArrayListWithExpectedSize(int)
-*/ 
-public static <E> java.util.ArrayList<E> newArrayListWithExpectedSize(int p0){
-	return com.google.common.collect.Lists.newArrayListWithExpectedSize(p0);
-}
-/**
 *public static <E> java.util.ArrayList<E> com.google.common.collect.Lists.newArrayListWithCapacity(int)
 */ 
 public static <E> java.util.ArrayList<E> newArrayListWithCapacity(int p0){
 	return com.google.common.collect.Lists.newArrayListWithCapacity(p0);
+}
+/**
+*public static <E> java.util.ArrayList<E> com.google.common.collect.Lists.newArrayListWithExpectedSize(int)
+*/ 
+public static <E> java.util.ArrayList<E> newArrayListWithExpectedSize(int p0){
+	return com.google.common.collect.Lists.newArrayListWithExpectedSize(p0);
 }
 }

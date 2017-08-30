@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class ByteBigListIteratorUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator it.unimi.dsi.fastutil.bytes.ByteBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.bytes.ByteListIterator)
+*/ 
+public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator asBigListIterator(it.unimi.dsi.fastutil.bytes.ByteListIterator p0){
+	return it.unimi.dsi.fastutil.bytes.ByteBigListIterators.asBigListIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator it.unimi.dsi.fastutil.bytes.ByteBigListIterators.singleton(byte)
 */ 
@@ -17,11 +25,5 @@ public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator singleton(byte p0)
 */ 
 public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator unmodifiable(it.unimi.dsi.fastutil.bytes.ByteBigListIterator p0){
 	return it.unimi.dsi.fastutil.bytes.ByteBigListIterators.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator it.unimi.dsi.fastutil.bytes.ByteBigListIterators.asBigListIterator(it.unimi.dsi.fastutil.bytes.ByteListIterator)
-*/ 
-public static it.unimi.dsi.fastutil.bytes.ByteBigListIterator asBigListIterator(it.unimi.dsi.fastutil.bytes.ByteListIterator p0){
-	return it.unimi.dsi.fastutil.bytes.ByteBigListIterators.asBigListIterator(p0);
 }
 }

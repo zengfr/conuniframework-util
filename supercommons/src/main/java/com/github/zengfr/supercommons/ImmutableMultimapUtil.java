@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -25,22 +27,10 @@ public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(){
 	return com.google.common.collect.ImmutableMultimap.of();
 }
 /**
-*public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V,K,V,K,V)
-*/ 
-public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1,K p2,V p3,K p4,V p5,K p6,V p7){
-	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3,p4,p5,p6,p7);
-}
-/**
 *public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V,K,V,K,V,K,V)
 */ 
 public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1,K p2,V p3,K p4,V p5,K p6,V p7,K p8,V p9){
 	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3,p4,p5,p6,p7,p8,p9);
-}
-/**
-*public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V)
-*/ 
-public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1,K p2,V p3){
-	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3);
 }
 /**
 *public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V,K,V)
@@ -49,9 +39,21 @@ public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V 
 	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3,p4,p5);
 }
 /**
+*public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V)
+*/ 
+public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1,K p2,V p3){
+	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3);
+}
+/**
 *public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V)
 */ 
 public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1){
 	return com.google.common.collect.ImmutableMultimap.of(p0,p1);
+}
+/**
+*public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> com.google.common.collect.ImmutableMultimap.of(K,V,K,V,K,V,K,V)
+*/ 
+public static <K,V> com.google.common.collect.ImmutableMultimap<K, V> of(K p0,V p1,K p2,V p3,K p4,V p5,K p6,V p7){
+	return com.google.common.collect.ImmutableMultimap.of(p0,p1,p2,p3,p4,p5,p6,p7);
 }
 }

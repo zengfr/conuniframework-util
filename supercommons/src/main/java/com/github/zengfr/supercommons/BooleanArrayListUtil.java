@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class BooleanArrayListUtil{
 /**
 *public static it.unimi.dsi.fastutil.booleans.BooleanArrayList it.unimi.dsi.fastutil.booleans.BooleanArrayList.wrap(boolean[])
 */ 
-public static it.unimi.dsi.fastutil.booleans.BooleanArrayList wrap(boolean[] p0){
+public static it.unimi.dsi.fastutil.booleans.BooleanArrayList wrap(boolean... p0){
 	return it.unimi.dsi.fastutil.booleans.BooleanArrayList.wrap(p0);
 }
 /**

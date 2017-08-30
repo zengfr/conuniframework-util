@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,16 @@ package com.github.zengfr.supercommons;
 */
 public final class AppendableUtil{ 
 /**
-*public static long com.google.common.io.CharStreams.copy(java.lang.Readable,java.lang.Appendable) throws java.io.IOException
-*/ 
-public static long copy(java.lang.Readable p0,java.lang.Appendable p1) throws java.io.IOException{
-	return com.google.common.io.CharStreams.copy(p0,p1);
-}
-/**
 *public static java.io.Writer com.google.common.io.CharStreams.asWriter(java.lang.Appendable)
 */ 
 public static java.io.Writer asWriter(java.lang.Appendable p0){
 	return com.google.common.io.CharStreams.asWriter(p0);
+}
+/**
+*public static long com.google.common.io.CharStreams.copy(java.lang.Readable,java.lang.Appendable) throws java.io.IOException
+*/ 
+public static long copy(java.lang.Readable p0,java.lang.Appendable p1) throws java.io.IOException{
+	return com.google.common.io.CharStreams.copy(p0,p1);
 }
 /**
 *public static void com.google.common.io.Files.copy(java.io.File,java.nio.charset.Charset,java.lang.Appendable) throws java.io.IOException

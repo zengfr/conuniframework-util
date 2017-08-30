@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -9,7 +11,7 @@ public final class ShortArrayListUtil{
 /**
 *public static it.unimi.dsi.fastutil.shorts.ShortArrayList it.unimi.dsi.fastutil.shorts.ShortArrayList.wrap(short[])
 */ 
-public static it.unimi.dsi.fastutil.shorts.ShortArrayList wrap(short[] p0){
+public static it.unimi.dsi.fastutil.shorts.ShortArrayList wrap(short... p0){
 	return it.unimi.dsi.fastutil.shorts.ShortArrayList.wrap(p0);
 }
 /**

@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,12 +15,6 @@ public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> constraine
 	return com.google.common.collect.MapConstraints.constrainedSortedSetMultimap(p0,p1);
 }
 /**
-*public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap(com.google.common.collect.SortedSetMultimap<K, V>)
-*/ 
-public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> unmodifiableSortedSetMultimap(com.google.common.collect.SortedSetMultimap<K, V> p0){
-	return com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap(p0);
-}
-/**
 *public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> com.google.common.collect.Multimaps.newSortedSetMultimap(java.util.Map<K, java.util.Collection<V>>,com.google.common.base.Supplier<? extends java.util.SortedSet<V>>)
 */ 
 public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> newSortedSetMultimap(java.util.Map<K, java.util.Collection<V>> p0,com.google.common.base.Supplier<? extends java.util.SortedSet<V>> p1){
@@ -29,5 +25,11 @@ public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> newSortedS
 */ 
 public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> synchronizedSortedSetMultimap(com.google.common.collect.SortedSetMultimap<K, V> p0){
 	return com.google.common.collect.Multimaps.synchronizedSortedSetMultimap(p0);
+}
+/**
+*public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap(com.google.common.collect.SortedSetMultimap<K, V>)
+*/ 
+public static <K,V> com.google.common.collect.SortedSetMultimap<K, V> unmodifiableSortedSetMultimap(com.google.common.collect.SortedSetMultimap<K, V> p0){
+	return com.google.common.collect.Multimaps.unmodifiableSortedSetMultimap(p0);
 }
 }

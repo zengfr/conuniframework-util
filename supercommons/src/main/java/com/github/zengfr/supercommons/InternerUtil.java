@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,15 +9,15 @@ package com.github.zengfr.supercommons;
 */
 public final class InternerUtil{ 
 /**
-*public static <E> com.google.common.collect.Interner<E> com.google.common.collect.Interners.newWeakInterner()
-*/ 
-public static <E> com.google.common.collect.Interner<E> newWeakInterner(){
-	return com.google.common.collect.Interners.newWeakInterner();
-}
-/**
 *public static <E> com.google.common.collect.Interner<E> com.google.common.collect.Interners.newStrongInterner()
 */ 
 public static <E> com.google.common.collect.Interner<E> newStrongInterner(){
 	return com.google.common.collect.Interners.newStrongInterner();
+}
+/**
+*public static <E> com.google.common.collect.Interner<E> com.google.common.collect.Interners.newWeakInterner()
+*/ 
+public static <E> com.google.common.collect.Interner<E> newWeakInterner(){
+	return com.google.common.collect.Interners.newWeakInterner();
 }
 }

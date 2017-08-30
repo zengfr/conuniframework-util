@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Short2FloatFunctionUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.primitive(java.util.function.Function<? super java.lang.Short, ? extends java.lang.Float>)
+*/ 
+public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction primitive(java.util.function.Function<? super java.lang.Short, ? extends java.lang.Float> p0){
+	return it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.primitive(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.singleton(java.lang.Short,java.lang.Float)
 */ 
@@ -35,11 +43,5 @@ public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction synchronize(it.un
 */ 
 public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction unmodifiable(it.unimi.dsi.fastutil.shorts.Short2FloatFunction p0){
 	return it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.unmodifiable(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.primitive(java.util.function.Function<? super java.lang.Short, ? extends java.lang.Float>)
-*/ 
-public static it.unimi.dsi.fastutil.shorts.Short2FloatFunction primitive(java.util.function.Function<? super java.lang.Short, ? extends java.lang.Float> p0){
-	return it.unimi.dsi.fastutil.shorts.Short2FloatFunctions.primitive(p0);
 }
 }

@@ -1,6 +1,3 @@
 
-ìsquid:S1598"»This file "ActionArrayUtil.java" should be located in "com\zengfr\supercommons" directory, not in "E:\javaproject\Super-Commons\supercommons\src\main\java\com\github\zengfr\supercommons".(˜ìĞHìURCRITICALZ
-CODE_SMELL
-lsquid:S1118
-":Add a private constructor to hide the implicit public one.(½Â¬ÎûÿÿÿÿHíURMAJORZ
+lsquid:S1118":Add a private constructor to hide the implicit public one.(½Â¬ÎûÿÿÿÿHúgRMAJORZ
 CODE_SMELL

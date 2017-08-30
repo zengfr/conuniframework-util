@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,10 @@ package com.github.zengfr.supercommons;
 */
 public final class PolynomialFunctionUtil{ 
 /**
-*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLegendrePolynomial(int)
+*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createChebyshevPolynomial(int)
 */ 
-public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createLegendrePolynomial(int p0){
-	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLegendrePolynomial(p0);
-}
-/**
-*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLaguerrePolynomial(int)
-*/ 
-public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createLaguerrePolynomial(int p0){
-	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLaguerrePolynomial(p0);
+public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createChebyshevPolynomial(int p0){
+	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createChebyshevPolynomial(p0);
 }
 /**
 *public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createHermitePolynomial(int)
@@ -31,9 +27,15 @@ public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction c
 	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createJacobiPolynomial(p0,p1,p2);
 }
 /**
-*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createChebyshevPolynomial(int)
+*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLaguerrePolynomial(int)
 */ 
-public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createChebyshevPolynomial(int p0){
-	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createChebyshevPolynomial(p0);
+public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createLaguerrePolynomial(int p0){
+	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLaguerrePolynomial(p0);
+}
+/**
+*public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLegendrePolynomial(int)
+*/ 
+public static org.apache.commons.math3.analysis.polynomials.PolynomialFunction createLegendrePolynomial(int p0){
+	return org.apache.commons.math3.analysis.polynomials.PolynomialsUtils.createLegendrePolynomial(p0);
 }
 }

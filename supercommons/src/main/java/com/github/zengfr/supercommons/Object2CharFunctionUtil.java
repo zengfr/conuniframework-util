@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Object2CharFunctionUtil{ 
+/**
+*public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> it.unimi.dsi.fastutil.objects.Object2CharFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Character>)
+*/ 
+public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Character> p0){
+	return it.unimi.dsi.fastutil.objects.Object2CharFunctions.primitive(p0);
+}
 /**
 *public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> it.unimi.dsi.fastutil.objects.Object2CharFunctions.singleton(K,java.lang.Character)
 */ 
@@ -35,11 +43,5 @@ public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> synchroni
 */ 
 public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> unmodifiable(it.unimi.dsi.fastutil.objects.Object2CharFunction<K> p0){
 	return it.unimi.dsi.fastutil.objects.Object2CharFunctions.unmodifiable(p0);
-}
-/**
-*public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> it.unimi.dsi.fastutil.objects.Object2CharFunctions.primitive(java.util.function.Function<? super K, ? extends java.lang.Character>)
-*/ 
-public static <K> it.unimi.dsi.fastutil.objects.Object2CharFunction<K> primitive(java.util.function.Function<? super K, ? extends java.lang.Character> p0){
-	return it.unimi.dsi.fastutil.objects.Object2CharFunctions.primitive(p0);
 }
 }

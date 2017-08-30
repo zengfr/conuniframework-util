@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -15,7 +17,7 @@ public static it.unimi.dsi.fastutil.shorts.ShortIterator concat(it.unimi.dsi.fas
 /**
 *public static it.unimi.dsi.fastutil.shorts.ShortIterator it.unimi.dsi.fastutil.shorts.ShortIterators.concat(it.unimi.dsi.fastutil.shorts.ShortIterator[])
 */ 
-public static it.unimi.dsi.fastutil.shorts.ShortIterator concat(it.unimi.dsi.fastutil.shorts.ShortIterator[] p0){
+public static it.unimi.dsi.fastutil.shorts.ShortIterator concat(it.unimi.dsi.fastutil.shorts.ShortIterator... p0){
 	return it.unimi.dsi.fastutil.shorts.ShortIterators.concat(p0);
 }
 }

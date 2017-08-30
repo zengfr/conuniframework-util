@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,12 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class IntBigListUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(it.unimi.dsi.fastutil.ints.IntList)
+*/ 
+public static it.unimi.dsi.fastutil.ints.IntBigList asBigList(it.unimi.dsi.fastutil.ints.IntList p0){
+	return it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.shuffle(it.unimi.dsi.fastutil.ints.IntBigList,java.util.Random)
 */ 
@@ -23,12 +31,6 @@ public static it.unimi.dsi.fastutil.ints.IntBigList singleton(int p0){
 */ 
 public static it.unimi.dsi.fastutil.ints.IntBigList singleton(java.lang.Object p0){
 	return it.unimi.dsi.fastutil.ints.IntBigLists.singleton(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(it.unimi.dsi.fastutil.ints.IntList)
-*/ 
-public static it.unimi.dsi.fastutil.ints.IntBigList asBigList(it.unimi.dsi.fastutil.ints.IntList p0){
-	return it.unimi.dsi.fastutil.ints.IntBigLists.asBigList(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.ints.IntBigList it.unimi.dsi.fastutil.ints.IntBigLists.synchronize(it.unimi.dsi.fastutil.ints.IntBigList)

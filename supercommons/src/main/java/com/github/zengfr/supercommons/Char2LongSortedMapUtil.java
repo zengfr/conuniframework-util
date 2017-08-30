@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -6,6 +8,18 @@ package com.github.zengfr.supercommons;
 * zengfr3000@qq.com
 */
 public final class Char2LongSortedMapUtil{ 
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.chars.Char2LongMap$Entry> it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterable(it.unimi.dsi.fastutil.chars.Char2LongSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.chars.Char2LongSortedMap p0){
+	return it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterable(p0);
+}
+/**
+*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.chars.Char2LongMap$Entry> it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterator(it.unimi.dsi.fastutil.chars.Char2LongSortedMap)
+*/ 
+public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.chars.Char2LongSortedMap p0){
+	return it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterator(p0);
+}
 /**
 *public static it.unimi.dsi.fastutil.chars.Char2LongSortedMap it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.singleton(char,long)
 */ 
@@ -29,18 +43,6 @@ public static it.unimi.dsi.fastutil.chars.Char2LongSortedMap singleton(java.lang
 */ 
 public static it.unimi.dsi.fastutil.chars.Char2LongSortedMap singleton(char p0,long p1,it.unimi.dsi.fastutil.chars.CharComparator p2){
 	return it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.singleton(p0,p1,p2);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<it.unimi.dsi.fastutil.chars.Char2LongMap$Entry> it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterator(it.unimi.dsi.fastutil.chars.Char2LongSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterator<Entry> fastIterator(it.unimi.dsi.fastutil.chars.Char2LongSortedMap p0){
-	return it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterator(p0);
-}
-/**
-*public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<it.unimi.dsi.fastutil.chars.Char2LongMap$Entry> it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterable(it.unimi.dsi.fastutil.chars.Char2LongSortedMap)
-*/ 
-public static it.unimi.dsi.fastutil.objects.ObjectBidirectionalIterable<Entry> fastIterable(it.unimi.dsi.fastutil.chars.Char2LongSortedMap p0){
-	return it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.fastIterable(p0);
 }
 /**
 *public static it.unimi.dsi.fastutil.chars.Char2LongSortedMap it.unimi.dsi.fastutil.chars.Char2LongSortedMaps.synchronize(it.unimi.dsi.fastutil.chars.Char2LongSortedMap,java.lang.Object)

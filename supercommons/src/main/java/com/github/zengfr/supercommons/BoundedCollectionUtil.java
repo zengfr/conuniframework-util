@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,16 @@ package com.github.zengfr.supercommons;
 */
 public final class BoundedCollectionUtil{ 
 /**
-*public static org.apache.commons.collections.BoundedCollection org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorateUsing(java.util.Collection)
-*/ 
-public static org.apache.commons.collections.BoundedCollection decorateUsing(java.util.Collection p0){
-	return org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorateUsing(p0);
-}
-/**
 *public static org.apache.commons.collections.BoundedCollection org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorate(org.apache.commons.collections.BoundedCollection)
 */ 
 public static org.apache.commons.collections.BoundedCollection decorate(org.apache.commons.collections.BoundedCollection p0){
 	return org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorate(p0);
+}
+/**
+*public static org.apache.commons.collections.BoundedCollection org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorateUsing(java.util.Collection)
+*/ 
+public static org.apache.commons.collections.BoundedCollection decorateUsing(java.util.Collection p0){
+	return org.apache.commons.collections.collection.UnmodifiableBoundedCollection.decorateUsing(p0);
 }
 /**
 *public static <E> org.apache.commons.collections4.BoundedCollection<E> org.apache.commons.collections4.collection.UnmodifiableBoundedCollection.unmodifiableBoundedCollection(org.apache.commons.collections4.BoundedCollection<? extends E>)

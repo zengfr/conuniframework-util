@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -13,6 +15,12 @@ public static void parseAndIgnoreWhitespace(java.lang.String p0,java.text.ParseP
 	 org.apache.commons.math3.util.CompositeFormat.parseAndIgnoreWhitespace(p0,p1);
 }
 /**
+*public static boolean org.apache.commons.math3.util.CompositeFormat.parseFixedstring(java.lang.String,java.lang.String,java.text.ParsePosition)
+*/ 
+public static boolean parseFixedstring(java.lang.String p0,java.lang.String p1,java.text.ParsePosition p2){
+	return org.apache.commons.math3.util.CompositeFormat.parseFixedstring(p0,p1,p2);
+}
+/**
 *public static char org.apache.commons.math3.util.CompositeFormat.parseNextCharacter(java.lang.String,java.text.ParsePosition)
 */ 
 public static char parseNextCharacter(java.lang.String p0,java.text.ParsePosition p1){
@@ -23,11 +31,5 @@ public static char parseNextCharacter(java.lang.String p0,java.text.ParsePositio
 */ 
 public static java.lang.Number parseNumber(java.lang.String p0,java.text.NumberFormat p1,java.text.ParsePosition p2){
 	return org.apache.commons.math3.util.CompositeFormat.parseNumber(p0,p1,p2);
-}
-/**
-*public static boolean org.apache.commons.math3.util.CompositeFormat.parseFixedstring(java.lang.String,java.lang.String,java.text.ParsePosition)
-*/ 
-public static boolean parseFixedstring(java.lang.String p0,java.lang.String p1,java.text.ParsePosition p2){
-	return org.apache.commons.math3.util.CompositeFormat.parseFixedstring(p0,p1,p2);
 }
 }

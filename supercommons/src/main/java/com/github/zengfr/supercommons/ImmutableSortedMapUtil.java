@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -29,6 +31,12 @@ public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> copyOf(ja
 */ 
 public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> copyOf(java.lang.Iterable<? extends Entry<? extends K, ? extends V>> p0,java.util.Comparator<? super K> p1){
 	return com.google.common.collect.ImmutableSortedMap.copyOf(p0,p1);
+}
+/**
+*public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> com.google.common.collect.ImmutableSortedMap.copyOfSorted(java.util.SortedMap<K, ? extends V>)
+*/ 
+public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> copyOfSorted(java.util.SortedMap<K, ? extends V> p0){
+	return com.google.common.collect.ImmutableSortedMap.copyOfSorted(p0);
 }
 /**
 *public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> com.google.common.collect.ImmutableSortedMap.of(K,V,K,V)
@@ -65,11 +73,5 @@ public static <K extends java.lang.Comparable<? super K> ,V> com.google.common.c
 */ 
 public static <K extends java.lang.Comparable<? super K> ,V> com.google.common.collect.ImmutableSortedMap<K, V> of(K p0,V p1,K p2,V p3,K p4,V p5){
 	return com.google.common.collect.ImmutableSortedMap.of(p0,p1,p2,p3,p4,p5);
-}
-/**
-*public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> com.google.common.collect.ImmutableSortedMap.copyOfSorted(java.util.SortedMap<K, ? extends V>)
-*/ 
-public static <K,V> com.google.common.collect.ImmutableSortedMap<K, V> copyOfSorted(java.util.SortedMap<K, ? extends V> p0){
-	return com.google.common.collect.ImmutableSortedMap.copyOfSorted(p0);
 }
 }

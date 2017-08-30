@@ -1,4 +1,6 @@
 package com.github.zengfr.supercommons;
+import java.util.*;
+import java.util.Map.Entry;
 /**
 * @author zengfr
 * https://github.com/zengfr/Super-Commons
@@ -7,16 +9,16 @@ package com.github.zengfr.supercommons;
 */
 public final class BaseEncodingUtil{ 
 /**
-*public static com.google.common.io.BaseEncoding com.google.common.io.BaseEncoding.base32()
-*/ 
-public static com.google.common.io.BaseEncoding base32(){
-	return com.google.common.io.BaseEncoding.base32();
-}
-/**
 *public static com.google.common.io.BaseEncoding com.google.common.io.BaseEncoding.base16()
 */ 
 public static com.google.common.io.BaseEncoding base16(){
 	return com.google.common.io.BaseEncoding.base16();
+}
+/**
+*public static com.google.common.io.BaseEncoding com.google.common.io.BaseEncoding.base32()
+*/ 
+public static com.google.common.io.BaseEncoding base32(){
+	return com.google.common.io.BaseEncoding.base32();
 }
 /**
 *public static com.google.common.io.BaseEncoding com.google.common.io.BaseEncoding.base32Hex()
